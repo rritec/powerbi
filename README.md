@@ -1,6 +1,3 @@
-# powerbi
-powerbi training by Myla RamReddy
+# Power BI
 
-Power BI mainly has two components
-1. Power Bi Desktop
-1. Power BI Service
+This Repository has Power BI Training Materials developed by Myla Ram Reddy.
