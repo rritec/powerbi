@@ -9,6 +9,7 @@ CREATE TABLE [dbo].[DEPT]
 (DEPTNO INT PRIMARY KEY ,
 DNAME VARCHAR(20),
 LOC VARCHAR(20) );
+
 GO
 
 INSERT INTO [dbo].[DEPT] VALUES (10, 'ACCOUNTING', 'NEW YORK');
@@ -26,6 +27,7 @@ HIREDATE DATE,
 SAL MONEY,
 COMM MONEY,
 DEPTNO INT FOREIGN KEY REFERENCES DEPT(DEPTNO) );
+
 GO
 
 INSERT INTO [dbo].[EMP] VALUES
@@ -62,12 +64,14 @@ CREATE TABLE [dbo].[BONUS]
 JOB VARCHAR(20),
 SAL MONEY,
 COMM MONEY);
+
 GO
 
 CREATE TABLE [dbo].[SALGRADE]
 (GRADE INT NOT NULL,
 LOSAL MONEY,
 HISAL MONEY );
+
 GO
 
 INSERT INTO [dbo].[SALGRADE] VALUES (1, 700, 1200);
@@ -75,10 +79,7 @@ INSERT INTO [dbo].[SALGRADE] VALUES (2, 1201, 1400);
 INSERT INTO [dbo].[SALGRADE] VALUES (3, 1401, 2000);
 INSERT INTO [dbo].[SALGRADE] VALUES (4, 2001, 3000);
 INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
-## Import below tables into Power BI
-1. emp
-1. dept
-1. salgrade
+## Import tables(emp,dept and salgrade) into Power BI
 
 1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Databases** > select **SqlServer Database** > click on **connect**
 
