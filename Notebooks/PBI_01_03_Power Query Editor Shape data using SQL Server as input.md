@@ -3,8 +3,11 @@
 
 ## Load Data
 CREATE DATABASE rritecDB;
+
 GO
+
 use rritecDB;
+
 GO
 
 CREATE TABLE [dbo].[DEPT]
