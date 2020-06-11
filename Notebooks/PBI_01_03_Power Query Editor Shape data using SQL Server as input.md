@@ -3,7 +3,9 @@
 
 ## Load Data
 CREATE DATABASE rritecDB;
+GO
 use rritecDB;
+GO
 
 CREATE TABLE [dbo].[DEPT]
 (DEPTNO INT PRIMARY KEY ,
@@ -79,6 +81,7 @@ INSERT INTO [dbo].[SALGRADE] VALUES (2, 1201, 1400);
 INSERT INTO [dbo].[SALGRADE] VALUES (3, 1401, 2000);
 INSERT INTO [dbo].[SALGRADE] VALUES (4, 2001, 3000);
 INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
+
 ## Import tables(emp,dept and salgrade) into Power BI
 
 1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Databases** > select **SqlServer Database** > click on **connect**
