@@ -25,5 +25,8 @@
     5. Date
     6. Currency
     refer more details [here](https://docs.microsoft.com/en-us/dax/dax-overview#data-types)
+1. **Name two types of connectivity modes in Power BI?**
+      1. Import
+      2. Direct Query
   
     
