@@ -41,6 +41,18 @@
 11. How to use particulat direction in one mesure calculation?
 12. How to implement RLS?
 13. How to use Mesure in slicer?
+14. How to pass multiple values of disconnected table to visulization?
+
+15. Difference between sum vs sumx in dax.
+
+16. common table expression in sql server example
+17. Create table from view in sql server?
+
+18. What is query folding in power bi
+
+	https://docs.microsoft.com/en-us/power-query/power-query-folding
+19. 
+
 
 
 
