@@ -41,6 +41,9 @@
 11. How to use particulat direction in one mesure calculation?
 12. How to implement RLS?
 13. How to use Mesure in slicer?
+14. How to add images ?
+	https://www.blue-granite.com/blog/simple-steps-to-embed-images-in-power-bi
+	
 
 
 
