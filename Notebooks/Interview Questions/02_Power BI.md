@@ -41,7 +41,7 @@
 11. How to use particulat direction in one mesure calculation?
 12. How to implement RLS?
 13. How to use Mesure in slicer?
-<<<<<<< HEAD
+
 14. How to pass multiple values of disconnected table to visulization?
 
 15. Difference between sum vs sumx in dax.
@@ -52,13 +52,10 @@
 18. What is query folding in power bi
 
 	https://docs.microsoft.com/en-us/power-query/power-query-folding
-19. 
-
-=======
-14. How to add images ?
+19. How to add images ?
 	https://www.blue-granite.com/blog/simple-steps-to-embed-images-in-power-bi
 	
->>>>>>> a4a7bdd2432b09cdd3743df50fe9921bbd434f5c
+
 
 
 
