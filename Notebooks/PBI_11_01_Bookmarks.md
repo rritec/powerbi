@@ -11,3 +11,4 @@
 1. Change slicers as you wish  and observe data
 1. press ctrl and click on button it will reset all slicers to **all**
 
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0147.png?raw=true)
