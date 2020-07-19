@@ -12,3 +12,9 @@
 1. press ctrl and click on button it will reset all slicers to **all**
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0147.png?raw=true)
+
+1. **Reference**
+    https://radacad.com/clear-all-slicers-in-power-bi-a-bookmark-story
+    
+    https://radacad.com/bookmarks-and-buttons-making-power-bi-charts-even-more-interactive
+    
