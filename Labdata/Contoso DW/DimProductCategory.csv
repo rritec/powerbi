@@ -1,0 +1,10 @@
+﻿.,,,,
+ProductCategoryKey,ProductCategoryLabel,ProductCategoryName,ProductCategoryDescription,ETLLoadID
+1,1,Audio,Audio,1
+2,2,TV and Video,TV and Video,1
+3,3,Computers,Computers,1
+4,4,Cameras and camcorders ,Cameras and camcorders ,1
+5,5,Cell phones,Cell phones,1
+6,6,"Music, Movies and Audio Books","Music, Movies and Audio Books",1
+7,7,Games and Toys,Games and Toys,1
+8,8,Home Appliances,Home Appliances,1
