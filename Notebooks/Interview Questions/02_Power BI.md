@@ -46,6 +46,8 @@
 
 15. Difference between sum vs sumx in dax.
 
+    https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
+
 16. common table expression in sql server example
 17. Create table from view in sql server?
 
@@ -53,8 +55,15 @@
 
 	https://docs.microsoft.com/en-us/power-query/power-query-folding
 19. How to add images ?
+
 	https://www.blue-granite.com/blog/simple-steps-to-embed-images-in-power-bi
-	
+
+    
+20. Count Vs CountA 
+21. Rolling Months
+https://stackoverflow.com/questions/49146565/show-last-3-months-from-selected-month-in-power-bi
+
+https://www.youtube.com/watch?v=duMSovyosXE
 
 
 
