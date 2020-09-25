@@ -3,7 +3,7 @@
 3. What is Conformed Dimension?
 4. What is Role Playing Dimension?
 
-  https://docs.microsoft.com/en-us/learn/modules/dax-power-bi-write-formulas/1-introduction
+      https://docs.microsoft.com/en-us/learn/modules/dax-power-bi-write-formulas/1-introduction
   
 5. What is Fact Less Fact Table?
 6. What is Primery Key?
