@@ -1,4 +1,7 @@
 1. What is Dimension Table?
+
+      https://docs.microsoft.com/en-us/learn/modules/dax-power-bi-models/2-star-schema-design
+           
 2. What is Fact Table?
 3. What is Conformed Dimension?
 4. What is Role Playing Dimension?
