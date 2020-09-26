@@ -16,8 +16,8 @@
 ## Power Query has `5` main parts
 1. Menu Bar
 1. Queries Pane
-1. Work area
 1. Query Settings Pane
+1. Work area
 1. Formula Bar
 
 ## Replace in `emp` table `comm` column `null` with `0`
