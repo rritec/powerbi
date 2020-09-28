@@ -153,12 +153,12 @@ direct link : https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0138.png?raw=true)   
 
 
-## optional
+## Restore sample data
 ---
 
 1. Follow below link download and restore sample data **AdventureWorksDW2012.bak**
 https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15
 
-# MySql Installation
+# MySql Installation(Optional)
 ---
 https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html
