@@ -25,15 +25,15 @@ SELECT * INTO [dbo].[emp20] FROM [dbo].[EMP] WHERE DEPTNO=20;
 SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
 
 
-select * from emp10 # 3 rosws
+select * from emp10 -- 3 rosws
 
 union
 
-select * from emp20 # 5 rosws
+select * from emp20 -- 5 rosws
 
 union
 
-select * from emp30 # 6 rosws
+select * from emp30 -- 6 rosws
 
 ### Develop Report using Append homogeneous Sources
 
