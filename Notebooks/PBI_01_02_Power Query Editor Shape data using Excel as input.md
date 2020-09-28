@@ -71,6 +71,13 @@
 ### Filter `Job` and `sal` column to get `managers` info whoms cost to company(CTC) is more than `2500`
 
 ## Reference 
+
+https://docs.microsoft.com/en-us/power-bi/fundamentals/desktop-getting-started
+
+https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-shape-and-combine-data
+
+https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-common-query-tasks
+
 https://docs.microsoft.com/en-us/power-bi/desktop-add-custom-column
 
 https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
