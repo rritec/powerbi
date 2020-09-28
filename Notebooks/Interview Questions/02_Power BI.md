@@ -71,6 +71,16 @@
 22. Number of unique rows – by multiple columns
 
 	https://exceltown.com/en/tutorials/power-bi/powerbi-com-and-power-bi-desktop/dax-query-language-for-power-bi-and-power-pivot/number-of-unique-rows-by-multiple-columns/
+	
+23. Can you  do sub totals in table visulization?
+
+	https://docs.microsoft.com/en-us/power-bi/visuals/desktop-matrix-visual#subtotals-and-grand-totals-with-matrix-visuals
+
+24. What is stepped-layout-with-matrix-visuals
+	
+	https://docs.microsoft.com/en-us/power-bi/visuals/desktop-matrix-visual#stepped-layout-with-matrix-visuals
+
+
 
 
 
