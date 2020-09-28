@@ -1,6 +1,8 @@
 
 # Working with MySql
 
+use rritecdb;
+
 ## Load Data
 drop table if exists emp;
 
@@ -134,6 +136,7 @@ INSERT INTO emp30 (empno,ename,job,mgr,hiredate,sal,comm,deptno,test) VALUES
 ,(7900,'JAMES','CLERK',7698,'1981-12-03',950.00,NULL,30,'1')
 ;
 ## Import below tables into Power BI
+
 1. emp
 1. dept
 1. salgrade
