@@ -3,10 +3,15 @@
 
 ## Load Data
 drop table if exists emp;
+
 drop table if exists dept;
+
 drop table if exists salgrade;
+
 drop table if exists emp10;
+
 drop table if exists emp20;
+
 drop table if exists emp30;
 
 CREATE TABLE `emp` (
