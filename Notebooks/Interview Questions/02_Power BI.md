@@ -61,12 +61,14 @@
     
 20. Count Vs CountA 
 21. Rolling Months
-https://stackoverflow.com/questions/49146565/show-last-3-months-from-selected-month-in-power-bi
 
-https://www.youtube.com/watch?v=duMSovyosXE
+	https://stackoverflow.com/questions/49146565/show-last-3-months-from-selected-month-in-power-bi
+
+	https://www.youtube.com/watch?v=duMSovyosXE
 
 22. Number of unique rows – by multiple columns
-https://exceltown.com/en/tutorials/power-bi/powerbi-com-and-power-bi-desktop/dax-query-language-for-power-bi-and-power-pivot/number-of-unique-rows-by-multiple-columns/
+
+	https://exceltown.com/en/tutorials/power-bi/powerbi-com-and-power-bi-desktop/dax-query-language-for-power-bi-and-power-pivot/number-of-unique-rows-by-multiple-columns/
 
 
 
