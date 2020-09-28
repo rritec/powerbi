@@ -4,7 +4,7 @@
 - Append
     - Rows appending
     - Append rules
-        - Rule 1: the number of columns in each table is same
+        - Rule 1: The number of columns in each table is same
         - Rule 2: The positions of columns must be same
         - Rule 3: The respective columns data types shoud be same 
 
@@ -12,6 +12,7 @@
     - Joins
 
 ## Append
+
 - **Scenario:** Append emp10,emp20 and emp30 tables as **emp102030**
 
 ### Sql Query
