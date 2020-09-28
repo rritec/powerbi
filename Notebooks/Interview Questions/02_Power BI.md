@@ -33,9 +33,11 @@
 6. How to keep images in Slicer? and filter visulizations based on image selection?
 7. How to show negative Values in pie chart?
 8. What is HASONEVALUE DAX formula ? Develop Some report?
+
 	https://docs.microsoft.com/en-us/dax/hasonevalue-function-dax
 
 9. How to use **selectedvalue**
+
 	https://docs.microsoft.com/en-us/dax/selectedvalue-function
 10. what is ALL dax formula?
 11. How to use particulat direction in one mesure calculation?
