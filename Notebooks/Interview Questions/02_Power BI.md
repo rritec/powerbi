@@ -78,7 +78,7 @@
 	
 	2.Advance Editor
 
-24. Advanced Editor
+24. What is Advanced Editor
 
 	The Advanced Editor lets you see the code that Power Query Editor is creating with each step. 
 	It also lets you create your own shaping code. To launch the advanced editor, select View from the ribbon, then select Advanced Editor. 
