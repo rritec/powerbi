@@ -72,7 +72,19 @@
 
 	https://exceltown.com/en/tutorials/power-bi/powerbi-com-and-power-bi-desktop/dax-query-language-for-power-bi-and-power-pivot/number-of-unique-rows-by-multiple-columns/
 
+23. In how manys we can see the list of query applied steps
 
+	1.Query setting
+	
+	2.Advance Editor
+
+24. Advanced Editor
+
+	The Advanced Editor lets you see the code that Power Query Editor is creating with each step. 
+	It also lets you create your own shaping code. To launch the advanced editor, select View from the ribbon, then select Advanced Editor. 
+	A window appears, showing the existing query code.
+
+25. Difference between load and transform data
 
 
   
