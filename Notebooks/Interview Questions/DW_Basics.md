@@ -25,7 +25,10 @@
 19. What is Snow Flake Schema?
 20. What is Mixed Schema?
 
-##    1. What is Dimension Table?
+1. What is Dimension Table?
+
       If a table contains Key coloumn and string colomn is called as 'dimension' Table 
-##    2. What is Fact Table?
+      
+2. What is Fact Table?
+
      If a table contains Key coloumn and measure colomn is called as 'Fact' Table 
