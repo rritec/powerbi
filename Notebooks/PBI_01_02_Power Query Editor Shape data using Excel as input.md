@@ -33,6 +33,7 @@
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0084.png?raw=true)
 1. Observe output
+
    
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0086.png?raw=true)
 
@@ -86,3 +87,8 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
 ```python
 
 ```
+## Questions
+1. In how manys we can see the lisit of query applied steps
+
+    1.Query setting
+    2.Advance Editor
