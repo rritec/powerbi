@@ -37,7 +37,7 @@ select * from emp30 -- 6 rosws
 
 ### Develop Report using Append homogeneous Sources
 
-1. Open **Power BI** > Click on **Get Data** > Select **Databases**> Select **MySql** > Click on **Connect** > Provide **Servername** as **localhost** and **Database Name** as **rritec** > Click on **ok**
+1. Open **Power BI** > Click on **Get Data** > Select **Databases**> Select **SqlServer** > Click on **Connect** > Provide **Servername** as **localhost** and **Database Name** as **rritec** > Click on **ok**
 1. In **Navigator** window Select tables **emp10**,**emp20** and **emp30** > Click on **Transform Data**
 1. Click on **Append Queries** > **Append Queries as New** > Select radio button **Three or More Tables** > Select required tables and push to right side then click on **ok**
 
@@ -46,7 +46,7 @@ select * from emp30 -- 6 rosws
 ### Develop Report using Append Hetrogeneous Sources
 
 1. In above report import emp30 data from excel **LabData/Lab1/emp30_data_from_excel.XLSX**
-1. Combine This Excel emp 30 with MySql emp10 and emp20 data
+1. Combine This Excel emp 30 with SQL Server emp10 and emp20 data
 
 
 
@@ -184,14 +184,19 @@ where deptno not in (select deptno from emp );
 select ename,sal,grade 
 from emp,salgrade 
 where sal between losal and hisal
+
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0042.png?raw=true)
 
 #### Develop PBI Report using Non Equi Join
 1. Click on **Get Data** > Select **Databases**> Select **MySql** > Click on **Connect** > Provide **Servername** as **localhost** and **Database Name** as **rritec** > Click on **Advanced Options** > under **SQL Statement** ,paste above sql > Click on **ok**
+
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0043.png?raw=true)
+	
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0044.png?raw=true)
+	
 1. In **Query Settings** rename query as **Non Equi Join**
 1. Observe result    
+
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0045.png?raw=true)
 
 ### Cross Join
@@ -199,6 +204,7 @@ where sal between losal and hisal
 #### Learn Sql Query
 select ename,dname,job,sal \
 from emp,dept
+
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0046.png?raw=true)
 
 #### Develop PBI Report using Cross Join
