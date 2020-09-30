@@ -30,10 +30,10 @@ A copy of the `Access Database` containing ABC's US sales data.
 
 `4 CSV files`, containing ABC’s international sales data:
 
-CA Sales.csv
-FR Sales.csv
-DE Sales.csv
-MX Sales.csv
+1. CA Sales.csv
+2. FR Sales.csv
+3. DE Sales.csv
+4. MX Sales.csv
 
 An `Excel` file containing country population data.
 
