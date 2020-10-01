@@ -225,3 +225,4 @@ from emp,dept
 ```python
 
 ```
+## Can we figure out the all salesman from emp where deptno is 10?
