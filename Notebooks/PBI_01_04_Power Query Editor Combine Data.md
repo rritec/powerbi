@@ -225,3 +225,22 @@ from emp,dept
 ```python
 
 ```
+## Questions
+
+## In how many ways you can merge the 
+
+	we have only opntion.
+	In Power BI Desktop you can join two tables with Merge menu in the Power Query Editor, in the Home 
+
+	The Merge Window will appear with ability to select first table,and the second table 
+	You can choose columns that you want to participate as joining key within an order (you can choose multiple columns also). 
+	And there is join kind that you can choose.
+
+## what is fact table and dimension table
+
+
+## what is homogeneous and heterogeneous
+
+	A homogeneous material or system has the same properties at every point; it is uniform without 
+
+	Heterogeneous mixture has components in which proportions vary throughout the sample.
