@@ -79,6 +79,16 @@
 24. What is stepped-layout-with-matrix-visuals
 	
 	https://docs.microsoft.com/en-us/power-bi/visuals/desktop-matrix-visual#stepped-layout-with-matrix-visuals
+	
+25.How Many Built-in Joins available in Power BI?
+
+	1. Inner Join
+	2. Left Outer Join
+	3. Right Outer Join
+	4. Full Outer Join
+	5. Left Anti Join
+	6. Right Anti Join
+	
 
 
 
