@@ -89,7 +89,61 @@
 	5. Left Anti Join
 	6. Right Anti Join
 	
+Q.Power Bi connection Types
 
+	Import Query 2. Direct Query 3.live Connection
+	
+Q. How to choose the right Data Connectivity mode?
+
+Q. Need apply the format and colour for 10 pages at a time?
+
+Q. Difference between If and switch statement
+
+Q. Difference between All() and Allexcept()
+
+Q. In how many ways we can do transform  
+
+Q. How to remove white space in column
+
+	https://docs.microsoft.com/en-us/dax/trim-function-dax 
+	
+	https://community.powerbi.com/t5/Desktop/Remove-extra-white-space/td-p/739286
+	
+Q. Sum of sales from jan 2020 to sysdate,Which DAX function will you use ?
+
+	Year to date function
+	
+Q. What is workspaces ?
+
+	https://radacad.com/groups-in-power-bi
+	
+Q. What is Power BI Embedded?
+
+	https://docs.microsoft.com/en-us/power-bi/developer/embedded/embedded-faq
+	
+Q How to create dashboard , layered report ?
+
+https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-create-phone-report
+
+https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-grouping-visuals
+
+Q How to create dashboard tiles for Power BI designers
+
+	https://docs.microsoft.com/en-us/power-bi/create-reports/service-dashboard-tiles
+	
+Q. Embedded in power bi
+
+Q. PowerShell in power bi
+
+Q. How to transform the data from one workspace to another workspace 
+
+Q. How do you share the reports, dashboard to end user?
+
+Q.After sharing the data to end user, then user is not able to access that data?
+
+Q.How to share the data for 5000 user at a time
+
+Q.Power Bi architecture
 
 
 
