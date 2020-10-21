@@ -3,7 +3,7 @@
 
     
 
-    ```
+
 1. Follow this blog
     https://docs.microsoft.com/en-us/power-bi/desktop-python-scripts
 
