@@ -28,29 +28,6 @@
 1. Develop required reports
 
 
-## Exercise 3: Power BI publisher for Excel
-1. With Microsoft Power BI publisher for Excel, you can take snapshots of your most important insights in Excel, like PivotTables, charts, and ranges and pin them to dashboards in Power BI
-    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0076.png?raw=true)
-1. Download and install
-    - Power BI publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2007 and later.
-
-    - [Download Power BI publisher for Excel](https://www.microsoft.com/en-us/download/details.aspx?id=50729)
-1. Once you have the publisher installed, you'll see a new Power BI ribbon in Excel, where you can sign in (or sign out) of Power BI, pin elements to dashboards, and manage elements you've already pinned.
-    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0077.png?raw=true)
-
-**Steps**
-1. Open **Labdata/lab5/Lab 5 - USA_for_Power_BI_Publisher.xlsx**
-1. Click on **Power BI** menu > Click on **Profile** > login
-1. Select **B4:I12** cells > click on **Pin** > select options as shown 
-    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0079.png?raw=true)
-1. Go to power BI Service and observe report
-1. Similarly **Pin** pie chart
-    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0080.png?raw=true)
-
-
-## Reference :
-
-https://docs.microsoft.com/en-us/power-bi/publisher-for-excel
 
 
 ```python
