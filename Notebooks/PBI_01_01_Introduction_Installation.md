@@ -162,3 +162,14 @@ https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?vi
 # MySql Installation(Optional)
 ---
 https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html
+
+## Interview Questions
+-----
+1. What are the **key components** of power BI.
+    1. Power BI Desktop(Power Query/Power Pivot/Power View)
+    2. Power BI Service
+    3. Power BI Mobile
+    4. Power BI Maps
+    5. Power BI Embeded Analytics
+    
+
