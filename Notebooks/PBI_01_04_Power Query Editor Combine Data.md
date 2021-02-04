@@ -129,6 +129,12 @@ Select dept.deptno,dname,ename,job,sal \
 from emp right outer join dept \
 on emp.deptno=dept.deptno 
 
+or 
+
+select dept.deptno,emp.deptno,dname,loc,empno,ename,sal \
+from [dbo].[EMP] full outer join [dbo].[DEPT] \
+on dept.deptno=emp.deptno \
+
 #### Develop PBI Report using Full Outer Join
 
 1. In above report, In Queries Pane ,select **01_Inner_join** > Right Click and click on **Duplicate**
