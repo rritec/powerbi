@@ -133,7 +133,7 @@ or
 
 select dept.deptno,emp.deptno,dname,loc,empno,ename,sal \
 from [dbo].[EMP] full outer join [dbo].[DEPT] \
-on dept.deptno=emp.deptno \
+on dept.deptno=emp.deptno 
 
 #### Develop PBI Report using Full Outer Join
 
