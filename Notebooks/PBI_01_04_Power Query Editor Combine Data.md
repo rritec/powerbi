@@ -238,6 +238,48 @@ from emp,dept
 	Yes. Press Ctrl key and select multiple columns.
 	
 	*Note:* In *Model* we can not create join based on multiple columns 
+1. How many types of combine available in PowerBI?
+
+	1. Append
+	
+	2. Merge
+1. What you mean by append?
+
+	Combining rows from two or more tables
+1. What you mean by Merge?
+	
+	Merge is nothing but Join
+1. How many types of Mergeing possible in Power BI?
+	
+	- 6 Types and those are 
+		- Inner Join
+		- Left Outer Join
+		- Right Outer Join
+		- Full Outer Join
+		- Left Anti Join
+		- Right Anti Join
+1. Understand below data and answer questions?
+	- Table 1
+	| Col1 | Col2 |
+	| 101 | ram |
+	| 102 | raju |
+	
+	- Table 2
+	| Col1 | Col2 |
+	| 101 | Accounting |
+	| 102 | IT |
+	
+	1. if i create join between these two tables 
+		- using **inner join** how many rows will get in result?
+			- 4
+		- using **left outer join** how many rows will get in result?
+			- 4
+		- using **right outer join** how many rows will get in result?
+			- 4			
+		- using **full outer join** how many rows will get in result?
+			- 4			
+	
+	
 	
 ```python
 
