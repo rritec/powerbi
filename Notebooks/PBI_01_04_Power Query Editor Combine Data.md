@@ -260,13 +260,19 @@ from emp,dept
 		- Right Anti Join
 1. Understand below data and answer questions?
 	- Table 1
+	
 	| Col1 | Col2 |
+	
 	| 101 | ram |
+	
 	| 102 | raju |
 	
 	- Table 2
+	
 	| Col1 | Col2 |
+	
 	| 101 | Accounting |
+	
 	| 102 | IT |
 	
 	1. if i create join between these two tables 
