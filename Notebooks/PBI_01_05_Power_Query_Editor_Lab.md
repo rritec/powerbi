@@ -168,6 +168,13 @@ Continue with your Power BI file from the previous exercise. You want to import 
 1. Explore the imported data in the Data View.
 
 
+## Questions
+-----
+1. What is the max data limit in a given dataset?
+    1GB
+    
+    for more information read this [doc](https://docs.microsoft.com/en-us/power-bi/admin/service-admin-manage-your-data-storage-in-power-bi#:~:text=There%20is%20a%201%20GB,250%20MB%20for%20the%20dataset)
+
 ```python
 
 ```
