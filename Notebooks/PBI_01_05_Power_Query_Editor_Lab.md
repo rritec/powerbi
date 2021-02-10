@@ -175,6 +175,9 @@ Continue with your Power BI file from the previous exercise. You want to import 
     **1 GB**
     
     for more information read this [doc](https://docs.microsoft.com/en-us/power-bi/admin/service-admin-manage-your-data-storage-in-power-bi#:~:text=There%20is%20a%201%20GB,250%20MB%20for%20the%20dataset)
+1. How poer Bi define datatypes?
+    - Based on first 200 rows data values
+
 
 ```python
 
