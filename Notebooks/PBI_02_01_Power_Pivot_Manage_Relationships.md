@@ -16,7 +16,21 @@ https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-
 
     For more information refer [doc](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-composite-models#:~:text=A%20model%20that%20combines%20data,tables%20come%20from%20different%20sources.)
 
-2. 
+2. How many carinality's available?
+  - One to One
+  - One to Many
+  - Many to One
+  - Many to Many
+    - Old versions of Power BI not supported. 
+3. Fat to Dim what type of cardinality possible?
+  - Many to One
+4. Without Relationship, between two tables,will we get right data?
+  - Wrong Data
+5. Power BI creats relationships automatically based on what?
+  - Column Names
+6. Can you create Joins manually if column names are different?
+  - Yes
+ 7. Directions
 
 
 
