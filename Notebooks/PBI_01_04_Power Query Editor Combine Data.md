@@ -285,7 +285,13 @@ from emp,dept
 		- using **right outer join** how many rows will get in result?
 			- 4			
 		- using **full outer join** how many rows will get in result?
-			- 4			
+			- 4	
+1. Power BI **Append** works as **union** or **union all**?
+	- Union all
+1. What is the difference between **union** and **union all*
+	- Union --> it will not produce duplicates rows
+	- union all --> will produce duplicate rows
+
 	
 	
 	
