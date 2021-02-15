@@ -288,7 +288,7 @@ from emp,dept
 			- 4	
 1. Power BI **Append** works as **union** or **union all**?
 	- Union all
-1. What is the difference between **union** and **union all*
+1. What is the difference between **union** and **union all**
 	- Union --> it will not produce duplicates rows
 	- union all --> will produce duplicate rows
 
