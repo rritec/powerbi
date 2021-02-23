@@ -58,9 +58,18 @@ The **four types** of filters are:
 
 
 ### Reference
-[Refer and completed learning path](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/1-filtering-data)
+[Refer and complete learning path](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/1-filtering-data)
 
-
+### Questions:
+1. What is the defualt sorting in slicer?
+    - Ascending order
+1.  Slicer by default will affect other pages visulizations? do you have any work arounds?
+    - No, we have work arounds [Refer](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-slicers#sync-and-use-slicers-on-other-pages) 
+1.  I have a slicer and two visulas ,slicers need to affect only one visual,is it possible?
+    - Yes. [Refer](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-slicers#control-which-page-visuals-are-affected-by-slicers)
+1. Can you create a slicer with two values "option1" and "option2"
+    - Yes. create Custome table then create slicer using custom table [refer](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-enter-data-directly-into-desktop)
+2. 
 ```python
 
 ```
