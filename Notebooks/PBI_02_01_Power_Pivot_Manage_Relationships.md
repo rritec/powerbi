@@ -22,7 +22,7 @@ https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-
   - Many to One
   - Many to Many
     - Old versions of Power BI not supported. 
-3. Fat to Dim what type of cardinality possible?
+3. Fact to Dim what type of cardinality possible?
   - Many to One
 4. Without Relationship, between two tables,will we get right data?
   - Wrong Data
@@ -30,7 +30,9 @@ https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-
   - Column Names
 6. Can you create Joins manually if column names are different?
   - Yes
- 7. Directions
+7. Explain Single Vs Bi-directional Filters?
+  - https://docs.microsoft.com/en-us/power-bi/guidance/relationships-bidirectional-filtering
+   
 
 
 
