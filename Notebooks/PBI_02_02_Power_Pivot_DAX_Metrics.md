@@ -11,6 +11,7 @@
 
 
 https://docs.microsoft.com/en-us/dax/
+
 https://docs.microsoft.com/en-us/learn/modules/dax-power-bi-models/3-analytic-queries
 
 # DAX Main Types are
@@ -62,6 +63,9 @@ https://docs.microsoft.com/en-us/learn/modules/dax-power-bi-models/3-analytic-qu
 - MAX
 - MIN
 - ... etc
+
+## Questions
+1. Create a table with dates by using given two Dates?
 
 
 ```python
