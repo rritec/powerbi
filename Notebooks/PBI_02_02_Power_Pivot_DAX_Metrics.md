@@ -12,7 +12,7 @@
 
 https://docs.microsoft.com/en-us/dax/
 
-https://docs.microsoft.com/en-us/learn/modules/dax-power-bi-models/3-analytic-queries
+https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 
 # DAX Main Types are
 
