@@ -13,39 +13,47 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 ---
 
 
-1. **Introduction**
-
-	•	What is Power BI
-    
-	•	Why Power BI
-	
-1. **Power BI Desktop Transformation**
-
-    •	Introduction to Power BI Desktop
-    
-    •	Changing Locale
-    
-    •	Connecting to a Database
-    
-    •	Basic Transformations
-    
-    •	Managing Query Groups
-    
-    •	Splitting Columns
-    
-    •	Changing Data Types
-    
-    •	Working with Dates
-    
-    •	Removing and Reordering Columns
-    
-    •	Conditional Columns
-    
-    •	Connecting to Files in a Folder
-    
-    •	Merge Queries
-    
-    •	Query Dependency View
+1. Introduction
+	- What is Power BI?	
+	- What is Power Apps?
+	- What are the different BI tools available?
+	- Why Power BI?
+	- Products of Power BI
+	- What is Power BI Desktop?
+	- What is Power BI Service?
+	- What is Power BI Mobile?
+	- What is M-Language?
+	- What is DAX?
+1. Power BI Desktop Transformation
+	- Introduction to Power BI Desktop
+	- Power BI Desktop Components
+		- Power Query Editor
+		- Power Pivot
+		- Power View
+	- Power Query Editor
+		- Connecting to new Source(Files/Databases/web/...etc)
+		- Importing Tables
+		- Types of Connections
+			- Import
+			- Direct/Live Connection		- 
+		- Basic Transformations
+			- Changing datatypes
+			- replacing nulls with zero
+			- concatnating columns
+			- spliting columns
+			- renameing columns
+			- observing transformation steps
+			- understanding M-Language
+			- Computed columns/calculations
+	- Managing Query Groups
+	- Splitting Columns
+	- Changing Data Types
+	- Working with Dates
+	- Removing and Reordering Columns
+	- Conditional Columns
+	- Connecting to Files in a Folder
+	- Merge Queries
+	- Query Dependency View
     
     •	Transforming Less Structured Data
     
