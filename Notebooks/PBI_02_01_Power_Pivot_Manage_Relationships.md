@@ -32,6 +32,18 @@ https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-
   - Yes
 7. Explain Single Vs Bi-directional Filters?
   - https://docs.microsoft.com/en-us/power-bi/guidance/relationships-bidirectional-filtering
+8. What are the disadvantage of Bi-directional Join?
+  - Negatively impact on model query performance
+  - User confusing experiences
+9. When to go for Bi-Directional Join? or Advantages of Bi-directional?
+  - Special model relationships
+    - one to one cardinality tables
+    - Many to Many Cardinality Tables
+    - **Note:** 99.99% we will have many to one relation tables in any dataset
+  - Slicer items "with data"
+  - Dimension-to-dimension analysis
+  
+  
    
 
 
