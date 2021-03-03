@@ -74,10 +74,10 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
  1. Difference between USERNAME() Vs USERPRINCIPALNAME()?
     - https://docs.microsoft.com/en-us/dax/username-function-dax
     - https://docs.microsoft.com/en-us/dax/userprincipalname-function-dax
-    - In PowerBI Desktop 
-        ![image](https://user-images.githubusercontent.com/20516321/109728973-34dfc080-7bdd-11eb-8dbb-ad4fd8316da4.png)
+    - In PowerBI Desktop
+        - ![image](https://user-images.githubusercontent.com/20516321/109728973-34dfc080-7bdd-11eb-8dbb-ad4fd8316da4.png)
     - In Power BI Service
-        ![image](https://user-images.githubusercontent.com/20516321/109729142-740e1180-7bdd-11eb-9ec5-25db46bfd2cf.png)
+        - ![image](https://user-images.githubusercontent.com/20516321/109729142-740e1180-7bdd-11eb-9ec5-25db46bfd2cf.png)
  1. What is User Principal Name?
     - User Principal Name (UPN) is the name of a system user in an email address format.
     - A UPN (for example: john.doe@domain.com) consists of the user name (logon name), separator (the @ symbol), and domain name (UPN suffix)
