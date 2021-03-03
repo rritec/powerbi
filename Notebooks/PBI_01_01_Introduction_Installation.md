@@ -4,8 +4,8 @@
 
 ##  What is BI ?
 ---
-1. BI(Business Intelligence) is a processes that convert raw data into meaningful information
-1. The meaningful information drives profitable business actions
+1. BI(Business Intelligence) is a processes that convert **Raw Data** into **Meaningful Information**
+1. The **meaningful information** drives **profitable business actions**
 
 ## Do you know any BI tools?
 ---
@@ -27,13 +27,13 @@
 
     
 
-## What is Power BI
+## What is Power BI?
 ---
-1. Power BI is a business analytics solution that lets you visualize your data and share insights across your organization, or embed them in your app or website.
-1. Connect to hundreds of data sources and bring your data to **life** with **live dashboards** and **reports**.
+1. Power BI is a business analytics solution that lets you visualize your data and share **insights** across your organization, or embed them in your app or website.
+1. Connect to **hundreds of data sources** and bring your data to **life** with **live dashboards** and **reports**.
 1. [Visit for more information](https://powerbi.microsoft.com/en-us/what-is-power-bi/)
 
-## Why Power BI
+## Why Power BI?
 ---
 1. Create data dashboards and visualizations in **minutes**
 1. Put BI in everyone’s hands—**economically**. Please see the price of Tableau and Power BI    
