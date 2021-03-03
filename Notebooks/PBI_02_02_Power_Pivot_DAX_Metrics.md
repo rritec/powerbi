@@ -39,6 +39,8 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 - Refer next lesson 
 
 ## Information functions
+- username()
+- userprincipalname()
 - isblank
 - iserror
 - contains
