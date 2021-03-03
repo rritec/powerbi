@@ -66,6 +66,32 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 
 ## Questions
 1. Create a table with dates by using given two Dates?
+    - Open PBI Desktop
+    - Click on **Model** Menu bar
+    - Click on New Table
+    - Provide DAX formula as **Calendar = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
+    - Develop Table Report and observe output.
+ 1. Difference between USERNAME() Vs USERPRINCIPALNAME()?
+    - https://docs.microsoft.com/en-us/dax/username-function-dax
+    - https://docs.microsoft.com/en-us/dax/userprincipalname-function-dax
+    - In PowerBI Desktop 
+        ![image](https://user-images.githubusercontent.com/20516321/109728973-34dfc080-7bdd-11eb-8dbb-ad4fd8316da4.png)
+    - In Power BI Service
+        ![image](https://user-images.githubusercontent.com/20516321/109729142-740e1180-7bdd-11eb-9ec5-25db46bfd2cf.png)
+ 1. What is User Principal Name?
+    - User Principal Name (UPN) is the name of a system user in an email address format.
+    - A UPN (for example: john.doe@domain.com) consists of the user name (logon name), separator (the @ symbol), and domain name (UPN suffix)
+ 1. How many years survived by Mahatma Gandhi? 
+    - We know Gandhi Born on **October 2, 1869**, and Died on **January 30, 1948**
+    - Read help document and find out no of years survived by Gandhi https://docs.microsoft.com/en-us/dax/datediff-function-dax
+ 1.  What is the difference between SUM() Vs SUMX() ?
+    - https://exceleratorbi.com.au/use-sum-vs-sumx/
+    - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
+    - SUM() operates over a single column and has no awareness of individual rows in the column (no row by row evaluation).
+    - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
+ 1. Count Vs counta
+ 1. count vs countx
+ 1. counta vs countax
 
 
 ```python
