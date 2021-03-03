@@ -47,4 +47,20 @@
     - Share to business
 5. Please feel free to ask questions?
   - 
-6.  
+6.  FAQs
+    - Wat is the class duration?
+      - 30 Working days / 30  Hours
+    - How Many days in a week?
+      - Monday to Friday
+    - What time?
+      - Slot 1: 7AM IST to 8 AM IST or 8:30 PM ET to 9:30 PM ET (Fresh Batch)
+      - Slot 2: 8AM to 9AM IST or 9:30 PM to 10:30 PM ET(Running Batch)(iam half Way in this)
+    - Where to get Materials?
+      - from Github cloud https://github.com/rritec/powerbi
+    - Where to get Videos?
+      - From our website https://datahexa.com/course/power-bi/
+    - Support after course completion?
+      - CV writing
+      - Job Marketing
+      - Once we got job then Job Support
+    - 
