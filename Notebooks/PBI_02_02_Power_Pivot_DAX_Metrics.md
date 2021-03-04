@@ -95,11 +95,16 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
      - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
  1. Count Vs counta & count vs countx & counta vs countax
     - Enter below data and create a table
-    | Date  | Holiday Flag | phone |
-    | ------------- | ------------- | -------- |
-    | 01-Jan-2016 |	False	| 9573707079 |
-    | 02-Jan-207 |	True	|  |
-    |01-Jan-2019 |	False |	1234567890 |
+        | Date  | Holiday Flag | phone |
+        
+        | ------------- | ------------- | -------- |
+        
+        | 01-Jan-2016 |	False	| 9573707079 |
+        
+        | 02-Jan-207 |	True	|  |
+        
+        |01-Jan-2019 |	False |	1234567890 |
+        
     - Make sure datatypes are Date --> Date , Holiday Flag --> Bool, Phone --> Whole Number
     - Can you count Date column using count and counta function?
         - yes
