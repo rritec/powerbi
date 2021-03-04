@@ -109,10 +109,7 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
         - No
     - Can you count bool column with counta?
         - Yes
-    - Can we count blank/null values with count?
-        - No
-    - Can we count blank/null values with counta?
-        - yes
+   
     - count number of rows when holiday flag is *False*
         - *Hint*: use below formula inside the measure 
         - COUNTAX(FILTER(count_understanding,count_understanding[Holiday Flag]=FALSE()),count_understanding[Holiday Flag])    -  
