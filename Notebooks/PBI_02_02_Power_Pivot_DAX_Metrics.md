@@ -86,15 +86,20 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
     - A UPN (for example: john.doe@domain.com) consists of the user name (logon name), separator (the @ symbol), and domain name (UPN suffix)
  1. How many years survived by Mahatma Gandhi? 
     - We know Gandhi Born on **October 2, 1869**, and Died on **January 30, 1948**
-    - Read help document and find out no of years survived by Gandhi https://docs.microsoft.com/en-us/dax/datediff-function-dax
+    - Read help document and find out no of years survived by Gandhi 
+    - https://docs.microsoft.com/en-us/dax/datediff-function-dax
  1.  What is the difference between SUM() Vs SUMX()?
      - https://exceleratorbi.com.au/use-sum-vs-sumx/
      - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
      - SUM() operates over a single column and has no awareness of individual rows in the column (no row by row evaluation).
      - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
- 1. Count Vs counta
- 1. count vs countx
- 1. counta vs countax
+ 1. Count Vs counta & count vs countx & counta vs countax
+    | Date  | Holiday Flag | phone |
+    | ------------- | ------------- | -------- |
+    | 01-Jan-2016 |	False	| 9573707079 |
+    | 02-Jan-207 |	True	|  |
+    |01-Jan-2019 |	False |	1234567890 |
+ 
 
 
 ```python
