@@ -117,6 +117,5 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
     - DateTime
     - .... etc
 1.In how many ways we can see the list of query applied steps?
-
-    1.Query setting pane
-    2.Advance Editor
+   - Query setting pane
+   - Advance Editor
