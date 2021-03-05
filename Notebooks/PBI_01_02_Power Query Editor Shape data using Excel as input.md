@@ -88,7 +88,35 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
 
 ```
 ## Questions
-1. In how manys we can see the lisit of query applied steps
+1. **Power BI** Key Components?
+    - Power BI Desktop
+    - Power BI Service
+    - Power BI Mobile
+1. **Power BI Desktop** Key components
+    - Power Query Editor
+    - Power Pivot
+    - Power View
+1. Power Query Editor useing which language?
+    - M - Language
+1. Can we import 2 sheets from excel workbook which has 5 sheets?
+    - Yes
+1. Each Sheet is called as what in power Query Editor?
+    - Query
+1. Can we reorder Transformation steps in **Qurry Settings**?
+    - Yes
+1. What is the extension of Power BI File?
+    - .PBIX
+1. The calculation in Power Query Editor is called as ?
+    - Co**M**uting Column
+1. Can you name some of the Power BI supporting Data Types?
+    - Whole Number
+    - Deciambal
+    - Text
+    - Date
+    - True/False(Bool)
+    - DateTime
+    - .... etc
+1.In how many ways we can see the list of query applied steps?
 
-    1.Query setting
+    1.Query setting pane
     2.Advance Editor
