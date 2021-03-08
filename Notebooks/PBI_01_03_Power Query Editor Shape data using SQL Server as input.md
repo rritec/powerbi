@@ -1,5 +1,6 @@
 # Working with SQL Server
 ---
+**Note:** Mostly as **BI** developer, we wont get chance to create databases,tables and loading data. In our training program, we are creating simple database with couple of small tables.
 
 ## Load Data
 CREATE DATABASE rritecDB;
@@ -121,7 +122,7 @@ INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
     
 
 
-## Do all exercise of Previous chapter excel import
+## Do all exercise of Previous chapter "PBI_01_02_Power Query Editor Shape data using Excel as input.md"
 ---
 
 
