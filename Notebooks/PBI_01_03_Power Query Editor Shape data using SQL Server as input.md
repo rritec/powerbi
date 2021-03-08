@@ -122,7 +122,8 @@ INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
     
 
 
-## Do all exercise of Previous chapter "PBI_01_02_Power Query Editor Shape data using Excel as input.md"
----
+## Exercise:
+- Do all exercise of [Previous chapter ](https://github.com/rritec/powerbi/blob/8cd3e9b6ff889c7056baf4c71b951dd152a41c16/Notebooks/PBI_01_02_Power%20Query%20Editor%20Shape%20data%20using%20Excel%20as%20input.md)
+
 
 
