@@ -1,15 +1,27 @@
 
 # Combine Queries
+- In power BI, we can combine data two ways
+	1. Append
+	2. Merge
+
 ---
 - Append
     - Rows appending
+    -  It is equal to sql union all
     - Append rules
-        - Rule 1: The number of columns in each table is same
+        - Rule 1: The number of columns in each table should be same, other wise it will fill with null values.
         - Rule 2: The positions of columns must be same
         - Rule 3: The respective columns data types shoud be same 
 
 - Merge
-    - Joins
+    - It is equal to SQL Joins
+    - It supports 6 types of joins  
+	1. Inner Join
+	2. Left outer Join
+	3. Right Outer Join
+	4. Full Outer Join
+	5. Right Anti Join
+	6. Left Anti Join
 
 ## Append
 
@@ -46,7 +58,7 @@ select * from emp30 -- 6 rosws
 ### Develop Report using Append Hetrogeneous Sources
 
 1. In above report import emp30 data from excel **LabData/Lab1/emp30_data_from_excel.XLSX**
-1. Combine This Excel emp 30 with SQL Server emp10 and emp20 data
+1. Combine This Excel emp 30 with SQL Server emp10 data
 
 
 
