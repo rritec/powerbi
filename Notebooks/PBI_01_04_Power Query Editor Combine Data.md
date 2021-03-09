@@ -301,6 +301,10 @@ from emp,dept
 1. What is the difference between **union** and **union all**
 	- Union --> it will not produce duplicates rows
 	- union all --> will produce duplicate rows
+1. Can you create a join using more than one column from each table?
+	- Yes
+	- Refer [doc](https://www.sqlbi.com/articles/using-combinevalues-to-optimize-directquery-performance/)
+2. 
 
 	
 	
