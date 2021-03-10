@@ -232,6 +232,11 @@ Power BI Desktop has automatically detected and created table relationships. So 
         - Click the ellipses adjacent to `CountryZip` and click `Hide in report view`.
 9. Click `Save`, to save the Power BI file.
 
+## Questions
+----
+1. Can you develop below report
+    - ![image](https://user-images.githubusercontent.com/20516321/110577445-ac3ac480-8188-11eb-9afc-a39eb1443a41.png)
+
 
 ```python
 
