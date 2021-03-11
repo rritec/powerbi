@@ -2,74 +2,79 @@
 
 - Each single-column summarization function has its equivalent iterator function.
 - Example sum > sumx, min > minx, max >maxx, ..etc
-- The following sections will consider two aggregation scenarios when iterator functions are useful
-    - complex summarization
-    - higher grain summarization.
-
-## Complex summarization
-- In this section, you will create your first measure that uses an iterator function. First, open the Adventure Works DW 2020 M05.pbix file. Next, add the following measure definition:
 
 
-Revenue&nbsp;=<br><span class="Keyword" style="color:#035aca">SUMX</span><span class="Parenthesis" style="color:#808080">&nbsp;(</span><br><span class="indent4">&nbsp;&nbsp;&nbsp;&nbsp;</span>Sales,<br><span class="indent4">&nbsp;&nbsp;&nbsp;&nbsp;</span>Sales[Order&nbsp;Quantity]&nbsp;*&nbsp;Sales[Unit&nbsp;Price]&nbsp;*<span class="Parenthesis" style="color:#808080">&nbsp;(</span>&nbsp;<span class="Number" style="color:#EE7F18">1</span>&nbsp;-&nbsp;Sales[Unit&nbsp;Price&nbsp;Discount&nbsp;Pct]&nbsp;<span class="Parenthesis" style="color:#808080">)</span><br><span class="Parenthesis" style="color:#808080">)</span><br>
+## Calculate ranks
 
-Format the Revenue measure as currency with two decimal places, and then add it to the table visual that is found on Page 1 of the report.
+- The RANKX DAX function is a special iterator function you can use to calculate ranks. Its syntax is as follows:
+- RANKX(<table>, <expression>[, <value>[, <order>[, <ties>]]])
+- Similar to all iterator functions, you must pass in a table and an expression. Optionally, you can pass in a rank value to find the order direction or to help you determine how to handle ranks when values are tied.
+### Order direction
+Order direction is either ascending or descending. When ranking something favorable, like revenue values, you're likely to use descending order so that the highest revenue will be ranked first. When ranking something unfavorable, like customer complaints, you might use ascending order so that the lowest number of complaints will be ranked first. When you don't pass in an order argument, the function will use descending order.
 
-An image show a table visual with two columns: Month and Revenue. A year's worth of data is displayed.
+### Handle ties
+You can handle ties by skipping rank values or using dense ranking, which uses the next rank value after a tie. When you don't pass in a ties argument, the function will use skipped. You'll have an opportunity to work with an example of each tie argument in subsequent sections.
 
-By using an iterator function, the Revenue measure formula aggregates more than the values of a single column. For each row, it uses the row context values of three columns to produce the revenue amount.
-
-Now, add another measure:
+### Create ranking measures
+- Download [file](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M05.pbix)
+- Open file 
+- Add the following measure 
 
 DAX
 
 Copy
-Discount =
-SUMX(
-    Sales,
-    Sales[Order Quantity]
-    * (
-        RELATED('Product'[List Price]) - Sales[Unit Price]
+Product Quantity Rank =
+RANKX(
+    ALL('Product'[Product]),
+    [Quantity]
+)
+- Add the Product Quantity Rank measure to the table visual that is found on Page 2 of the report. The table visual groups bike products and displays quantity, which orders products by descending quantity.
+
+- The RANKX function iterates over a table that is returned by the ALL DAX function. The ALL function is used to return all rows in a model table or values in one or more columns, and it ignores all filters. Therefore, in this case, it returns a table that consists of all Product column values in the Product table. The RANKX function must use the ALL function because the table visual will group by product (which is a filter on the Product table).
+
+- In the table visual, notice that two products tie for tenth place and that the next product's rank is 12. This visual is an example of using the Skipped ties argument.
+
+- Bike Sales table visual with columns: Product, Quantity, and Rank, ordered by Quantity descending.
+
+- Your next task is to enter the following logic to modify the Product Quantity Rank measure definition to use dense ranking:
+
+DAX
+
+Copy
+Product Quantity Rank =
+RANKX(
+    ALL('Product'[Product]),
+    [Quantity],
+    ,
+    ,
+    DENSE
+)
+- In the table visual, notice that a skipped ranking no longer exists. After the two products that tie for tenth place, the next ranking is 11.
+
+- Bike Sales table visual with columns: Product, Quantity, and Rank, ordered by Quantity descending, but with dense ranking.
+
+- Notice that the table visual total for the Product Quantity Rank is one (1). The reason is because the total for all products is ranked.
+
+- An image shows the Product Quantity Rank total is 1.
+
+- It's not appropriate to rank total products, so you will now use the following logic to modify the measure definition to return BLANK, unless a single product is filtered:
+
+DAX
+
+Copy
+Product Quantity Rank =
+IF(
+    HASONEVALUE('Product'[Product]),
+    RANKX(
+        ALL('Product'[Product]),
+        [Quantity],
+        ,
+        ,
+        DENSE
     )
 )
-Format the Discount measure as currency with two decimal places, and then add it to the table visual.
+- An image shows the Product Quantity Rank total is BLANK.
 
-An image show a table visual with three columns: Month, Revenue, and Discount. A year's worth of data is displayed.
+- Notice that the total Product Quantity Rank is now BLANK, which was achieved by using the HASONEVALUE DAX function to test whether the Product column in the Product table has a single value in filter context. It's the case for each product group, but not for the total, which represents all products.
 
-Notice that the formula uses the RELATED function. Remember, row context does not extend beyond the table. If your formula needs to reference columns in other tables, and model relationships exist between the tables, use the RELATED function for the one-side relationship or the RELATEDTABLE function for the many-side relationship.
 
-Higher grain summarization
-The following example considers a requirement to report on average revenue. Add the following measure:
-
-DAX
-
-Copy
-Revenue Avg =
-AVERAGEX(
-    Sales,
-    Sales[Order Quantity] * Sales[Unit Price] * (1 - Sales[Unit Price Discount Pct])
-)
-Format the Revenue Avg measure as currency with two decimal places, and then add it to the table visual.
-
-An image showing a table visual with four columns: Month, Revenue, Discount, and Revenue Avg. A year's worth of data is displayed.
-
-Consider that average means the sum of values divided by the count of values. However, that theory raises a question: What does the count of values represent? In this case, the count of values is the number of expressions that didn't evaluate to BLANK. Also, because the iterator function enumerates rows of the Sales table, average would mean revenue per row. Taking this logic one step further, because each row in the Sales table records a sales order line, it can be more precisely described as revenue per order line.
-
-Accordingly, you should rename the Revenue Avg measure as Revenue Avg Order Line so that it's clear to report users about what's being used as the average base.
-
-The following example uses an iterator function to create a new measure that raises the granularity to the sales order level (a sales order consists of one or more order lines). Add the following measure:
-
-DAX
-
-Copy
-Revenue Avg Order =
-AVERAGEX(
-    VALUES('Sales Order'[Sales Order]),
-    [Revenue]
-)
-Format the Revenue Avg Order measure as currency with two decimal places, and then add it to the table visual.
-
-A table visual with five columns: Month, Revenue, Discount, Revenue Avg Order Line, and Revenue Avg Order. A year's worth of data is displayed.
-
-As expected, the average revenue for an order is always higher than the average revenue for a single order line.
-
-Notice that the formula uses the VALUES DAX function. This function lets your formulas determine what values are in filter context. In this case, this AVERAGEX function iterates over each sales order in filter context. In other words, it iterates over each sales order for the month. Filter context and the VALUES function are introduced in the filter context module.
