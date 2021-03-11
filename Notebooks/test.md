@@ -26,14 +26,12 @@
 - Open file 
 - Add the following measure 
 
-DAX
-
-Copy
+```
 Product Quantity Rank =
 RANKX(
     ALL('Product'[Product]),
     [Quantity]
-)
+)```
 - Add the Product Quantity Rank measure to the table visual that is found on Page 2 of the report. The table visual groups bike products and displays quantity, which orders products by descending quantity.
 - The RANKX function iterates over a table that is returned by the ALL DAX function. The ALL function is used to return all rows in a model table or values in one or more columns, and it ignores all filters. Therefore, in this case, it returns a table that consists of all Product column values in the Product table. The RANKX function must use the ALL function because the table visual will group by product (which is a filter on the Product table).
 - In the table visual, notice that two products tie for tenth place and that the next product's rank is 12. This visual is an example of using the Skipped ties argument.
@@ -61,9 +59,7 @@ RANKX(
 
 - It's not appropriate to rank total products, so you will now use the following logic to modify the measure definition to return BLANK, unless a single product is filtered:
 
-DAX
 
-Copy
 Product Quantity Rank =
 IF(
     HASONEVALUE('Product'[Product]),
