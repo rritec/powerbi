@@ -1,12 +1,31 @@
 
+- **Power BI Desktop** Key Components
+    - Power Query Editor
+        - Connecting Data Sources
+        - Import The Tables
+        - Transformations
+        - Understanding Transformations M-Language of Power BI
+        - Combine
+            - Append(Union All)
+            - Merge(Join)
+                - Inner Join
+                - Left Outer Join
+                - Right Outer Join
+                - Full Outer JOin
+                - Left Anti Join
+                - Right Anti Join 
+        - Based on these concepts let us do one small project
+    - Power Pivot
+    - Power View
+- 
 # Lab Overview
 
 ## SCENARIO
 ABC is a company that manufactures and sells sporting goods. The company has offices in the United States (US) and several other countries. Its sales comprise of US sales and International sales. ABC’s sales come from its owned manufactured products, as well as other manufacturers’ products.
 
-ABC's US office stores the sales data on an Access database. ABC International sales transactions are available as comma separated (CSV) files. They could be generated daily, either manually by someone, or automatically by an automated process. They are available in a dedicated folder. These CSV files have the same column structure as the sales table for the US sales that comes from the SQL Database.
+ABC's US office stores the sales data on an **Access** database. ABC International sales transactions are available as **comma separated (CSV)** files. They could be generated daily, either manually by someone, or automatically by an automated process. They are available in a dedicated folder. These CSV files have the same column structure as the sales table for the US sales that comes from the SQL Database.
 
-You want to perform analysis on ABC's worldwide sales data for the year 2000 to 2015. You need to bring all these data into Power BI Desktop before you can perform any analysis. Finally, you want to compare ABC's country sales with the country population. You need to import the country population data from a less structured Excel report to Power BI.
+You want to perform analysis on ABC's worldwide sales data for the year **2000 to 2015**. You need to bring all these data into Power BI Desktop before you can perform any analysis. Finally, you want to compare ABC's **country sales with the country population**. You need to import the country population data from a less structured Excel report to Power BI.
 
 
 
