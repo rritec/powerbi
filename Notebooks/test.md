@@ -1,18 +1,17 @@
-Use aggregation iterator functions
-3 minutes
-Each single-column summarization function has its equivalent iterator function. The following sections will consider two aggregation scenarios when iterator functions are useful: complex summarization and higher grain summarization.
+# Use aggregation iterator functions
 
-Complex summarization
-In this section, you will create your first measure that uses an iterator function. First, download and open the Adventure Works DW 2020 M05.pbix file. Next, add the following measure definition:
+- Each single-column summarization function has its equivalent iterator function.
+- Example sum > sumx, min > minx, max >maxx, ..etc
+- The following sections will consider two aggregation scenarios when iterator functions are useful
+    - complex summarization
+    - higher grain summarization.
 
-DAX
+## Complex summarization
+- In this section, you will create your first measure that uses an iterator function. First, open the Adventure Works DW 2020 M05.pbix file. Next, add the following measure definition:
 
-Copy
-Revenue =
-SUMX(
-    Sales,
-    Sales[Order Quantity] * Sales[Unit Price] * (1 - Sales[Unit Price Discount Pct])
-)
+
+Revenue&nbsp;=<br><span class="Keyword" style="color:#035aca">SUMX</span><span class="Parenthesis" style="color:#808080">&nbsp;(</span><br><span class="indent4">&nbsp;&nbsp;&nbsp;&nbsp;</span>Sales,<br><span class="indent4">&nbsp;&nbsp;&nbsp;&nbsp;</span>Sales[Order&nbsp;Quantity]&nbsp;*&nbsp;Sales[Unit&nbsp;Price]&nbsp;*<span class="Parenthesis" style="color:#808080">&nbsp;(</span>&nbsp;<span class="Number" style="color:#EE7F18">1</span>&nbsp;-&nbsp;Sales[Unit&nbsp;Price&nbsp;Discount&nbsp;Pct]&nbsp;<span class="Parenthesis" style="color:#808080">)</span><br><span class="Parenthesis" style="color:#808080">)</span><br>
+
 Format the Revenue measure as currency with two decimal places, and then add it to the table visual that is found on Page 1 of the report.
 
 An image show a table visual with two columns: Month and Revenue. A year's worth of data is displayed.
