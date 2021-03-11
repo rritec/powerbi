@@ -8,6 +8,7 @@
 
 - The RANKX DAX function is a special iterator function you can use to calculate ranks. Its syntax is as follows:
 ```RANKX(<table>, <expression>[, <value>[, <order>[, <ties>]]])```
+- Ref Help [doc](https://docs.microsoft.com/en-us/dax/rankx-function-dax)
 - Similar to all iterator functions, you must pass in a table and an expression. Optionally, you can pass in a rank value to find the order direction or to help you determine how to handle ranks when values are tied.
 
 ## Order direction
