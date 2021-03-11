@@ -26,7 +26,7 @@
 - Open file 
 - Add the following measure 
 
-```Product Quantity Rank = RANKX(ALL('Product'[Product]),[Quantity])```
+  ```Product Quantity Rank = RANKX(ALL('Product'[Product]),[Quantity])```
 
 - Add the Product Quantity Rank measure to the table visual that is found on Page 2 of the report. The table visual groups bike products and displays quantity, which orders products by descending quantity.
 - The RANKX function iterates over a table that is returned by the ALL DAX function. The ALL function is used to return all rows in a model table or values in one or more columns, and it ignores all filters. Therefore, in this case, it returns a table that consists of all Product column values in the Product table. The RANKX function must use the ALL function because the table visual will group by product (which is a filter on the Product table).
@@ -36,22 +36,18 @@
 
 - Your next task is to enter the following logic to modify the Product Quantity Rank measure definition to use dense ranking:
 
-``` Product Quantity Rank =RANKX(ALL('Product'[Product]),[Quantity],,,DENSE)```
+  ``` Product Quantity Rank =RANKX(ALL('Product'[Product]),[Quantity],,,DENSE)```
 
 - In the table visual, notice that a skipped ranking no longer exists. After the two products that tie for tenth place, the next ranking is 11.
-
 - Bike Sales table visual with columns: Product, Quantity, and Rank, ordered by Quantity descending, but with dense ranking.
+    ![image](https://user-images.githubusercontent.com/20516321/110742454-67805d80-825c-11eb-82e1-752da4ebc908.png)
 
 - Notice that the table visual total for the Product Quantity Rank is one (1). The reason is because the total for all products is ranked.
-
 - An image shows the Product Quantity Rank total is 1.
-
 - It's not appropriate to rank total products, so you will now use the following logic to modify the measure definition to return BLANK, unless a single product is filtered:
-
-
-```Product Quantity Rank = IF(HASONEVALUE('Product'[Product]),RANKX(ALL('Product'[Product]),[Quantity],,,DENSE))```
-
+  ```Product Quantity Rank = IF(HASONEVALUE('Product'[Product]),RANKX(ALL('Product'[Product]),[Quantity],,,DENSE))```
 - An image shows the Product Quantity Rank total is BLANK.
+  ![image](https://user-images.githubusercontent.com/20516321/110742868-20df3300-825d-11eb-888b-5f11d71d8857.png)
 
 - Notice that the total Product Quantity Rank is now BLANK, which was achieved by using the HASONEVALUE DAX function to test whether the Product column in the Product table has a single value in filter context. It's the case for each product group, but not for the total, which represents all products.
 
