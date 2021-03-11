@@ -289,13 +289,13 @@ from emp,dept
 	
 	1. if i create join between these two tables 
 		- using **inner join** how many rows will get in result?
-			- 4
+			- 2
 		- using **left outer join** how many rows will get in result?
-			- 4
+			- 2
 		- using **right outer join** how many rows will get in result?
-			- 4			
+			- 2			
 		- using **full outer join** how many rows will get in result?
-			- 4	
+			- 2	
 1. Power BI **Append** works as **union** or **union all**?
 	- Union all
 1. What is the difference between **union** and **union all**
