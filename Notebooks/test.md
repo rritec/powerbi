@@ -1,7 +1,7 @@
 # Use aggregation iterator functions
 
 - Each single-column summarization function has its equivalent iterator function.
-- Example sum > sumx, min > minx, max >maxx, ..etc
+- Example sum > sumx, min > minx, max > maxx, ..etc
 
 
 ## Calculate ranks
@@ -32,6 +32,8 @@
 - The RANKX function iterates over a table that is returned by the ALL DAX function. The ALL function is used to return all rows in a model table or values in one or more columns, and it ignores all filters. Therefore, in this case, it returns a table that consists of all Product column values in the Product table. The RANKX function must use the ALL function because the table visual will group by product (which is a filter on the Product table).
 - In the table visual, notice that two products tie for tenth place and that the next product's rank is 12. This visual is an example of using the Skipped ties argument.
 - Bike Sales table visual with columns: Product, Quantity, and Rank, ordered by Quantity descending.
+![image](https://user-images.githubusercontent.com/20516321/110742032-a7931080-825b-11eb-9bd3-40a885fb958e.png)
+
 - Your next task is to enter the following logic to modify the Product Quantity Rank measure definition to use dense ranking:
 
 ``` Product Quantity Rank =RANKX(ALL('Product'[Product]),[Quantity],,,DENSE)```
