@@ -189,7 +189,19 @@ Continue with your Power BI file from the previous exercise. You want to import 
 
 ## Questions
 -----
-1. What is the max data limit in a given dataset?
+1. How Many Types of connections available in **Power BI**
+    - Import
+    - Live or DirectQuery 
+2. What is difference between Import and Direct Connection?
+    1. Import:
+        - Gives you the **full suite** of transformation and **data manipulation** in the Desktop
+        - There is a 1 GB limit to the Desktop if you plan on publishing to the PBI Service
+        - Scheduling Datasets using gateway is needed to avoid old(stale) data
+    2. DirectQuery:
+        - Limits your ability to manipulate data in the Desktop (removes the Data section)
+        - Leaves the data in the SQL database
+        - Is "live", no need to schedule a refresh (In the Service)
+2. What is the max data limit in a given dataset?
 
     - **1 GB**
     
