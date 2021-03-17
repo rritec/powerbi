@@ -9,7 +9,7 @@
         - **Many to One**
         - Many to Many
       - Directions
-        - Single
+        - **Single**
         - Both
       - Active Vs Inactive Relationships      
     - DAX Calculations
