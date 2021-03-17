@@ -73,10 +73,12 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 - The last year sales, calculating two times right .
 - Develop one mesure with the name of **Revenue YOY % using Var** with below formula
 
-```Revenue YoY %_var = 
-VAR LYSales = CALCULATE([Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
-RETURN
-DIVIDE([Revenue] - LYSales, LYSales)```
+    ```
+    Revenue YoY %_var = 
+    VAR LYSales = CALCULATE([Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
+    RETURN
+    DIVIDE([Revenue] - LYSales, LYSales) 
+    ```
 - Develop report as shown below
 
 
