@@ -80,7 +80,7 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
     DIVIDE([Revenue] - LYSales, LYSales) 
     ```
 - Develop report as shown below
-    ![image](https://user-images.githubusercontent.com/20516321/111411593-da785100-8700-11eb-94d7-c8e177cf87b9.png)
+    - ![image](https://user-images.githubusercontent.com/20516321/111411593-da785100-8700-11eb-94d7-c8e177cf87b9.png)
 
 
 
