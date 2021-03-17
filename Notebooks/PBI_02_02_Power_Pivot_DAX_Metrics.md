@@ -26,7 +26,7 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 1. Provide DAX formula as **Calendar = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
 1. Develop Table Report and observe output.
 
-1. Also explore DATE,EOMONTH,DATEDIFF,TODAY
+1. Also explore DATE,EOMONTH, DATEDIFF, TODAY
 
 ## Time-intelligence functions
 
@@ -65,6 +65,20 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 - MAX
 - MIN
 - ... etc
+
+## Exercise 1: Using Variables to improve performance
+- Any calculation, we are using twice are more better to store the calculation result in variable and use the variable where ever needed.
+- Open Labdata/Adventure Works DW 2020 M02.pbix file
+- Observe Calculation inside **Sales** table **Revenue YoY %**
+- The last year sales, calculating two times right .
+- Develop one mesure with the name of **Revenue YOY % using Var** with below formula
+
+'''Revenue YoY %_var = 
+VAR LYSales = CALCULATE([Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
+RETURN
+DIVIDE([Revenue] - LYSales, LYSales)'''
+- Develop report as shown below
+
 
 ## Questions
 1. Create a table with dates by using given two Dates?
