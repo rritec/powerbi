@@ -106,6 +106,19 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
         - Ship Full Date
     - Mark the **Ship Date** table as a date table by using the Ship Date column.
 
+## Exercise 3: Can you populate dates of india financial year
+- The financial year of India begins from April 1 of a calendar year and ends on March 31 of the next calendar year
+- In above PBIX file, develop a table report to understand range of dates
+- ![image](https://user-images.githubusercontent.com/20516321/111573915-72de0680-87d1-11eb-8895-158a5d895da2.png)
+- In the Data view > Click on New Table > type below formula 
+
+    ```
+    India Fin Dates =  CALENDARAUTO(3)
+    ```
+ - Using **India Fin Dates** Table **Date** Column  develop below report and understand how the Calendar Auto working.
+ - ![image](https://user-images.githubusercontent.com/20516321/111574107-d831f780-87d1-11eb-83ca-9b1254d9e1ff.png)
+
+
 ## Questions
 1. Create a table with dates by using given two Dates?
     - Open PBI Desktop
