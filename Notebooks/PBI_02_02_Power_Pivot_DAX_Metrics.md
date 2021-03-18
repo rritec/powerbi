@@ -84,7 +84,10 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 
 ## Exercise 2: Duplicate Table
 - Open [Adventure Works DW 2020 M03](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M03.pbix)
-- In the Data view > Click on New Table > type '''Ship Date = 'Date' '''
+- In the Data view > Click on New Table > type formula 
+    '''
+    Ship Date = 'Date'
+    '''
 - 
 
 ## Questions
