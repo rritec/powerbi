@@ -109,14 +109,15 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 ## Exercise 3: Can you populate dates of india financial year
 - The financial year of India begins from April 1 of a calendar year and ends on March 31 of the next calendar year
 - In above PBIX file, develop a table report to understand range of dates
-- ![image](https://user-images.githubusercontent.com/20516321/111573915-72de0680-87d1-11eb-8895-158a5d895da2.png)
+  ![image](https://user-images.githubusercontent.com/20516321/111573915-72de0680-87d1-11eb-8895-158a5d895da2.png)
 - In the Data view > Click on New Table > type below formula 
 
     ```
     India Fin Dates =  CALENDARAUTO(3)
     ```
  - Using **India Fin Dates** Table **Date** Column  develop below report and understand how the Calendar Auto working.
- - ![image](https://user-images.githubusercontent.com/20516321/111574107-d831f780-87d1-11eb-83ca-9b1254d9e1ff.png)
+   ![image](https://user-images.githubusercontent.com/20516321/111574107-d831f780-87d1-11eb-83ca-9b1254d9e1ff.png)
+ - Read the [doc](https://docs.microsoft.com/en-us/dax/calendarauto-function-dax)
 
 
 ## Questions
