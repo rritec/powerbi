@@ -82,7 +82,10 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 - Develop report as shown below
     - ![image](https://user-images.githubusercontent.com/20516321/111411593-da785100-8700-11eb-94d7-c8e177cf87b9.png)
 
-
+## Exercise 2: Duplicate Table
+- Open [Adventure Works DW 2020 M03](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M03.pbix)
+- In the Data view > Click on New Table > type '''Ship Date = 'Date' '''
+- 
 
 ## Questions
 1. Create a table with dates by using given two Dates?
