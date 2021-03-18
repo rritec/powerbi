@@ -84,14 +84,27 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 
 ## Exercise 2: Duplicate Table
 - Open [Adventure Works DW 2020 M03](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M03.pbix)
-- In the Data view > Click on New Table > type formula 
+- In the Data view > Click on New Table > type below formula 
 
     ```
-
     Ship Date = 'Date'
-
     ```
-- 
+- To complete the design of the Ship Date table, you can:
+    - Rename the following columns:
+        - **Date** as **Ship Date**
+        - **Fiscal Year** as **Ship Fiscal Year**
+        - **Fiscal Quarter** as **Ship Fiscal Quarter**
+        - **Month** as **Ship Month**
+        - **Full Date** as **Ship Full Date**
+    - Sort the **Ship Full Date** column by the **Ship Date** column.
+    - Sort the **Ship Month** column by the **MonthKey** column.
+    - Hide the **MonthKey** column.
+    - Create a hierarchy named Fiscal with the following levels:
+        - Ship Fiscal Year
+        - Ship Fiscal Quarter
+        - Ship Month
+        - Ship Full Date
+    - Mark the **Ship Date** table as a date table by using the Ship Date column.
 
 ## Questions
 1. Create a table with dates by using given two Dates?
