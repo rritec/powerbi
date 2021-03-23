@@ -116,7 +116,7 @@ Power BI Desktop has automatically detected and created table relationships. So 
 
 11. On the `Modeling` ribbon, click `Format`, click `Currency`, and click `Currency general`.
 12. On the `Modeling` ribbon, click `New Measure`.
-13. In the formula bar for the `new measure`, type `Sales Var % = DIVIDE([Sales Var],[LY Sales]) * 100`, and press `Enter`.
+13. In the formula bar for the `new measure`, type `Sales Var % = DIVIDE([Sales Var],[LY Sales]) `, and press `Enter`.
 
     
 14. On the `Modeling` ribbon, click `Format`, and click `Percentage`.
