@@ -123,7 +123,8 @@ Power BI Desktop has automatically detected and created table relationships. So 
 15. Click `Save`, to save the Power BI file.
 16. Develop below report and understand results
 
-    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0109.png?raw=true)
+    ![image](https://user-images.githubusercontent.com/20516321/112080270-a8a33680-8ba7-11eb-8346-299e0f052cb2.png)
+
 
 `Home Work:`
 - Total Units: Total Units = SUM(Sales[Units])
