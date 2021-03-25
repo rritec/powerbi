@@ -18,6 +18,8 @@
 ## Binning
 1. Import **scott excel** file from **Labdata/Lab1**
 1. Right click on sal column and develop as shown
+    - Note: Default Number of bins are 5
+
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0114.png?raw=true)
     
