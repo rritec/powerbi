@@ -17,3 +17,6 @@
 
 https://docs.microsoft.com/en-us/power-bi/desktop-getting-started <br>
 https://docs.microsoft.com/en-us/power-bi/desktop-conditional-table-formatting
+## Ref
+
+https://exceleratorbi.com.au/conditional-formatting-with-a-text-field-in-power-bi/
