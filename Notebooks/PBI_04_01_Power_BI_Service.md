@@ -33,7 +33,7 @@
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0048.png?raw=true)
 
-## Exercise 2- Share Dashboard and Update Report
+## Share Dashboard and Update Report
 
 1. Let's start sharing your newly created dashboard. For simplicity, let's share the dashboard to your own email address.
 
@@ -55,32 +55,12 @@
 1. Again **publish** the file to **Power BI service** and replace the existing dataset with this one.
 1. Go to Power BI service and review the **Lab 4 - Starting Report** and examine whether the change you made is reflected.
 
-## Exercise 3- Schedule Data Refresh
 
-1. So far, the report you uploaded is rather **static**. That means, if the data in the Access database changes, the report and dashboard are not updated. You can install **Power BI Personal Gateway** and schedule data refresh for on-premises data sources, such as the Access database, to keep your report and dashboard on Power BI service **up-to-date**.
-
-1. NOTE: Power BI Pro is required to setup scheduled refresh for on-premises data. If you do not have Power BI Pro subscription you can enroll for a free 60 day trial.
-
-1. On the Power BI website, click My Workspace, click Datasets, click Lab 4 – Starting, and click the Schedule refresh icon.
-1. Power BI Pro is required to setup scheduled refresh for on-premises data. If you do not have Power BI Pro subscription you can enrol for a 60 day trial.
-1. Ensure that you are in the Datasets tab and that the Lab 4 - Starting dataset is selected.
-1. Click Gateway connection and click Install now to download the Power BI Personal Gateway.
-1. When the download is complete, click the On-premises data gateway to begin installation.
-1. Click Next, accept the license terms, and click Install.
-1. Sign in using your Power BI account and click Close.
-1. In New on-premises data gateway name, type Van Arsdel Sales.
-1. In Recovery key and Confirm recovery key, type Pa$$w0rd, and click Configure.
-1. Click Close.
-1. Expand Data source credentials and, for Country Population by Year.xlsx, click Edit credentials.
-1. For Privacy level setting for this data source, select Organizational, and click Sign in.
-1. Edit credentials for the Data sources that needs updating.
-1. Now you can schedule your data source refresh.
-1. NOTE: If you are using the starter file provided in the beginning of Lab 4, in order to be able to successfully refresh the data, please ensure that you have the files from previous labs under the "C:\DAT207x" folder. This is because the files were developed with this referenced. You might use arbitrary folders in your own scenario or if you are using your own file throughout the labs.
-
-## Exercise 4: Add Youtube Video using Tile
-1. In above report click on **...** > Click on **+ Add tile**
-1. Under Media, Clic on **Web Content**  > Select **Next** 
-1. Under **Embed Code** > paste below code 
+ 
+## Add Youtube Video using Tile
+4. In above report click on **...** > Click on **+ Add tile**
+5. Under Media, Clic on **Web Content**  > Select **Next** 
+6. Under **Embed Code** > paste below code 
 ```html
 <object width="425" height="355"><param name="movie" value="https://www.youtube.com/v/4_afKAWj2Ek&hl=en"></param><param name="wmode" value="transparent"></param><embed src="https://www.youtube.com/v/4_afKAWj2Ek&hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>
 
@@ -89,7 +69,7 @@
 
 1. Click om **Apply** and observe Tile in the dashboard
 
-## Exercise 5: Add Image Tile
+## Add Image Tile
 
 1. In above report click on **...** > Click on **+ Add tile**
 1. Under Media, Clic on **Image**  > Select **Next** 
@@ -99,7 +79,7 @@
 
 1. Click om **Apply** and observe Tile in the dashboard    
 
-## Exercise 6: Add youtube Video
+## Add youtube Video
 
 1. In above report click on **...** > Click on **+ Add tile**
 1. Under Media, Clic on **Video**  > Select **Next** 
@@ -109,14 +89,14 @@
 
 1. Click om **Apply** and observe Tile in the dashboard    
 
-## Exercise 7: Explan Dasboard Themes
+## Explore Dasboard Themes
 
 1. In above report click on **...** > Click on **Sashboard Theme** > explore it
   
-
-## Exercise 8: Apps
+## Apps
 
 1. Explore it https://docs.microsoft.com/en-us/power-bi/service-organizational-content-pack-create-and-publish
+
   
 
 
