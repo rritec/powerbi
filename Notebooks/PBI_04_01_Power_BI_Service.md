@@ -61,8 +61,8 @@
 4. In above report click on **...** > Click on **+ Add tile**
 5. Under Media, Clic on **Web Content**  > Select **Next** 
 6. Under **Embed Code** > paste below code 
-```html
-<object width="425" height="355"><param name="movie" value="https://www.youtube.com/v/4_afKAWj2Ek&hl=en"></param><param name="wmode" value="transparent"></param><embed src="https://www.youtube.com/v/4_afKAWj2Ek&hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>```
+html
+<object width="425" height="355"><param name="movie" value="https://www.youtube.com/v/4_afKAWj2Ek&hl=en"></param><param name="wmode" value="transparent"></param><embed src="https://www.youtube.com/v/4_afKAWj2Ek&hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>
 
         
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0125.png?raw=true)
@@ -98,8 +98,3 @@
 1. Explore it https://docs.microsoft.com/en-us/power-bi/service-organizational-content-pack-create-and-publish
 
   
-
-
-```python
-
-```
