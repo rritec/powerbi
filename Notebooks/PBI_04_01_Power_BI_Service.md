@@ -1,6 +1,15 @@
 
 # Power BI Service
 
+## Create a new workspace
+
+1. Signup for new user id and password [Signup link](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb_nolicense_redirect%26redirectedFromSignup%3D1%26noSignUpCheck%3D1) or use what instructor provided to you.
+2. Open app.powerbi.com
+3. Signin with username and password given to you by your instructor
+    ![image](https://user-images.githubusercontent.com/20516321/112792985-1658d200-9082-11eb-9f74-63b862b27d24.png)
+
+4. In the left **Navigation Pane** > Click on **Workspaces** > Click on **Create a Workspace** > provide **workspace name** as **rritec-workspace** > click on **Save**
+
 ## Exercise 1- Upload PBI Report and Pin Visualizations
 
 1. Open the **Labdata/Lab4/Lab 4 Starting.pbix** file.
@@ -9,7 +18,7 @@
 1. If prompted, sign in using the account you used to sign up for the Power BI service.
 1. [Signup link](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb_nolicense_redirect%26redirectedFromSignup%3D1%26noSignUpCheck%3D1)
 1. Once the report is published, click Got it.
-1. Start an Internet browser, go to https://app.powerbi.com/, and click Sign in.
+1. Open browser, go to https://app.powerbi.com/, and click Sign in.
 1. Sign in using your account.
 1. Go to the **Lab 4 Starting Report** and explore your published report. It looks similar to the one in Power BI Desktop file. Now you can start creating a dashboard by pinning some visualizations.
 1. Go to the **Sales Report** tab and pin the chart showing **Total Sales by Category and Segment** (100% Stacked Bar Chart). Select to create a New dashboard and name it **VanArsdel Sales**.
