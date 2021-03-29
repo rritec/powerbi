@@ -94,8 +94,9 @@
 
 1. In above report click on **...** > Click on **Sashboard Theme** > explore it
   
-## Apps
+## Permissions 
 
-1. Explore it https://docs.microsoft.com/en-us/power-bi/service-organizational-content-pack-create-and-publish
+1. Explore it https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#roles-in-the-new-workspaces
+2. 
 
   
