@@ -60,7 +60,7 @@
 
  
 ## Add Youtube Video using Tile
-4. In above report click on **...** > Click on **+ Add tile**
+4. In above report click on **Edit** > Click on **+ Add tile**
 5. Under Media, Clic on **Web Content**  > Select **Next** 
 6. Under **Embed Code** > paste below code html
 
@@ -74,7 +74,7 @@
 
 ## Add Image Tile
 
-1. In above report click on **...** > Click on **+ Add tile**
+1. In above report click on **Edit** > Click on **+ Add tile**
 1. Under Media, Clic on **Image**  > Select **Next** 
 1. Under **Content** > paste below URL
 
@@ -84,17 +84,17 @@
 
 ## Add youtube Video
 
-1. In above report click on **...** > Click on **+ Add tile**
+1. In above report click on **Edit** > Click on **+ Add tile**
 1. Under Media, Clic on **Video**  > Select **Next** 
 1. Under **Content** > paste below URL
 
-    https://youtu.be/K40PGTYM2i0
+    https://youtu.be/ap2X2Dzlzag
 
 1. Click om **Apply** and observe Tile in the dashboard    
 
 ## Explore Dasboard Themes
 
-1. In above report click on **...** > Click on **Sashboard Theme** > explore it
+1. In above report click on **Edit** > Click on **Sashboard Theme** > explore it
   
 ## Permissions 
 
