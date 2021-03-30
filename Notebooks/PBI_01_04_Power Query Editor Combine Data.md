@@ -80,6 +80,10 @@ Select dname,ename,job,sal \
 from emp,dept\
 where emp.deptno=dept.deptno
 
+	Select emp.deptno,dept.deptno,dname,ename,job,sal
+	from emp inner join dept
+	on emp.deptno=dept.deptno
+
 #### Develop PBI Report using inner Join
 
 1. In above Report import **emp** and **dept**
