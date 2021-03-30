@@ -10,7 +10,7 @@
 
 4. In the left **Navigation Pane** > Click on **Workspaces** > Click on **Create a Workspace** > provide **workspace name** as **rritec-workspace** > click on **Save**
 
-## Exercise 1- Upload PBI Report and Pin Visualizations
+## Upload PBI Report and Pin Visualizations
 
 1. Open the **Labdata/Lab4/Lab 4 Starting.pbix** file.
 1. On the **Home ribbon**, click **Publish**.
