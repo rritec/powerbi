@@ -32,6 +32,8 @@
 1. You should have something similar to the below image:
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0048.png?raw=true)
+    
+- **Note:** If the original visualization that's used to create the tile changes, the tile doesn't change. For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
 
 ## Share Dashboard and Update Report
 
