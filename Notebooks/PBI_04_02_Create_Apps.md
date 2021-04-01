@@ -4,3 +4,12 @@
 - Click on **Publish app** > in pop up click on **publish**
 - Explore [Here](https://docs.microsoft.com/en-us/learn/paths/manage-workspaces-datasets-power-bi/?ns-enrollment-type=Collection&ns-enrollment-id=djwu3eywpk4nm)
 
+## Questions
+1. If we created new report, will it automatically reflect into app?
+  - No,We need to update the app
+2. By default,a report or dashboard will be shown in the app. Do we have any option to hide a report or dashboard.?
+  - Yes . (Go to workspace > view > list > Include in app > disable/enable it)
+3. Can you create a report using published dataset? in side power bi service?
+  - Yes
+
+
