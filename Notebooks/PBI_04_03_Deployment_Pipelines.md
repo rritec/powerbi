@@ -25,4 +25,10 @@
 1. Click on **Deploy** to copy content (Datasets/reports/dashboards) to **Test**
 1. Click on Test **Deploy** to copy content from **Test** to **production**
 ### Questions
-1. After deployment 
+1. After deployment(from dev to test) one report added to dev. Then will it automatically will appear in test?
+  - NO, We need click on Dev **Deploy** button
+2. As a developer what workspace i will have access?
+  - Dev
+3. Accidentely removed one report from Dev, Can i copy a report from test to dev?
+  - No. (Work around is Request Admin to download PBIX file from test and publis pbix file to Dev)
+4. 
