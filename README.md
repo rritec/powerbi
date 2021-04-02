@@ -24,18 +24,35 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- What is Power BI Mobile?
 	- What is M-Language?
 	- What is DAX?
-1. Power BI Desktop Transformation
+1. Data Warehousing Concepts
+	- What is OLTP
+	- What is Data warehouse
+	- Difference between OLTP Vs OLAP
+	- Difference among Primery Key/Foriegn Key/Surrogate Key
+	- Types of Tables
+		- Dimension Tables
+		- Fact Tables
+	- Types of Schemas
+		- Star Schema
+		- Snow Flake Schema
+		- Mixed Schema	
+1. Power BI Desktop
 	- Introduction to Power BI Desktop
 	- Power BI Desktop Components
 		- Power Query Editor
 		- Power Pivot
 		- Power View
 	- Power Query Editor
-		- Connecting to new Source(Files/Databases/web/...etc)
+		- Connecting to new Source
+			- File connections (Excel,Csv,XML,JSON,Folder)
+			- Connecting to Databases (MySql,MSSqlServer,Access dtatabase,...etc)
+			- Cloud Connections(SnowFlake Database)
+			- Online Connections(Web,Github ..etc)
 		- Importing Tables
 		- Types of Connections
 			- Import
-			- Direct/Live Connection		- 
+			- Direct
+			- Live Connection		- 
 		- Basic Transformations
 			- Changing datatypes
 			- replacing nulls with zero
@@ -45,31 +62,33 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 			- observing transformation steps
 			- understanding M-Language
 			- Computed columns/calculations
-	- Managing Query Groups
-	- Splitting Columns
-	- Changing Data Types
-	- Working with Dates
-	- Removing and Reordering Columns
-	- Conditional Columns
-	- Connecting to Files in a Folder
-	- Merge Queries
-	- Query Dependency View
-    
-    •	Transforming Less Structured Data
-    
-    •	Enter Data
-    
-    •	Query Parameters
-    
-    •	Summary
-    
-    •	Knowledge Checks
-    
-        •	Import Data from Access Database
+		- M-Language
+			- About Let and In
+			- Single Line comments in M-language
+			- Multi line comments
+			- How to write M-language code in multiple lines
+			- Change Steps in Query settings and observe in M-language
+			- Change M-language and observe Query Setting Steps
+			- Build Query using M-Language Script from Blank Query
+		- Combine Queries
+			- Append
+				- Learn SQL Queries of union ,Union all,Minus 
+				- Prove Power BI Append is equal to Union all			
+			- Merge
+				- Inner Join
+				- Left Outer Join
+				- Right Outer Join
+				- Full Outer Join
+				- Left Anti Join
+				- Right Anti Join
+			- Learn how to implement Cross join,Non equi join.
+			- Learn SQL Queries of Joins
+	- Project 1: Power Query Editor Level Project
+		- Import Data from Access Database
+		- Import Data from a Folder Containing CSV Files
+		- Import a Less Structured Data from an Excel File
 
-        •	Import Data from a Folder Containing CSV Files
-
-        •	Import a Less Structured Data from an Excel File
+	
 
 1.  **Power BI Desktop Modelling**
 
