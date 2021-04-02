@@ -21,12 +21,17 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 
 ### CALENDAR
 1. Open PBI Desktop
-1. Click on **Model** Menu bar
+1. In left side Navigation bar > Click on **Data**
 1. Click on New Table
 1. Provide DAX formula as **Calendar = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
 1. Develop Table Report and observe output.
 
 1. Also explore DATE,EOMONTH, DATEDIFF, TODAY
+
+ 1. How many years survived by Mahatma Gandhi? 
+    - We know Gandhi Born on **October 2, 1869**, and Died on **January 30, 1948**
+    - Read help document and find out no of years survived by Gandhi 
+    - https://docs.microsoft.com/en-us/dax/datediff-function-dax
 
 ## Time-intelligence functions
 
@@ -143,10 +148,7 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
  1. What is User Principal Name?
     - User Principal Name (UPN) is the name of a system user in an email address format.
     - A UPN (for example: john.doe@domain.com) consists of the user name (logon name), separator (the @ symbol), and domain name (UPN suffix)
- 1. How many years survived by Mahatma Gandhi? 
-    - We know Gandhi Born on **October 2, 1869**, and Died on **January 30, 1948**
-    - Read help document and find out no of years survived by Gandhi 
-    - https://docs.microsoft.com/en-us/dax/datediff-function-dax
+
  1.  What is the difference between SUM() Vs SUMX()?
      - https://exceleratorbi.com.au/use-sum-vs-sumx/
      - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
