@@ -17,3 +17,12 @@
 ### Production
 
 - After testing the content, use the production stage to share the final version of your content with business users across the organization.
+
+### Navigation Steps
+
+1. Click on Workspace **rritec-workspace** > Click on **settings** > Click on Premium > select storage as small blobs > click on **ok**
+1. Click on **Deployment Pipelines** > Click on **Create a Pipeline** > Provide pipeline name as **rritecPipeline** >click on **Assign Workspace** > from drop down select **rritec-workspace** > Select **Development** > Click on assign
+1. Click on **Deploy** to copy content (Datasets/reports/dashboards) to **Test**
+1. Click on Test **Deploy** to copy content from **Test** to **production**
+### Questions
+1. After deployment 
