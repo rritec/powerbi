@@ -1,4 +1,8 @@
-# Use Case: Clear All Slicers in Power BI
+# Reading Activity:
+https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks
+
+
+## Use Case: Clear All Slicers in Power BI
 1. Create a **text box** and name it as Dname:
 1. Create a **Slicer** with Dname Column
 1. Create a **text box** and name it as Job:
