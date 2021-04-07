@@ -21,6 +21,10 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks
 
 ![image](https://user-images.githubusercontent.com/20516321/113813419-7b50ae00-978d-11eb-9718-acd2f1cc6c79.png)
 
+## Use Case 3:
+
+![image](https://user-images.githubusercontent.com/20516321/113814794-d1beec00-978f-11eb-9e36-7511da5f7002.png)
+
 
 1. **Reference**
     https://radacad.com/clear-all-slicers-in-power-bi-a-bookmark-story
