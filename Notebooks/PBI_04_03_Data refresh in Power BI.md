@@ -30,7 +30,5 @@
 
 Reference: 
 - https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install
-- https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-onprem
-- https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-onprem
 - https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-data
 - https://docs.microsoft.com/en-us/power-bi/admin/service-premium-incremental-refresh
