@@ -42,6 +42,12 @@
 
   4. You're now signed in to your account. Select Close.
       ![image](https://user-images.githubusercontent.com/20516321/113990114-c393cd00-986e-11eb-9ac1-ca3a6016a1ed.png)
+ ## Schedule Dataset developed using Excel/SQL Server Source
+
+  1. Follow regular process and develop a report from excel source
+  2. Publish it
+  3. In Power BI Service > click on dataset schedule and set credentials and time accordingly
+  4. 
 
 Reference: 
 - https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install
