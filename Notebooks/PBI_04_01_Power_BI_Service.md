@@ -101,6 +101,13 @@
 ## Permissions 
 
 1. Explore it https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#roles-in-the-new-workspaces
+
+## Questions
+1. Without using **Power BI Desktop**, will you be able to upload **PBIX** file into **Power BI Service** ?
+    - Yes. 
+    - Go to required **workspace** > Click on **New** > Click on **Upload a File**
+        ![image](https://user-images.githubusercontent.com/20516321/114537204-8e70eb80-9c6f-11eb-9c72-a4f0d0b68c5c.png)
+
 2. 
 
   
