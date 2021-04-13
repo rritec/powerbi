@@ -10,12 +10,14 @@ https://radacad.com/row-level-security-configuration-in-power-bi-desktop
 ## Exercise
 
 1. Cpy below data into Excel
+
 | Item      | Price | Account Manager     |
 | ---        |    ----   |          --- |
 | Item 1      | 10       | ramreddy1@datahexa.com   |
 | Item 2   | 20        | ramreddy1@datahexa.com      |
 | Item 3   | 30        | info@datahexa.com      |
 | Item 4   | 40        | info@datahexa.com      |
+
 2. Save the excel as rritec_rls_source
 3. Import the excel and develop a table report with three columns
 ![image](https://user-images.githubusercontent.com/20516321/114550670-15c65b00-9c80-11eb-8129-9e0bef38f3a4.png)
