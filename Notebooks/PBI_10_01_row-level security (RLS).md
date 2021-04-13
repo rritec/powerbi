@@ -20,7 +20,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-rls
 3. Import the excel and develop a table report with three columns
 ![image](https://user-images.githubusercontent.com/20516321/114550670-15c65b00-9c80-11eb-8129-9e0bef38f3a4.png)
 
-4. Click on the model > Click on the Manage Roles > Create a role as shown below
+4. Click on the model > Click on the Manage Roles > Create **Four** role as shown below
 ![image](https://user-images.githubusercontent.com/20516321/114554400-4f996080-9c84-11eb-9830-322389658f0b.png)
 
 
