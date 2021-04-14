@@ -72,4 +72,21 @@ implemented
 9. Understanding business requirements and converting them into automation solutions.
 10. Delivering solutions that optimize processes across business strategies and technology capabilities.
 
+# HR Screening Call
+1. How many years of experience you have overall?
+  - 4 Years
+2. How many years of relavent experience of power bi?
+  - 4 Years
+3. What is the Notice period?
+  - 1 Month
+4. What is CTC?
+  - 7 Lakhs
+5. What is ECTC ?
+  - 9 Lakhs
+6. Which company you are working?
+  - Cognizant(CTS)
+7. Why you want leave the company?
+  - Carrier Growth 
+8. What you studied
+
 
