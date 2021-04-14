@@ -1,6 +1,6 @@
 
 # Security
-In any BI application 3 =Tiers of Security required. Those are
+In any BI application 3 Tiers of Security required. Those are
 1. Authentication
   - Application username and password is called as Authentication.
 2. Autherization
