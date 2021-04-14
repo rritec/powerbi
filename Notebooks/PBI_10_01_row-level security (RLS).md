@@ -31,13 +31,14 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-rls
 ![image](https://user-images.githubusercontent.com/20516321/114554400-4f996080-9c84-11eb-9830-322389658f0b.png)
 
 
-5. Save this report as rls_report_static
-6. Publish to workspace.
-7. In the workspace make sure **info@datahexa.com** as **Viewer**
-8. Go to Dataset > Security > Select item 3 and map info@datahexa.com > Add > Save 
-9. Select item 4 and map info@datahexa.com > Add > Save
-10. Open **Private window** in the brwoser > open app.powerbi.com > login using info@datahexa.com and password shared by your instructor.
-11. Open the report and notice that only two records are visible
+5. Click on **View as** > select **item2** > click on **ok** > go to **Report** page >Notice that onlt **item 2** data visible 
+6. Save this report as rls_report_static
+7. Publish to workspace.
+8. In the workspace make sure **info@datahexa.com** as **Viewer**
+9. Go to Dataset > Security > Select item 3 and map info@datahexa.com > Add > Save 
+10. Select item 4 and map info@datahexa.com > Add > Save
+11. Open **Private window** in the brwoser > open app.powerbi.com > login using info@datahexa.com and password shared by your instructor.
+12. Open the report and notice that only two records are visible
 ![image](https://user-images.githubusercontent.com/20516321/114551387-f24fe000-9c80-11eb-8dcd-0bfd582b64a4.png)
 
 ## Develop Data Security in Dynamic Way
