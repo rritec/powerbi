@@ -1,7 +1,11 @@
 
 1. Create **Snowflake** data warehouse
     1. Sign up for free account
-    1. Sign in and browse all options
+	- Click [here](https://signup.snowflake.com/?_ga=2.244222469.1468146556.1618626004-173092964.1618626004) and create id 
+	- Provide all information like name and mailid  > click **Cotinue**
+	- 
+    2. 	
+    3. Sign in and browse all options
   
 1. Open PBI Desktop
 1. Connect snowflake
