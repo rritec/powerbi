@@ -29,7 +29,7 @@
   1. Install snowsql CLI https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/index.html
   1. https://docs.snowflake.com/en/user-guide/getting-started-tutorial.html#snowflake-in-20-minutes
   
-**Scripts**
+**Scripts:**
 ```
 account_name: bk73213.west-us-2.azure
 account url : https://BK73213.west-us-2.azure.snowflakecomputing.com
@@ -77,6 +77,8 @@ select first_name, last_name, dateadd('day',90,start_date) from emp_basic where 
 drop database if exists sf_tuts;
 
 drop warehouse if exists sf_tuts_wh;
+
+!exit
 
 ```
 
