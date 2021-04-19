@@ -93,6 +93,18 @@
 	https://data-flair.training/blogs/power-bi-interview-questions/
 
 	https://data-flair.training/blogs/power-bi-interview-questions-and-answers/
+27. Think and develop below reports.
+	![image](https://user-images.githubusercontent.com/20516321/115226802-44837c00-a12d-11eb-94d3-b1ced898ddf1.png)
+	![image](https://user-images.githubusercontent.com/20516321/115226863-57964c00-a12d-11eb-8d66-f248102aa75a.png)
+
+
+
+28. Think and develop below reports.
+	![image](https://user-images.githubusercontent.com/20516321/115226962-785ea180-a12d-11eb-991c-623b1c43dccd.png)
+	![image](https://user-images.githubusercontent.com/20516321/115227020-8ca29e80-a12d-11eb-83e2-ca85877e5bca.png)
+
+
+29. 
 	
 
 
