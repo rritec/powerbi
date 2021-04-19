@@ -28,6 +28,7 @@
 
   1. Install snowsql CLI https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/index.html
   1. https://docs.snowflake.com/en/user-guide/getting-started-tutorial.html#snowflake-in-20-minutes
+  
 **Scripts**
 ```
 account_name: bk73213.west-us-2.azure
