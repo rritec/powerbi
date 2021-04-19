@@ -2,14 +2,15 @@
 1. Create **Snowflake** data warehouse
     1. Sign up for free account
 	- Click [here](https://signup.snowflake.com/?_ga=2.244222469.1468146556.1618626004-173092964.1618626004) and create id 
-	- Provide all information like name and mailid  > click **Cotinue**
+	- Provide all information like name and mailid  > click **Continue** > Choose your Snowflake edition as **Enterprise** > Choose your cloud provider as **Microsoft Azure** > Region as **West US2 (washington)** > click on **Get Started** > Open Mail > Verify mail to activate the account > create username and password
+	![image](https://user-images.githubusercontent.com/20516321/115165273-bd052100-a0ca-11eb-89f9-a2443e23c786.png)
+
 	- 
-    2. 	
-    3. Sign in and browse all options
+    
   
 1. Open PBI Desktop
 1. Connect snowflake
-		1. Server > nh09498.west-us-2.azure.snowflakecomputing.com
+		1. Server > xxxxxxxx.west-us-2.azure.snowflakecomputing.com
 		2. Warehouse > COMPUTE_WH > click on **ok**
 		3. provide username: xxxxxx  > pasword: xxxxxx > click on **connect**
 		
