@@ -61,7 +61,16 @@ The **four types** of filters are:
 [Refer and complete learning path](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/1-filtering-data)
 
 ### Questions:
-1. What is the defualt sorting in slicer?
+1. How many Filters available in Power BI?
+
+    - Slicer
+    - Filter Pane
+        - Viz
+        - page
+        - all pages
+    - Drill Through
+    - Row-Level Security(RLS)
+2. What is the defualt sorting in slicer?
     - Ascending order
 1.  Slicer by default will affect other pages visulizations? do you have any work arounds?
     - No, we have work arounds [Refer](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-slicers#sync-and-use-slicers-on-other-pages) 
