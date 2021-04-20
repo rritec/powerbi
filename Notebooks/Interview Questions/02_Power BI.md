@@ -104,10 +104,13 @@
 	![image](https://user-images.githubusercontent.com/20516321/115227020-8ca29e80-a12d-11eb-83e2-ca85877e5bca.png)
 
 
-29. Do uou know Power BI Rest API?
+29. Do you know Power BI Rest API?
 30. Do you know power Shell commands of Power BI?
 31. Project Methodology (Agil)
 32. Errors rectifing (debugging)
+33. What is the definition of L1, L2, L3, L4 support levels in IT Operations Management?
+	- https://myfirstsite99.wordpress.com/what-is-the-definition-of-l1-l2-l3-l4-support-levels-in-it-operations-management/
+- 
 	
 
 
