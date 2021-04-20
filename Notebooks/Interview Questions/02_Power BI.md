@@ -106,6 +106,9 @@
 
 29. Do uou know Power BI Rest API?
 30. Do you know power Shell commands of Power BI?
+31. Project Methodology (Agil)
+32. errors rectifing (debugging)
+
 	
 
 
