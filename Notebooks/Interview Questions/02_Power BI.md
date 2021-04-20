@@ -106,6 +106,25 @@
 
 29. Do you know Power BI Rest API?
 30. Do you know power Shell commands of Power BI?
+	- https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
+	- Right click on  Windows power shell ISE > Run as Administartor 
+	- Install all below moduls
+		```
+		Install-Module -Name MicrosoftPowerBIMgmt
+		Install-Module -Name MicrosoftPowerBIMgmt.Admin
+		Install-Module -Name MicrosoftPowerBIMgmt.Capacities
+		Install-Module -Name MicrosoftPowerBIMgmt.Data
+		Install-Module -Name MicrosoftPowerBIMgmt.Profile
+		Install-Module -Name MicrosoftPowerBIMgmt.Reports
+		Install-Module -Name MicrosoftPowerBIMgmt.Workspaces
+		```
+	- In Power Shell > Click on **New Script** > copy paste below code and change path accordingly.
+		```
+		Connect-PowerBIServiceAccount
+		Get-PowerBIWorkspace | Export-Csv -Path C:\work\powerbi-powershell\ws.csv
+		Disconnect-PowerBIServiceAccount
+		```
+	Click on Run > observe Csv file output
 31. Project Methodology (Agil)
 32. Errors rectifing (debugging)
 33. What is the definition of L1, L2, L3, L4 support levels in IT Operations Management?
