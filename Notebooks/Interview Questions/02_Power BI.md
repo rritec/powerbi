@@ -129,10 +129,37 @@
 32. Errors rectifing (debugging)
 33. What is the definition of L1, L2, L3, L4 support levels in IT Operations Management?
 	- https://myfirstsite99.wordpress.com/what-is-the-definition-of-l1-l2-l3-l4-support-levels-in-it-operations-management/
-- 
+-
 	
+34. A comprehensive guide to Power BI performance tuning
+
+Tuning the data refresh
+- 1. Verify the query folding is working..
+- 2. Minimize the data you are loding..
+- 3. Consider performing joins in DAX not in M..
+- 4. Review your applied steps..
+- 5. Make use of SQL indexes..
+- 6. Use the Powe BI Performance Analyzer..
+- 7. confirm that the storge engine is being used..
+- 8. Remove data you don't need.
+
+Please refer as below link to get more information
+https://www.sqlgene.com/2019/09/27/a-comprehensive-guide-to-power-bi-performance-tuning/
 
 
+35. How to share reports with people that don't have power bi accounts?
+ - You can, but they will have to sign up with a Power BI account. Unless, you send them the PBIX file and they install Desktop.
+ - Unless, you use Publish to Web feature, and then they do not need Desktop or an Account.
+ - 
+36. Why we should create report in Power BI Desktop Instead of Power BI Service?
+- Comparing Power BI Desktop and the Power BI service
+
+Power BI Desktop
+- Many data sources,Transforming, Shaping & modeling, Measures, Calculated columns,Python,Themes and RLS creation.
+Power BI Services
+ - Some data sources, Dashboards, Apps & Workspaces, Sharing, Dataflow creation, Paginated reports, RLS management and Gateway connecions.
+ IF Combain Both
+  - Reports, Visualizations, Security, Filters, Bookmarks, Q&A and R visuals.
 
 
 
