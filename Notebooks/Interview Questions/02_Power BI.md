@@ -104,7 +104,8 @@
 	![image](https://user-images.githubusercontent.com/20516321/115227020-8ca29e80-a12d-11eb-83e2-ca85877e5bca.png)
 
 
-29. 
+29. Do uou know Power BI Rest API?
+30. Do you know power Shell commands of Power BI?
 	
 
 
