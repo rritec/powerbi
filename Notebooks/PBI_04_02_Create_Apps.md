@@ -11,5 +11,8 @@
   - Yes . (Go to workspace > view > list > Include in app > disable/enable it)
 3. Can you create a report using published dataset? in side power bi service?
   - Yes
+4. How Many Apps, possible using One Work Space ?
+  - Only **One**
+5. 
 
 
