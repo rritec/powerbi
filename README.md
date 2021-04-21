@@ -228,8 +228,8 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Treemap
 		- Bar Chart with Line
 		- Waterfall 
-		- Scatter Chart   
-	-     Project 3: Power View Level Project
+		- Scatter Chart
+	- Project 3: Power View Level Project
 		- Page Layout and Formatting
 		- Visual Relationship
 		- Duplicate Page
@@ -245,9 +245,8 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Rank Report
     
 1. **Power BI Service**
-
-    •	Introduction
-    
+	- Introduction
+	- Signup and access [app.powerbi.com](app.powerbi.com) 
     •	Overview of Dashboards and Service
     
     •	Uploading to Power BI Service
