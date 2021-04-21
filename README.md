@@ -42,61 +42,74 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Power Query Editor
 		- Power Pivot
 		- Power View
-	- Power Query Editor
-		- Connecting to new Source
-			- File connections (Excel,Csv,XML,JSON,Folder)
-			- Connecting to Databases (MySql,MSSqlServer,Access dtatabase,...etc)
-			- Cloud Connections(SnowFlake Database)
-			- Online Connections(Web,Github ..etc)
-		- Importing Tables
-		- Types of Connections
-			- Import
-			- Direct
-			- Live Connection		- 
-		- Basic Transformations
-			- Changing datatypes
-			- replacing nulls with zero
-			- concatnating columns
-			- spliting columns
-			- renameing columns
-			- observing transformation steps
-			- understanding M-Language
-			- Computed columns/calculations
-		- M-Language
-			- About Let and In
-			- Single Line comments in M-language
-			- Multi line comments
-			- How to write M-language code in multiple lines
-			- Change Steps in Query settings and observe in M-language
-			- Change M-language and observe Query Setting Steps
-			- Build Query using M-Language Script from Blank Query
-		- Combine Queries
-			- Append
-				- Learn SQL Queries of union ,Union all,Minus 
-				- Prove Power BI Append is equal to Union all			
-			- Merge
-				- Inner Join
-				- Left Outer Join
-				- Right Outer Join
-				- Full Outer Join
-				- Left Anti Join
-				- Right Anti Join
-			- Learn how to implement Cross join,Non equi join.
-			- Learn SQL Queries of Joins
-	- Project 1: Power Query Editor Level Project
-		- Import Data from Access Database
-		- Import Data from a Folder Containing CSV Files
-		- Import a Less Structured Data from an Excel File
+1. Power Query Editor
+	- Connecting to new Source
+		- File connections (Excel,Csv,XML,JSON,Folder)
+		- Connecting to Databases (MySql,MSSqlServer,Access dtatabase,...etc)
+		- Cloud Connections(SnowFlake Database)
+		- Online Connections(Web,Github ..etc)
+	- Importing Tables
+	- Types of Connections
+		- Import
+		- Direct
+		- Live Connection		- 
+	- Basic Transformations
+		- Changing datatypes
+		- replacing nulls with zero
+		- concatnating columns
+		- spliting columns
+		- renameing columns
+		- observing transformation steps
+		- understanding M-Language
+		- Computed columns/calculations
+	- M-Language
+		- About Let and In
+		- Single Line comments in M-language
+		- Multi line comments
+		- How to write M-language code in multiple lines
+		- Change Steps in Query settings and observe in M-language
+		- Change M-language and observe Query Setting Steps
+		- Build Query using M-Language Script from Blank Query
+	- Combine Queries
+		- Append
+			- Learn SQL Queries of union ,Union all,Minus 
+			- Prove Power BI Append is equal to Union all			
+		- Merge
+			- Inner Join
+			- Left Outer Join
+			- Right Outer Join
+			- Full Outer Join
+			- Left Anti Join
+			- Right Anti Join
+		- Learn how to implement Cross join,Non equi join.
+		- Learn SQL Queries of Joins
+	- Query Folding
+		- How to see Native Query
+- Project 1: Power Query Editor Level Project
+	- Import Data from Access Database
+	- Import Data from a Folder Containing CSV Files
+	- Import a Less Structured Data from an Excel File
 
 	
-
-1.  **Power BI Desktop Modelling**
-
-    •	Introduction
-    
-    •	Managing Data Relationships
-    
-    •	Creating Calculated Columns
+1.  **Power BI - Power Pivot - Modelling**
+	- Introduction
+	- What is Relationship?
+	- What is Cardinality
+	- Types of cardinality
+	- What cardinality is used between fact and dimension tables and why?
+	- Can we use many to many cardinality? if we want to skip what are the workarounds?
+	- Can we use one to one cardinality? if we want to skip what are the workarounds?
+	- What is active relationship/join?
+	- What is inactive Relationship/Join
+	- When to go for Inactive relation ships? 
+	- What is role playing dimension? Can we use active and inactive both between role playing dimension and fact
+	- What is Cross Filter Direction?
+	- Types of Cross Filter Directions?
+	- What type of direction used in star schema?
+	- When to go for Both direction?
+1.  **Power BI - Power Pivot - DAX Calculations**
+	- Introduction
+	- Creating Calculated Columns
     
     •	Optimizing Models for Reporting
     
