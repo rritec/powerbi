@@ -246,62 +246,53 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
     
 1. **Power BI Service**
 	- Introduction
-	- Signup and access [app.powerbi.com](app.powerbi.com) 
-    •	Overview of Dashboards and Service
-    
-    •	Uploading to Power BI Service
-    
-    •	Quick Insights
-    
-    •	Configuring a Dashboard
-    
-    •	Adding Textbox, Image Widgets
-    
-    •	Featured and Favorite Dashboard
-    
-    •	Filtering Dashboard
-    
-    •	Dashboard Settings
-    
-    •	Natural Language Queries
-    
-    •	Featured Questions
-    
-    •	Sharing a Dashboard
-    
-    •	In-Focus Mode
-    
-    •	Pinning a Live Page
-    
-    •	Custom URL and Title
-    
-    •	TV Mode and Collapse Navigation
-    
-    •	Printing Dashboard and Exporting Data
-    
-    •	Export to CSV and Excel
-    
-    •	Power BI Notifications
-    
-    •	Alerts in the Power BI Service
-    
-    •	Personal Gateway
-    
-    •	Publishing to Web
-    
-    •	Admin Portal
-    
-    •	Viewing in Windows App
-    
-    •	Viewing in Android App
-    
-    •	Viewing in iPad
-    
-    •	 Upload PBI Report and Pin Visualizations
-    
-    •	Share Dashboard and Update Report
-    
-    •	Schedule Data Refresh
+	- Signup and access [app.powerbi.com](app.powerbi.com)
+	- Workspace
+		- Create Workspace
+		- Publish PBIX to workspace
+		- Upload PBIX to workspace
+	- Dashboard
+		- Create Dashboard
+		- Pin Viz to Dashboard
+		- Pin Entire page to dashboard
+		- Pin Vs Pin Live
+		- Share Dashboard
+		- Edit Dashboard
+		- Tiles
+			- Web Content Tile
+			- Image Tile
+			- Text Tile
+			- Video Tile
+		- Dashboard Layouts
+		- Dashboard Mobile View
+		- Dashboard Web View
+		- Featured and Favorite Dashboard
+		- Filtering Dashboard
+		- Dashboard Settings
+		- Q&A - Natural Language Queries - NLP
+		- Printing Dashboard and Exporting Data
+		- Export to CSV and Excel
+	- Apps
+		- Creating App
+		- Updating App
+		- Controling reports visibility in app
+1. **Power BI Gateways**
+	- Introduction
+	- What is Gateway
+	- Types of Gateways
+	- Personal Gateway
+	- Standalone or enterprise gateway
+	- Installation of Gateway
+	- Configuring Gateway
+	- Scheduling
+		- Refreshing Dataset daily 8 times in Pro licence
+		- Refreshing Dataset daily 48 times in Premium licence
+		- Refreshing dateset weekly
+		- Updateing source credentials of dataset
+	- Incremental Refresh
+		- RangeStart
+		- RangeEnd
+		- Refresh only last 10 days data   
     
 1. **Working with Excel**
 
