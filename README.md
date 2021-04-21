@@ -106,7 +106,80 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Types of Cross Filter Directions?
 	- What type of direction used in star schema?
 	- When to go for Both direction?
-1.  **Power BI - Power Pivot - DAX Calculations**
+1.  **Power BI - Power Pivot - Data Analysis Expressions(DAX)- Calculations**
+	- Introduction	
+	- When to go for new column
+	- When to go for New Mesure
+	- New column Vs New Measure
+	- What is Implicity Mesure
+	- What is Explicity Mesure
+	- What is compound Mesure
+	- What is Computed column?
+	- Date and time functions
+		- CALENDAR
+		- CALENDARAUTO
+		- DATE
+		- DATDIFF
+		- DATEVALUE
+		- NOW
+		- TODAY
+		- CALENDAR Vs CALENDARAUTO
+		- NOW Vs TODAY
+		- ... etc
+	- Information functions
+		- USERNAME
+		- USERPRINCIPALNAME
+		- USERNAME Vs USERPRINCIPALNAME
+		- ISBLANK
+		- ISEMPTY
+		- ISBLANK Vs ISEMPTY
+		- HASONEVALUE
+		- ... etc
+	- Logical functions
+		- IF
+		- IFERROR
+		- AND
+		- ... etc
+	-  Math and trig functions
+		- DIVIDE
+		- DIVIDE Vs /
+		- TRUNC
+		- ROUND
+		- ... etc
+	-  Relationship functions
+		- CROSSFILTER
+		- USERELATIONSHIP
+	-  Statistical functions
+		- Explain Itterator Functions
+		- sumx
+		- countx
+		- minx
+		- maxx
+		- rankx
+		- SUM Vs SUMX
+		- COUNT Vs COUNTX
+		- COUNTA Vs COUNTAX
+		- COUNT Vs COUNTA
+	- Filter functions
+		- ALL
+		- FILTER
+		- SELECTEDVALUE
+		- CALCULATE
+		- CALCULATETABLE
+		- Difference between Calculate Vs Calculatetable
+		- REMOVEFILTERS
+		- ...etc
+	- Time intelligence functions
+		- SAMEPERIODLASTYEAR
+		- TOTALYTD
+		- ...etc
+	- Explain DAX Statements
+		- Define
+		- Evalute
+		- Var
+		- Order By	- 
+	
+1.  **DAX Studio**
 	- Introduction
 	- Creating Calculated Columns
     
