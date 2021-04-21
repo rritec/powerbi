@@ -98,9 +98,7 @@
   
 ## Add entire page to dashboard as live page
 1. Open report > click on **...** > Click on **Pin to a dashboard**
-## Permissions 
 
-1. Explore it https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#roles-in-the-new-workspaces
 
 ## Questions
 1. Without using **Power BI Desktop**, will you be able to upload **PBIX** file into **Power BI Service** ?
