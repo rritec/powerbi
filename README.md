@@ -292,73 +292,42 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Incremental Refresh
 		- RangeStart
 		- RangeEnd
-		- Refresh only last 10 days data   
-    
-1. **Working with Excel**
+		- Refresh only last 10 days data
+1. **Power BI Connections**
+	- Import
+	- Direct
+	- Live
+	- Streaming
+	- Difference among above **4** connections
+1. **Power BI Performance Tunning**
+	- Performance Analyser
+	- Query Folding
+	- Index
+	- Dax Formulas tuning
+1. **Power BI Security**
+	- Authentication
+	- Object Level Authrization
+		- Admin
+		- Member
+		- Contributor
+		- Viewer
+	- Row Level Security
+		- Static
+		- Dynamic	- 
+1. **Power BI Cmdlets and Rest APIs**
+	- Install Cmdlets
+	- Connect power BI
+	- Disconnect Power BI
+	- Get list of workspaces
+	- Get list of users
+	- Add user to workspace
+	- Remove user from workspace
+	- Create New Workspace
+	- Export list of reports
+	- Export list of dashboards
 
-    •	Introduction
     
-    •	Importing Excel Data using Simple Table
-    
-    •	Excel Workbook with Excel Data Model
-    
-    •	Connecting to Excel Workbook on OneDrive for Business
-    
-    •	Pinning Excel Tables or Visuals
-    
-    •	Analyzing Data in Excel
-    
-1. **Direct Connectivity**
 
-    •	Direct Connectivity to SQL Database
-    
-    •	Direct Connectivity to SSAS
-    
-    •	Using SSAS Connector
-    
-    •	SSAS Multi Dimensional Preview
-    
-    •	SAP HANA
-    
-    •	Direct Connectivity From Power BI Desktop
-    
-    •	Direct Connectivity From Power BI Service
-    
-1. **Developer API**
-
-    •	Introduction
-    
-    •	Interactive API Console
-    
-    •	Registering a Client App and Embedding a Tile
-    
-    •	Integrating a Tile to Your App
-    
-    •	Using PubNub to Push Data to a Tile
-    
-    •	Creating Custom Visuals
-    
-    •	Using Custom Visuals
-    
-    •	Power BI Embedded
-    
-1. **Mobile App**
-
-    •	Introduction
-    
-    •	Report Gallery and Search
-    
-    •	Mobile Dashboard Layout
-    
-    •	Sharing and Annotating in Power BI Mobile
-    
-    •	Taking Your Mobile Content Offline
-    
-    •	Platform Specific Features
-    
-    •	Search and Recent
-    
-    •	Limiting Access to Mobile + MAM
     
 
 
