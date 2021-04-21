@@ -85,11 +85,10 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Learn SQL Queries of Joins
 	- Query Folding
 		- How to see Native Query
-- Project 1: Power Query Editor Level Project
-	- Import Data from Access Database
-	- Import Data from a Folder Containing CSV Files
-	- Import a Less Structured Data from an Excel File
-
+	- Project 1: Power Query Editor Level Project
+		- Import Data from Access Database
+		- Import Data from a Folder Containing CSV Files
+		- Import a Less Structured Data from an Excel File
 	
 1.  **Power BI - Power Pivot - Modelling**
 	- Introduction
