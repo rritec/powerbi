@@ -90,7 +90,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Import Data from a Folder Containing CSV Files
 		- Import a Less Structured Data from an Excel File
 	
-1.  **Power BI - Power Pivot - Modelling**
+1.  **Power BI Desktop - Power Pivot - Modelling**
 	- Introduction
 	- What is Relationship?
 	- What is Cardinality
@@ -106,7 +106,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Types of Cross Filter Directions?
 	- What type of direction used in star schema?
 	- When to go for Both direction?
-1.  **Power BI - Power Pivot - Data Analysis Expressions(DAX)- Calculations**
+1.  **Power BI Desktop - Power Pivot - Data Analysis Expressions(DAX)- Calculations**
 	- Introduction	
 	- When to go for new column
 	- When to go for New Mesure
@@ -181,107 +181,68 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	
 1.  **DAX Studio**
 	- Introduction
-	- Creating Calculated Columns
-    
-    •	Optimizing Models for Reporting
-    
-    •	Creating Calculated Measures
-    
-    •	Creating and Managing Hierarchies	
-    
-    •	Using Calculated Tables	
-    
-    •	Time Intelligence
-    
-    •	Manually Typing in a Data Table
-    
-    •	Include Exclude
-    
-    •	Grouping Binning
-    
-    •	Summary
-    
-    •	Knowledge Checks
-    
-        •	 Manage Table Relationships
-
-        •	Last Year Comparison
-
-        •	Year to Date
-
-        •	Market Share
-
-        •	Optimize the Data Model
+	- Installation
+	- What are Power BI External Tools
+	- Open Power BI Model in DAX Studio
+	- What is DAX Query
+	- See Dax Query using Performance Analyser tool
+	- SQL Query Vs DAX Query
+	- Write Few Queries from Scratch
+		- select * from Customer Vs EVALUATE Customer
+		- select city from customer Vs EVALUATE VALUES(Customer[City])
+		- select * from customer where city ="redmond" Vs EVALUATE CALCULATETABLE ( Customer, Customer[City] = "Redmond" )
+		- ... etc
+	- Project 2: Power Pivot Level Project
+		- Manage Table Relationships
+		- Last Year Comparison
+		- Year to Date
+		- Market Share
+		- Optimize the Data Model
         
-1. **Power BI Desktop Visualization**
-
-    •	Introduction
-    
-    •	Pie and Treemap
-    
-    •	Hierarchical Axis and Concatenating
-    
-    •	Filter (Including TopN)
-    
-    •	Bar Chart with Line
-    
-    •	Analytics Pane
-    
-    •	Clustering (and Machine Learning)
-    
-    •	Slicer
-    
-    •	Focus Mode and See Data
-    
-    •	Date Slicer
-    
-    •	Map and Filled Map
-    
-    •	ESRI Map
-    
-    •	Table and Matrix
-    
-    •	Table Styles
-    
-    •	Scatter Chart
-    
-    •	Waterfall
-    
-    •	Gauge, Card, and KPI
-    
-    •	Coloring Charts
-    
-    •	Shapes, Textboxes, and Images
-    
-    •	Gridlines and Snap to Grid
-    
-    •	Knowledge Checks
-    
-        •	Page Layout and Formatting
-
-        •	Visual Relationship
-
-        •	Duplicate Page
-
-        •	Categories with No Data
-
-        •	Default Summarization and Categorization
-
-        •	Positioning, Aligning, and Sorting Visuals
-
-        •	Custom Hierarchies
-
-        •	R - Visual Integration
-
-        •	Cross-Tabular Report
-
-        •	Part-to-Whole Report
-
-        •	Relationship Report
-
-        •	Trend Report
-
-        •	 Rank Report
+1. **Power BI Desktop - Power View - Visualization**
+	- Introduction
+	- Hierarchy
+		- Creating hierarchy
+		- Drill down
+		- Drill Up
+		- Show Next Level
+		- Expand Next Level
+		- Drill Through
+		- Back button
+		- customise back button and use userdefined image as back button
+	- Filters
+		- Viz level filter
+		- page Level Filter
+		- All pages or Report level Filter
+		- Drill through Filter
+		- Slicer
+		- Row Level Security(RLS)	- 	- 
+	- Visulizations
+		- Slicer
+		- Table
+		- Matrix
+		- Column Chart
+		- Bar Chart
+		- Pie
+		- Donut
+		- Treemap
+		- Bar Chart with Line
+		- Waterfall 
+		- Scatter Chart   
+	-     Project 3: Power View Level Project
+		- Page Layout and Formatting
+		- Visual Relationship
+		- Duplicate Page
+		- Categories with No Data
+		- Default Summarization and Categorization
+		- Positioning, Aligning, and Sorting Visuals
+		- Custom Hierarchies
+		- Python - Visual Integration
+		- Cross-Tabular Report
+		- Part-to-Whole Report
+		- Relationship Report
+		- Trend Report
+		- Rank Report
     
 1. **Power BI Service**
 
