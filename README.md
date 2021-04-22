@@ -216,7 +216,15 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- All pages or Report level Filter
 		- Drill through Filter
 		- Slicer
-		- Row Level Security(RLS)	- 	- 
+		- Row Level Security(RLS)
+	- Bookmarks, Actions, Buttons and Images
+		- What is book mark
+		- Understand Bookmarks Pane
+		- Understand Selections Pane
+		- Create book marks
+		- Use bookmark and buttons to Clear All Slicers in Power BI
+		- Use book marks and images to switch pie and bar charts
+		- Use Slicers,image andpage naviagation to navigate to required page	- 
 	- Visulizations
 		- Slicer
 		- Table
@@ -325,6 +333,37 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Create New Workspace
 	- Export list of reports
 	- Export list of dashboards
+1. **Deployment Pipelines**
+	- What is environment 
+	- Types of environments
+	- What is deployment pipeline
+	- Create deployment pipeline
+	- Push ojects from development environment to Test Environment
+	- Push ojects from Test environment to Production Environment
+	- Compare any two environments
+1. **SSAS Multidimensional Models using in PowerBI**
+	- Download and Restore Sample Data
+	- Install SQL Server Analysis Services
+	- Learn Basic of SSAS
+	- Develop a simple Cube
+	- Deploy Cube
+	- Develop PBI Report using Cube
+1. **Using Snowflake computing warehouse in Power BI Desktop** 
+	- Signup to snowflake
+	- Create database
+	- Create warehouse
+	- load data
+	- understand basics of snowflake
+	- connect snowflake using Power BI
+	- Develop reports
+1. **Run Python scripts in Power BI Desktop**
+	- Install Python
+	- Install Numpy,Pandas and Matplotlib packages
+	- Configre Powerbi to use python
+	- Write python script to create dataframe
+	- Develop Power BI report using dataframe
+1. **Writing CV and Marketing CV**
+
 
     
 
