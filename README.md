@@ -13,7 +13,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 ---
 
 
-1. Introduction
+1. **Introduction**
 	- What is Power BI?	
 	- What is Power Apps?
 	- What are the different BI tools available?
@@ -24,7 +24,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- What is Power BI Mobile?
 	- What is M-Language?
 	- What is DAX?
-1. Data Warehousing Concepts
+1. **Data Warehousing Concepts**
 	- What is OLTP
 	- What is Data warehouse
 	- Difference between OLTP Vs OLAP
@@ -36,13 +36,13 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Star Schema
 		- Snow Flake Schema
 		- Mixed Schema	
-1. Power BI Desktop
+1. **Power BI Desktop**
 	- Introduction to Power BI Desktop
 	- Power BI Desktop Components
 		- Power Query Editor
 		- Power Pivot
 		- Power View
-1. Power Query Editor
+1. **Power BI Desktop - Power Query Editor**
 	- Connecting to new Source
 		- File connections (Excel,Csv,XML,JSON,Folder)
 		- Connecting to Databases (MySql,MSSqlServer,Access dtatabase,...etc)
@@ -362,7 +362,8 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Configre Powerbi to use python
 	- Write python script to create dataframe
 	- Develop Power BI report using dataframe
-1. **Writing CV and Marketing CV**
+1. **Writing CV**
+1. **Marketing CV**
 
 
     
