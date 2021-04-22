@@ -49,8 +49,20 @@
   | OLTP      | OLAP(read only DB)(DSS)|
   | ----------- | ----------- |
   | Is useful to store Transactional data      | Is useful to store Analytical Data       |
-  | Is useful to run the business   | Is useful to run the business        |
-  | Is useful to run the business   | Is useful to run the business        |
+  | Is useful to **run** the business   | Is useful to **analyze** the business        |
+  | The nature of data is current and detail   | The nature of data is historical and summarized     |
+  | OLTP Supports CRUD(Create ,Partially read,update,delete)   | OLAP supports only Read operations    |
+  | It is a application oriented DB | It is a Subject oriented DB |
+  | It is volatile | It is non Volatile |
+  | No of users are more(customers+emp) | No of users are less (MM+HM) |
+  | In OLTP we will use Normalized schema | In OLAP we will use denormalized schema |
+
+
+
+
+
+
+
 8. 
 
 
