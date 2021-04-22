@@ -56,14 +56,19 @@
     | It is volatile | It is non Volatile |
     | No of users are more(customers+emp) | No of users are less (MM+HM) |
     | In OLTP we will use Normalized schema | In OLAP we will use denormalized schema |
-
-
-
-
-
-
-
-8. 
+8. Data Warehouse Definations
+    - Different people have different definitions for a data warehouse.
+    - The most popular definition came from Bill Inmon, who provided the following
+        - A data warehouse is a subject-oriented, integrated, time-variant and non-volatile collection of data to support analysis.
+        - Subject-Oriented: A data warehouse can be used to analyze a particular subject area. For example, "sales" can be a particular subject.
+        - Integrated: A data warehouse integrates data from multiple data sources. For example, source A and source B may have different ways of identifying a product, but in a data warehouse, there will be only a single way of identifying a product.
+        - Time-Variant: Historical data is kept in a data warehouse. For example, one can retrieve data from 3 months, 6 months, 12 months, or even older data from a data warehouse. This contrasts with a transactions system, where often only the most recent data is kept. For example, a transaction system may hold the most recent address of a customer, where a data warehouse can hold all addresses associated with a customer.
+        - Non-volatile: Once data is in the data warehouse, it will not change. So, historical data in a data warehouse should never be altered.
+    - Ralph Kimball provided a more concise definition of a data warehouse:
+        - A data warehouse is a copy of transaction data specifically structured for query and analysis.
+        - This is a functional view of a data warehouse. 
+        - Kimball did not address how the data warehouse is built like Inmon did; rather he focused on the functionality of a data warehouse.
+9. 
 
 
 
