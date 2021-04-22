@@ -105,6 +105,8 @@
     - Mixed Schema
         - Galaxy schema contains many fact tables with some common dimensions (conformed dimensions). 
         - This schema is a combination of many schemas
+        - ![image](https://user-images.githubusercontent.com/20516321/115670843-7da73080-a367-11eb-8ed5-adac58cdffb0.png)
+
 
 
 
