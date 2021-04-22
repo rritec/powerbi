@@ -68,7 +68,46 @@
         - A data warehouse is a copy of transaction data specifically structured for query and analysis.
         - This is a functional view of a data warehouse. 
         - Kimball did not address how the data warehouse is built like Inmon did; rather he focused on the functionality of a data warehouse.
-9. 
+9. Tables
+    - Dimension Tables (Keys + Descripitive Columns)
+        - Role Play Dimensions
+        - Slowly Changing Dimensions
+            - SCD1
+            - SCD2
+            - SCD3
+            - SCD4
+            - SCD5
+            - SCD6
+        - Conformed Dimensions
+        - Degenerated Dimension
+        - Junk Dimension
+    - Fact Tables (Keys + Mesure columns)
+
+10. Schemas
+    - A group of tables are called as schema 
+        - Star 
+        - Snow Flake
+        - Constellation or mixed 
+    - Star
+        - Organizes data into a central fact table with surrounding dimension tables
+        - Each dimension row has many associated fact rows
+        - Dimension tables do not directly relate to each other
+        - All Dimension Tables are de normalized
+        - Optimized to read data
+        - User friendly ,easy to understand
+        - ![image](https://user-images.githubusercontent.com/20516321/115670440-0a9dba00-a367-11eb-9c39-abac453225f1.png)
+    - Snow Flake
+        - Normalized tables are used
+        - Extended star schema
+        - Two dimesiontables will be directly joined
+        - Like star schema ,it  has only one fact table
+
+    - Mixed Schema
+        - Galaxy schema contains many fact tables with some common dimensions (conformed dimensions). 
+        - This schema is a combination of many schemas
+
+
+
 
 
 
