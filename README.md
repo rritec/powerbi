@@ -362,6 +362,8 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Configre Powerbi to use python
 	- Write python script to create dataframe
 	- Develop Power BI report using dataframe
+1. **Power BI Pro Vs Premium**
+	- Understand all from https://powerbi.microsoft.com/en-us/pricing/
 1. **Writing CV**
 1. **Marketing CV**
 
