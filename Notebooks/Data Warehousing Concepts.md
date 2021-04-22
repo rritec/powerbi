@@ -46,10 +46,11 @@
     - MicroStrategy 
 7. OLTP Vs OLAP
 
-  | Syntax      | Description |
+  | OLTP      | OLAP(read only DB)(DSS)|
   | ----------- | ----------- |
-  | Header      | Title       |
-  | Paragraph   | Text        |
+  | Is useful to store Transactional data      | Is useful to store Analytical Data       |
+  | Is useful to run the business   | Is useful to run the business        |
+  | Is useful to run the business   | Is useful to run the business        |
 8. 
 
 
