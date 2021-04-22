@@ -199,7 +199,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Market Share
 		- Optimize the Data Model
         
-1. **Power BI Desktop - Power View - Visualization**
+1. **Power BI Desktop - Power View - Report - Visualization**
 	- Introduction
 	- Hierarchy
 		- Creating hierarchy
