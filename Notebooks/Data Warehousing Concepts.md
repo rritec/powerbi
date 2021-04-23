@@ -24,10 +24,10 @@
     - Example : ATM Transactions , Share market transactions..etc
     - ![image](https://user-images.githubusercontent.com/20516321/115664644-bb07c000-a35f-11eb-878a-ead2e05c2c1b.png)
 4. Analytical Data
-    - Is usuful to ANALYSE  the business
-    - Is Historical and summarized 
-    - Is stored in OLAP(On Line Analytical Processing) or DW(Data Warehouse )
-    - Source of Analytical data is OLTP
+    - Is usuful to **ANALYSE**  the business
+    - Is **Historical** and **Summarized**
+    - Is stored in **OLAP**(On Line Analytical Processing) or **DW**(Data Warehouse )
+    - Source of Analytical data is **OLTP**
 5. Generic DW Flow or Architecture
     - ![image](https://user-images.githubusercontent.com/20516321/115664889-19cd3980-a360-11eb-803d-ecf61a778c20.png)
 
