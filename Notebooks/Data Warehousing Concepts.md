@@ -29,7 +29,8 @@
     - Is stored in **OLAP**(On Line Analytical Processing) or **DW**(Data Warehouse )
     - Source of Analytical data is **OLTP**
 5. Generic DW Flow or Architecture
-    - ![image](https://user-images.githubusercontent.com/20516321/115664889-19cd3980-a360-11eb-803d-ecf61a778c20.png)
+    - ![image](https://user-images.githubusercontent.com/20516321/115807868-045f1a80-a407-11eb-9c80-458a606844d0.png)
+
 
 6. DW Tools
     - ETL Tools
