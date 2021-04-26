@@ -113,6 +113,18 @@
         - Galaxy schema contains many fact tables with some common dimensions (conformed dimensions). 
         - This schema is a combination of many schemas
         - ![image](https://user-images.githubusercontent.com/20516321/115670843-7da73080-a367-11eb-8ed5-adac58cdffb0.png)
+## Questions:
+---
+1. What type of attributes available in dimension?
+    - Keys
+    - Descriptive (example Product name,Product Size ..etc)
+2. 1. What type of attributes available in Fact?
+    - Keys
+    - Measures (Revenue,Qty.. etc)
+3. Based on usage the databases are divided into how many types?
+    - OLTP > Runing the business
+    - OLAP or DW > Analyzing the business
+4. 
 
 
 
