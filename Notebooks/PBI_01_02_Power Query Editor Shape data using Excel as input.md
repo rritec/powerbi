@@ -121,3 +121,6 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
 1.In how many ways we can see the list of query applied steps?
    - Query setting pane
    - Advance Editor
+1. In Excel how many kinds of data containers available?
+    - Sheet
+    - Table
