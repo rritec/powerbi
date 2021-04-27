@@ -1,6 +1,8 @@
 
 # Power Query Editor
 - It is also known as `Power Query`
+# Download all materials and data
+- https://github.com/rritec/powerbi/archive/refs/heads/master.zip
 
 
 ## Import scott data from excel
