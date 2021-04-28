@@ -47,3 +47,16 @@ https://radacad.com/basics-of-m-power-query-formula-language
            year = Date.Year(date)
         in
             year
+### Exercise 4: Real world example
+--
+1. Open any one PBIX file and observe M-language code
+2. In screenshot below, you can see all basics mentioned so far:
+        - **let** and **in** block
+        - Variable names matching steps applied in the query
+        - Some variable names with hashtag and double quote: #”var name”
+        - End of the line characters: **comma**
+        - Calling many functions
+        ![image](https://user-images.githubusercontent.com/20516321/116349500-c77f9300-a80d-11eb-9559-0d88ac8890b5.png)
+
+
+       
