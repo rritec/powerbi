@@ -61,20 +61,24 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 ### Questions:
 ---
 1. What is the result of below program
-        = let 
-            Sales2007 =  
-                [  
-                    Year = 2007,  
-                    FirstHalf = 1000,  
-                    SecondHalf = 1100, 
-                    Total = FirstHalf + SecondHalf // 2100 
-                ], 
-            Sales2008 =  
-                [  
-                    Year = 2008,  
-                    FirstHalf = 1200,  
-                    SecondHalf = 1300, 
-                    Total = FirstHalf + SecondHalf // 2500 
-                ] 
-          in Sales2007[Total] + Sales2008[Total]
+
+```M
+= let 
+Sales2007 =  
+[  
+    Year = 2007,  
+    FirstHalf = 1000,  
+    SecondHalf = 1100, 
+    Total = FirstHalf + SecondHalf // 2100 
+], 
+Sales2008 =  
+[  
+    Year = 2008,  
+    FirstHalf = 1200,  
+    SecondHalf = 1300, 
+    Total = FirstHalf + SecondHalf // 2500 
+] 
+in Sales2007[Total] + Sales2008[Total]
+
+```
        
