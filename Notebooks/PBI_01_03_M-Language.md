@@ -81,4 +81,63 @@ Sales2008 =
 in Sales2007[Total] + Sales2008[Total]
 
 ```
+1. What is the result of below program
+
+```M
+let
+SimpleInterest = (p,t,r) => p*t*r/100,
+// Here 
+// p is principal
+// t is time in months
+// r is rate of interest
+interest = SimpleInterest(100,12,2)
+in 
+rs
+
+```
+1. What is the result of below program
+
+```M
+let
+    a =
+    [
+        x = 1,       
+        y = 2,       
+        z = x + y    
+    ], 
+    b = 3             
+in 
+    a[z] + b         
+
+```
+1. What is the result of below program
+
+```M
+= let
+    a = List.Contains({1, 2, 3, 4, 5}, 3),
+    b = List.Contains({1, 2, 3, 4, 5}, 6)
+in 
+    {a,b}        
+
+```
+1. What is the result of below program
+
+```M
+let
+
+rs = List.Select({1, -3, 4, 9, -2}, each _ > 0)
+in 
+rs       
+
+```
+1. What is the result of below program
+
+```M
+let
+
+rs = List.Sum({1, 2, 3})
+in 
+rs       
+
+```
        
