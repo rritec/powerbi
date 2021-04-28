@@ -3,6 +3,10 @@
 **Note:** Mostly as **BI** developer, we wont get chance to create databases,tables and loading data. In our training program, we are creating simple database with couple of small tables.
 
 ## Load Data
+
+- Open SSMS > Provide below info > Click on **Connect**
+- ![image](https://user-images.githubusercontent.com/20516321/116333897-f25bee00-a7f1-11eb-8cd0-161a5ed8e4dc.png)
+
 CREATE DATABASE rritecDB;
 
 GO
