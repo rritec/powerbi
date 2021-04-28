@@ -81,6 +81,7 @@ Sales2008 =
 in Sales2007[Total] + Sales2008[Total]
 
 ```
+
 2. What is the result of below program
 
 ```M
@@ -95,6 +96,7 @@ in
 rs
 
 ```
+
 3. What is the result of below program
 
 ```M
@@ -110,6 +112,7 @@ in
     a[z] + b         
 
 ```
+
 4. What is the result of below program
 
 ```M
@@ -120,6 +123,7 @@ in
     {a,b}        
 
 ```
+
 5. What is the result of below program
 
 ```M
@@ -130,6 +134,7 @@ in
 rs       
 
 ```
+
 6. What is the result of below program
 
 ```M
