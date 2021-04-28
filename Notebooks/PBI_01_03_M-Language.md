@@ -145,4 +145,49 @@ in
 rs       
 
 ```
-       
+   
+
+7. What is the result of below program
+
+```M
+let
+
+rs = Table.AlternateRows(
+    Table.FromRecords({
+        [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
+        [CustomerID = 2, Name = "Jim", Phone = "987-6543"],
+        [CustomerID = 3, Name = "Paul", Phone = "543-7890"]
+    }),
+    1,1,1
+)
+in 
+rs       
+
+```
+8. What is the result of below program
+
+```M
+let
+
+rs = Table.FuzzyGroup(
+    Table.FromRecords(
+        {
+            [EmployeeID = 1, Location = "Seattle"],
+            [EmployeeID = 2, Location = "seattl"],
+            [EmployeeID = 3, Location = "Vancouver"],
+            [EmployeeID = 4, Location = "Seatle"],
+            [EmployeeID = 5, Location = "vancover"],
+            [EmployeeID = 6, Location = "Seattle"],
+            [EmployeeID = 7, Location = "Vancouver"]
+        },
+        type table [EmployeeID = nullable number, Location = nullable text]
+    ),
+    "Location",
+    {"Count", each Table.RowCount(_)},
+    [IgnoreCase = true, IgnoreSpace = true]
+)
+in 
+rs       
+
+```
+ 
