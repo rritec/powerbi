@@ -1,6 +1,8 @@
 # M-Language
 --
-
+1. Power Query Formula Language (informally known as "M")
+2. **M** stands for **mash-up**
+3. 
 ## Reference doc 
 ---
 https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-formula-language
@@ -56,5 +58,23 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
         - Calling many functions
         ![image](https://user-images.githubusercontent.com/20516321/116349500-c77f9300-a80d-11eb-9559-0d88ac8890b5.png)
 
-
+### Questions:
+---
+1. What is the result of below program
+        = let 
+            Sales2007 =  
+                [  
+                    Year = 2007,  
+                    FirstHalf = 1000,  
+                    SecondHalf = 1100, 
+                    Total = FirstHalf + SecondHalf // 2100 
+                ], 
+            Sales2008 =  
+                [  
+                    Year = 2008,  
+                    FirstHalf = 1200,  
+                    SecondHalf = 1300, 
+                    Total = FirstHalf + SecondHalf // 2500 
+                ] 
+          in Sales2007[Total] + Sales2008[Total]
        
