@@ -23,7 +23,16 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 
 ![image](https://user-images.githubusercontent.com/20516321/113813419-7b50ae00-978d-11eb-9718-acd2f1cc6c79.png)
 
-## Use Case 3:
+## Use Case 3: Navigate to required page of PBIX file Dynamically
+
+- Create custom table by using Enter Table option
+    - In ** Power BI Desktop** > Click on **Enter Data** > Provide **Table Name**, **Column Name** and Values must be equal to your PBIX page names 
+    - For Example
+        ![image](https://user-images.githubusercontent.com/20516321/116339897-e117df00-a7fb-11eb-95eb-517087b67597.png)
+- Develop a slicer using above column and make it as single selection
+- Introduce one Image and allign beside slicer as shown below image
+- select Image > Go to format > action > Type: **Page Navigation** > Destination: Click on **Fx* > Format By: **Field Value** > Based on Field: **Select column what you created** > Click on **ok**
+
 
 ![image](https://user-images.githubusercontent.com/20516321/113814794-d1beec00-978f-11eb-9e36-7511da5f7002.png)
 
