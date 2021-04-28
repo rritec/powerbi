@@ -81,7 +81,7 @@ Sales2008 =
 in Sales2007[Total] + Sales2008[Total]
 
 ```
-1. What is the result of below program
+2. What is the result of below program
 
 ```M
 let
@@ -95,7 +95,7 @@ in
 rs
 
 ```
-1. What is the result of below program
+3. What is the result of below program
 
 ```M
 let
@@ -110,7 +110,7 @@ in
     a[z] + b         
 
 ```
-1. What is the result of below program
+4. What is the result of below program
 
 ```M
 = let
@@ -120,7 +120,7 @@ in
     {a,b}        
 
 ```
-1. What is the result of below program
+5. What is the result of below program
 
 ```M
 let
@@ -130,7 +130,7 @@ in
 rs       
 
 ```
-1. What is the result of below program
+6. What is the result of below program
 
 ```M
 let
