@@ -35,6 +35,13 @@ https://radacad.com/basics-of-m-power-query-formula-language
 --
 1. Replace above code with below code and observe result
 
+       //this is a single line comment
+       /* This
+       is 
+       a
+       multiline
+       comment*/
+       
        let
            date = #date(2021,04,25),
            year = Date.Year(date)
