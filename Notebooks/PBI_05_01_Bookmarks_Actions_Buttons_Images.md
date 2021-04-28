@@ -26,7 +26,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 ## Use Case 3: Navigate to required page of PBIX file Dynamically
 
 - Create custom table by using Enter Table option
-    - In ** Power BI Desktop** > Click on **Enter Data** > Provide **Table Name**, **Column Name** and Values must be equal to your PBIX page names 
+    - In **Power BI Desktop** > Click on **Enter Data** > Provide **Table Name**, **Column Name** and Values must be equal to your PBIX page names 
     - For Example
         ![image](https://user-images.githubusercontent.com/20516321/116339897-e117df00-a7fb-11eb-95eb-517087b67597.png)
 - Develop a slicer using above column and make it as single selection
