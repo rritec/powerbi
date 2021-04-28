@@ -20,3 +20,23 @@ https://radacad.com/basics-of-m-power-query-formula-language
 1. Click on done
 2. Click on apply and close
 3. develop report and observe output
+### Exercise 2: Write Simple M-languge Query with spaces in variable name.
+--
+1. Replace above code with below code and observe result
+
+       let
+            x = 1,
+            y = x * 10,
+            #"variable name with spaces"=y+10
+        in
+            #"variable name with spaces"
+            
+ ### Exercise 3: Call functions in M-language
+--
+1. Replace above code with below code and observe result
+
+       let
+           date = #date(2021,04,25),
+           year = Date.Year(date)
+        in
+            year
