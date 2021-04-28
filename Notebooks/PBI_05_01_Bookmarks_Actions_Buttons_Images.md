@@ -31,7 +31,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
         ![image](https://user-images.githubusercontent.com/20516321/116339897-e117df00-a7fb-11eb-95eb-517087b67597.png)
 - Develop a slicer using above column and make it as single selection
 - Introduce one Image and allign beside slicer as shown below image
-- select Image > Go to format > action > Type: **Page Navigation** > Destination: Click on **Fx* > Format By: **Field Value** > Based on Field: **Select column what you created** > Click on **ok**
+- select Image > Go to format > action > Type: **Page Navigation** > Destination: Click on **Fx** > Format By: **Field Value** > Based on Field: **Select column what you created** > Click on **ok**
 
 
 ![image](https://user-images.githubusercontent.com/20516321/113814794-d1beec00-978f-11eb-9e36-7511da5f7002.png)
