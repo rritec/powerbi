@@ -48,6 +48,9 @@
 ## Optional
 - Lear SSIS by using MSFT documents
     - https://docs.microsoft.com/en-us/sql/integration-services/lesson-1-create-a-project-and-basic-package-with-ssis?view=sql-server-ver15-  
+- SSRS
+    - https://docs.microsoft.com/en-us/sql/reporting-services/install-windows/install-reporting-services?view=sql-server-ver15
+    - https://docs.microsoft.com/en-us/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15
 
 
 
