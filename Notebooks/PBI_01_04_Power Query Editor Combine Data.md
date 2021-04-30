@@ -44,8 +44,8 @@ select * from emp20 -- 5 rows
 
 union
 
-select * from emp30 -- 6 ro
-ws
+select * from emp30 -- 6 rows
+
 
 ### Develop Report using Append homogeneous Sources
 
