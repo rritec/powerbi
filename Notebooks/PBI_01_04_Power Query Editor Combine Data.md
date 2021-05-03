@@ -247,7 +247,7 @@ from emp,dept
 1. What is composite Key ?
 
 	A composite key is a combination of two or more columns in a table that can be used to uniquely identify each row in the table
-	![image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.got-it.ai%2Fsolutions%2Fsqlquerychat%2Fwp-content%2Fuploads%2F2019%2F11%2F0.png.png&imgrefurl=https%3A%2F%2Fwww.got-it.ai%2Fsolutions%2Fsqlquerychat%2Fsql-help%2Fdata-definition%2Fcreate-composite-primary-keys-in-sql-server%2F&tbnid=TuBpwIiJbUTD7M&vet=12ahUKEwjnk-S-85TsAhULgEsFHcdQCkMQMygGegUIARDTAQ..i&docid=Q1-r5NG5hSa9JM&w=758&h=302&q=composite%20key&ved=2ahUKEwjnk-S-85TsAhULgEsFHcdQCkMQMygGegUIARDTAQ)
+	
 	
 1. Can we merge/Join in power bi with two or more columns?
 
