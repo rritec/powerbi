@@ -3,7 +3,10 @@ https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
 
 ## Exercise 1: Install all modules of PowerBI
 -----
-1. Open **Windows PowerShell ISE(X86)** > 
+1. Open **Windows PowerShell ISE(X86)** > In power Shell window run below command
+```
+Install-Module -Name MicrosoftPowerBIMgmt
+```
 
 
 
