@@ -7,7 +7,17 @@ https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
 ```
 Install-Module -Name MicrosoftPowerBIMgmt
 ```
+2. In right side **Commands** window click on refresh observe all six useful modules
+```
 
+MicrosoftPowerBIMgmt.Admin
+MicrosoftPowerBIMgmt.Capacities
+MicrosoftPowerBIMgmt.Data
+MicrosoftPowerBIMgmt.Profile
+MicrosoftPowerBIMgmt.Reports
+MicrosoftPowerBIMgmt.Workspaces
+```
+3. 
 
 
 
