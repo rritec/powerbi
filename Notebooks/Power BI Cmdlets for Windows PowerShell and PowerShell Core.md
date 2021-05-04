@@ -7,7 +7,7 @@ https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
 ```
 Install-Module -Name MicrosoftPowerBIMgmt
 ```
-2. In right side **Commands** window click on refresh observe all six useful modules
+2. In right side **Commands** window click on refresh observe all **six** useful modules are installed.
 ```
 
 MicrosoftPowerBIMgmt.Admin
@@ -17,30 +17,36 @@ MicrosoftPowerBIMgmt.Profile
 MicrosoftPowerBIMgmt.Reports
 MicrosoftPowerBIMgmt.Workspaces
 ```
-3. 
+## Exercise 2: Export workspaces to csv file
+-----
 
-
-
-# Export workspaces to csv file
-
+1. Click on **New Script** > paste below code and change path accordingly and run it
+```
 Connect-PowerBIServiceAccount
 
 Get-PowerBIWorkspace | Export-Csv -Path C:\work\powerbi-powershell\ws.csv
+```
 
-# Create new workspace
+## Exercise 3: Create new workspace
+-----
+```
 New-PowerBIWorkspace -Name myla1-workspace
+```
 
-# Remove Power BI Report
+## Exercise 4: Remove Power BI Report
+----
+1. Change report id and workspace id and run it.
+```
 Remove-PowerBIReport -Id 09d39a15-65ac-46c8-84ac-de2923536cb9 -WorkspaceId 383e66d4-0587-45c8-93dd-0b4a8abec074
+```
 
-# disconnect Power BI Service
+## Exercise 5: disconnect Power BI Service
+----
+```
 Disconnect-PowerBIServiceAccount
+```
 
-Get-PowerBIReport -Scope Organization | Export-Csv -Path C:\work\powerbi-powershell\ws_reports1.csv
 
-Get-PowerBIAccessToken -AsString
-
-Resolve-PowerBIError -Last
 
 
 
