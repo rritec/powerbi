@@ -36,12 +36,14 @@ New-PowerBIWorkspace -Name myla1-workspace
 ## Exercise 4: Remove Power BI Report
 ----
 1. Change report id and workspace id and run it.
+
 ```
 Remove-PowerBIReport -Id 09d39a15-65ac-46c8-84ac-de2923536cb9 -WorkspaceId 383e66d4-0587-45c8-93dd-0b4a8abec074
 ```
 
 ## Exercise 5: disconnect Power BI Service
 ----
+
 ```
 Disconnect-PowerBIServiceAccount
 ```
