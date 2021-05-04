@@ -17,7 +17,7 @@ MicrosoftPowerBIMgmt.Profile
 MicrosoftPowerBIMgmt.Reports
 MicrosoftPowerBIMgmt.Workspaces
 ```
-## Exercise 2: Export workspaces to csv file
+## Exercise 2: Export workspaces/Dashboards/Reports to csv file
 -----
 
 1. Click on **New Script** > paste below code and change path accordingly and run it
@@ -25,6 +25,8 @@ MicrosoftPowerBIMgmt.Workspaces
 Connect-PowerBIServiceAccount
 
 Get-PowerBIWorkspace | Export-Csv -Path C:\work\powerbi-powershell\ws.csv
+Get-PowerBIDashboard | Export-Csv -Path C:\work\powerbi-powershell\ds.csv
+Get-PowerBIReport | Export-Csv -Path C:\work\powerbi-powershell\rs.csv
 ```
 
 ## Exercise 3: Create new workspace
