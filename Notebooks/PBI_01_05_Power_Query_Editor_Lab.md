@@ -191,7 +191,9 @@ Continue with your Power BI file from the previous exercise. You want to import 
 -----
 1. How Many Types of connections available in **Power BI**
     - Import
-    - Live or DirectQuery 
+    - DirectQuery
+    - Live Connection
+    - Streaming Connection
 2. What is difference between Import and Direct Connection?
     1. Import:
         - Gives you the **full suite** of transformation and **data manipulation** in the Desktop
