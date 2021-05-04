@@ -1,2 +1,33 @@
 # Power BI Cmdlets for Windows PowerShell and PowerShell Core
 https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
+
+## Exercise 1: Install all modules of PowerBI
+-----
+1. Open **Windows PowerShell ISE(X86)** > 
+
+
+
+
+# Export workspaces to csv file
+
+Connect-PowerBIServiceAccount
+
+Get-PowerBIWorkspace | Export-Csv -Path C:\work\powerbi-powershell\ws.csv
+
+# Create new workspace
+New-PowerBIWorkspace -Name myla1-workspace
+
+# Remove Power BI Report
+Remove-PowerBIReport -Id 09d39a15-65ac-46c8-84ac-de2923536cb9 -WorkspaceId 383e66d4-0587-45c8-93dd-0b4a8abec074
+
+# disconnect Power BI Service
+Disconnect-PowerBIServiceAccount
+
+Get-PowerBIReport -Scope Organization | Export-Csv -Path C:\work\powerbi-powershell\ws_reports1.csv
+
+Get-PowerBIAccessToken -AsString
+
+Resolve-PowerBIError -Last
+
+
+
