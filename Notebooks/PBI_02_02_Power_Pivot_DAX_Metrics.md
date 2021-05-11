@@ -152,6 +152,9 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
      - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
      - SUM() operates over a single column and has no awareness of individual rows in the column (no row by row evaluation).
      - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
+     - Develop below report
+        ![image](https://user-images.githubusercontent.com/20516321/117744290-065a1380-b226-11eb-971f-87b9c80729a0.png)
+
  1. Count Vs counta & count vs countx & counta vs countax
     - Enter below data and create a table
 
