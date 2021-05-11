@@ -35,13 +35,11 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 
 ## Time-intelligence functions
 
-### SAMEPERIODLASTYEAR
-- Refer next lesson 
+- SAMEPERIODLASTYEAR
 
 ## Filter functions
 
-### CALCULATE
-- Refer next lesson 
+- CALCULATE
 
 ## Information functions
 - username()
