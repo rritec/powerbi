@@ -1,4 +1,8 @@
-
+# Power BI Desktop
+    - It has mainly three Components
+        - Power Query Editor
+        - Power Pivot
+        - Power View
 # Power Query Editor
 - It is also known as `Power Query`
 # Download all materials and data
