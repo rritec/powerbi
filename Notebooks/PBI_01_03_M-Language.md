@@ -2,7 +2,11 @@
 --
 1. Power Query Formula Language (informally known as "M")
 2. **M** stands for **mash-up**
-3. 
+3. **M** is a case-sensitive language
+4. Power Query is a data transformation and data preparation engine. Power Query comes with a graphical interface for getting data from sources and a Power Query Editor for applying transformations. Because the engine is available in many products and services, the destination where the data will be stored depends on where Power Query was used. Using Power Query, you can perform the extract, transform, and load (ETL) processing of data.
+
+![image](https://user-images.githubusercontent.com/20516321/118579120-12584f00-b7ab-11eb-8f40-dee8dd8bfd24.png)
+
 ## Reference doc 
 ---
 https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-formula-language
