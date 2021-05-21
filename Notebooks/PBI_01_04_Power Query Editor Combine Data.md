@@ -27,13 +27,15 @@
 - **Scenario:** Append emp10,emp20 and emp30 tables as **emp102030**
 
 ### Sql Query
-
+- Create required tables
 
 	SELECT * INTO [dbo].[emp10] FROM [dbo].[EMP] WHERE DEPTNO=10;
 
 	SELECT * INTO [dbo].[emp20] FROM [dbo].[EMP] WHERE DEPTNO=20;
 
 	SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
+
+- Verify data
 
 
 	select * from emp10 -- 3 rows
@@ -102,9 +104,9 @@ OR
 
 #### Learn Sql Query
 
-Select emp.deptno,dname,ename,job,sal \
-from emp left outer join dept \
-on emp.deptno=dept.deptno
+	Select emp.deptno,dname,ename,job,sal \
+	from emp left outer join dept \
+	on emp.deptno=dept.deptno
 
 #### Develop PBI Report using Left Outer Join
 
@@ -121,9 +123,9 @@ on emp.deptno=dept.deptno
 
 #### Learn Sql Query
 
-Select dept.deptno,dname,ename,job,sal \
-from emp right outer join dept \
-on emp.deptno=dept.deptno
+	Select dept.deptno,dname,ename,job,sal \
+	from emp right outer join dept \
+	on emp.deptno=dept.deptno
 
 #### Develop PBI Report using Right Outer Join
 
@@ -139,19 +141,19 @@ on emp.deptno=dept.deptno
 
 #### Learn Sql Query
 
-Select dept.deptno,dname,ename,job,sal \
-from emp left outer join dept \
-on emp.deptno=dept.deptno \
-union  \
-Select dept.deptno,dname,ename,job,sal \
-from emp right outer join dept \
-on emp.deptno=dept.deptno 
+	Select dept.deptno,dname,ename,job,sal \
+	from emp left outer join dept \
+	on emp.deptno=dept.deptno \
+	union  \
+	Select dept.deptno,dname,ename,job,sal \
+	from emp right outer join dept \
+	on emp.deptno=dept.deptno 
 
 or 
 
-select dept.deptno,emp.deptno,dname,loc,empno,ename,sal \
-from [dbo].[EMP] full outer join [dbo].[DEPT] \
-on dept.deptno=emp.deptno 
+	select dept.deptno,emp.deptno,dname,loc,empno,ename,sal \
+	from [dbo].[EMP] full outer join [dbo].[DEPT] \
+	on dept.deptno=emp.deptno 
 
 #### Develop PBI Report using Full Outer Join
 
@@ -167,8 +169,8 @@ on dept.deptno=emp.deptno
 
 #### Learn Sql Query
 
-select * from emp \
-where deptno not in (select deptno from dept );
+	select * from emp \
+	where deptno not in (select deptno from dept );
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0038.png?raw=true)
 
@@ -186,9 +188,9 @@ where deptno not in (select deptno from dept );
 
 #### Learn Sql Query
 
-select * \
-from dept \
-where deptno not in (select deptno from emp );
+	select * \
+	from dept \
+	where deptno not in (select deptno from emp );
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0040.png?raw=true)
 
@@ -205,9 +207,9 @@ where deptno not in (select deptno from emp );
 ### Non Equi Join
 
 #### Learn Sql Query
-select ename,sal,grade 
-from emp,salgrade 
-where sal between losal and hisal
+	select ename,sal,grade 
+	from emp,salgrade 
+	where sal between losal and hisal
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0042.png?raw=true)
 
@@ -226,8 +228,8 @@ where sal between losal and hisal
 ### Cross Join
 
 #### Learn Sql Query
-select ename,dname,job,sal \
-from emp,dept
+	select ename,dname,job,sal \
+	from emp,dept
 
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0046.png?raw=true)
 
