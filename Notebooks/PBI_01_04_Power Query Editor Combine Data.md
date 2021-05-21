@@ -80,6 +80,8 @@
 	Select dname,ename,job,sal \
 	from emp,dept\
 	where emp.deptno=dept.deptno
+	
+OR 
 
 	Select emp.deptno,dept.deptno,dname,ename,job,sal
 	from emp inner join dept
