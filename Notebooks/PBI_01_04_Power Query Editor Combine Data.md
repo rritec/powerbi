@@ -29,24 +29,25 @@
 ### Sql Query
 - Create required tables
 
-	SELECT * INTO [dbo].[emp10] FROM [dbo].[EMP] WHERE DEPTNO=10;
+		SELECT * INTO [dbo].[emp10] FROM [dbo].[EMP] WHERE DEPTNO=10;
 
-	SELECT * INTO [dbo].[emp20] FROM [dbo].[EMP] WHERE DEPTNO=20;
+		SELECT * INTO [dbo].[emp20] FROM [dbo].[EMP] WHERE DEPTNO=20;
 
-	SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
+		SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
+	
 
 - Verify data
 
 
-	select * from emp10 -- 3 rows
+		select * from emp10 -- 3 rows
 
-	union
+		union
 
-	select * from emp20 -- 5 rows
+		select * from emp20 -- 5 rows
 
-	union
+		union
 
-	select * from emp30 -- 6 rows
+		select * from emp30 -- 6 rows
 
 
 ### Develop Report using Append homogeneous Sources
