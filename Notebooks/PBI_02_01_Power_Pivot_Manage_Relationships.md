@@ -6,10 +6,10 @@
       - Cardinality
         - One to One
         - One to Many
-        - **Many to One**
+        - **Many to One**(Default)
         - Many to Many
       - Directions
-        - **Single**
+        - **Single**(Default)
         - Both
       - Active Vs Inactive Relationships      
     - DAX Calculations
