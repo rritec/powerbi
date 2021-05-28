@@ -53,3 +53,10 @@ Reference:
 - https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install
 - https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-data
 - https://docs.microsoft.com/en-us/power-bi/admin/service-premium-incremental-refresh
+
+## Questions
+----
+1. With **Pro** Licence, how many times we can schedule/Refresh the dataset in a given day?
+  - **8** Times
+2. With **Premium** Licence, how many times we can schedule/Refresh the dataset in a given day?
+  - **48** Times
