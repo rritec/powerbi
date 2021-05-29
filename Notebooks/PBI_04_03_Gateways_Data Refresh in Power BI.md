@@ -60,3 +60,16 @@ Reference:
   - **8** Times
 2. With **Premium** Licence, how many times we can schedule/Refresh the dataset in a given day?
   - **48** Times
+3. In Incrmental Refresh what are the parameters are manadatory?
+  - RangeStart
+  - RangeEnd
+4. In Incrmental refresh what is the importance of **Detect data changes**
+  - [Refer](https://docs.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview#4---detect-data-changes)
+5. In Incrmental refresh what is the importance of **Only Refresh Complete Days**
+  - [Refer](https://docs.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview#5---only-refresh-complete-days)
+6. What is Query Folding?
+  -  Incremental refresh is designed for data sources that support query folding, which is Power Query's ability to generate a single query expression to retrieve and transform source data. Most data sources that support SQL queries support query folding. Data sources like flat files, blobs, and some web feeds often do not.
+7. Incremental Refresh, can you apply on **Excel** Data source?
+  - No
+8. 
+
