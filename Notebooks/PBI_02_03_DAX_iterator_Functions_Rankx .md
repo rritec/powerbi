@@ -53,3 +53,34 @@
 - Notice that the total Product Quantity Rank is now BLANK, which was achieved by using the HASONEVALUE DAX function to test whether the Product column in the Product table has a single value in filter context. It's the case for each product group, but not for the total, which represents all products.
 
 
+## What is the difference between SUM() Vs SUMX()?
+   - https://exceleratorbi.com.au/use-sum-vs-sumx/
+   - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
+   - SUM() operates over a single column and has no awareness of individual rows in the column (no row by row evaluation).
+   - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
+   - Develop below report
+      ![image](https://user-images.githubusercontent.com/20516321/117744290-065a1380-b226-11eb-971f-87b9c80729a0.png)
+
+## Count Vs counta & count vs countx & counta vs countax
+  - Enter below data and create a table
+
+      | Date  | Holiday Flag | phone |        
+      | ------------- | ------------- | -------- |        
+      | 01-Jan-2016 |	False	| 9573707079 |        
+      | 02-Jan-207 |	True	|  |        
+      | 01-Jan-2019 |	False |	1234567890 |
+
+  - Make sure datatypes are Date --> Date , Holiday Flag --> Bool, Phone --> Whole Number
+  - Can you count Date column using count and counta function?
+      - yes
+  - can you count bool column with count function?
+      - No
+  - Can you count bool column with counta?
+      - Yes
+
+  - count number of rows when holiday flag is *False*
+      - *Hint*: use below formula inside the measure 
+      - COUNTAX(FILTER(count_understanding,count_understanding[Holiday Flag]=FALSE()),count_understanding[Holiday Flag])  
+
+
+
