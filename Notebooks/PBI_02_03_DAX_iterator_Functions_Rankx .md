@@ -1,7 +1,7 @@
 # Use aggregation iterator functions
 
 - Each single-column summarization function has its equivalent iterator function.
-- Example sum > sumx, min > minx, max > maxx, ..etc
+- Example sum > sumx, min > minx, max > maxx, rank >rankx, count>countX, counta > countaX ..etc
 
 
 ## Calculate ranks
