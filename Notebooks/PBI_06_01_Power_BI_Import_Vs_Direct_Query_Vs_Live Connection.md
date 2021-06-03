@@ -15,6 +15,14 @@ Sql Server has Direct query
 
 https://radacad.com/directquery-live-connection-or-import-data-tough-decision
 
+## Questions
+---
+1. How many types of connection available in Power BI
+  - Import
+  - Direct Query
+  - Live Connection
+  - Stream
+2. 
 
 ```python
 
