@@ -63,8 +63,9 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-rls
 5. Save this report as rls_report
 6. Publish to workspace.
 7. In the workspace make sure **info@datahexa.com** as **Viewer**
-8. Open **Private window** in the brwoser > open app.powerbi.com > login using info@datahexa.com and password shared by your instructor.
-9. Open the report and notice that only two records are visible
+8. Go to Dataset > Security > Select **role** and map info@datahexa.com > Add > Save 
+9. Open **Private window** in the brwoser > open app.powerbi.com > login using info@datahexa.com and password shared by your instructor.
+10. Open the report and notice that only two records are visible
 ![image](https://user-images.githubusercontent.com/20516321/114551387-f24fe000-9c80-11eb-8dcd-0bfd582b64a4.png)
 
 
