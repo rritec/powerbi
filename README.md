@@ -7,7 +7,8 @@ Please contact **Renuka** for **Training and Certification** @ [8374899166](http
 
 Gain a 360° of how to explore and use Power BI to build impactful reports. In this course, you’ll go from **zero** to **hero**, as you discover how to use this popular business intelligence platform through **hands-on exercises**. You’ll first learn how to confidently load and transform data using Power Query and the importance of data models, before diving into creating visualizations using Power BI’s drag-and-drop functionality. You’ll also learn how to drill-down into reports and make your reports fully interactive. Lastly, you'll level-up your skills using **DAX formulas** (Data Analysis Expressions) to create customized calculated columns and fields to better analyze your data. Get started now. You've got the power!
 
-**On Boarding Questions**
+## On Boarding Questions
+----
 1. Wat is the class duration?
 	- 30 Working days / 30 Hours
 2. How Many days in a week?
@@ -25,18 +26,25 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Once we got job then Job Support
 
 ---
-**Course Content**
+## Course Content
 
 ---
 
 
 1. **Introduction**
-	- What is Power BI?	
+	- What is Power Platform?	
+	- What is Power BI?
 	- What is Power Apps?
+	- What is Power Automate?
+	- What is Power Virtual Agents?
 	- What are the different BI tools available?
-	- Why Power BI?
-	- Products of Power BI
+	- Why Power BI? Why not other BI tools like (Tableau/OBIEE/Cognos/SAP-BO/ ... etc)
+	- What are the Products of Power BI (Power BI Desktop/ Power BI Pro / Power BI Premium / Power BI Mobile / Power BI Embedded / Power BI Report Server)
 	- What is Power BI Desktop?
+		- What is Power Query ?	
+		- What is Power Pivot ?
+		- What is Power View ?
+		- What is Power Maps ?
 	- What is Power BI Service?
 	- What is Power BI Mobile?
 	- What is M-Language?
@@ -59,17 +67,18 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Power Query Editor
 		- Power Pivot
 		- Power View
+		- Power Maps
 1. **Power BI Desktop - Power Query Editor**
 	- Connecting to new Source
-		- File connections (Excel,Csv,XML,JSON,Folder)
+		- File Connections (Excel,Csv,XML,JSON,Folder ... etc)
 		- Connecting to Databases (MySql,MSSqlServer,Access dtatabase,...etc)
-		- Cloud Connections(SnowFlake Database)
-		- Online Connections(Web,Github ..etc)
-	- Importing Tables
+		- Cloud Connections(SnowFlake Database, Azure SQL Database ... etc)
+		- Online Connections(Web,Github,Linkedin ... etc)	
 	- Types of Connections
 		- Import
 		- Direct
-		- Live Connection		- 
+		- Live Connection
+	- Importing Tables		- 
 	- Basic Transformations
 		- Changing datatypes
 		- replacing nulls with zero
@@ -101,6 +110,8 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Learn how to implement Cross join,Non equi join.
 		- Learn SQL Queries of Joins
 	- Query Folding
+		- What is query folding
+		- What are the sources support Query Folding
 		- How to see Native Query
 	- Project 1: Power Query Editor Level Project
 		- Import Data from Access Database
@@ -115,13 +126,14 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- What cardinality is used between fact and dimension tables and why?
 	- Can we use many to many cardinality? if we want to skip what are the workarounds?
 	- Can we use one to one cardinality? if we want to skip what are the workarounds?
-	- What is active relationship/join?
-	- What is inactive Relationship/Join
-	- When to go for Inactive relation ships? 
-	- What is role playing dimension? Can we use active and inactive both between role playing dimension and fact
+	- What is active relationship ?
+	- What is inactive Relationship ?
+	- When to go for Inactive relation ships ?
+	- What is role playing dimension? Can we use active and inactive both between role playing dimension and fact ?
 	- What is Cross Filter Direction?
 	- Types of Cross Filter Directions?
 	- What type of direction used in star schema?
+	- When to go for Single direction?
 	- When to go for Both direction?
 1.  **Power BI Desktop - Power Pivot - Data Analysis Expressions(DAX)- Calculations**
 	- Introduction	
@@ -132,6 +144,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- What is Explicity Mesure
 	- What is compound Mesure
 	- What is Computed column?
+	- Where to create New column in Power Query or DAX ?
 	- Date and time functions
 		- CALENDAR
 		- CALENDARAUTO
@@ -194,7 +207,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Define
 		- Evalute
 		- Var
-		- Order By	- 
+		- Order By
 	
 1.  **DAX Studio**
 	- Introduction
@@ -226,14 +239,17 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Expand Next Level
 		- Drill Through
 		- Back button
-		- customise back button and use userdefined image as back button
+		- Customise back button and use userdefined image as back button
 	- Filters
-		- Viz level filter
-		- page Level Filter
+		- Vizulization level filter
+		- Page Level Filter
 		- All pages or Report level Filter
 		- Drill through Filter
 		- Slicer
+			- Sync Slicers
+			- Edit Interactions
 		- Row Level Security(RLS)
+		- Row Context Filter
 	- Bookmarks, Actions, Buttons and Images
 		- What is book mark
 		- Understand Bookmarks Pane
@@ -276,10 +292,11 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Create Workspace
 		- Publish PBIX to workspace
 		- Upload PBIX to workspace
+		- Upload Spread sheet to workspace
 	- Dashboard
 		- Create Dashboard
-		- Pin Viz to Dashboard
-		- Pin Entire page to dashboard
+		- Pin Vizulization to Dashboard
+		- Pin Entire page(live Page) to dashboard
 		- Pin Vs Pin Live
 		- Share Dashboard
 		- Edit Dashboard
@@ -301,6 +318,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Creating App
 		- Updating App
 		- Controling reports visibility in app
+		- Organizing Content
 1. **Power BI Gateways**
 	- Introduction
 	- What is Gateway
