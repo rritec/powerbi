@@ -1,7 +1,7 @@
 # Power BI
 This Repository has **Power BI** Training Materials developed by **Myla Ram Reddy**.
 
-Please contact my HR **Renuka** for **Training and Certification** @ **8374899166**(whatsapp)
+Please contact **Renuka** for **Training and Certification** @ [8374899166](https://wa.me/918374899166)(whatsapp)
 
 ----
 
