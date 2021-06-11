@@ -25,6 +25,9 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Job Marketing
 	- Once we got job then Job Support
 
+![image](https://user-images.githubusercontent.com/20516321/121617831-5fb29e00-ca83-11eb-9482-cefedc822271.png)
+
+
 ---
 ## Course Content
 
