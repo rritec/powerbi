@@ -39,6 +39,8 @@
 
 ### Drill Down
 
+    - Navigating from high level data to low level data (Example : Year > Half Year > Quarter > Month > Day)
+
 1. In **Visulizations** > Click on **Stacked Column Chart**
 1. From **Fields** pane > Click on **Total Sales** and **Product Hierarchy** 
 1. Your report should look as shown below
@@ -55,6 +57,8 @@
 
 
 ### Drill Up
+
+    - Navigating from low level data to high level data (Example : Day > Month > Quarter > Half Year > Year)
 1. Click on **Drill Up** to see again **Category** Level Data
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0058.png?raw=true)
