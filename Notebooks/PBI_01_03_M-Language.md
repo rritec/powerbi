@@ -95,7 +95,7 @@ SimpleInterest = (p,t,r) => p*t*r/100,
 // p is principal
 // t is time in months
 // r is rate of interest
-interest = SimpleInterest(100,12,2)
+rs = SimpleInterest(100,12,2)
 in 
 rs
 
