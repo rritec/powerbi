@@ -4,7 +4,7 @@
 ## Create a new workspace
 
 1. Signup for new user id and password with **work mail id** [Signup link](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb_nolicense_redirect%26redirectedFromSignup%3D1%26noSignUpCheck%3D1) or **use what instructor provided to you**.
-2. Open app.powerbi.com
+2. Open https://app.powerbi.com/
 3. Signin with username and password given to you by your instructor
     ![image](https://user-images.githubusercontent.com/20516321/112792985-1658d200-9082-11eb-9f74-63b862b27d24.png)
 
