@@ -20,6 +20,19 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0147.png?raw=true)
 
 ## Use Case 2:
+1. Open Power BI Desktop
+2. Import DimCustomer.csv and FactInternetSale.csv
+3. Develop a pie chart and column chart one overap another
+4. Change titles of visulizations as Pie and Bar respectively
+5. Open Selection pane and Bookmarks pane
+6. Hide Column chart and create bookmark as Pie
+7. Hide Pie chart and create bookmark as Column
+8. From google download two images Pie and bar chart
+9. Go to insert menu and click on images and browse above pie and place in the work area as small as possible
+10. Go to insert menu and click on images and browse above bar and place in the work area as small as possible
+11. Select Pie image > enable Actions > select bookmarks as pie
+12. Select Bar image > enable Actions > select bookmarks as Bar
+13. Test it
 
 ![image](https://user-images.githubusercontent.com/20516321/113813419-7b50ae00-978d-11eb-9718-acd2f1cc6c79.png)
 
