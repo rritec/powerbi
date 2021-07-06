@@ -61,7 +61,8 @@
    - SUMX() vs SUM(): Which One Should I Use?
       - Which you use really depends on your personal preference and the **structure of your data**.
       - In below example what we should use ?
-      -  | product  | Quantity | Unit Price |        
+      
+      | product  | Quantity | Unit Price |        
       | ------------- | ------------- | -------- |        
       | Product 1 |	2	| 100 |        
       | Product 2 |	4	| 120 |        
@@ -69,7 +70,9 @@
       
       - Answer is : Sumx
       - In below example what we should use ?
-      -  | product  | Total Price |        
+      
+      
+      | product  | Total Price |        
       | ------------- | -------- |        
       | Product 1 |	200 |        
       | Product 2 |	480 |        
