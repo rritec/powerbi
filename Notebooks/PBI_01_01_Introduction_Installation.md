@@ -123,7 +123,7 @@
 ## Instal SQL Server Management Studio (SSMS) 
 ---
 
-1. Download Sqlserver Developer edition [here](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)
+1. Download SQL Server Management Studio [here](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)
 1. Double Click on exe file
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0133.png?raw=true)
