@@ -22,15 +22,17 @@
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0023.png?raw=true)
 1. Click **Save**, to save the Power BI file.    
 ### Think few mins, how to get below vizulization.
-    - ![image](https://user-images.githubusercontent.com/20516321/125020165-f9c33180-e095-11eb-9276-bf6689b976e9.png)
-    - Drag **Matrix** to work area
-    - Drag Year, Manufacturer, Region to **Rows**
-    - Drag **TotalSales** to **Values**
-    - Filter on **year** for **2001** and **2002**
-    - Filter on **region** for **Central** and **East**
-    - Filter on **Manufacturer** for **Abbas** and **Aliqui**
-    - Click **twice** on **Expand all down one level in the hierarchy**
-    - If you need **SubTotals** in the bottom set it in **format** tab
+
+![image](https://user-images.githubusercontent.com/20516321/125020165-f9c33180-e095-11eb-9276-bf6689b976e9.png)
+
+- Drag **Matrix** to work area
+- Drag Year, Manufacturer, Region to **Rows**
+- Drag **TotalSales** to **Values**
+- Filter on **year** for **2001** and **2002**
+- Filter on **region** for **Central** and **East**
+- Filter on **Manufacturer** for **Abbas** and **Aliqui**
+- Click **twice** on **Expand all down one level in the hierarchy**
+- If you need **SubTotals** in the bottom set it in **format** tab
 
 ## Exercise 2- Part-to-Whole Report
 **Scenario:** analyzing sales data by product category, segment and manufacturer.
