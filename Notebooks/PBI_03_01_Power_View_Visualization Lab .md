@@ -61,6 +61,18 @@
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0024.png?raw=true)
 
+## Edit Interactions:
+Scenario: Slicer should not impact few vizulations.
+- By Default Slicer changing all the visulizations inside the current page
+- In above report click on year slicer > go to **Format** > click on **edit Interactions**  > select required vizulization **None** button.
+- Now change any slicer options and observe the vizulation is not impacting.
+
+## Sync Slicers
+- In above report,copy any vizulaion and paste into other page .
+- Go to view menu > click on **sync Slicers**
+- select **year** slicer > select sync check boxes of current page and the pages need to impact.
+- Change slicer options and observe that visulization changes.
+
 ## Exercise 3- Relationship Report
 
 - **Scenario:** You would like to know more about the relationship between total units and total sales by category and segment. You choose to analyze this using scatter chart.
