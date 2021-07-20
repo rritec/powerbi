@@ -4,7 +4,7 @@
 
 1. What are the connection types?
   - Import
-      - Today 10 rows available in the excel/sql server/oracle/teradata(on - Permise Datasets)
+      - Today 10 rows available in the Source(example: excel/sql server/oracle/teradata)(on - Permise Datasets)
       - you imported to PBI file
       - Developed reports
       - published report to power Bi service
