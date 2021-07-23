@@ -1,7 +1,7 @@
 
 # Power Pivot
 
-## Data Analysis Expressions (DAX):
+## Data Analysis eXpressions (DAX):
 1. Data Analysis Expressions (DAX) is a library of functions and operators that can be combined to build formulas and expressions in 
     - Power BI Desktop
     - Azure Analysis Services
