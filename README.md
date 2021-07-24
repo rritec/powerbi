@@ -9,12 +9,12 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 
 ## On Boarding Questions
 ----
-1. Wat is the class duration?
+1. What is the class duration?
 	- 30 Working days / 30 Hours
 2. How Many days in a week?
 	- Monday to Friday
 3. What time?
-	- Slot 1: 7AM IST to 8 AM IST or 8:30 PM ET to 9:30 PM ET (Fresh Batch)
+	- Slot 1: 7AM IST to 8 AM IST or 8:30 PM ET to 9:30 PM ET (New Batch)
 	- Slot 2: 8AM to 9AM IST or 9:30 PM to 10:30 PM ET(Running Batch)(iam half Way in this)
 4. Where to get Materials?
 	- from Github cloud https://github.com/rritec/powerbi
@@ -35,11 +35,11 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 
 
 1. **Introduction**
-	- What is Power Platform?	
-	- What is Power BI?
-	- What is Power Apps?
-	- What is Power Automate?
-	- What is Power Virtual Agents?
+	- What is **Power Platform**?	
+	- What is **Power BI**?
+	- What is **Power Apps**?
+	- What is **Power Automate**?
+	- What is **Power Virtual Agents**?
 	- What are the different BI tools available?
 	- Why Power BI? Why not other BI tools like (Tableau/OBIEE/Cognos/SAP-BO/ ... etc)
 	- What are the Products of Power BI (Power BI Desktop/ Power BI Pro / Power BI Premium / Power BI Mobile / Power BI Embedded / Power BI Report Server)
@@ -70,10 +70,9 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Power Query Editor
 		- Power Pivot
 		- Power View
-		- Power Maps
 1. **Power BI Desktop - Power Query Editor**
 	- Connecting to new Source
-		- File Connections (Excel,Csv,XML,JSON,Folder ... etc)
+		- File Connections (Excel,CSV,XML,JSON,Folder ... etc)
 		- Connecting to Databases (MySql,MSSqlServer,Access dtatabase,...etc)
 		- Cloud Connections(SnowFlake Database, Azure SQL Database ... etc)
 		- Online Connections(Web,Github,Linkedin ... etc)	
@@ -86,6 +85,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Changing datatypes
 		- replacing nulls with zero
 		- concatnating columns
+		- Computing new columns from available columns
 		- spliting columns
 		- renameing columns
 		- observing transformation steps
@@ -94,7 +94,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- M-Language
 		- About Let and In
 		- Single Line comments in M-language
-		- Multi line comments
+		- Multi line comments in M-language
 		- How to write M-language code in multiple lines
 		- Change Steps in Query settings and observe in M-language
 		- Change M-language and observe Query Setting Steps
@@ -110,7 +110,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 			- Full Outer Join
 			- Left Anti Join
 			- Right Anti Join
-		- Learn how to implement Cross join,Non equi join.
+		- Learn how to implement Cross join,Non equi join,self join.
 		- Learn SQL Queries of Joins
 	- Query Folding
 		- What is query folding
@@ -173,7 +173,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- IFERROR
 		- AND
 		- ... etc
-	-  Math and trig functions
+	-  Math and trignometic functions
 		- DIVIDE
 		- DIVIDE Vs /
 		- TRUNC
@@ -184,11 +184,11 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- USERELATIONSHIP
 	-  Statistical functions
 		- Explain Itterator Functions
-		- sumx
-		- countx
-		- minx
-		- maxx
-		- rankx
+			- sumx
+			- countx
+			- minx
+			- maxx
+			- rankx
 		- SUM Vs SUMX
 		- COUNT Vs COUNTX
 		- COUNTA Vs COUNTAX
@@ -322,6 +322,9 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 		- Updating App
 		- Controling reports visibility in app
 		- Organizing Content
+		- Creating section in apps
+		- Creating external links
+		- Shareing the app to business users
 1. **Power BI Gateways**
 	- Introduction
 	- What is Gateway
@@ -404,10 +407,3 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Understand all from https://powerbi.microsoft.com/en-us/pricing/
 1. **Writing CV**
 1. **Marketing CV**
-
-
-    
-
-    
-
-
