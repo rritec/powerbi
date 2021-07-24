@@ -35,11 +35,12 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 
 
 1. **Introduction**
-	- What is **Power Platform**?	
-	- What is **Power BI**?
-	- What is **Power Apps**?
-	- What is **Power Automate**?
-	- What is **Power Virtual Agents**?
+	- What is **Power Platform**?
+	- What are the products	of **Power Platform**?
+		- **Power BI**
+		- **Power Apps**
+		- **Power Automate**
+		- **Power Virtual Agents**
 	- What are the different BI tools available?
 	- Why Power BI? Why not other BI tools like (Tableau/OBIEE/Cognos/SAP-BO/ ... etc)
 	- What are the Products of Power BI (Power BI Desktop/ Power BI Pro / Power BI Premium / Power BI Mobile / Power BI Embedded / Power BI Report Server)
