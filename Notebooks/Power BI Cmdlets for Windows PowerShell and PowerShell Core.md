@@ -46,11 +46,12 @@ New-PowerBIWorkspace -Name myla1-workspace
 Remove-PowerBIReport -Id 09d39a15-65ac-46c8-84ac-de2923536cb9 -WorkspaceId 383e66d4-0587-45c8-93dd-0b4a8abec074
 ```
 
-## Exercise 5: Add user to workspace
+## Exercise 5: Add/Remove user to/from workspace
 ----
 
 ```
 Add-PowerBIWorkspaceUser -Id 79578b7e-3515-421b-bb3f-1fbaee65a319 -UserEmailAddress info@datahexa.com -AccessRight Viewer
+Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrincipalName info@datahexa.com
 ```
 
 ## Exercise 6: disconnect Power BI Service
