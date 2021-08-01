@@ -31,14 +31,14 @@
   
 **Scripts:**
 ```
-account_name: bk73213.west-us-2.azure
+account_name: uk00084.west-us-2.azure
 account url : https://BK73213.west-us-2.azure.snowflakecomputing.com
-sername: mylavenkata1
-password: Apr@2021
+sername: mylageethika
+password: AuIn@2021
 
 
 
-snowsql -a bk73213.west-us-2.azure -u mylavenkata1
+snowsql -a uk00084.west-us-2.azure -u mylageethika
 create or replace database sf_tuts;
 select current_database(), current_schema();
 create or replace table emp_basic (
