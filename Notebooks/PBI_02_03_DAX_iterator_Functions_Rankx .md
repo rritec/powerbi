@@ -90,7 +90,7 @@
       | Date  | Holiday Flag | phone |        
       | ------------- | ------------- | -------- |        
       | 01-Jan-2016 |	False	| 9573707079 |        
-      | 02-Jan-207 |	True	|  |        
+      | 02-Jan-2017 |	True	|  |        
       | 01-Jan-2019 |	False |	1234567890 |
 
   - Make sure datatypes are Date --> Date , Holiday Flag --> Bool, Phone --> Whole Number
