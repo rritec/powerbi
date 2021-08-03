@@ -253,6 +253,9 @@ or
 
 	A composite key is a combination of two or more columns in a table that can be used to uniquely identify each row in the table
 	
+	![image](https://user-images.githubusercontent.com/20516321/127946905-78dea4ea-93aa-49da-9cff-0c72aaa38264.png)
+
+	
 	
 1. Can we merge/Join in power bi with two or more columns?
 
