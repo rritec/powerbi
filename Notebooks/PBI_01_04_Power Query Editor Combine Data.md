@@ -243,6 +243,11 @@ or
 1. Observe Result
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0047.png?raw=true)
+    
+#### Develop PBI Report using Self Join
+	select e.ename as employee_name,m.ename as manager_name 
+	from emp as e,emp as m
+	where e.mgr=m.empno
 
 ## Home Work: Develop Below reports
 
