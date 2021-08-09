@@ -1,18 +1,20 @@
 
 # Power Pivot
-  1. It is useful to do two activities
-    - Relation Ships
-      - Relation ship(Among Tables) Vs Join(Among Queries)
-      - Cardinality
-        - One to One
-        - One to Many
-        - **Many to One**(Default)
-        - Many to Many
-      - Cross Filter Directions
-        - **Single**(Default)
-        - Both
-      - Active Vs Inactive Relationships      
-    - DAX Calculations
+  - It is useful to do two activities
+  
+    1. Modeling
+        - Relation ship(Among Tables) Vs Join(Among Queries)
+        - Cardinality
+          - One to One
+          - One to Many
+          - **Many to One**(Default)
+          - Many to Many
+        - Cross Filter Directions
+          - **Single**(Default)
+          - Both
+        - Active Vs Inactive Relationships 
+      
+    2. DAX Calculations
   
 ## Manage Relationships
 
