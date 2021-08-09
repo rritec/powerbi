@@ -8,7 +8,7 @@
         - One to Many
         - **Many to One**(Default)
         - Many to Many
-      - Directions
+      - Cross Filter Directions
         - **Single**(Default)
         - Both
       - Active Vs Inactive Relationships      
