@@ -54,6 +54,8 @@
   2. Import DimDate, DimCustomer, FactInternetSales from Sql Server AdventureWorksDW2012 data base
   3. In PowerQueryEditor window create two parameters with the name of RangeStart and RangeEnd and set below values 
   ![image](https://user-images.githubusercontent.com/20516321/129829244-0af234a9-016d-4e5e-a4c1-6280c9c6cef5.png)
+  ![image](https://user-images.githubusercontent.com/20516321/129829544-1900ae16-10b0-4801-8faa-e35975a94ca9.png)
+
 
   4. Apply custom filter on FactInternetSales/Orderdate column bu using above parameters
   5. close and apply
