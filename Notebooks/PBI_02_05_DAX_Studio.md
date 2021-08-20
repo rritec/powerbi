@@ -23,3 +23,26 @@
 // select city  from customer where city like "R%" order by city desc
 //EVALUATE CALCULATETABLE(VALUES(Customer[City]),left(Customer[City],1)="R") ORDER BY Customer[City] desc
 
+## Exercise: Create a tabe in powerBI using below dax query
+1. In DAX studio write below Dax query, run it  and understand result. 
+    EVALUATE
+  SUMMARIZECOLUMNS (
+      Product[Color],
+      Reseller[Business Type],
+      FILTER ( ALL ( Product[List Price] ), Product[List Price] > 150.00 ),
+      TREATAS ( { "Accessories", "Bikes" }, 'Product'[Category] ),
+      "Total Sales", SUM ( Sales[Sales Amount] )
+  )
+2. Once we are happy with result then create table inside PBI
+3. open PBI Desltop > data page
+4. click on Dax Table, write below dax formula
+    test_table_name =
+  SUMMARIZECOLUMNS (
+      Product[Color],
+      Reseller[Business Type],
+      FILTER ( ALL ( Product[List Price] ), Product[List Price] > 150.00 ),
+      TREATAS ( { "Accessories", "Bikes" }, 'Product'[Category] ),
+      "Total Sales", SUM ( Sales[Sales Amount] )
+  )
+5. Observe result
+
