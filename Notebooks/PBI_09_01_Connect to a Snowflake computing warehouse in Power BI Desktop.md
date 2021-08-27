@@ -32,7 +32,7 @@
 **Scripts:**
 ```
 account_name: uk00084.west-us-2.azure
-account url : https://BK73213.west-us-2.azure.snowflakecomputing.com
+account url : https://uk00084.west-us-2.azure.snowflakecomputing.com
 sername: mylageethika
 password: AuIn@2021
 
