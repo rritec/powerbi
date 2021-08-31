@@ -29,7 +29,7 @@ Get-PowerBIWorkspace | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\202
 Get-PowerBIDashboard -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\ds.csv
 Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\rs.csv
 
-### get reports from multiple workspaces
+### get report names from multiple workspaces
 
 $myArray = "9c265642-a2b2-4ae1-a7fe-d9f3822984d7","1083fdff-a6fd-4a92-b849-4387530e8a38"
 #$myArray.Length-1
@@ -38,6 +38,21 @@ for(;$i -le $myArray.Length-1;$i++)
 {
     $myArray[$i]
     Get-PowerBIReport -WorkspaceId $myArray[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports1.csv
+}
+
+### get report names from all workspaces
+$file_name="list_of_workspaces.csv"
+Get-PowerBIWorkspace | Export-Csv -Path C:\work\ps\$file_name
+$ws=Import-Csv -Path C:\work\ps\$file_name
+ForEach-Object {
+    $Ids += $ws.Id
+}
+
+$i=0
+for(;$i -le $Ids.Length-1;$i++)
+{
+    
+    Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports2.csv
 }
 
 
