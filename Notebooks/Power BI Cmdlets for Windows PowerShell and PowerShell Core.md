@@ -47,19 +47,33 @@ Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv
 ### Exercise 4: Get report names from all workspaces
 
     
-    $file_name="list_of_workspaces.csv"
-    Get-PowerBIWorkspace | Export-Csv -Path C:\work\ps\$file_name
-    $ws=Import-Csv -Path C:\work\ps\$file_name
-    ForEach-Object {
-        $Ids += $ws.Id
-    }
+      # connect to power BI Service
+      Connect-PowerBIServiceAccount
 
-    $i=0
-    for(;$i -le $Ids.Length-1;$i++)
-    {
 
-        Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports2.csv
-    }
+      # Define variables for path and file name
+      $path="C:\work\ps\"
+      $file_name="list_of_workspaces.csv"
+
+      # Export all workspace information
+      Get-PowerBIWorkspace | Export-Csv -Path $path$file_name
+
+      # Read csv file of workspaces
+      $ws=Import-Csv -Path $path$file_name
+
+      # Read ids of workspaces
+      ForEach-Object {
+          $Ids += $ws.Id
+      }
+
+      # export reportnames from each workspace in append mode
+
+      $i=0
+      for(;$i -le $Ids.Length-1;$i++)
+      {
+
+          Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports3.csv
+      }
     
    
 
