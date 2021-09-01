@@ -30,7 +30,7 @@ Get-PowerBIDashboard -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-
 Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\rs.csv
 ```
 
-## Exercise 3: get report names from multiple workspaces
+## Exercise 3: Get report names from multiple workspaces
 
    
     $myArray = "9c265642-a2b2-4ae1-a7fe-d9f3822984d7","1083fdff-a6fd-4a92-b849-4387530e8a38"
@@ -44,7 +44,7 @@ Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv
     
    
             
-### Exercise 4: get report names from all workspaces
+### Exercise 4: Get report names from all workspaces
 
     
     $file_name="list_of_workspaces.csv"
@@ -85,7 +85,7 @@ Add-PowerBIWorkspaceUser -Id 79578b7e-3515-421b-bb3f-1fbaee65a319 -UserEmailAddr
 Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrincipalName info@datahexa.com
 ```
 
-## Exercise 8: disconnect Power BI Service
+## Exercise 8: Disconnect Power BI Service
 ----
 
 ```
