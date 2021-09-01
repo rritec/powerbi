@@ -29,42 +29,53 @@ Get-PowerBIWorkspace | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\202
 Get-PowerBIDashboard -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\ds.csv
 Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\rs.csv
 
-### get report names from multiple workspaces
 
-$myArray = "9c265642-a2b2-4ae1-a7fe-d9f3822984d7","1083fdff-a6fd-4a92-b849-4387530e8a38"
-#$myArray.Length-1
-$i=0
-for(;$i -le $myArray.Length-1;$i++)
-{
-    $myArray[$i]
-    Get-PowerBIReport -WorkspaceId $myArray[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports1.csv
-}
 
-### get report names from all workspaces
-$file_name="list_of_workspaces.csv"
-Get-PowerBIWorkspace | Export-Csv -Path C:\work\ps\$file_name
-$ws=Import-Csv -Path C:\work\ps\$file_name
-ForEach-Object {
-    $Ids += $ws.Id
-}
 
-$i=0
-for(;$i -le $Ids.Length-1;$i++)
-{
-    
-    Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports2.csv
-}
 
 
 ```
 
-## Exercise 3: Create new workspace
+## Exercise 3: get report names from multiple workspaces
+
+    ```
+    $myArray = "9c265642-a2b2-4ae1-a7fe-d9f3822984d7","1083fdff-a6fd-4a92-b849-4387530e8a38"
+    #$myArray.Length-1
+    $i=0
+    for(;$i -le $myArray.Length-1;$i++)
+    {
+        $myArray[$i]
+        Get-PowerBIReport -WorkspaceId $myArray[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports1.csv
+    }
+    
+    ```
+            
+### Exercise 4: get report names from all workspaces
+
+    ```
+    $file_name="list_of_workspaces.csv"
+    Get-PowerBIWorkspace | Export-Csv -Path C:\work\ps\$file_name
+    $ws=Import-Csv -Path C:\work\ps\$file_name
+    ForEach-Object {
+        $Ids += $ws.Id
+    }
+
+    $i=0
+    for(;$i -le $Ids.Length-1;$i++)
+    {
+
+        Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports2.csv
+    }
+    
+    ```
+
+## Exercise 5: Create new workspace
 -----
 ```
 New-PowerBIWorkspace -Name myla1-workspace
 ```
 
-## Exercise 4: Remove Power BI Report
+## Exercise 6: Remove Power BI Report
 ----
 1. Change report id and workspace id and run it.
 
@@ -72,7 +83,7 @@ New-PowerBIWorkspace -Name myla1-workspace
 Remove-PowerBIReport -Id 09d39a15-65ac-46c8-84ac-de2923536cb9 -WorkspaceId 383e66d4-0587-45c8-93dd-0b4a8abec074
 ```
 
-## Exercise 5: Add/Remove user to/from workspace
+## Exercise 7: Add/Remove user to/from workspace
 ----
 
 ```
@@ -80,7 +91,7 @@ Add-PowerBIWorkspaceUser -Id 79578b7e-3515-421b-bb3f-1fbaee65a319 -UserEmailAddr
 Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrincipalName info@datahexa.com
 ```
 
-## Exercise 6: disconnect Power BI Service
+## Exercise 8: disconnect Power BI Service
 ----
 
 ```
