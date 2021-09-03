@@ -98,8 +98,45 @@ Remove-PowerBIReport -Id 09d39a15-65ac-46c8-84ac-de2923536cb9 -WorkspaceId 383e6
 Add-PowerBIWorkspaceUser -Id 79578b7e-3515-421b-bb3f-1fbaee65a319 -UserEmailAddress info@datahexa.com -AccessRight Viewer
 Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrincipalName info@datahexa.com
 ```
+## Exercise 8: Bulk users adding to required workspaces
+-----
+- Download sample securiy [file](https://github.com/rritec/powerbi/blob/master/Labdata/setup-powerbi-access-to-end-users1.csv) 
+      # Define variables for path and file name
+      $path="C:\work\ps\"
+      $file_name="setup-powerbi-access-to-end-users1.csv"
 
-## Exercise 8: Disconnect Power BI Service
+
+      # Read csv file of workspaces
+      $ws=Import-Csv -Path $path$file_name
+      #$ws
+      #$Id1=""
+      #$UserEmailAddress=""
+      #$AccessRights=""
+
+      Clear-Variable wsId
+      Clear-Variable UserEmailAddress1
+      Clear-Variable AccessRights1
+
+      # Read ids of workspaces
+      ForEach-Object {
+          $wsId += $ws.workspaceid
+          $UserEmailAddress1 += $ws.UserEmailAddress
+          $AccessRights1 += $ws.AccessRight   
+
+      }
+
+      # export reportnames from each workspace in append mode
+
+      $i=0
+      for(;$i -le $wsId.Length-1;$i++)
+      {
+
+          Add-PowerBIWorkspaceUser -Id $wsId[$i] -UserEmailAddress $UserEmailAddress1[$i] -AccessRight $AccessRights1[$i]
+
+
+
+      }
+## Exercise 9: Disconnect Power BI Service
 ----
 
 ```
