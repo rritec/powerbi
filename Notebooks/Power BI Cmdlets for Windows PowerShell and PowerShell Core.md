@@ -101,6 +101,7 @@ Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrinci
 ## Exercise 8: Bulk users adding to required workspaces
 -----
 - Download sample securiy [file](https://github.com/rritec/powerbi/blob/master/Labdata/setup-powerbi-access-to-end-users1.csv) 
+
       # Define variables for path and file name
       $path="C:\work\ps\"
       $file_name="setup-powerbi-access-to-end-users1.csv"
