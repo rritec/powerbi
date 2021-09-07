@@ -28,12 +28,14 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 --
 1. Replace above code with below code and observe result
 
-       let
-            x = 1,
-            y = x * 10,
-            #"variable name with spaces"=y+10
-        in
-            #"variable name with spaces"
+                       let
+                    #"First Name" = "Ram",
+                    #"Last Name" = "Reddy",
+                    #"Full Name" = Text.Combine({#"First Name", #"Last Name"})
+
+                in
+                    #"Full Name"
+            
             
  ### Exercise 3: Call functions in M-language
 --
