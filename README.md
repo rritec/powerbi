@@ -353,11 +353,14 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Disconnect Power BI
 	- Get list of workspaces
 	- Get list of users
-	- Add user to workspace
-	- Remove user from workspace
+	- Add users to workspaces
+	- Remove users from workspaces
 	- Create New Workspace
 	- Export list of reports
 	- Export list of dashboards
+	- Backup list of reports/dashboards
+	- Create Empty Dashboard
+	- provide security to users using power shell script
 1. **Deployment Pipelines**
 	- What is environment 
 	- Types of environments
@@ -366,6 +369,7 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 	- Push ojects from development environment to Test Environment
 	- Push ojects from Test environment to Production Environment
 	- Compare any two environments
+	- push only required objects from one environment to another environment
 1. **SSAS Multidimensional Models using in PowerBI**
 	- Download and Restore Sample Data
 	- Install SQL Server Analysis Services
