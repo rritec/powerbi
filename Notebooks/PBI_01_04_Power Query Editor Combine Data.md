@@ -74,6 +74,7 @@
 1. Left Anti Join
 1. Non Equi Join
 1. Cross Join
+1. Self Join
 
 
 ### Inner Join
