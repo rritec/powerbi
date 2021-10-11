@@ -1,5 +1,5 @@
 1. Install DAX Studio, Download software [here](https://daxstudio.org/)
-2. https://github.com/microsoft/powerbi-desktop-samples/tree/main/DAX
+2. Download sample pbix file to follow dax studio tutorial https://github.com/microsoft/powerbi-desktop-samples/blob/main/DAX/Adventure%20Works%20DW%202020.pbix 
 3. complet blog https://daxstudio.org/tutorials/writing-dax-queries/
 4. Explore online dax examples https://dax.guide/
 
