@@ -1,3 +1,7 @@
+## About
+
+- DAX Studio is a tool to write, execute, and analyze DAX queries in Power BI Desktop, Power Pivot for Excel, and Analysis Services Tabular.
+
 ## Setup environment 
 1. Download DAX Studio Software [here](https://daxstudio.org/)
 2. Double click on DAX STUDIO > Install it.
