@@ -52,7 +52,7 @@
 
 - Notice that the total Product Quantity Rank is now BLANK, which was achieved by using the HASONEVALUE DAX function to test whether the Product column in the Product table has a single value in filter context. It's the case for each product group, but not for the total, which represents all products.
 
-https://github.com/rritec/powerbi/blob/566b75a3a5850984fc9a9d9549104ce3dd70befe/Notebooks/Interview%20Questions/Top%20N%20Dynmic%20Selecton%20using%20what%20if%20parameter.md
+**Home work:** [Top N dynamic selections](https://github.com/rritec/powerbi/blob/566b75a3a5850984fc9a9d9549104ce3dd70befe/Notebooks/Interview%20Questions/Top%20N%20Dynmic%20Selecton%20using%20what%20if%20parameter.md)
 
 ## What is the difference between SUM() Vs SUMX()?
    - https://exceleratorbi.com.au/use-sum-vs-sumx/
