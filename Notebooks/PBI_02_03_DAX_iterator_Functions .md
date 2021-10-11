@@ -4,6 +4,38 @@
 - Example sum > sumx, min > minx, max > maxx, rank >rankx, count>countX, counta > countaX ..etc
 
 
+
+## What is the difference between SUM() Vs SUMX()?
+   - https://exceleratorbi.com.au/use-sum-vs-sumx/   
+   - SUM() operates over a single column and has no awareness of individual rows in the column (no row by row evaluation).
+   - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
+   - SUMX() vs SUM(): Which One Should I Use?
+      - Which you use really depends on your personal preference and the **structure of your data**.
+      - In below example what we should use ?
+      
+      | product  | Quantity | Unit Price |        
+      | ------------- | ------------- | -------- |        
+      | Product 1 |	2	| 100 |        
+      | Product 2 |	4	| 120 |        
+      | Product 3 |	8 |	130 |
+      
+      - Answer is : Sumx
+      - In below example what we should use ?
+      
+      
+      | product  | Total Price |        
+      | ------------- | -------- |        
+      | Product 1 |	200 |        
+      | Product 2 |	480 |        
+      | Product 3 |	1040|
+      
+      
+      - Answer is sum
+
+   - Follow below blog and Develop below report
+   - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
+      ![image](https://user-images.githubusercontent.com/20516321/117744290-065a1380-b226-11eb-971f-87b9c80729a0.png)
+
 ## Calculate ranks
 
 - The RANKX DAX function is a special iterator function you can use to calculate ranks. Its syntax is as follows:
@@ -53,37 +85,6 @@
 - Notice that the total Product Quantity Rank is now BLANK, which was achieved by using the HASONEVALUE DAX function to test whether the Product column in the Product table has a single value in filter context. It's the case for each product group, but not for the total, which represents all products.
 
 **Home work:** [Top N dynamic selections](https://github.com/rritec/powerbi/blob/566b75a3a5850984fc9a9d9549104ce3dd70befe/Notebooks/Interview%20Questions/Top%20N%20Dynmic%20Selecton%20using%20what%20if%20parameter.md)
-
-## What is the difference between SUM() Vs SUMX()?
-   - https://exceleratorbi.com.au/use-sum-vs-sumx/
-   - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
-   - SUM() operates over a single column and has no awareness of individual rows in the column (no row by row evaluation).
-   - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
-   - SUMX() vs SUM(): Which One Should I Use?
-      - Which you use really depends on your personal preference and the **structure of your data**.
-      - In below example what we should use ?
-      
-      | product  | Quantity | Unit Price |        
-      | ------------- | ------------- | -------- |        
-      | Product 1 |	2	| 100 |        
-      | Product 2 |	4	| 120 |        
-      | Product 3 |	8 |	130 |
-      
-      - Answer is : Sumx
-      - In below example what we should use ?
-      
-      
-      | product  | Total Price |        
-      | ------------- | -------- |        
-      | Product 1 |	200 |        
-      | Product 2 |	480 |        
-      | Product 3 |	1040|
-      
-      
-      - Answer is sum
-
-   - Develop below report
-      ![image](https://user-images.githubusercontent.com/20516321/117744290-065a1380-b226-11eb-971f-87b9c80729a0.png)
 
 ## Count Vs counta & count vs countx & counta vs countax
   - Enter below data and create a table
