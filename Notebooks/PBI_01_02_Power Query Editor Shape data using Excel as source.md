@@ -1,7 +1,7 @@
 # Power BI Desktop
     - It has mainly three Components
         - Power Query Editor(Extract + Transforming + Loading into PBIX file)
-        - Power Pivot (Data + Model)
+        - Power Pivot (Model + DAX)
         - Power View or Report View
 # Power Query Editor
 - It is also known as `Power Query`
