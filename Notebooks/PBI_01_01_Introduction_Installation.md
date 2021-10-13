@@ -89,10 +89,10 @@
 ![](https://github.com/rritec/powerbi/blob/master/images/powerbiinstallation1.png?raw=true)
 [Reference](https://docs.microsoft.com/en-us/power-bi/desktop-get-the-desktop)
 
-# MS SQL Installation
+# MSFT SQL Server Installation
 ---
 
-## Install SQL Server Database
+## Install MSFT SQL Server Database
 ---
 
 1. Download Sqlserver Developer edition [here](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)
