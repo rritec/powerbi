@@ -1,0 +1,80 @@
+Recap:
+
+1. Power Pivot
+	1.1. Model
+		1.1.1. What are the dimension tables?
+		1.1.2. What are the Fact Tables?
+		1.1.3. Star Model,Snow Flake Model,Mixed Models
+		1.1.4. Between two tables
+			a) Cardinality(1:1,*:*,*:1,1:*)>> Default(*:1)(Fact to Dim)
+			b) Cross Filter Direction (Single,Both)
+			c) Active/Inactive (This scenario of inactive relation comes if we have ROLE PLAYING DIMENSIONS)
+	1.2. DAX(Data Analysis eXpression)(Calculations)
+		1.2.1. New Column(0.01%)
+		1.2.2. New Mesure(99.98%)
+		1.2.3. New Table(0.01%)
+			1).Aggregation functions
+				SUM(Retuen value)
+				MIN
+				MAX
+				COUNT
+				COUNTA
+				SUMX
+				MINX
+				MAXX
+				COUNTX
+				COUNTAX
+			2) Date and time functions
+				Calendar(Retuen Table)
+				CALENDARAUTO(Return Table)
+				DATE(<yyyy>,<mm>,<dd>)(Return Value)
+				DATEDIFF(<startdate>,<enddate>,<interval>)(Return Value)
+				NOW()(Return Value)
+				today()(Return Value)
+				EOMONTH(<DATE>,<months>)(Return Value)
+			3) Filter functions
+				Filter(<Table>,<filter>)(Return Table)
+				CalculateTable(<Table>,<filter>)(Return Table)
+				ALL([<Table>,[<column]])(Return Table)
+				ALLEXCEPT(<table>,<column>[,<column>[,…]])(Return Table)
+				Calculate(<Expression>,[<filter1>,[<Filter2>...]])
+				SELECTEDVALUE())Returns slicer selected value/coresponding value
+			4) Financial functions
+			5) Information functions
+				HASONEVALUE(<columnName>)(Return Value)(Bool)
+				ISBLANK(<value>) 
+				USERNAME()
+				USERPRINCIPALNAME()
+			6) Logical functions
+				AND
+				OR
+				IF
+				SWITCH
+			7) Math and Trig functions
+				DIVIDE(<num>,<den>,[<alternate Result>])
+				ABS
+				SIN(pi()/2)
+				COS(0)
+				SQRT(<number>)
+			8) Other functions
+				BLANK()
+				ERROR()
+			9) Parent and Child functions
+				PATH(<empno>,<mgrno>
+			10) RelationShip Functions
+				deptno10_data_only = FILTER(EMP,RELATED(DEPT[DNAME])="ACCOUNTING")
+			11) Statistical functions
+
+				RankX
+			12) Table manipulation functions
+				SUMMARIZEDCOLUMNS
+				ROLLUP
+				TOPN
+
+
+				
+	
+		
+
+		
+		
