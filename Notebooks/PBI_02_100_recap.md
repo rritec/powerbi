@@ -74,7 +74,10 @@ Recap:
 				- ROLLUP
 				- TOPN
 
-
+## Questions:
+----
+1. Filter Vs Calculatedtable
+	- 
 				
 	
 		
