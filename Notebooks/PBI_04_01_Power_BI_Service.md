@@ -10,17 +10,18 @@
 
 4. In the left **Navigation Pane** > Click on **Workspaces** > Click on **Create a Workspace** > provide **workspace name** as **rritec-workspace** > click on **Save**
 
-## Upload PBI Report and Pin Visualizations
+## Publish PBI Report
 
 1. Open the **Labdata/Lab4/Lab 4 Starting.pbix** file.
 1. On the **Home ribbon**, click **Publish**.
-1. In Select a destination, select **My workspace**, and click **Select**.
+1. In Select a destination, select **rritec-workspace**, and click **Select**.
 1. If prompted, sign in using the account you used to sign up for the Power BI service.
 1. [Signup link](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb_nolicense_redirect%26redirectedFromSignup%3D1%26noSignUpCheck%3D1)
 1. Once the report is published, click Got it.
 1. Open browser, go to https://app.powerbi.com/, and click Sign in.
 1. Sign in using your account.
 1. Go to the **Lab 4 Starting Report** and explore your published report. It looks similar to the one in Power BI Desktop file. Now you can start creating a dashboard by pinning some visualizations.
+## Create Dashboard by Pining Visualizations
 1. Go to the **Sales Report** tab and pin the chart showing **Total Sales by Category and Segment** (100% Stacked Bar Chart). Select to create a New dashboard and name it **VanArsdel Sales**.
 1. Pin the **treemap chart**, **the scatter chart**, and the **map** visualization from the Sales Report tab to the **VanArsdel Sales** dashboard.
 1. Go to the **Yearly Trend** tab and pin the **waterfall chart** that shows the **Sales Var by Year** to the VanArsdel Sales dashboard.
