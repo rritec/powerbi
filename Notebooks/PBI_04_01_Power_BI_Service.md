@@ -36,7 +36,7 @@
     
 - **Note:** If the original visualization that's used to create the tile changes, the tile doesn't change. For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
 
-## Share Dashboard and Update Report
+## Share Dashboard
 
 1. Let's start sharing your newly created dashboard. For simplicity, let's share the dashboard to your own email address.
 
@@ -50,9 +50,10 @@
 1. In the **VanArsdel Sales dashboard**, click the **Share** button to share your dashboard.
 1. In Grant access to, enter your email address used for Power BI service and click Share.
 1. Check your inbox to see an invite to view this dashboard.
----
-1. **Home Work**
-1. Once you've uploaded your Power BI Desktop file to Power BI service, you can still make changes to it, and re-upload the file so that your changes is reflected in Power BI service.
+
+## Update Report and re-publish
+----
+1. Once you've published your Power BI Desktop file to Power BI service, you can still make changes to it, and re-publish the file so that your changes is reflected in Power BI service.
 1. Open the **Lab 4 Starting.pbix** file.
 1. Modify the **Total Sales by Category and Segment chart** (the one displayed using **100% stacked bar chart** visualization) on the Sales Report tab to use **Stacked Bar chart** visualization instead.
 1. Again **publish** the file to **Power BI service** and replace the existing dataset with this one.
@@ -61,6 +62,7 @@
 
  
 ## Add Youtube Video using Tile
+----
 4. In above report click on **Edit** > Click on **+ Add tile**
 5. Under Media, Clic on **Web Content**  > Select **Next** 
 6. Under **Embed Code** > paste below code html
@@ -74,6 +76,7 @@
 1. Click om **Apply** and observe Tile in the dashboard
 
 ## Add Image Tile
+-----
 
 1. In above report click on **Edit** > Click on **+ Add tile**
 1. Under Media, Clic on **Image**  > Select **Next** 
@@ -84,6 +87,7 @@
 1. Click om **Apply** and observe Tile in the dashboard    
 
 ## Add youtube Video
+----
 
 1. In above report click on **Edit** > Click on **+ Add tile**
 1. Under Media, Clic on **Video**  > Select **Next** 
@@ -94,6 +98,7 @@
 1. Click om **Apply** and observe Tile in the dashboard    
 
 ## Explore Dasboard Themes
+----
 
 1. In above report click on **Edit** > Click on **Sashboard Theme** > explore it
   
