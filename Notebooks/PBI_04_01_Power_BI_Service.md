@@ -68,8 +68,10 @@
 6. Under Media, Clic on **Web Content**  > Select **Next** 
 7. Under **Embed Code** > paste below code html
 
-    ```<h1>This is a heading</h1>
-    <p>This is a paragraph.</p>```
+    ```
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    ```
 
 1. Click om **Apply** and observe Tile in the dashboard
 
