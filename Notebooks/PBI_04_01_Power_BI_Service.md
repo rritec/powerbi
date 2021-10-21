@@ -59,8 +59,6 @@
 1. Again **publish** the file to **Power BI service** and replace the existing dataset with this one.
 1. Go to Power BI service and review the **Lab 4 - Starting Report** and examine whether the change you made is reflected.
 
-
- 
 ## Add Web Content Tile
 ----
 4. Web Content Tile accepts any html tags/code
@@ -93,7 +91,7 @@
 1. Under Media, Clic on **Video**  > Select **Next** 
 1. Under **Content** > paste below URL
 
-    https://youtu.be/ap2X2Dzlzag
+    https://youtu.be/DNovBg5VCHA?list=PLpF-Cn8-Vi9QLt3NsK-7RH0jUPGRLnu7o
 
 1. Click om **Apply** and observe Tile in the dashboard    
 
