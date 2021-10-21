@@ -2,8 +2,21 @@
 # Data Refresh
 ---
 
-1. What are the connection types?
-  - Import
+- How many types of sources are available?
+  - On-Permise
+    - excel
+    - SqlServer
+    - Oracle
+    - ...etc 
+  
+  - Cloud
+    - web
+    - Azure SQL Database
+    - snowflake    - 
+    - ...etc
+- For which type of sources required scheduling?
+  - On-Permise
+  - Scenerio:
       - Today 10 rows available in the Source(example: excel/sql server/oracle/teradata)(on - Permise Datasets)
       - you imported to PBI file
       - Developed reports
