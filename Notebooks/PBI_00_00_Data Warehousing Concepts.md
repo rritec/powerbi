@@ -1,3 +1,12 @@
+Please listen below videos and read the material
+
+[Intro to DW](https://youtu.be/NAuWUWmdmsE)
+
+[OLTP Vs OLAP](https://youtu.be/KeJi1xDHQtA)
+
+[Types of Schemas](https://youtu.be/XeMpv1Q3aJ8)
+
+
 1. Name few business domains around you and understand how they collect data from customer.
     - Retail
         - amazon.in/amazon.com/amazon.co.uk        
