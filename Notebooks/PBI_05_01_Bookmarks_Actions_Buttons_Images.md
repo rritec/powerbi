@@ -19,7 +19,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0147.png?raw=true)
 
-## Use Case 2:
+## Use Case 2: Toggle etween Pie and Bar Chart
 1. Open Power BI Desktop
 2. Import DimCustomer.csv and FactInternetSale.csv
 3. Develop a pie chart and column chart one overap another
