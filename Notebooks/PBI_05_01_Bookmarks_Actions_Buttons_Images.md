@@ -1,3 +1,5 @@
+
+
 # Reading Activity:
 https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks
 
@@ -5,6 +7,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 
 
 ## Use Case 1: Clear All Slicers in Power BI
+----
 1. Create a **text box** and name it as Dname:
 1. Create a **Slicer** with Dname Column
 1. Create a **text box** and name it as Job:
@@ -20,6 +23,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0147.png?raw=true)
 
 ## Use Case 2: Toggle etween Pie and Bar Chart
+----
 1. Open Power BI Desktop
 2. Import DimCustomer.csv and FactInternetSale.csv
 3. Develop a pie chart and column chart one overap another
@@ -37,6 +41,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 ![image](https://user-images.githubusercontent.com/20516321/113813419-7b50ae00-978d-11eb-9718-acd2f1cc6c79.png)
 
 ## Use Case 3: Navigate to required page of PBIX file Dynamically
+----
 
 - Create custom table by using Enter Table option
     - In **Power BI Desktop** > Click on **Enter Data** > Provide **Table Name**, **Column Name** and Values must be equal to your PBIX page names 
