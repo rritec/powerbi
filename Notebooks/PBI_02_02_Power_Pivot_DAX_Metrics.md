@@ -7,69 +7,37 @@
     - Azure Analysis Services
     - SQL Server Analysis Services
     - Power Pivot in Excel data models.
-1. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
+1. Refer below MSFT Materials
+    - [Help Document](https://docs.microsoft.com/en-us/dax/)
+    - [Guided Learning Path](https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/)
 
+# DAX Functions mainily catagorized as below
 
-https://docs.microsoft.com/en-us/dax/
+    - Aggregation functions
+    - Date and time functions
+    - Filter functions
+    - Financial functions 
+    - Information functions
+    - Logical functions
+    - Math and Trig functions
+    - Other functions
+    - Parent and Child functions
+    - Relationship functions
+    - Statistical functions
+    - Table manipulation functions
+    - Text functions
+    - Time intelligence functions
 
-https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
+## Exercise 1: Learn Calendar function
 
-# DAX Main Types are
-
-## Date and time functions
-
-
-### CALENDAR
 1. Open PBI Desktop
 1. In left side Navigation bar > Click on **Data**
 1. Click on New Table
 1. Provide DAX formula as **Calendar = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
 1. Develop Table Report and observe output.
-
 1. Also explore DATE,EOMONTH, DATEDIFF, TODAY
 
- 1. How many years survived by Mahatma Gandhi? 
-    - We know Gandhi Born on **October 2, 1869**, and Died on **January 30, 1948**
-    - Read help document and find out no of years survived by Gandhi 
-    - https://docs.microsoft.com/en-us/dax/datediff-function-dax
-
-## Time-intelligence functions
-
-- SAMEPERIODLASTYEAR
-
-## Filter functions
-
-- CALCULATE
-
-## Information functions
-- username()
-- userprincipalname()
-- isblank
-- iserror
-- contains
-- ...etc
-
-## Logical functions
-- and
-- or
-- if
-- ...etc
-
-## Math and Trig functions
-- sin
-- cos
-- log
-- exp
-- ..etc
-
-## Statistical functions
-- AVERAGE
-- COUNT
-- MAX
-- MIN
-- ... etc
-
-## Exercise 1: Using Variables to improve performance
+## Exercise 2: Using Variables to improve performance
 - Any calculation, we are using twice or more better to store the calculation result in variable and use the variable where ever needed.
 - Open Labdata/Adventure Works DW 2020 M02.pbix file
 - Observe Calculation inside **Sales** table **Revenue YoY %**
@@ -85,7 +53,7 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 - Develop report as shown below
     - ![image](https://user-images.githubusercontent.com/20516321/111411593-da785100-8700-11eb-94d7-c8e177cf87b9.png)
 
-## Exercise 2: Duplicate Table
+## Exercise 3: Duplicate Table
 - Open [Adventure Works DW 2020 M03](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M03.pbix)
 - In the Data view > Click on New Table > type below formula 
 
@@ -109,7 +77,7 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
         - Ship Full Date
     - Mark the **Ship Date** table as a date table by using the Ship Date column.
 
-## Exercise 3: Can you populate dates of india financial year
+## Exercise 4: Can you populate dates of india financial year
 - The financial year of India begins from April 1 of a calendar year and ends on March 31 of the next calendar year
 - In above PBIX file, develop a table report to understand range of dates
 
