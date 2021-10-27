@@ -37,7 +37,13 @@
 1. Develop Table Report and observe output.
 1. Also explore DATE,EOMONTH, DATEDIFF, TODAY
 
-## Exercise 2: Using Variables to improve performance
+## Exercise 2: How many years survived by Mahatma Gandhi?
+
+- We know Gandhi Born on October 2, 1869, and Died on January 30, 1948
+- Read help document and find out no of years survived by Gandhi
+    https://docs.microsoft.com/en-us/dax/datediff-function-dax
+
+## Exercise 3: Using Variables to improve performance
 - Any calculation, we are using twice or more better to store the calculation result in variable and use the variable where ever needed.
 - Open Labdata/Adventure Works DW 2020 M02.pbix file
 - Observe Calculation inside **Sales** table **Revenue YoY %**
@@ -53,7 +59,7 @@
 - Develop report as shown below
     - ![image](https://user-images.githubusercontent.com/20516321/111411593-da785100-8700-11eb-94d7-c8e177cf87b9.png)
 
-## Exercise 3: Duplicate Table
+## Exercise 4: Duplicate Table
 - Open [Adventure Works DW 2020 M03](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M03.pbix)
 - In the Data view > Click on New Table > type below formula 
 
@@ -77,7 +83,7 @@
         - Ship Full Date
     - Mark the **Ship Date** table as a date table by using the Ship Date column.
 
-## Exercise 4: Can you populate dates of india financial year
+## Exercise 5: Can you populate dates of india financial year
 - The financial year of India begins from April 1 of a calendar year and ends on March 31 of the next calendar year
 - In above PBIX file, develop a table report to understand range of dates
 
