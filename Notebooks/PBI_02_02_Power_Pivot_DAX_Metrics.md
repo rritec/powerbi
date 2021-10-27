@@ -103,13 +103,7 @@
 
 
 ## Questions
-1. Create a table with dates by using given two Dates?
-    - Open PBI Desktop
-    - Click on **Model** Menu bar
-    - Click on New Table
-    - Provide DAX formula as **Calendar = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
-    - Develop Table Report and observe output.
- 1. Difference between USERNAME() Vs USERPRINCIPALNAME()?
+1. About USERNAME() and USERPRINCIPALNAME()?
     - https://docs.microsoft.com/en-us/dax/username-function-dax
     - https://docs.microsoft.com/en-us/dax/userprincipalname-function-dax
     - In PowerBI Desktop
