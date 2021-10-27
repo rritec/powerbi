@@ -11,7 +11,7 @@
     - [Help Document](https://docs.microsoft.com/en-us/dax/)
     - [Guided Learning Path](https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/)
 
-# DAX Functions mainily catagorized as below
+## DAX Functions mainily catagorized as below
 
     - Aggregation functions
     - Date and time functions
