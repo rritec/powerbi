@@ -70,7 +70,7 @@ https://docs.microsoft.com/en-us/learn/paths/dax-power-bi/
 - ... etc
 
 ## Exercise 1: Using Variables to improve performance
-- Any calculation, we are using twice are more better to store the calculation result in variable and use the variable where ever needed.
+- Any calculation, we are using twice or more better to store the calculation result in variable and use the variable where ever needed.
 - Open Labdata/Adventure Works DW 2020 M02.pbix file
 - Observe Calculation inside **Sales** table **Revenue YoY %**
 - The last year sales, calculating two times right .
