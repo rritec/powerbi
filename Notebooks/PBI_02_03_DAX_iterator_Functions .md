@@ -95,7 +95,7 @@
       | John | 02-Jan-2017 |	True	|  |        
       | Nancy | 01-Jan-2019 |	False |	1234567890 |
 
-  - Make sure datatypes are Date --> Date , Holiday Flag --> Bool, Phone --> Whole Number
+  - Make sure datatypes are Employee Name --> Text, Date --> Date , Holiday Flag --> Bool, Phone --> Whole Number
   - Can you count Date column using count and counta function?
       - yes
   - can you count bool column with count function?
