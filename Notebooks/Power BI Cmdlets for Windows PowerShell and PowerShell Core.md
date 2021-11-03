@@ -53,13 +53,14 @@ Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv
 
       # Define variables for path and file name
       $path="C:\work\ps\"
-      $file_name="list_of_workspaces.csv"
+      $ws_file_name="list_of_workspaces.csv"
+      $rs_file_name="list_of_reports.csv"
 
       # Export all workspace information
-      Get-PowerBIWorkspace | Export-Csv -Path $path$file_name
+      Get-PowerBIWorkspace | Export-Csv -Path $path$ws_file_name
 
       # Read csv file of workspaces
-      $ws=Import-Csv -Path $path$file_name
+      $ws=Import-Csv -Path $path$ws_file_name
 
       # Read ids of workspaces
       ForEach-Object {
@@ -72,7 +73,7 @@ Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv
       for(;$i -le $Ids.Length-1;$i++)
       {
 
-          Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports3.csv
+          Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path $path$rs_file_name
       }
     
    
