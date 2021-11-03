@@ -6,7 +6,7 @@ Recap:
 		- 1.1.2. What are the Fact Tables?
 		- 1.1.3. Star Model,Snow Flake Model,Mixed Models
 		- 1.1.4. Between two tables
-			- a) Cardinality(1:1,*:*,*:1,1:*)>> Default(*:1)(Fact to Dim)
+			- a) Cardinality(1:1,\*:\*,\*:1,1:\*)>> Default(*:1)(Fact to Dim)
 			- b) Cross Filter Direction (Single,Both)
 			- c) Active/Inactive (This scenario of inactive relation comes if we have ROLE PLAYING DIMENSIONS)
 	- DAX(Data Analysis eXpression)(Calculations)
