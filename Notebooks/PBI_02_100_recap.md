@@ -6,15 +6,15 @@ Recap:
 		- 1.1.2. What are the Fact Tables?
 		- 1.1.3. Star Model,Snow Flake Model,Mixed Models
 		- 1.1.4. Between two tables
-			- a) Cardinality(1:1,\*:\*,\*:1,1:\*)>> Default(*:1)(Fact to Dim)
-			- b) Cross Filter Direction (Single,Both)
+			- a) Cardinality(1:1, \*:\*, \*:1, 1:\*)>> Default(\*:1)(Fact to Dim)
+			- b) Cross Filter Direction (Single, Both) >> Default Cross Filter Direction is **Single**
 			- c) Active/Inactive (This scenario of inactive relation comes if we have ROLE PLAYING DIMENSIONS)
 	- DAX(Data Analysis eXpression)(Calculations)
 		- 1.2.1. New Column(0.01%)
 		- 1.2.2. New Mesure(99.98%)
 		- 1.2.3. New Table(0.01%)
 			- 1).Aggregation functions
-				- SUM(Retuen value)
+				- SUM(Return value)
 				- MIN
 				- MAX
 				- COUNT
@@ -25,7 +25,7 @@ Recap:
 				- COUNTX
 				- COUNTAX
 			- 2) Date and time functions
-				- Calendar(Retuen Table)
+				- Calendar(Return Table)
 				- CALENDARAUTO(Return Table)
 				- DATE(<yyyy>,<mm>,<dd>)(Return Value)
 				- DATEDIFF(<startdate>,<enddate>,<interval>)(Return Value)
@@ -39,6 +39,7 @@ Recap:
 				- ALLEXCEPT(<table>,<column>[,<column>[,…]])(Return Table)
 				- Calculate(<Expression>,[<filter1>,[<Filter2>...]])
 				- SELECTEDVALUE())Returns slicer selected value/coresponding value
+				
 			- 4) Financial functions
 			- 5) Information functions
 				- HASONEVALUE(<columnName>)(Return Value)(Bool)
