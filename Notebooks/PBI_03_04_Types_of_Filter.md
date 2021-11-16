@@ -1,7 +1,16 @@
 
 # Filter data with Power BI
-1. Data is the core of Power BI. As you explore reports, each visual draws its underlying data from sources that often contain far more data than you need. 
-1. Power BI offers several ways to filter reports. Knowing how to filter data is the key to finding the right information
+1. In PowerBI filters are mainly **6** types
+    - Slicer
+    - Filter Pane Filters
+        - Vizulations Level Filter
+        - Page Level Filter
+        - All Pages Level Filter or Report Level Filter
+    - Drill Through Filter
+    - RLS(Row Level Security)
+
+3. Data is the core of Power BI. As you explore reports, each visual draws its underlying data from sources that often contain far more data than you need. 
+4. Power BI offers several ways to filter reports. Knowing how to filter data is the key to finding the right information
 ![](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/media/2-1/power-bi-filter-intro.gif)
 
 ## Slicers
