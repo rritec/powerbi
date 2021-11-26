@@ -1,31 +1,24 @@
-WIP...
+# Parameters
 
-Dev(dataset) > PBI Service
+- let us assume development servername and database name
+    - Server name: rritec
+    - Databasename: Adventureworksdw2012
 
-Server name: rritec
-Databasename: Adventureworksdw2012
+- let us assume Testing servername and database name
+    - Server name: rritec_test
+    - Databasename: Adventureworksdw2012_test
+
+- let us assume production servername and database name
+    - Server name: rritec_prod
+    - Databasename: Adventureworksdw2012_prod
+- Import three tables DimDate,DimCustomer and FactInternetSales tables from sqlserver and observe M-Language source line of code of each query
+- Create two paramatrs with the name of Servername and DBName and passvalues as rritec and AdventureWorksDW2012 respectively
+- Double click on each Query source step and change static values to above parameters.
 
 
-Test
-
-Server name: rritec_test
-Databasename: Adventureworksdw2012_test
-
-
-Prod
-
-Server name: rritec_prod
-Databasename: Adventureworksdw2012_prod
-
+## Reference M-Language
 let
     Source = Sql.Database("rritec", "AdventureWorksDW2012"),
-    dbo_DimDate = Source{[Schema="dbo",Item="DimDate"]}[Data]
-in
-    dbo_DimDate
-
-
-let
-    Source = Sql.Database(ServerName, DBName),
     dbo_DimDate = Source{[Schema="dbo",Item="DimDate"]}[Data]
 in
     dbo_DimDate
