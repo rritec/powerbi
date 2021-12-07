@@ -65,11 +65,12 @@ Recap:
 				- BLANK()
 				- ERROR()
 			- 9) Parent and Child functions
-				- PATH(<empno>,<mgrno>
+				- PATH(\<empno>,\<mgrno>
 				- ![image](https://user-images.githubusercontent.com/20516321/137073130-748c5efb-2208-4c6a-a4c5-effa23a3552a.png)
 
 			- 10) RelationShip Functions
 				- deptno10_data_only = FILTER(EMP,RELATED(DEPT[DNAME])="ACCOUNTING")
+
 			- 11) Statistical functions
 				- RankX
 
@@ -84,6 +85,11 @@ Recap:
 
 
 1. Filter Vs Calculatedtable
+2. calculate Vs Calculatetable
+3. all vs allexcept
+4. new column Vs New mesure
+5. selectedvalue
+6. sum Vs Sumx
 	- 
 				
 	
