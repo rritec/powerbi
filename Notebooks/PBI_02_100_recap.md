@@ -90,7 +90,7 @@ Recap:
 4. new column Vs New mesure
 5. selectedvalue
 6. sum Vs Sumx
-	- 
+
 				
 	
 		
