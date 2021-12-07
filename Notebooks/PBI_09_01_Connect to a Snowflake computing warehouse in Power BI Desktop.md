@@ -31,13 +31,14 @@
   
 **Scripts:**
 ```
-account_name: uk00084.west-us-2.azure
-account url : https://uk00084.west-us-2.azure.snowflakecomputing.com
-sername: mylageethika
-password: AuIn@2021
+account_name: ox16000.west-us-2.azure
+account url : https://ox16000.west-us-2.azure.snowflakecomputing.com
+sername: kumaryama
+password: ********
 
 
 
+open cmd
 snowsql -a uk00084.west-us-2.azure -u mylageethika
 create or replace database sf_tuts;
 select current_database(), current_schema();
