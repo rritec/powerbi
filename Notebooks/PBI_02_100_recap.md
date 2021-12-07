@@ -3,7 +3,9 @@ Recap:
 1. Power Pivot
 	- Model
 		- 1.1.1. What are the dimension tables?
+			- PK + Decs
 		- 1.1.2. What are the Fact Tables?
+			- FKs + Mesures
 		- 1.1.3. Star Model,Snow Flake Model,Mixed Models
 		- 1.1.4. Between two tables
 			- a) Cardinality(1:1, \*:\*, \*:1, 1:\*)>> Default(\*:1)(Fact to Dim)
