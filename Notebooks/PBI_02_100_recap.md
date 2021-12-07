@@ -29,11 +29,13 @@ Recap:
 			- 2) Date and time functions
 				- Calendar(Return Table)
 				- CALENDARAUTO(Return Table)
-				- DATE(<yyyy>,<mm>,<dd>)(Return Value)
+				- DATE (<yyyy>,<mm>,<dd>)(Return Value)
+
 				- DATEDIFF(<startdate>,<enddate>,<interval>)(Return Value)
 				- NOW()(Return Value)
 				- today()(Return Value)
 				- EOMONTH(<DATE>,<months>)(Return Value)
+
 			- 3) Filter functions
 				- Filter(<Table>,<filter>)(Return Table)
 				- CalculateTable(<Table>,<filter>)(Return Table)
