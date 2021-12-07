@@ -34,20 +34,20 @@ Recap:
 				- DATEDIFF(\<startdate>,\<enddate>,\<interval>)(Return Value)
 				- NOW()(Return Value)
 				- today()(Return Value)
-				- EOMONTH(<DATE>,<months>)(Return Value)
+				- EOMONTH(\<DATE>,\<months>)(Return Value)
 
 			- 3) Filter functions
-				- Filter(<Table>,<filter>)(Return Table)
-				- CalculateTable(<Table>,<filter>)(Return Table)
-				- ALL([<Table>,[<column]])(Return Table)
-				- ALLEXCEPT(<table>,<column>[,<column>[,…]])(Return Table)
-				- Calculate(<Expression>,[<filter1>,[<Filter2>...]])
+				- Filter(\<Table>,\<filter>)(Return Table)
+				- CalculateTable(\<Table>,\<filter>)(Return Table)
+				- ALL([\<Table>,[<column]])(Return Table)
+				- ALLEXCEPT(\<table>,\<column>[,\<column>[,…]])(Return Table)
+				- Calculate(\<Expression>,[\<filter1>,[\<Filter2>...]])
 				- SELECTEDVALUE())Returns slicer selected value/coresponding value
 				
 			- 4) Financial functions
 			- 5) Information functions
-				- HASONEVALUE(<columnName>)(Return Value)(Bool)
-				- ISBLANK(<value>) 
+				- HASONEVALUE(\<columnName>)(Return Value)(Bool)
+				- ISBLANK(\<value>) 
 				- USERNAME()
 				- USERPRINCIPALNAME()
 			- 6) Logical functions
@@ -56,7 +56,7 @@ Recap:
 				- IF
 				- SWITCH
 			- 7) Math and Trig functions
-				- DIVIDE(<num>,<den>,[<alternate Result>])
+				- DIVIDE(\<num>,\<den>,[\<alternate Result>])
 				- ABS
 				- SIN(pi()/2)
 				- COS(0)
