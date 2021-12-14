@@ -169,7 +169,10 @@ INSERT INTO emp30 (empno,ename,job,mgr,hiredate,sal,comm,deptno,test) VALUES
 
 ## Do all exercise of Previous chapter excel import
 
-
+## Questions
+1. What is the official tool, to query MySql database?
+    - MySQL Workbench
+2. 
 ```python
 
 ```
