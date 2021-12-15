@@ -1,7 +1,7 @@
 # M-Language
---
-1. Power Query Formula Language (informally known as "M")
-2. **M** stands for **mash-up**
+
+1. Power Query is a Formula Language (Informally known as "M")
+2. **M** stands for **Mash-Up**
 3. **M** is a case-sensitive language
 4. Power Query is a data transformation and data preparation engine. Power Query comes with a graphical interface for getting data from sources and a Power Query Editor for applying transformations. Because the engine is available in many products and services, the destination where the data will be stored depends on where Power Query was used. Using Power Query, you can perform the extract, transform, and load (ETL) processing of data.
 
@@ -13,7 +13,7 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 
 ### Exercise 1: Write Simple M-languge Query
 --
-1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Blank Query** > in **Power Query Editor** > In Queries Pane >  Click on Advanced Editor > Then copy paste below code
+1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Blank Query** > In **Power Query Editor** > Click on **Advanced Editor** > Then copy paste below code
 
         let
             x = 1 +1,
