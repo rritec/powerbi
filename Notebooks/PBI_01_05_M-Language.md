@@ -13,7 +13,7 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 
 ### Exercise 1: Write Simple M-languge Query
 --
-1. Open **Power Query Editor** > In Queries Pane > Right Click > New Query > Blank Query > Click on Advanced Editor > Then copy paste below code
+1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Blank Query** > in **Power Query Editor** > In Queries Pane >  Click on Advanced Editor > Then copy paste below code
 
         let
             x = 1 +1,
