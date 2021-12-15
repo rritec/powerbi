@@ -8,11 +8,11 @@
 ![image](https://user-images.githubusercontent.com/20516321/118579120-12584f00-b7ab-11eb-8f40-dee8dd8bfd24.png)
 
 ## Reference doc 
----
+
 https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-formula-language
 
 ### Exercise 1: Write Simple M-languge Query
---
+
 1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Blank Query** > In **Power Query Editor** > Click on **Advanced Editor** > Then copy paste below code
 
         let
@@ -25,7 +25,7 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 2. Click on apply and close
 3. develop report and observe output
 ### Exercise 2: Write Simple M-languge Query with spaces in variable name.
---
+
 1. Replace above code with below code and observe result
 
                        let
@@ -38,7 +38,7 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
             
             
  ### Exercise 3: Call functions in M-language
---
+
 1. Replace above code with below code and observe result
 
        //this is a single line comment
@@ -54,7 +54,7 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
         in
             year
 ### Exercise 4: Real world example
---
+
 1. Open any one PBIX file and observe M-language code
 2. In screenshot below, you can see all basics mentioned so far:
         - **let** and **in** block
