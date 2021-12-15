@@ -174,6 +174,21 @@ rs
 
 ```M
 let
+   student=Table.FromRecords(
+    {
+        [sno =101,sname="ram",scourse="powerbi",sfee=100],
+        [sno =102,sname="nancy",scourse="powerapps",sfee=200],
+        [sno =103,sname="john",scourse="powerautomate",sfee=300]
+    }
+       )
+in
+    student       
+
+```
+9. What is the result of below program
+
+```M
+let
 
 rs = Table.FuzzyGroup(
     Table.FromRecords(
