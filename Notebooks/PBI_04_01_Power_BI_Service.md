@@ -99,7 +99,8 @@
 ----
 
 1. In above report click on **Edit** > Click on **Sashboard Theme** > explore it
-For more info [click here](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes)
+
+    - For more info [click here](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes)
   
 ## Add entire page to dashboard as live page
 1. Open report > click on **...** > Click on **Pin to a dashboard**
