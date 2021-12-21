@@ -1,5 +1,5 @@
 
-# Power BI Service
+<h1>Power BI Service</h1>
 
 ## Create a new workspace
 
