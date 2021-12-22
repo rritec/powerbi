@@ -2,8 +2,16 @@
 - **Power BI Desktop** Key Components
     - Power Query Editor
         - Connecting Data Sources
+            - file(excel ... etc)
+            - Relational Databases (MySql,MS Sql Server ... etc)        - 
         - Import The Tables
         - Transformations
+            - Replace null with zero
+            - add new column
+            - change datatype
+            - filter
+            - .... etc
+        
         - Understanding Transformations M-Language of Power BI
         - Combine
             - Append(Union All)
@@ -21,11 +29,11 @@
 # Lab Overview
 
 ## SCENARIO
-ABC is a company that manufactures and sells sporting goods. The company has offices in the United States (US) and several other countries. Its sales comprise of US sales and International sales. ABC’s sales come from its owned manufactured products, as well as other manufacturers’ products.
+ABC is a company that manufactures and sells **sporting goods**. The company has offices in the United States (US) and several other countries. Its sales comprise of US sales and International sales. ABC’s sales come from its owned manufactured products, as well as other manufacturers’ products.
 
-ABC's US office stores the sales data on an **Access** database. ABC International sales transactions are available as **comma separated (CSV)** files. They could be generated daily, either manually by someone, or automatically by an automated process. They are available in a dedicated folder. These CSV files have the same column structure as the sales table for the US sales that comes from the SQL Database.
+ABC's US office stores the sales data on an **Access** database. ABC International sales transactions are available as **Comma Separated Values (CSV)** files. They could be generated daily, either manually by someone, or automatically by an automated process. They are available in a dedicated folder. These CSV files have the same column structure as the sales table for the US sales that comes from the SQL Database.
 
-You want to perform analysis on ABC's worldwide sales data for the year **2000 to 2015**. You need to bring all these data into Power BI Desktop before you can perform any analysis. Finally, you want to compare ABC's **country sales with the country population**. You need to import the country population data from a less structured Excel report to Power BI.
+You want to perform analysis on ABC's worldwide sales data for the year **2000 to 2015**. You need to bring all these data into Power BI Desktop before you can perform any analysis. Finally, you want to compare ABC's **country sales with the country population**. You need to import the country population data from a less structured **Excel** report to Power BI.
 
 
 
@@ -33,11 +41,11 @@ You want to perform analysis on ABC's worldwide sales data for the year **2000 t
 
 This lab comprises of three exercises:
 
-In the first exercise, you will import data to Power BI Desktop from an Access database file.
+In the **First Exercise**, you will import data to Power BI Desktop from an Access database file.
 
-In the second exercise, you will import data from CSV files which resides in a file folder. You will append this new data to the corresponding existing data that comes from the Access Database.
+In the **Second Exercise**, you will import data from CSV files which resides in a file folder. You will append this new data to the corresponding existing data that comes from the Access Database.
 
-In the third exercise, you will import data to Power BI Desktop from an Excel file that is less structured.
+In the **Third Exercise**, you will import data to Power BI Desktop from an Excel file that is less structured.
 
 
 
