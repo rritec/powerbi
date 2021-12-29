@@ -33,7 +33,7 @@
 1. Open PBI Desktop
 1. In left side Navigation bar > Click on **Data**
 1. Click on New Table
-1. Provide DAX formula as **Calendar = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
+1. Provide DAX formula as **dt_table = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
 1. Develop Table Report and observe output.
 1. Also explore DATE,EOMONTH, DATEDIFF, TODAY
 
@@ -41,7 +41,10 @@
 
 - We know Gandhi Born on October 2, 1869, and Died on January 30, 1948
 - Read help document and find out no of years survived by Gandhi
+
     https://docs.microsoft.com/en-us/dax/datediff-function-dax
+ - Process:
+    - In Fields pane > Click on dt_table ... > click on new mesure > type the formula **Number of years survived = datediff(date(1869,10,02),date(1948,01,30))** > click on validate > drag this column into table and observe the output.
 
 ## Exercise 3: Using Variables to improve performance
 - Any calculation, we are using twice or more better to store the calculation result in variable and use the variable where ever needed.
