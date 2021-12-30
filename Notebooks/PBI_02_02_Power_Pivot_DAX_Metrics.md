@@ -54,13 +54,14 @@
 - Develop one mesure with the name of **Revenue YOY % using Var** with below formula
 
     ```
-    Revenue YoY %_var = 
-    VAR LYSales = CALCULATE([Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
+    Revenue YoY %_var =     
+    VAR LySales = CALCULATE([Revenue],SAMEPERIODLASTYEAR('Date'[Date]))
     RETURN
-    DIVIDE([Revenue] - LYSales, LYSales) 
+    if(HASONEVALUE('Date'[Fiscal Year]),DIVIDE([Revenue]-LySales,LySales))
     ```
 - Develop report as shown below
-    - ![image](https://user-images.githubusercontent.com/20516321/111411593-da785100-8700-11eb-94d7-c8e177cf87b9.png)
+    - ![image](https://user-images.githubusercontent.com/20516321/147716190-3778224e-e457-4198-ae42-7a6d1fd08f7c.png)
+
 
 ## Exercise 4: Duplicate Table
 - Open [Adventure Works DW 2020 M03](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M03.pbix)
