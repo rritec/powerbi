@@ -49,7 +49,7 @@
 
 ## Do you know Power BI products?
 ---
-1. **Power BI Desktop**
+1. **Power BI Desktop**(Windows based software)
     - Create rich,interactive reports with visual analytics at your fingertips
     - Go from `data` →  `insight` →  `action` with Power BI Desktop
     - Connect to your data, wherever it is
