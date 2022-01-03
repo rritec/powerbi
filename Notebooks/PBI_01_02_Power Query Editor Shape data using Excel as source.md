@@ -10,7 +10,7 @@
 
 
 ## Import scott data from excel
-1. Open **Power BI Desktop** > Click on **Get Data** > Click on **File** > Click on **Excel**
+1. Go to windows search > type **Power BI** > Open **Power BI Desktop** > Click on **Get Data** > Click on **File** > Click on **Excel**
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0081.png?raw=true)
     
@@ -20,7 +20,7 @@
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0082.png?raw=true)
 
 ## Power Query has `5` main parts
-1. Menu Bar
+1. Menu Bar(Home/Transform/Add Column/View/Tools/Help)
 1. Queries Pane
 1. Query Settings Pane
 1. Work area
