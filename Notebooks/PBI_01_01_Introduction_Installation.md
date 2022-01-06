@@ -162,7 +162,7 @@ https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?vi
 # MySql Installation(Optional)
 ---
 1. Download the software 
-2. https://dev.mysql.com/downloads/file/?id=508936
+    https://dev.mysql.com/downloads/file/?id=508936
 3. Ckick in msi file and install it
 ![image](https://user-images.githubusercontent.com/20516321/148321034-5bbd5b60-57e6-42c4-ae60-3fb446f6c1b1.png)
 
