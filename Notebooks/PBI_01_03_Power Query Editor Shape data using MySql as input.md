@@ -1,6 +1,9 @@
 
 # Working with MySql
 
+- MySql is a oracle product
+- Install **MySql** software by following below link
+  https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#mysql-installationoptional
 - Open **MySql Workbench** > if required create **new connection** or use **existing connection** > Click on **New SQL Tab for execution of queries**
 - In **Navigator** Window in empty space > Right Click > click on **Create Schema** > Provide schema name as **rritecdb** > click on **apply** > click on **apply** > Click on **Finish**
 or 
