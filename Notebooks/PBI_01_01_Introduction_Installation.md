@@ -171,6 +171,12 @@ https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?vi
 
 5. Observe all components
 ![image](https://user-images.githubusercontent.com/20516321/148321246-8f013719-ee9a-428a-844b-7134cc97aaf0.png)
+6. Click on Next
+    ![image](https://user-images.githubusercontent.com/20516321/148321730-ebf433d9-08cb-4b66-985e-98d27a9be83b.png)
+
+7. Provide **root** user password and notedown some where
+    ![image](https://user-images.githubusercontent.com/20516321/148321849-dff93321-3f00-466c-b3ca-af97b5758a5f.png)
+
 
 
 
