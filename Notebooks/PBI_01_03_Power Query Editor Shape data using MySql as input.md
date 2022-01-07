@@ -7,13 +7,10 @@
 - Open **MySql Workbench** > if required create **new connection** or use **existing connection** > Click on **New SQL Tab for execution of queries**
 - In **Navigator** Window in empty space > Right Click > click on **Create Schema** > Provide schema name as **rritecdb** > click on **apply** > click on **apply** > Click on **Finish**
 or 
-run below script 
+- run below script 
 
   CREATE SCHEMA `rritecDB` ;
-  
-- 
-
-use rritecdb;
+  use rritecdb;
 
 ## Load Data
 drop table if exists emp;
