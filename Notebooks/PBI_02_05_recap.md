@@ -15,6 +15,8 @@ Recap:
 		- 1.2.1. New Column(0.01%)
 		- 1.2.2. New Mesure(99.98%)
 		- 1.2.3. New Table(0.01%)
+		- ![image](https://user-images.githubusercontent.com/20516321/148710242-8e059b9a-21e5-460f-b995-1f7c1689fdb3.png)
+
 			- 1).Aggregation functions
 				- SUM(Return value)
 				- MIN
