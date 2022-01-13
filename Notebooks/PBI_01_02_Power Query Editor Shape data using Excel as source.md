@@ -6,11 +6,11 @@
 # Power Query Editor
 - It is also known as `Power Query`
 # Download all materials and data
-- Download materials [here](https://github.com/rritec/powerbi/archive/refs/heads/master.zip)
-- Create one folder on desktop with the name of **PowerBI_work**
-- Move above **powerbi-master.zip** file to **PowerBI_work** folder
-- Right click on **powerbi-master.zip** file > Click on **Extract All**
-- Observe all materials and Labs
+1. Download materials [here](https://github.com/rritec/powerbi/archive/refs/heads/master.zip)
+1. Create one folder on desktop with the name of **PowerBI_work**
+1. Move above **powerbi-master.zip** file to **PowerBI_work** folder
+1. Right click on **powerbi-master.zip** file > Click on **Extract All**
+1. Observe all materials and Labs
 
 
 ## Import scott data from excel
