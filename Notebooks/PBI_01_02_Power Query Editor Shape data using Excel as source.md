@@ -37,16 +37,6 @@
 
 
 
-## Create `totalsal` column
-1. In the **Menu bar** > Click on **Add Column** > Click on **Custom Column** > Name it as **totalsal**
-1. Develop formula as shown in below image > Click on **ok**
-
-    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0084.png?raw=true)
-1. Observe output
-
-   
-   ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0086.png?raw=true)
-
 ## Rename column name `ename` as `Employee Name`
 1. In **Queries** pane > select **emp** > Right click on **ename** column 
 
@@ -55,9 +45,20 @@
 1. Click on **rename** and name it as **Employee Name** > press enter
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0088.png?raw=true)
+    
+## Create `totalsal` column
+1. In the **Menu bar** > Click on **Add Column** > Click on **Custom Column** > Name it as **totalsal**
+1. Develop formula as shown in below image > Click on **ok**
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0084.png?raw=true)
+1. Observe output
+   
+   ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0086.png?raw=true)
 
 
-## Data Types
+
+
+## Observe Data Types
 1. Decimal Number
 2. Fixed Decimal Number
 3. Whole Number
@@ -70,16 +71,26 @@
 10. Text
 11. True/False
 12. Binary
+## Change data type of TotalSal to decimal numbar
+1. Right click on **totalsal** column > click on **Change type** > Click on **Decimal Number**
 
 ## AutoFilter/Basic Filter
+### Filter `sal` column to display only greater than `900`
+1. Click on **sal** column down arrow mark > Click on **Number Filters** > Click on **Greater Than** > type **900** > Click on **ok**
 
-### Filter `Job` column to display only `MANAGER` and `ANALYST`
+## Save the report
+1. Go to **File** menu > click on **save** > Select **powerbi_work** folder > name it as **PBI_01_02_Power Query Editor Shape data using Excel as source** > click on **ok**
 
-### Filter `Hiredate` column to display only greater than `01-Jan-1982`
 
-### Filter `sal` column to display only greater than `2400`
+## Publish the report
 
-### Filter `Job` and `sal` column to get `managers` info whoms cost to company(CTC) is more than `2500`
+1. Open https://app.powerbi.com/
+1. Signin with username and password given to you by your instructor
+2. In the left Navigation Pane > Click on Workspaces > Click on Create a Workspace > provide workspace name as rritec - workspace > click on Save
+3. In **Power BI Desktop** > click on **signin** and pass username and password
+4. Click on **publish** > Select above workspace **rritec - workspace** > click on ok
+5. Go to **power BI service** > observe report
+    
 
 ## Reference 
 
