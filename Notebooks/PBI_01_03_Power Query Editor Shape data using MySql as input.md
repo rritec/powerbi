@@ -8,10 +8,15 @@
 **or**
 1. run below script 
 
-  CREATE SCHEMA `rritecDB` ;
-  use rritecdb;
+``` sql
+CREATE SCHEMA rritecDB;
+```
+``` sql
+USE rritecdb;
+```
 
 ## Load Data
+``` sql
 drop table if exists emp;
 
 drop table if exists dept;
@@ -23,7 +28,9 @@ drop table if exists emp10;
 drop table if exists emp20;
 
 drop table if exists emp30;
+```
 
+``` sql
 CREATE TABLE `emp` (
   `empno` decimal(4,0) NOT NULL,
   `ename` varchar(10) DEFAULT NULL,
@@ -143,6 +150,7 @@ INSERT INTO emp30 (empno,ename,job,mgr,hiredate,sal,comm,deptno,test) VALUES
 ,(7844,'TURNER','SALESMAN',7698,'1981-09-08',1500.00,0.00,30,'1')
 ,(7900,'JAMES','CLERK',7698,'1981-12-03',950.00,NULL,30,'1')
 ;
+```
 ## Import below tables into Power BI
 
 1. emp
