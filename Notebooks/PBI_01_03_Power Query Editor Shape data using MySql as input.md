@@ -1,13 +1,12 @@
 
 # Working with MySql
 
-- MySql is a oracle product
-- Install **MySql** software by following below link
-  https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#mysql-installationoptional
-- Open **MySql Workbench** > if required create **new connection** or use **existing connection** > Click on **New SQL Tab for execution of queries**
-- In **Navigator** Window in empty space > Right Click > click on **Create Schema** > Provide schema name as **rritecdb** > click on **apply** > click on **apply** > Click on **Finish**
-or 
-- run below script 
+1. MySql is a oracle product
+1. Install **MySql** software by following [this link](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#mysql-installationoptional)
+1. Open **MySql Workbench** > if required create **new connection** or use **existing connection** > Click on **New SQL Tab for execution of queries**
+1. In **Navigator** Window in empty space > Right Click > click on **Create Schema** > Provide schema name as **rritecdb** > click on **apply** > click on **apply** > Click on **Finish**
+**or**
+1. run below script 
 
   CREATE SCHEMA `rritecDB` ;
   use rritecdb;
@@ -167,7 +166,7 @@ INSERT INTO emp30 (empno,ename,job,mgr,hiredate,sal,comm,deptno,test) VALUES
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0091.png?raw=true)
 
 
-## Do all exercise of Previous chapter excel import
+## Do all exercise of Previous chapter [PBI_01_02_Power Query Editor Shape data using Excel as source](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_02_Power%20Query%20Editor%20Shape%20data%20using%20Excel%20as%20source.md)
 
 ## Questions
 1. What is the official tool, to query MySql database?
