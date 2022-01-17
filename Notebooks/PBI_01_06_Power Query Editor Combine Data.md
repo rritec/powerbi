@@ -43,13 +43,9 @@ SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
 
 ```sql
 select * from emp10 -- 3 rows
-
 union
-
 select * from emp20 -- 5 rows
-
 union
-
 select * from emp30 -- 6 rows
 ```
 
@@ -86,8 +82,8 @@ select * from emp30 -- 6 rows
 #### Learn Sql Query
 
 ```sql
-Select dname,ename,job,sal \
-from emp,dept\
+Select dname,ename,job,sal
+from emp,dept
 where emp.deptno=dept.deptno
 ```
 	
@@ -115,8 +111,8 @@ on emp.deptno=dept.deptno
 #### Learn Sql Query
 
 ``` sql
-Select emp.deptno,dname,ename,job,sal \
-from emp left outer join dept \
+Select emp.deptno,dname,ename,job,sal
+from emp left outer join dept
 on emp.deptno=dept.deptno
 ```
 
@@ -136,8 +132,8 @@ on emp.deptno=dept.deptno
 #### Learn Sql Query
 
 ``` sql
-Select dept.deptno,dname,ename,job,sal \
-from emp right outer join dept \
+Select dept.deptno,dname,ename,job,sal
+from emp right outer join dept
 on emp.deptno=dept.deptno
 ```
 
@@ -156,20 +152,20 @@ on emp.deptno=dept.deptno
 #### Learn Sql Query
 
 ``` sql 
-Select dept.deptno,dname,ename,job,sal \
-from emp left outer join dept \
-on emp.deptno=dept.deptno \
-union  \
-Select dept.deptno,dname,ename,job,sal \
-from emp right outer join dept \
+Select dept.deptno,dname,ename,job,sal
+from emp left outer join dept
+on emp.deptno=dept.deptno
+union 
+Select dept.deptno,dname,ename,job,sal
+from emp right outer join dept
 on emp.deptno=dept.deptno 
 ```
 
 or 
 
 ``` sql
-select dept.deptno,emp.deptno,dname,loc,empno,ename,sal \
-from [dbo].[EMP] full outer join [dbo].[DEPT] \
+select dept.deptno,emp.deptno,dname,loc,empno,ename,sal
+from [dbo].[EMP] full outer join [dbo].[DEPT]
 on dept.deptno=emp.deptno 
 ```
 
@@ -188,7 +184,7 @@ on dept.deptno=emp.deptno
 #### Learn Sql Query
 
 ``` sql 
-select * from emp \
+select * from emp
 where deptno not in (select deptno from dept );
 ```
 
@@ -209,8 +205,8 @@ where deptno not in (select deptno from dept );
 #### Learn Sql Query
 
 ``` sql
-select * \
-from dept \
+select * 
+from dept 
 where deptno not in (select deptno from emp );
 ```
 
@@ -253,7 +249,7 @@ where sal between losal and hisal
 
 #### Learn Sql Query
 ``` sql
-select ename,dname,job,sal \
+select ename,dname,job,sal
 from emp,dept
 ```
 
@@ -345,12 +341,3 @@ where e.mgr=m.empno
 1. What is the difference between **union** and **union all**
 	- Union --> it will not produce duplicates rows
 	- union all --> will produce duplicate rows
-
-
-
-	
-	
-	
-```python
-
-```
