@@ -29,27 +29,29 @@
 ### Sql Query
 - Create required tables
 
-		SELECT * INTO [dbo].[emp10] FROM [dbo].[EMP] WHERE DEPTNO=10;
+``` sql 
+SELECT * INTO [dbo].[emp10] FROM [dbo].[EMP] WHERE DEPTNO=10;
 
-		SELECT * INTO [dbo].[emp20] FROM [dbo].[EMP] WHERE DEPTNO=20;
+SELECT * INTO [dbo].[emp20] FROM [dbo].[EMP] WHERE DEPTNO=20;
 
-		SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
+SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
+```
 	
 
 - Verify data
 
 
-		```sql
-		select * from emp10 -- 3 rows
+```sql
+select * from emp10 -- 3 rows
 
-		union
+union
 
-		select * from emp20 -- 5 rows
+select * from emp20 -- 5 rows
 
-		union
+union
 
-		select * from emp30 -- 6 rows
-		```
+select * from emp30 -- 6 rows
+```
 
 
 ### Develop Report using Append homogeneous Sources
@@ -83,19 +85,19 @@
 
 #### Learn Sql Query
 
-	```sql
-	Select dname,ename,job,sal \
-	from emp,dept\
-	where emp.deptno=dept.deptno
-	```
+```sql
+Select dname,ename,job,sal \
+from emp,dept\
+where emp.deptno=dept.deptno
+```
 	
 OR 
 
-	``` sql
-	Select emp.deptno,dept.deptno,dname,ename,job,sal
-	from emp inner join dept
-	on emp.deptno=dept.deptno
-	```
+``` sql
+Select emp.deptno,dept.deptno,dname,ename,job,sal
+from emp inner join dept
+on emp.deptno=dept.deptno
+```
 
 #### Develop PBI Report using inner Join
 
@@ -112,11 +114,11 @@ OR
 
 #### Learn Sql Query
 
-	``` sql
-	Select emp.deptno,dname,ename,job,sal \
-	from emp left outer join dept \
-	on emp.deptno=dept.deptno
-	```
+``` sql
+Select emp.deptno,dname,ename,job,sal \
+from emp left outer join dept \
+on emp.deptno=dept.deptno
+```
 
 #### Develop PBI Report using Left Outer Join
 
@@ -133,11 +135,11 @@ OR
 
 #### Learn Sql Query
 
-	``` sql
-	Select dept.deptno,dname,ename,job,sal \
-	from emp right outer join dept \
-	on emp.deptno=dept.deptno
-	```
+``` sql
+Select dept.deptno,dname,ename,job,sal \
+from emp right outer join dept \
+on emp.deptno=dept.deptno
+```
 
 #### Develop PBI Report using Right Outer Join
 
@@ -153,23 +155,23 @@ OR
 
 #### Learn Sql Query
 
-	``` sql 
-	Select dept.deptno,dname,ename,job,sal \
-	from emp left outer join dept \
-	on emp.deptno=dept.deptno \
-	union  \
-	Select dept.deptno,dname,ename,job,sal \
-	from emp right outer join dept \
-	on emp.deptno=dept.deptno 
-	```
+``` sql 
+Select dept.deptno,dname,ename,job,sal \
+from emp left outer join dept \
+on emp.deptno=dept.deptno \
+union  \
+Select dept.deptno,dname,ename,job,sal \
+from emp right outer join dept \
+on emp.deptno=dept.deptno 
+```
 
 or 
 
-	``` sql
-	select dept.deptno,emp.deptno,dname,loc,empno,ename,sal \
-	from [dbo].[EMP] full outer join [dbo].[DEPT] \
-	on dept.deptno=emp.deptno 
-	```
+``` sql
+select dept.deptno,emp.deptno,dname,loc,empno,ename,sal \
+from [dbo].[EMP] full outer join [dbo].[DEPT] \
+on dept.deptno=emp.deptno 
+```
 
 #### Develop PBI Report using Full Outer Join
 
@@ -185,10 +187,10 @@ or
 
 #### Learn Sql Query
 
-	``` sql 
-	select * from emp \
-	where deptno not in (select deptno from dept );
-	```
+``` sql 
+select * from emp \
+where deptno not in (select deptno from dept );
+```
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0038.png?raw=true)
 
@@ -206,11 +208,11 @@ or
 
 #### Learn Sql Query
 
-	``` sql
-	select * \
-	from dept \
-	where deptno not in (select deptno from emp );
-	```
+``` sql
+select * \
+from dept \
+where deptno not in (select deptno from emp );
+```
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0040.png?raw=true)
 
@@ -227,11 +229,11 @@ or
 ### Non Equi Join
 
 #### Learn Sql Query
-	``` sql
-	select ename,sal,grade 
-	from emp,salgrade 
-	where sal between losal and hisal
-	```
+``` sql
+select ename,sal,grade 
+from emp,salgrade 
+where sal between losal and hisal
+```
 
 ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0042.png?raw=true)
 
@@ -250,10 +252,10 @@ or
 ### Cross Join
 
 #### Learn Sql Query
-	``` sql
-	select ename,dname,job,sal \
-	from emp,dept
-	```
+``` sql
+select ename,dname,job,sal \
+from emp,dept
+```
 
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0046.png?raw=true)
 
@@ -268,11 +270,11 @@ or
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0047.png?raw=true)
     
 #### Develop PBI Report using Self Join
-	``` sql
-	select e.ename as employee_name,m.ename as manager_name 
-	from emp as e,emp as m
-	where e.mgr=m.empno
-	```
+``` sql
+select e.ename as employee_name,m.ename as manager_name 
+from emp as e,emp as m
+where e.mgr=m.empno
+```
 
 ## Home Work: Develop Below reports
 
