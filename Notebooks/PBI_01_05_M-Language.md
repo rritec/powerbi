@@ -15,7 +15,7 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 
 1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Blank Query** > In **Power Query Editor** > Click on **Advanced Editor** > Then copy paste below code
 
-``` M
+``` F#
 let
     x = 1 +1,
     y= 2+2,
@@ -30,7 +30,7 @@ in
 
 1. Replace above code with below code and observe result
 
-``` M
+``` F#
 let
         #"First Name" = "Ram",
         #"Last Name" = "Reddy",
@@ -44,7 +44,7 @@ in
 
 1. Replace above code with below code and observe result
 
-``` M
+``` F#
 //this is a single line comment
 /* This
 is 
@@ -73,7 +73,7 @@ in
 ---
 1. What is the result of below program
 
-```M
+```F#
 let 
         Sales2007 =  
         [  
@@ -95,7 +95,7 @@ in
 
 2. What is the result of below program
 
-```M
+```F#
 let
         SimpleInterest = (p,t,r) => p*t*r/100,
         // Here 
@@ -109,7 +109,7 @@ in
 
 3. What is the result of below program
 
-```M
+```F#
 let
     a =
     [
@@ -124,7 +124,7 @@ in
 
 4. What is the result of below program
 
-```M
+```F#
 = let
     a = List.Contains({1, 2, 3, 4, 5}, 3),
     b = List.Contains({1, 2, 3, 4, 5}, 6)
@@ -134,7 +134,7 @@ in
 
 5. What is the result of below program
 
-```M
+```F#
 let
         rs = List.Select({1, -3, 4, 9, -2}, each _ > 0)
 in 
@@ -143,7 +143,7 @@ in
 
 6. What is the result of below program
 
-```M
+```F#
 let
         rs = List.Sum({1, 2, 3})
 in 
@@ -154,7 +154,7 @@ in
 
 7. What is the result of below program
 
-```M
+```F#
 let
    student=Table.FromRecords(
     {
@@ -169,7 +169,7 @@ in
 ```
 8. What is the result of below program
 
-```M
+```F#
 let
 rs = Table.AlternateRows(
     Table.FromRecords({
@@ -184,7 +184,7 @@ in
 ```
 9. What is the result of below program
 
-```M
+```F#
 let
         rs = Table.FuzzyGroup(
             Table.FromRecords(
