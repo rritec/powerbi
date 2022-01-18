@@ -1,18 +1,17 @@
 
 - **Power BI Desktop** Key Components
-    - Power Query Editor
+    1. Power Query Editor
         - Connecting Data Sources
-            - file(excel ... etc)
+            - Files(Excel ... etc)
             - Relational Databases (MySql,MS Sql Server ... etc)        - 
-        - Import The Tables
+        - Import Tables
         - Transformations
-            - Replace null with zero
-            - add new column
-            - change datatype
-            - filter
-            - .... etc
-        
-        - Understanding Transformations M-Language of Power BI
+            - Replace **null** with **zero**
+            - Add new column
+            - Change datatype
+            - Filter data
+            - .... etc        
+        - Understanding Transformations in M-Language of Power BI
         - Combine
             - Append(Union All)
             - Merge(Join)
@@ -23,9 +22,9 @@
                 - Left Anti Join
                 - Right Anti Join 
         - Based on these concepts let us do one small project
-    - Power Pivot
-    - Power View
-- 
+    1. Power Pivot
+    1. Power View
+    
 # Lab Overview
 
 ## SCENARIO
