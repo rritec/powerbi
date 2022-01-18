@@ -15,12 +15,14 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 
 1. Open **Power BI Desktop** > Click on **Get Data** > Click on **Blank Query** > In **Power Query Editor** > Click on **Advanced Editor** > Then copy paste below code
 
-        let
-            x = 1 +1,
-            y= 2+2,
-            z = x+y+3
-        in
-            z
+``` M
+let
+    x = 1 +1,
+    y= 2+2,
+    z = x+y+3
+in
+    z
+```
 1. Click on done
 2. Click on apply and close
 3. develop report and observe output
@@ -28,31 +30,34 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 
 1. Replace above code with below code and observe result
 
-                       let
-                    #"First Name" = "Ram",
-                    #"Last Name" = "Reddy",
-                    #"Full Name" = Text.Combine({#"First Name", #"Last Name"})
-
-                in
-                    #"Full Name"
+``` M
+let
+        #"First Name" = "Ram",
+        #"Last Name" = "Reddy",
+        #"Full Name" = Text.Combine({#"First Name", #"Last Name"})
+in
+        #"Full Name"
+```
             
             
  ### Exercise 3: Call functions in M-language
 
 1. Replace above code with below code and observe result
 
-       //this is a single line comment
-       /* This
-       is 
-       a
-       multiline
-       comment*/
-       
-       let
-           date = #date(2021,04,25),
-           year = Date.Year(date)
-        in
-            year
+``` M
+//this is a single line comment
+/* This
+is 
+a
+multiline
+comment*/
+
+let
+   date = #date(2021,04,25),
+   year = Date.Year(date)
+in
+    year
+```
 ### Exercise 4: Real world example
 
 1. Open any one PBIX file and observe M-language code
@@ -69,38 +74,37 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 1. What is the result of below program
 
 ```M
-= let 
-Sales2007 =  
-[  
-    Year = 2007,  
-    FirstHalf = 1000,  
-    SecondHalf = 1100, 
-    Total = FirstHalf + SecondHalf // 2100 
-], 
-Sales2008 =  
-[  
-    Year = 2008,  
-    FirstHalf = 1200,  
-    SecondHalf = 1300, 
-    Total = FirstHalf + SecondHalf // 2500 
-] 
-in Sales2007[Total] + Sales2008[Total]
-
+let 
+        Sales2007 =  
+        [  
+            Year = 2007,  
+            FirstHalf = 1000,  
+            SecondHalf = 1100, 
+            Total = FirstHalf + SecondHalf // 2100 
+        ], 
+        Sales2008 =  
+        [  
+            Year = 2008,  
+            FirstHalf = 1200,  
+            SecondHalf = 1300, 
+            Total = FirstHalf + SecondHalf // 2500 
+        ] 
+in 
+        Sales2007[Total] + Sales2008[Total]
 ```
 
 2. What is the result of below program
 
 ```M
 let
-SimpleInterest = (p,t,r) => p*t*r/100,
-// Here 
-// p is principal
-// t is time in months
-// r is rate of interest
-rs = SimpleInterest(100,12,2)
+        SimpleInterest = (p,t,r) => p*t*r/100,
+        // Here 
+        // p is principal
+        // t is time in months
+        // r is rate of interest
+        rs = SimpleInterest(100,12,2)
 in 
-rs
-
+        rs
 ```
 
 3. What is the result of below program
@@ -116,7 +120,6 @@ let
     b = 3             
 in 
     a[z] + b         
-
 ```
 
 4. What is the result of below program
@@ -127,29 +130,24 @@ in
     b = List.Contains({1, 2, 3, 4, 5}, 6)
 in 
     {a,b}        
-
 ```
 
 5. What is the result of below program
 
 ```M
 let
-
-rs = List.Select({1, -3, 4, 9, -2}, each _ > 0)
+        rs = List.Select({1, -3, 4, 9, -2}, each _ > 0)
 in 
-rs       
-
+        rs  
 ```
 
 6. What is the result of below program
 
 ```M
 let
-
-rs = List.Sum({1, 2, 3})
+        rs = List.Sum({1, 2, 3})
 in 
-rs       
-
+        rs
 ```
    
 
@@ -173,7 +171,6 @@ in
 
 ```M
 let
-
 rs = Table.AlternateRows(
     Table.FromRecords({
         [CustomerID = 1, Name = "Bob", Phone = "123-4567"],
@@ -183,33 +180,30 @@ rs = Table.AlternateRows(
     1,1,1
 )
 in 
-rs       
-
+        rs       
 ```
 9. What is the result of below program
 
 ```M
 let
-
-rs = Table.FuzzyGroup(
-    Table.FromRecords(
-        {
-            [EmployeeID = 1, Location = "Seattle"],
-            [EmployeeID = 2, Location = "seattl"],
-            [EmployeeID = 3, Location = "Vancouver"],
-            [EmployeeID = 4, Location = "Seatle"],
-            [EmployeeID = 5, Location = "vancover"],
-            [EmployeeID = 6, Location = "Seattle"],
-            [EmployeeID = 7, Location = "Vancouver"]
-        },
-        type table [EmployeeID = nullable number, Location = nullable text]
-    ),
-    "Location",
-    {"Count", each Table.RowCount(_)},
-    [IgnoreCase = true, IgnoreSpace = true]
-)
+        rs = Table.FuzzyGroup(
+            Table.FromRecords(
+                {
+                    [EmployeeID = 1, Location = "Seattle"],
+                    [EmployeeID = 2, Location = "seattl"],
+                    [EmployeeID = 3, Location = "Vancouver"],
+                    [EmployeeID = 4, Location = "Seatle"],
+                    [EmployeeID = 5, Location = "vancover"],
+                    [EmployeeID = 6, Location = "Seattle"],
+                    [EmployeeID = 7, Location = "Vancouver"]
+                },
+                type table [EmployeeID = nullable number, Location = nullable text]
+            ),
+            "Location",
+            {"Count", each Table.RowCount(_)},
+            [IgnoreCase = true, IgnoreSpace = true]
+        )
 in 
-rs       
-
+        rs       
 ```
  
