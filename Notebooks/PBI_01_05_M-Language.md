@@ -125,7 +125,7 @@ in
 4. What is the result of below program
 
 ```F#
-= let
+let
     a = List.Contains({1, 2, 3, 4, 5}, 3),
     b = List.Contains({1, 2, 3, 4, 5}, 6)
 in 
