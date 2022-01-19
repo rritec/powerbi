@@ -27,7 +27,7 @@
 1. Go to the **Yearly Trend** tab and pin the **waterfall chart** that shows the **Sales Var by Year** to the VanArsdel Sales dashboard.
 1. Go to the VanArsdel Sales dashboard and review what you have created.
 1. Resize and arrange the tiles as necessary.
-1. On the top-right, click Web view and click Phone view.
+1. Go to **Edit** > Click on **Mobile Layout** > Observe how it looks in mobile > In the Right Side corner Click on **Web Layout** to see how it looks in web/laptops
 1. Review the phone view.
 1. Resize and arrange the tiles as necessary.
 1. You should have something similar to the below image:
