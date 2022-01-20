@@ -3,27 +3,15 @@
 - In power BI, we can combine data intwo ways
 	1. Append
 	2. Merge
-1. Append
-    - Rows appending
-    -  It is equal to sql union all
-    - Append rules
-        - Rule 1: The number of columns in each table should be same, other wise it will fill with null values.        
-        - Rule 2: The respective columns data types shoud be same 
-1. Merge
-    - It is equal to SQL Joins
-    - It supports **6** types of joins  
-	1. Inner Join
-	2. Left outer Join
-	3. Right Outer Join
-	4. Full Outer Join
-	5. Right Anti Join
-	6. Left Anti Join
-
 ## Append
+1. Rows appending
+1. It is equal to sql union all
+1. Append rules
+	- Rule 1: The number of columns in each table should be same, other wise it will fill with null values.        
+	- Rule 2: The respective columns data types shoud be same 
+### Exercise 1: Append emp10,emp20 and emp30 tables as **emp102030**
 
-- **Scenario:** Append emp10,emp20 and emp30 tables as **emp102030**
-
-### Sql Query
+#### Sql Query
 - Create required tables
 
 ``` sql 
@@ -47,7 +35,7 @@ select * from emp30 -- 6 rows
 ```
 
 
-### Develop Report using Append homogeneous Sources
+#### Develop Report using Append homogeneous Sources
 
 1. Open **Power BI** > Click on **Get Data** > Select **Databases**> Select **SqlServer** > Click on **Connect** > Provide **Servername** as **localhost** and **Database Name** as **rritec** > Click on **ok**
 1. In **Navigator** window Select tables **emp10**,**emp20** and **emp30** > Click on **Transform Data**
