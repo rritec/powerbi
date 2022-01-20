@@ -3,16 +3,13 @@
 - In power BI, we can combine data intwo ways
 	1. Append
 	2. Merge
-
----
-- Append
+1. Append
     - Rows appending
     -  It is equal to sql union all
     - Append rules
         - Rule 1: The number of columns in each table should be same, other wise it will fill with null values.        
         - Rule 2: The respective columns data types shoud be same 
-
-- Merge
+1. Merge
     - It is equal to SQL Joins
     - It supports **6** types of joins  
 	1. Inner Join
