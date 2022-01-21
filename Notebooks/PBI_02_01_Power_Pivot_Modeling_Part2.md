@@ -1,5 +1,11 @@
 ## Exercise: Single and Both Directions
-1. Follow MSFT [doc](https://docs.microsoft.com/en-us/power-bi/guidance/relationships-bidirectional-filtering)
+1. A **Single-directional** relationship is one that filters in **one** directions.
+1. A **bi-directional** relationship is one that filters in **both** directions.
+1. By default relationship is **Single-directional**
+1. Generally, we recommend minimizing the use of bi-directional relationships.
+    - They can **negatively** impact on model query **performance**.
+
+6. Follow MSFT [doc](https://docs.microsoft.com/en-us/power-bi/guidance/relationships-bidirectional-filtering)
 ## Reference
 https://docs.microsoft.com/en-us/power-bi/desktop-create-and-manage-relationships
 https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message
