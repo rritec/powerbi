@@ -13,6 +13,9 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 
 ---
 
+
+[![PBI01_01_Demo_Power_Query](https://th.bing.com/th/id/OIP.Ebot0gnVAXUENvSVCtRaaAHaEK?pid=ImgDet&rs=1)](https://youtu.be/bn0RbKYyLtI)
+
 https://user-images.githubusercontent.com/20516321/151648977-71a504bb-8206-4dd2-95c6-63a779cfcc07.mp4
 
 
