@@ -12,6 +12,22 @@ Gain a 360° of how to explore and use Power BI to build impactful reports. In t
 
 
 ---
+
+https://user-images.githubusercontent.com/20516321/151648977-71a504bb-8206-4dd2-95c6-63a779cfcc07.mp4
+
+
+
+https://user-images.githubusercontent.com/20516321/151649055-6f37ee2d-ca85-4262-bb0b-de0ff842510b.mp4
+
+
+
+https://user-images.githubusercontent.com/20516321/151649108-b90ceb5d-e0df-4109-9a7b-4fe2ca5df19f.mp4
+
+
+
+https://user-images.githubusercontent.com/20516321/151649164-37de19fa-7019-4ce3-9757-892d9dbcf7e7.mp4
+
+
 ## Course Content
 
 ---
