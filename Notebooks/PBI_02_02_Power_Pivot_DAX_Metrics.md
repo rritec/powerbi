@@ -34,8 +34,16 @@
 1. In left side Navigation bar > Click on **Data**
 1. Click on New Table
 1. Provide DAX formula as **dt_table = CALENDAR (DATE (2019, 1, 1), DATE (2020, 12, 31))**
-1. Develop Table Report and observe output.
-1. Also explore DATE,EOMONTH, DATEDIFF, TODAY
+1. Create **new column** to extract **year**
+2. Create **new column** to extract **month**
+3. Create **new column** to extract **weeknumber**
+4. Create **new column** to extract **day**
+5. Create **new column** to extract **dayname**
+    - **Hint:** Use Switch logical statement **or** Nested if else statments
+7. Create **new column** to extract **end_of_the_month**
+8. Create **new column** to extract **hour**
+9. Create **new column** to extract **minute**
+10. Create **new column** to extract **Second**
 
 ## Exercise 2: How many years survived by Mahatma Gandhi?
 
