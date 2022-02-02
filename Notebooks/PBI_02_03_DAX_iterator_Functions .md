@@ -7,8 +7,8 @@
 
 ## What is the difference between SUM() Vs SUMX()?
    - https://exceleratorbi.com.au/use-sum-vs-sumx/   
-   - SUM() operates over a single column and has no awareness of individual rows in the column (no row by row evaluation).
-   - SUMX() can operate on multiple columns in a table and can complete row by row evaluation in those columns.
+   - SUM() operates over a **single column** and has no awareness of individual rows in the column (no row by row evaluation).
+   - SUMX() can operate on **multiple columns** in a table and can complete row by row evaluation in those columns.
    - SUMX() vs SUM(): Which One Should I Use?
       - Which you use really depends on your personal preference and the **structure of your data**.
       - In below example what we should use ?
