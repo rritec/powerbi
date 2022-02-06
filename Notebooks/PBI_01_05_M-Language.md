@@ -211,14 +211,20 @@ in
 
 ```F#
 let
-startdate = #date(2021, 1, 1),
-enddate=#date(2022,02,01),
-NumberOfDays = Duration.Days( enddate - startdate ),
-Dates = List.Dates(startdate, NumberOfDays+1, #duration(1,0,0,0)),
-#"Converted to Table" = Table.FromList(Dates, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    startdate=DateTime.From(#date(2022, 1, 1)),
+    enddate=DateTime.LocalNow(),
+    numberofdays=Duration.Days(enddate-startdate),
+    Dates = List.DateTimes(startdate, numberofdays+1, #duration(1,1,1,1)),
+    #"Converted to Table" = Table.FromList(Dates, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
     #"Renamed Columns" = Table.RenameColumns(#"Converted to Table",{{"Column1", "Date"}}),
-#"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Date", type datetime}})
+    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Date", type datetime}}),
+    #"Added Custom" = Table.AddColumn(#"Changed Type", "year", each Date.Year([Date])),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"year", Int64.Type}}),
+    #"Added Custom1" = Table.AddColumn(#"Changed Type1", "monthnumber", each Date.Month([Date])),
+    #"Added Custom2" = Table.AddColumn(#"Added Custom1", "Monthname", each Date.MonthName([Date])),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom2",{{"monthnumber", Int64.Type}, {"Monthname", type text}}),
+    #"Added Custom3" = Table.AddColumn(#"Changed Type2", "daynumber", each Date.Day([Date]))
 in
-#"Changed Type"       
+    #"Added Custom3"     
 ```
  
