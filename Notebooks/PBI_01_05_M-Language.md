@@ -206,4 +206,19 @@ let
 in 
         rs       
 ```
+
+10. What is the result of below program
+
+```F#
+let
+startdate = #date(2021, 1, 1),
+enddate=#date(2022,02,01),
+NumberOfDays = Duration.Days( enddate - startdate ),
+Dates = List.Dates(startdate, NumberOfDays+1, #duration(1,0,0,0)),
+#"Converted to Table" = Table.FromList(Dates, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Renamed Columns" = Table.RenameColumns(#"Converted to Table",{{"Column1", "Date"}}),
+#"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Date", type datetime}})
+in
+#"Changed Type"       
+```
  
