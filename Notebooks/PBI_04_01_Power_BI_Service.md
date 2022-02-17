@@ -59,6 +59,9 @@
 1. Again **publish** the file to **Power BI service** and replace the existing dataset with this one.
 1. Go to Power BI service and review the **Lab 4 - Starting Report** and examine whether the change you made is reflected.
 
+## Add entire page to dashboard as live page
+1. Open report > click on **...** > Click on **Pin to a dashboard**
+ 
 ## Add Web Content Tile
 ----
 4. Web Content Tile accepts any html tags/code
@@ -102,9 +105,6 @@
 
     - For more info [click here](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes)
   
-## Add entire page to dashboard as live page
-1. Open report > click on **...** > Click on **Pin to a dashboard**
-
 
 ## Questions
 1. Without using **Power BI Desktop**, will you be able to upload **PBIX** file into **Power BI Service** ?
