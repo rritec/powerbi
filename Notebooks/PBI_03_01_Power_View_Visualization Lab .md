@@ -147,11 +147,13 @@ Scenario: Slicer should not impact few vizulations.
 
 https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-report-visualizations
 
-## Exercise:
+## Exercise 1:
 
 ![image](https://user-images.githubusercontent.com/20516321/115183931-64e61300-a0fa-11eb-9740-bc7eebf4f56a.png)
 
+## Exercise 2:
 
+https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-radial-gauge-charts
 
 ```python
 
