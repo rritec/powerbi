@@ -63,9 +63,9 @@
 
   1. Open Power BI Desktop
   2. Import DimDate, DimCustomer, FactInternetSales from Sql Server AdventureWorksDW2012 database
-  3. Develop a table report, by dragging orderdate column from factinternetsales > Set Orderdate as date column  > set aggregation rule as earliest . Again drag orderdate column from factinternetsales table > set orderdate as date column > set aggregation rule as latest date
+  3. Develop a table visulization, by dragging **orderdate** column from **FactInternetSales** > Set **Orderdate** as **date** column  > set aggregation rule as **earliest** . Again drag **orderdate** column from **FactInternetSales** table > set **orderdate** as date column > set aggregation rule as **latest** date
   ![image](https://user-images.githubusercontent.com/20516321/129829244-0af234a9-016d-4e5e-a4c1-6280c9c6cef5.png)
-  4. In **PowerQueryEditor** window create two parameters with the name of RangeStart and RangeEnd and set below values.
+  4. In **PowerQueryEditor** window create two parameters with the name of **RangeStart** and **RangeEnd** and set below values.
   
   ![image](https://user-images.githubusercontent.com/20516321/129829544-1900ae16-10b0-4801-8faa-e35975a94ca9.png)
 
