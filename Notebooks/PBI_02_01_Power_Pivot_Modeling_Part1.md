@@ -58,7 +58,7 @@
 
 | Ticket	| OpenedBy	| SubmittedBy	| Hours	| Project	| DateSubmit |
 | --- | --- | --- | --- | --- | --- |
-| 1001	| Perham, Tom	Brewer, Alan	22	Blue	1/1/2013| 
+| 1001	| Perham, |Tom	Brewer, |Alan	|22	|Blue	|1/1/2013 | 
 1002	Roman, Daniel	Brewer, Alan	26	Red	2/1/2013
 1003	Roth, Daniel	Ito, Shu	34	Yellow	12/4/2012
 1004	Perham, Tom	Brewer, Alan	13	Orange	1/2/2012
