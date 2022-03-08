@@ -20,10 +20,10 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-rls
 
 | Item      | Price | Account Manager     |
 | ---        |    ----   |          --- |
-| Item 1      | 10       | ramreddy1@datahexa.com   |
-| Item 2   | 20        | ramreddy1@datahexa.com      |
-| Item 3   | 30        | info@datahexa.com      |
-| Item 4   | 40        | info@datahexa.com      |
+| Item 1      | 10       | studentpbi@mylaramreddy.onmicrosoft.com   |
+| Item 2   | 20        | studentpbi@mylaramreddy.onmicrosoft.com      |
+| Item 3   | 30        | vmyla1@mylaramreddy.onmicrosoft.com      |
+| Item 4   | 40        | vmyla1@mylaramreddy.onmicrosoft.com      |
 
 2. Save the excel as rritec_rls_source
 3. Import the excel and develop a table report with three columns
@@ -49,10 +49,10 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-rls
 
 | Item      | Price | Account Manager     |
 | ---        |    ----   |          --- |
-| Item 1      | 10       | ramreddy1@datahexa.com   |
-| Item 2   | 20        | ramreddy1@datahexa.com      |
-| Item 3   | 30        | info@datahexa.com      |
-| Item 4   | 40        | info@datahexa.com      |
+| Item 1      | 10       | studentpbi@mylaramreddy.onmicrosoft.com   |
+| Item 2   | 20        | studentpbi@mylaramreddy.onmicrosoft.com      |
+| Item 3   | 30        | vmyla1@mylaramreddy.onmicrosoft.com      |
+| Item 4   | 40        | vmyla1@mylaramreddy.onmicrosoft.com      |
 
 2. Save the excel as rritec_rls_source
 3. Import the excel and develop a table report with three columns
