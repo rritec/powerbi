@@ -60,8 +60,8 @@
 | --- | --- | --- | --- | --- | --- |
 | 1001	| Perham, Tom	| Brewer, Alan | 22	| Blue	| 1/1/2013 | 
 | 1002	| Roman, Daniel |	Brewer, Alan | 26 |	Red |	2/1/2013 |
-| 1003	Roth, Daniel	Ito, Shu	34	Yellow	12/4/2012
-| 1004	Perham, Tom	Brewer, Alan	13	Orange	1/2/2012
+| 1003	|Roth, Daniel |	Ito, Shu |	34 |	Yellow |	12/4/2012 |
+| 1004	|Perham, Tom |	Brewer, Alan |	13 |	Orange |	1/2/2012 |
 | 1005	Roman, Daniel	Bowen, Eli	29	Purple	10/1/2013
 | 1006	Roth, Daniel	Bento, Nuno	35	Green	2/1/2013
 | 1007	Roth, Daniel	Hamilton, David	10	Yellow	10/1/2013
