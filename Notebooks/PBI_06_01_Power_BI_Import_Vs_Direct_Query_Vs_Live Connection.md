@@ -53,6 +53,13 @@ https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-directquery-about
     - Power BI all fetures are not supported
 7. Always give first priority to Import connection
 8. Live connection available only for SSAS Tabular Models and SSAS Multidimensional Cubes
+9. Can you swtich Import Connection of table to Direct Query?
+  - No
+10. Can you swtich Direct Query Connection of table to Import?
+  - Yes
+ 11. What is Dual Storage, when we will use it.
+  - https://docs.microsoft.com/en-in/power-bi/transform-model/desktop-storage-mode
+
 
 ```python
 
