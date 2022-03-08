@@ -21,17 +21,17 @@
 
     | **Ticket** | **SubmittedBy** | **Hours** | **Project** | **DateSubmit** |
     | ---:|:--- | ---:|:--- | ---:|
-    | 1001 |Brewer, Alan |22 |Blue |1/1/2013 |
-    | 1002 |Brewer, Alan |26 |Red |2/1/2013 |
-    | 1003 |Ito, Shu |34 |Yellow |12/4/2012 |
-    | 1004 |Brewer, Alan |13 |Orange |1/2/2012 |
-    | 1005 |Bowen, Eli |29 |Purple |10/1/2013 |
-    | 1006 |Bento, Nuno |35 |Green |2/1/2013 |
-    | 1007 |Hamilton, David |10 |Yellow |10/1/2013 |
-    | 1008 |Han, Mu |28 |Orange |1/2/2012 |
-    | 1009 |Ito, Shu |22 |Purple |2/1/2013 |
-    | 1010 |Bowen, Eli |28 |Green |10/1/2013 |
-    | 1011 |Bowen, Eli |9 |Blue |10/15/2013 |
+    | 1001 |Brewer Alan |22 |Blue |1/1/2013 |
+    | 1002 |Brewer Alan |26 |Red |2/1/2013 |
+    | 1003 |Ito Shu |34 |Yellow |12/4/2012 |
+    | 1004 |Brewer Alan |13 |Orange |1/2/2012 |
+    | 1005 |Bowen Eli |29 |Purple |10/1/2013 |
+    | 1006 |Bento Nuno |35 |Green |2/1/2013 |
+    | 1007 |Hamilton David |10 |Yellow |10/1/2013 |
+    | 1008 |Han Mu |28 |Orange |1/2/2012 |
+    | 1009 |Ito Shu |22 |Purple |2/1/2013 |
+    | 1010 |Bowen Eli |28 |Green |10/1/2013 |
+    | 1011 |Bowen Eli |9 |Blue |10/15/2013 |
 
 5. This second table, **CompanyProject**, is a list of projects with an assigned priority: A, B, or C. Create this table also simillar to above table.
 
