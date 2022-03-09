@@ -1,3 +1,7 @@
+## Reading Activity
+
+- https://docs.microsoft.com/en-us/learn/modules/introduction-to-powershell/
+
 # Power BI Cmdlets for Windows PowerShell and PowerShell Core
 https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
 
