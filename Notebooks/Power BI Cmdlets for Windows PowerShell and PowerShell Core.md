@@ -142,6 +142,9 @@ Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrinci
 
 
       }
+      Clear-Variable wsId
+      Clear-Variable UserEmailAddress1
+      Clear-Variable AccessRights1
 ## Exercise 9: Disconnect Power BI Service
 ----
 
