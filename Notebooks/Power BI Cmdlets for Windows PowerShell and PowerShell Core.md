@@ -119,9 +119,9 @@ Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrinci
       #$UserEmailAddress=""
       #$AccessRights=""
 
-      Clear-Variable wsId
-      Clear-Variable UserEmailAddress1
-      Clear-Variable AccessRights1
+      #Clear-Variable wsId
+      #Clear-Variable UserEmailAddress1
+      #Clear-Variable AccessRights1
 
       # Read ids of workspaces
       ForEach-Object {
