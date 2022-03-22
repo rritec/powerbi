@@ -29,10 +29,9 @@ Recap:
 				- COUNTX
 				- COUNTAX
 			- 2) Date and time functions
-				- Calendar(Return Table)
-				- CALENDARAUTO(Return Table)
+				- Calendar(\<start date\>,\<end date\>) (Returns Table)
+				- CALENDARAUTO([\<end_of_the_fin_month\>](Return Table)
 				- DATE (\<yyyy>,\<mm>,\<dd>)(Return Value)
-
 				- DATEDIFF(\<startdate>,\<enddate>,\<interval>)(Return Value)
 				- NOW()(Return Value)
 				- today()(Return Value)
