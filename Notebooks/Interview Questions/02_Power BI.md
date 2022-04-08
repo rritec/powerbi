@@ -129,7 +129,14 @@
 32. Errors rectifing (debugging)
 33. What is the definition of L1, L2, L3, L4 support levels in IT Operations Management?
 	- https://myfirstsite99.wordpress.com/what-is-the-definition-of-l1-l2-l3-l4-support-levels-in-it-operations-management/
-- 
+34. Write Sql Query to get running totals.
+	```sql
+	select empno,sal,
+sum(sal)over (order by empno) 
+from emp
+order by empno
+```
+35. 
 	
 
 
