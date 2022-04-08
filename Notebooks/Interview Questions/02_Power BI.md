@@ -132,10 +132,10 @@
 34. Write Sql Query to get running totals.
 	```sql
 	select empno,sal,
-sum(sal)over (order by empno) 
-from emp
-order by empno
-```
+	sum(sal)over (order by empno) 
+	from emp
+	order by empno
+	```
 35. 
 	
 
