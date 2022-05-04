@@ -214,7 +214,7 @@ let
     startdate=DateTime.From(#date(2022, 1, 1)),
     enddate=DateTime.LocalNow(),
     numberofdays=Duration.Days(enddate-startdate),
-    Dates = List.DateTimes(startdate, numberofdays+1, #duration(1,1,1,1)),
+    Dates = List.DateTimes(startdate, numberofdays+1, #duration(1,0,0,0),
     #"Converted to Table" = Table.FromList(Dates, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
     #"Renamed Columns" = Table.RenameColumns(#"Converted to Table",{{"Column1", "Date"}}),
     #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Date", type datetime}}),
