@@ -224,7 +224,7 @@ let
     #"Added Custom2" = Table.AddColumn(#"Added Custom1", "Monthname", each Date.MonthName([Date])),
     #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom2",{{"monthnumber", Int64.Type}, {"Monthname", type text}}),
     #"Added Custom3" = Table.AddColumn(#"Changed Type2", "daynumber", each Date.Day([Date])),
-    #"Added Custom4" = Table.AddColumn(#"Changed Type3", "weeknumber", each Date.WeekOfYear([Date])),
+    #"Added Custom4" = Table.AddColumn(#"Added Custom3", "weeknumber", each Date.WeekOfYear([Date])),
     #"Changed Type4" = Table.TransformColumnTypes(#"Added Custom4",{{"weeknumber", Int64.Type}})
     
 in
