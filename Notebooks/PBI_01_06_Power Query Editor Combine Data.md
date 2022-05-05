@@ -52,8 +52,13 @@ select * from emp10 -- 3 rows
 
 ``` sql 
 select * from emp10 -- 3 rows
-intersection
+intersect
 select * from emp10 -- 3 rows
+```
+``` sql 
+select * from emp10 -- 3 rows
+intersect
+select * from emp20 -- 5 rows
 ```
 #### except
 - Observe Results of below Queries
