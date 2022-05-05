@@ -33,7 +33,36 @@ select * from emp20 -- 5 rows
 union
 select * from emp30 -- 6 rows
 ```
+#### Difference between Union and Union all
+- Observe Results of below Queries
 
+``` sql 
+select * from emp10 -- 3 rows
+union
+select * from emp10 -- 3 rows
+```
+
+``` sql 
+select * from emp10 -- 3 rows
+union all
+select * from emp10 -- 3 rows
+```
+#### Intersection
+- Observe Results of below Queries
+
+``` sql 
+select * from emp10 -- 3 rows
+intersection
+select * from emp10 -- 3 rows
+```
+#### except
+- Observe Results of below Queries
+
+``` sql 
+select * from emp10 -- 3 rows
+except
+select * from emp10 -- 3 rows
+```
 
 #### Develop Report using Append homogeneous Sources
 
