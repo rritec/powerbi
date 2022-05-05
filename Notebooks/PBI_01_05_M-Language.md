@@ -226,7 +226,8 @@ let
     #"Added Custom3" = Table.AddColumn(#"Changed Type2", "daynumber", each Date.Day([Date])),
     #"Added Custom4" = Table.AddColumn(#"Added Custom3", "weeknumber", each Date.WeekOfYear([Date])),
     #"Changed Type4" = Table.TransformColumnTypes(#"Added Custom4",{{"weeknumber", Int64.Type}})
-    
+    #"Extracted Day Name" = Table.TransformColumns(#"Filtered Rows", {{"Date - Copy", each Date.DayOfWeekName(_), type text}}),
+    #"Renamed Columns1" = Table.RenameColumns(#"Extracted Day Name",{{"Date - Copy", "Weekdays"}})    
 in
      #"Changed Type4"      
 ```
