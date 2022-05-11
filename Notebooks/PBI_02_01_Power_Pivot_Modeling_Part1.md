@@ -50,9 +50,10 @@
 ## Exercise 3: Number of hours submitted by project priority with relationship
 7. Go to model and create relation using **ProjName** and **project** columns
 8. Come to report observe the data.
-## Exercise 4: Add one more table to above Model
+## Exercise 4: Understand Role Playing Dimension and solutions to reslove the issue of Role Playing Dimension
 
-7. Click on **Enter Data** > create below table
+7. Open **Power BI Desktop** > In the toolbar click on **Enter Data** >
+8. Click on **Enter Data** > create below tables
 
   **ProjectTickets**
 
