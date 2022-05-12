@@ -136,7 +136,9 @@
 	from emp
 	order by empno
 	```
-35. 
+35. Difference between summarize and summarizecolumns
+	- https://www.sqlbi.com/articles/introducing-summarizecolumns/#:~:text=Another%20difference%20between%20SUMMARIZE%20and,only%20and%20no%20row%20context.
+36. 
 	
 
 
