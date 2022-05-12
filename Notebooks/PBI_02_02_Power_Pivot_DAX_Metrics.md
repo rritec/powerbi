@@ -39,7 +39,7 @@
 3. Create **new column** to extract **weeknumber**
 4. Create **new column** to extract **day**
 5. Create **new column** to extract **dayname**
-    - **Hint:** Use Switch logical statement **or** Nested if else statments
+    - **Hint:** Use Format Dax function [Refer help document](https://docs.microsoft.com/en-us/dax/format-function-dax#custom-datetime-formats)
 7. Create **new column** to extract **end_of_the_month**
 8. Create **new column** to extract **hour**
 9. Create **new column** to extract **minute**
