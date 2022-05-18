@@ -40,7 +40,7 @@
    -  ![image](https://user-images.githubusercontent.com/20516321/168948738-e6c7985b-f620-4e4d-aeba-bf0529b7ea61.png)
 
    -  Create **Margin** Mesure using below formula
-         F"""Margin = sumx(FactInternetSales,FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])"""
+         ``` DAX Margin = sumx(FactInternetSales,FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])```
    -  Create **TotalMargin** Mesure using below formula
          F"""TotalMargin = sumx(all(FactInternetSales),FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])"""
    -  Create **% Margin Contribution** Mesure using below formula
