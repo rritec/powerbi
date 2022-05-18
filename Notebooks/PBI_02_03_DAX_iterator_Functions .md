@@ -36,7 +36,15 @@
    ----
    -  From SQL Server **Adventureworksdw2012** > Import **FactInternetSales** and **Customer** Table
    -  Observe the **Model** Relationship based on **customerkey** automatically created
+   -  Creat a table vizulization with three columns **English Education**,**TotalProductCost**,**SalesAmount**
+   -  ![image](https://user-images.githubusercontent.com/20516321/168948738-e6c7985b-f620-4e4d-aeba-bf0529b7ea61.png)
+
    -  Create **Margin** Mesure using below formula
+         F"""Margin = sumx(FactInternetSales,FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])"""
+   -  Create **TotalMargin** Mesure using below formula
+         F"""TotalMargin = sumx(all(FactInternetSales),FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])"""
+   -  Create **% Margin Contribution** Mesure using below formula
+         F"""% Margin Contribution = DIVIDE([Margin],[TotalMargin])"""
    -  Follow below blog and Develop below report
    - https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi
       ![image](https://user-images.githubusercontent.com/20516321/117744290-065a1380-b226-11eb-971f-87b9c80729a0.png)
