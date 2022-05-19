@@ -48,6 +48,7 @@
    -  Create **% Margin Contribution** Mesure using below formula
    
             % Margin Contribution = DIVIDE([Margin],[TotalMargin])
+   -  Select **% Margin** > Change format as **Percentage**
    -  For more information Follow below blog and Develop below report
    - [Reference](https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi)
       ![image](https://user-images.githubusercontent.com/20516321/117744290-065a1380-b226-11eb-971f-87b9c80729a0.png)
