@@ -81,6 +81,9 @@ Syntax: ORDER BY \<column names\> ASC/DESC
 // select city  from customer where city like "R%" order by city desc
 //EVALUATE CALCULATETABLE(VALUES(Customer[City]),left(Customer[City],1)="R") ORDER BY Customer[City] desc
 
+![image](https://user-images.githubusercontent.com/20516321/169445380-cf011b56-3c7c-485f-bdc4-ced3857f1dc3.png)
+
+
 ### Exercise: Create a tabe in powerBI using below dax query
 1. In DAX studio write below Dax query, run it  and understand result. 
 
