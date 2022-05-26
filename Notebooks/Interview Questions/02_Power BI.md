@@ -1,4 +1,8 @@
-1. **What are the important components of Power BI?**
+1. Tell me about your self
+- I completed <Btech> in <cse> specilaization and got opprtunity to work as fresher in <abc> company. I got onboard/Induction training on skills SQL and PowerBI.
+- From last 3 years iam working as a power Bi developer.
+- In current Project iam working in IC role.
+3. **What are the important components of Power BI?**
 
    Important components of Power BI are: 
     1. Power BI Desktop
