@@ -146,7 +146,9 @@
 	```
 35. Difference between summarize and summarizecolumns
 	- https://www.sqlbi.com/articles/introducing-summarizecolumns/#:~:text=Another%20difference%20between%20SUMMARIZE%20and,only%20and%20no%20row%20context.
-36. 
+36. Explain about data alerts ?
+- https://docs.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts
+37. 
 	
 
 
