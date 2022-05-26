@@ -148,9 +148,52 @@
 	- https://www.sqlbi.com/articles/introducing-summarizecolumns/#:~:text=Another%20difference%20between%20SUMMARIZE%20and,only%20and%20no%20row%20context.
 36. Explain about data alerts ?
 - https://docs.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts
-37. 
-	
-
+37. Difference between Power BI desktop and Power Bi service
+38. How we can create the workspace
+39. Licenses in Power Bi service
+40. Can we create new column in live Database ?
+41. What method we used to get the Data
+42. where we can store the data in Power BI
+43. How we can access the data from SSMS
+44. How we can connect live datsbase in Power BI
+45. Difference between column and Measure 
+46. How we can create column and measure in Tables
+47. Explain about Parameters
+48. Different types of connection modes to database 
+49. How we can give acesss to team members as ADMIN
+50. What are Transformations in Power BI
+51. Precautions while creating Reports
+52. Data Sources in Power BI
+53. Types of views 
+54. DAX Function to create the Table 
+55. Sum Function uses
+56. How we can give access to user by ID or Name etc...?
+57. Major components of PowerBI
+58. Types of Refresh options
+59. What are Custom visuals and which types used in Power BI desktop
+60. What are Filters and Types
+61. Difference between filters and slicers
+62. what is Row level security
+63. what is Power BI service
+64. what is Deployment pipeline process in Power BI
+65. what is Schedule Refresh
+66. If clients has some issues in the project then how you reslove it and how you connect them
+67. Types of Schemas and which it connected to fact tables and WHY
+68. Power apps and Power automate
+69. Bookmarks and Paginated Reports
+70. Difference between Power view and Power query
+71. Differnce between Reports and Datasets
+72. How can we create tables in Power query   
+73. Why we use the import mode mostly
+74. Tabular model
+75. When we exactly use column and measure
+76. How the values are stored
+77. What are Variables 
+78. Relation between the two tables apart from data modelling?
+79. WHhat is incremental refersh and how we can do that
+80.What are different types of feature in power BI
+81.What are different types of versions in power BI
+82.What is comprehensive working system of Power BI
 
 
 
