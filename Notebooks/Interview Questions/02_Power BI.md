@@ -1,6 +1,6 @@
 1. Tell me about your self
 
-- I completed [Btech] in [cse] specilaization and got opprtunity to work as fresher in <abc> company. I got onboard/Induction training on skills SQL and PowerBI.
+- I completed [Btech] in [cse] specilaization and got opprtunity to work as fresher in [abc] company. I got onboard/Induction training on skills SQL and PowerBI.
 - From last 3 years iam working as a power Bi developer.
 - In current Project iam working in IC role. As part of this role i will be speaking directly with Product Owner and getting user stories in jira board. We are following 4 standard user stories 1) Requirment Gathering 2) Development 3) Testing 4) Deployment
 - In current Project Iam working with Pobwer BI and SQl are main skills.
