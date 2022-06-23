@@ -144,3 +144,7 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
 1. In Excel how many kinds of data containers available?
     - Sheet
     - Table
+1. How Many Data Sources/Data bases worked ?
+    - Flat Files(Excel,Csv,Tab delimited,Json,XML...etc)
+    - Relational Databases (MS Sql Server,Oracle,Teradata,MySql,BigData Hive,...etc)
+    - Cloud Databases(Snow Flake,Azure SQl Database,Azure Synapse,Azure Blobs...etc)
