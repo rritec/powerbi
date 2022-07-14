@@ -72,6 +72,8 @@
 
 
 ## Exercise 4: Duplicate Table
+- In Which scenario duplication of table isneeded?
+    - Role Playing Dimension
 - Open [Adventure Works DW 2020 M03](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M03.pbix)
 - In the Data view > Click on New Table > type below formula 
 
