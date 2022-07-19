@@ -55,6 +55,19 @@
 
 ## Calculate ranks
 
+sql```
+
+select e.*,
+sum(sal) over ( partition by deptno),
+rank() over(order by sal) as rank1,
+dense_rank() over(order by sal) as denserank
+from emp as e
+order by deptno
+
+
+
+```
+
 - The RANKX DAX function is a special iterator function you can use to calculate ranks. Its syntax is as follows:
 ```RANKX(<table>, <expression>[, <value>[, <order>[, <ties>]]])```
 - Ref Help [doc](https://docs.microsoft.com/en-us/dax/rankx-function-dax)
