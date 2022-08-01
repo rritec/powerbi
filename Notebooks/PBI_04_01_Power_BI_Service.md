@@ -101,7 +101,7 @@
 ## Explore Dasboard Themes
 ----
 
-1. In above report click on **Edit** > Click on **Sashboard Theme** > explore it
+1. In above report click on **Edit** > Click on **Dashboard Theme** > explore it
 
     - For more info [click here](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes)
   
