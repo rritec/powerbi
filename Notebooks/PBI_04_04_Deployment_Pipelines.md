@@ -24,6 +24,10 @@
 1. Click on **Deployment Pipelines** > Click on **Create a Pipeline** > Provide pipeline name as **rritecPipeline** >click on **Assign Workspace** > from drop down select **rritec-workspace** > Select **Development** > Click on assign
 1. Click on **Deploy** to copy content (Datasets/reports/dashboards) to **Test**
 1. Click on Test **Deploy** to copy content from **Test** to **production**
+### On going Changes:
+1. How to deploy new 1 or couple of reports into other environment?
+2. How to deploy Modified report from lower environment to higher environment?
+3. How to decommission(Delete) a report?
 ### Questions
 1. After deployment(from dev to test) one report added to dev. Then will it automatically will appear in test?
   - NO, We need click on Dev **Deploy** button
