@@ -16,6 +16,14 @@ Sql Server has Direct query
 https://radacad.com/directquery-live-connection-or-import-data-tough-decision
 https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-directquery-about
 
+	Import(90%)	Direct Query/Live Connection(10%)	Comments
+Memory(Hard Disk Space)	(metadata + Data)2044KB	(Metadata)32KB	"1. Publish Limitation of PBIX file is 1GB
+2. PBIS Storage follows Column-store in-memory technology"
+Performance	High Speed	Low Speed	
+Features	All Dax Functions using possible	Few Dax Functions using possible	
+![image](https://user-images.githubusercontent.com/20516321/183326168-df918024-1b3e-42c1-aa85-b0a2042cf906.png)
+
+
 ## Questions
 ---
 1. How many types of connection available in Power BI
