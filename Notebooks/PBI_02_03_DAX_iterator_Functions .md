@@ -2,6 +2,7 @@
 
 - Each single-column summarization function has its equivalent iterator function.
 - Example sum > sumx, min > minx, max > maxx, rank >rankx, count>countX, counta > countaX ..etc
+- All scenarios of sum/min/max ..etc can also achivable using respective sumX/minX/maxX.... etc, however first priority goes to sum/min/max ..etc
 
 
 
