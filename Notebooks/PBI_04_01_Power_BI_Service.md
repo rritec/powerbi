@@ -101,6 +101,17 @@
 ## Explore Dasboard Themes
 ----
 
+#### Exercise 1: Export and import custom theme.
+
+1. Open **PowerBI Desktop** > Open Any **report** > Go to **View** menu > Click on **Themes** down arrow mark > Click on **Customize Current Theme**
+2. Observe all **properties**
+3. Change required **colors** or **fonts** ...etc
+4. Click on **Apply**
+5. Again Go to **View** menu > Click on **Themes** down arrow mark > **Save Current Theme** into local pc **Desktop**
+6. Open any other report > Go to **View** menu > Click on **Themes** down arrow mark > Click **Browse for themes** > Select previously saved **json** file > Click on **open** > observe changes
+
+#### Exercise 2: Change Themes from Power BI Service.
+
 1. In above report click on **Edit** > Click on **Dashboard Theme** > explore it
 
     - For more info [click here](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes)
