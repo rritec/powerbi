@@ -135,6 +135,12 @@
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0136.png?raw=true)   
 
 
+## Restore sample data
+---
+
+1. Follow below link download and restore sample data **AdventureWorksDW2012.bak**
+https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15
+
 ## Instal MSBI (Download SQL Server Data Tools (SSDT))
 ---
 
@@ -152,12 +158,6 @@ direct link : https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data
 
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0138.png?raw=true)   
 
-
-## Restore sample data
----
-
-1. Follow below link download and restore sample data **AdventureWorksDW2012.bak**
-https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15
 
 # MySql Installation(Optional)
 ---
