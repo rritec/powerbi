@@ -114,9 +114,7 @@
 1. Observe connections info
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0129.png?raw=true)  
-1. Test Connection and version
-
-    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0131.png?raw=true)     
+   
 
     
 
