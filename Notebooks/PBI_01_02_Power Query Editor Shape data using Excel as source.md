@@ -14,6 +14,10 @@
 
 
 ## Import scott data from excel
+
+![image](https://user-images.githubusercontent.com/20516321/196328872-9932cfa7-18cb-4b14-b609-e87f4d12bda2.png)
+
+
 1. Go to windows search > type **Power BI** > Open **Power BI Desktop** > Click on **Get Data** > Click on **File** > Click on **Excel**
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0081.png?raw=true)
