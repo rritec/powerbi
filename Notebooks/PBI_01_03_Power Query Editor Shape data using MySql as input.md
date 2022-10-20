@@ -1,6 +1,9 @@
 
 # Working with MySql
 
+![image](https://user-images.githubusercontent.com/20516321/196849404-a9371f5d-6a66-4d5c-9285-75e3131c8332.png)
+
+
 1. MySql is a oracle product
 1. Install **MySql** software by following [this link](https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#mysql-installationoptional)
 1. Open **MySql Workbench** > if required create **new connection** or use **existing connection** > Click on **New SQL Tab for execution of queries**
