@@ -56,7 +56,7 @@ https://user-images.githubusercontent.com/20516321/151649164-37de19fa-7019-4ce3-
 	- What is M-Language?
 	- What is DAX?
 1. **Data Warehousing Concepts**
-	- What is OLTP
+	- What is OLTP?
 	- What is Data warehouse
 	- Difference between OLTP Vs OLAP
 	- Difference among Primery Key/Foriegn Key/Surrogate Key
