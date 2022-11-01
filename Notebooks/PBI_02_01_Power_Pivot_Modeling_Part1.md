@@ -11,7 +11,8 @@
         - Cross Filter Directions
           - **Single**(Default)
           - Both
-        - Active Vs Inactive Relationships       
+        - Active Vs Inactive Relationships   
+    - Note: Please listen first *three videos*    https://rritec.blogspot.com/p/obiee.html
     2. DAX Calculations  
 ## Exercise 1: Create Two tables using Enter Data Method
 1. When you import multiple tables, chances are you'll do some analysis using data from all those tables. Relationships between those tables are necessary to accurately calculate results and display the correct information in your reports.
