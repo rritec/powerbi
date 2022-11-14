@@ -111,4 +111,5 @@ Syntax: ORDER BY \<column names\> ASC/DESC
  ### More Examples
 
 Explore online dax examples https://dax.guide/
+Compare SQL to DAX Query examples  https://www.sqlbi.com/articles/from-sql-to-dax-projection/
 
