@@ -20,7 +20,7 @@ https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
 1. Change slicers as you wish  and observe data
 1. press ctrl and click on button it will reset all slicers to **all**
 
-![](https://github.com/rritec/powerbi/blob/master/images/PBI_0147.png?raw=true)
+![image](https://user-images.githubusercontent.com/20516321/209264366-34062b18-eeb1-4b6f-a76c-47e16aab8464.png)
 
 ## Use Case 2: Toggle between Pie and Bar Chart
 ----
