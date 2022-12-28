@@ -14,34 +14,7 @@ In any BI application 3 Tiers of Security required. Those are
 
 https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-rls
 
-## Develop Data Security in Static Way
 
-1. Copy below data into Excel
-
-| Item      | Price | Account Manager     |
-| ---        |    ----   |          --- |
-| Item 1      | 10       | studentpbi@mylaramreddy.onmicrosoft.com   |
-| Item 2   | 20        | studentpbi@mylaramreddy.onmicrosoft.com      |
-| Item 3   | 30        | vmyla1@mylaramreddy.onmicrosoft.com      |
-| Item 4   | 40        | vmyla1@mylaramreddy.onmicrosoft.com      |
-
-2. Save the excel as rritec_rls_source
-3. Import the excel and develop a table report with three columns
-![image](https://user-images.githubusercontent.com/20516321/114550670-15c65b00-9c80-11eb-8129-9e0bef38f3a4.png)
-
-4. Click on the model > Click on the Manage Roles > Create **Four** role as shown below
-![image](https://user-images.githubusercontent.com/20516321/114554400-4f996080-9c84-11eb-9830-322389658f0b.png)
-
-
-5. Click on **View as** > select **item2** > click on **ok** > go to **Report** page >Notice that onlt **item 2** data visible 
-6. Save this report as rls_report_static
-7. Publish to workspace.
-8. In the workspace make sure **studentpbi@mylaramreddy.onmicrosoft.com** as **Viewer**
-9. Go to Dataset > Security > Select item 3 and map studentpbi@mylaramreddy.onmicrosoft.com > Add > Save 
-10. Select item 4 and map studentpbi@mylaramreddy.onmicrosoft.com > Add > Save
-11. Open **Private window** in the brwoser > open app.powerbi.com > login using studentpbi@mylaramreddy.onmicrosoft.com and password shared by your instructor.
-12. Open the report and notice that only two records are visible
-![image](https://user-images.githubusercontent.com/20516321/114551387-f24fe000-9c80-11eb-8dcd-0bfd582b64a4.png)
 
 ## Develop Data Security in Dynamic Way
 
