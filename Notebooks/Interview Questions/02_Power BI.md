@@ -164,7 +164,14 @@
     2. There are very few data soures that allow real-time connections to PowerBi reports and dashboards.
     3. it only shares dashboards and reports with users logged in with the same email address.
     4. Dashboard doesn't accept or pass user,account,or other entity parameters.
-42. 
+42. Name some commonly used tasks in the query editor ?
+    1. Connect to data
+    2. Shape and Combine data
+    3. Group rows
+    4. Pivot columns 
+    5. Create custom columns 
+    6. Query formulas
+43. 
 	
 
 
