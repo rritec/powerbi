@@ -153,7 +153,11 @@
     2. Enterprise gateway
 38. When we need to gateway?
     1. For on permise data sources(for example Oracle,Sql Server ,MySql,Excel, Notepad ...etc)
-39. 
+39. What are the ticketing tools available ?
+    1. Ivanti
+    2. Zendesk
+    3. Freshservice ....etc
+40. 
 	
 
 
