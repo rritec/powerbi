@@ -148,7 +148,12 @@
 	- https://www.sqlbi.com/articles/introducing-summarizecolumns/#:~:text=Another%20difference%20between%20SUMMARIZE%20and,only%20and%20no%20row%20context.
 36. Explain about data alerts ?
 - https://docs.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts
-37. 
+37. How many types of gateways are available in power BI?
+    1. Personal Gateway
+    2. Enterprise gateway
+38. When we need to gateway?
+    1. For on permise data sources(for example Oracle,Sql Server ,MySql,Excel, Notepad ...etc)
+39. 
 	
 
 
