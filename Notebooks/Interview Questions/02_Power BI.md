@@ -159,7 +159,12 @@
     3. Freshservice ....etc
 40. What is GetData in PowerBI ?
     1. GetData is a simple icon on PowerBI used to import data from the source.
-41. 
+41. List out some drawbacks/limitations of using PowerBI ?
+    1. PowerBi Doesn't accepts file sizes larger than 1GB and doesn't mix imported data accessed from real-time connections.
+    2. There are very few data soures that allow real-time connections to PowerBi reports and dashboards.
+    3. it only shares dashboards and reports with users logged in with the same email address.
+    4. Dashboard doesn't accept or pass user,account,or other entity parameters.
+42. 
 	
 
 
