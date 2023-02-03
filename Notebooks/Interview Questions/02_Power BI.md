@@ -158,7 +158,7 @@
     2. Zendesk
     3. Freshservice ....etc
 40. What is GetData in PowerBI ?
-    1.GetData is a simple icon on PowerBI used to import data from the source.
+    1. GetData is a simple icon on PowerBI used to import data from the source.
 41. 
 	
 
