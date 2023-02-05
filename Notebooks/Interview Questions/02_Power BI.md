@@ -170,7 +170,43 @@
     4. Pivot columns 
     5. Create custom columns 
     6. Query formulas
-43. 
+43. How many types of buildings blocks in power BI ?
+    There are Five Types of Building Blocks
+    1. Visualizations
+    2. Datasets
+    3. Reports
+    4. Dashboards
+    5. Tiles
+44. What is Visualizations ?
+    * Visualization is the visual representation of data in the form of maps, charts, or tables.
+45. What is Datasets ?
+    * Dataset is a collection of data gathered from various sources like SQL Server, Azure, Text, Oracle, XML, JSON, and many more. With the GetData feature in Power         BI, we can easily fetch data from any data source.
+46. What is Report ?
+    * Reports are a structured representation of datasets that consists of multiple pages. Reports help to extract important information and insights from datasets to       take major business decisions.
+47. What is Dashboard ?
+     * A dashboard is a single-page representation of reports made of various datasets. Each element is termed a tile. 
+48. What is Tile ?
+     * Tiles are single-block containing visualizations of a report. Tiles help to differentiate each report 
+49. Name any 3 most useful aggregation functions DAX?
+      DAX has a number of aggregation functions, including the following commonly used functions:
+        * SUM
+        * AVERAGE
+        * MIN
+        * MAX
+        * SUMX (and other X functions)
+
+50. Name any 3 most useful text functions in DAX?
+     The text functions in DAX include the following:
+       * CONCATENTATE
+       * REPLACE
+       * SEARCH
+       * UPPER
+       * FIXED
+
+
+
+
+
 	
 
 
