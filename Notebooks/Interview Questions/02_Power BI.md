@@ -208,6 +208,8 @@
    2. Power BI Services – Power BI Services is a Service-as-a-platform or a cloud based service.
    3. Power BI Mobile App – The Power BI App is available for iOs, Android, and Windows.
 
+   
+
 
 
 
