@@ -203,6 +203,12 @@
        * UPPER
        * FIXED
 
+51. What are formats in Power BI ?
+   1. Power BI Desktop – Power BI Desktop can be downloaded and installed on your PC. You can connect it to the data source, transform the data, and analyze and             visualize it with the help of templates.
+   2. Power BI Services – Power BI Services is a Service-as-a-platform or a cloud based service.
+   3. Power BI Mobile App – The Power BI App is available for iOs, Android, and Windows.
+
+
 
 
 
