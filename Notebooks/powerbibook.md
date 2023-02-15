@@ -1518,10 +1518,6 @@ Continue with your Power BI file from the previous exercise. You want to import 
 ```python
 
 ```
-
-
-
-
 # Power Pivot Modeling part 1
 
   - It is useful to do two activities  
