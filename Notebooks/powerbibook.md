@@ -5,7 +5,7 @@
 4. **[Working with SQL Server](#Working-with-SQL-Server)**<br>
 5. **[M-Language](#M-Language)**<br>
 6. **[Combine Queries](#Combine-Queries)**<br>
-7. **[Power Query Editor Lab](#Power-Query-Editor-Lab)**<br>
+7. **[Power Query Editor Project](#Power-Query-Editor-Project)**<br>
 8. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 9. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 10. **[Power BI Desktop](#Power-BI-Desktop)**<br>
@@ -1292,6 +1292,8 @@ where e.mgr=m.empno
 
 
 
+
+# Power Query Editor Project
 
 - **Power BI Desktop** Key Components
     1. Power Query Editor
