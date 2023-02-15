@@ -4,8 +4,8 @@
 3. **[Working with MySql](#Working-with-MySql)**<br>
 4. **[Working with SQL Server](#Working-with-SQL-Server)**<br>
 5. **[M-Language](#M-Language)**<br>
-6. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-7. **[Power BI Desktop](#Power-BI-Desktop)**<br>
+6. **[Combine Queries](#Combine-Queries)**<br>
+7. **[Power Query Editor Lab](#Power-Query-Editor-Lab)**<br>
 8. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 9. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 10. **[Power BI Desktop](#Power-BI-Desktop)**<br>
@@ -925,3 +925,595 @@ in
      #"Changed Type4"      
 ```
  
+
+
+
+# Combine Queries
+- In power BI, we can combine data intwo ways
+	1. Append
+	2. Merge
+## Append
+1. Rows appending
+1. It is equal to sql union all
+1. Append rules
+	- Rule 1: The number of columns in each table should be same, other wise it will fill with null values.        
+	- Rule 2: The respective columns data types shoud be same 
+### Exercise 1: Append emp10,emp20 and emp30 tables as **emp102030**
+
+#### Sql Query
+- Create required tables
+
+``` sql 
+SELECT * INTO [dbo].[emp10] FROM [dbo].[EMP] WHERE DEPTNO=10;
+
+SELECT * INTO [dbo].[emp20] FROM [dbo].[EMP] WHERE DEPTNO=20;
+
+SELECT * INTO [dbo].[emp30] FROM [dbo].[EMP] WHERE DEPTNO=30;
+```
+	
+
+- Verify data
+
+
+```sql
+select * from emp10 -- 3 rows
+union
+select * from emp20 -- 5 rows
+union
+select * from emp30 -- 6 rows
+```
+#### Difference between Union and Union all
+- Observe Results of below Queries
+
+``` sql 
+select * from emp10 -- 3 rows
+union
+select * from emp10 -- 3 rows
+```
+
+``` sql 
+select * from emp10 -- 3 rows
+union all
+select * from emp10 -- 3 rows
+```
+#### Intersection
+- Observe Results of below Queries
+
+``` sql 
+select * from emp10 -- 3 rows
+intersect
+select * from emp10 -- 3 rows
+```
+``` sql 
+select * from emp10 -- 3 rows
+intersect
+select * from emp20 -- 5 rows
+```
+#### except
+- Observe Results of below Queries
+
+``` sql 
+select * from emp10 -- 3 rows
+except
+select * from emp10 -- 3 rows
+```
+
+#### Develop Report using Append homogeneous Sources
+
+1. Open **Power BI** > Click on **Get Data** > Select **Databases**> Select **SqlServer** > Click on **Connect** > Provide **Servername** as **localhost** and **Database Name** as **rritec** > Click on **ok**
+1. In **Navigator** window Select tables **emp10**,**emp20** and **emp30** > Click on **Transform Data**
+1. Click on **Append Queries** > **Append Queries as New** > Select radio button **Three or More Tables** > Select required tables and push to right side then click on **ok**
+
+
+
+### Develop Report using Append Hetrogeneous Sources
+
+1. In above report import emp30 data from excel **LabData/Lab1/emp30_data_from_excel.XLSX**
+1. Combine This Excel emp 30 with SQL Server emp10 data
+
+
+
+## Merge
+1. Inner Join
+1. Left outer Join
+1. Right Outer Join
+1. Full Outer Join
+1. Right Anti Join
+1. Left Anti Join
+1. Non Equi Join
+1. Cross Join
+1. Self Join
+
+
+### Inner Join
+
+#### Learn Sql Query
+
+```sql
+Select dname,ename,job,sal
+from emp,dept
+where emp.deptno=dept.deptno
+```
+	
+OR 
+
+``` sql
+Select emp.deptno,dept.deptno,dname,ename,job,sal
+from emp inner join dept
+on emp.deptno=dept.deptno
+```
+
+#### Develop PBI Report using inner Join
+
+1. In above Report import **emp** and **dept**
+1. Click on **Merge Queries** > **Merge Queries as New** > Select Join Columns as shown below >Select Type of Join as **Inner Join** > click on **ok**
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0033.png?raw=true)
+1. In **Query Settings** rename **merge1** as **01_Inner_join**
+1. Expand Dept Table in the **work Area** and **Select all columns** > Click on **ok** > Understand Result of SQL Query in database and powerI result, Both Must be same
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0034.png?raw=true)
+
+### Left Outer Join
+
+#### Learn Sql Query
+
+``` sql
+Select emp.deptno,dname,ename,job,sal
+from emp left outer join dept
+on emp.deptno=dept.deptno
+```
+
+#### Develop PBI Report using Left Outer Join
+
+1. In above report, In Queries Pane ,select **01_Inner_join** > Right Click and click on **Duplicate**
+1. In Query Settings rename as **02_Left_outer_Join**
+1. Click on  **Source** Settings and change **inner join** as **Left Outer Join** 
+1. Click on **ok** 
+1. Observe result
+1. Notice that Ram Reddy record available even though he is belongs to 50 dept no
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0035.png?raw=true)
+
+### Right Outer Join
+
+#### Learn Sql Query
+
+``` sql
+Select dept.deptno,dname,ename,job,sal
+from emp right outer join dept
+on emp.deptno=dept.deptno
+```
+
+#### Develop PBI Report using Right Outer Join
+
+1. In above report, In Queries Pane ,select **01_Inner_join** > Right Click and click on **Duplicate**
+1. In Query Settings rename as **03_Right_outer_Join**
+1. Click on  **Source** Settings and change **inner join** as **Right Outer Join** 
+1. Click on **ok** 
+1. Observe Result
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0036.png?raw=true)
+
+### Full Outer Join
+
+#### Learn Sql Query
+
+``` sql 
+Select dept.deptno,dname,ename,job,sal
+from emp left outer join dept
+on emp.deptno=dept.deptno
+union 
+Select dept.deptno,dname,ename,job,sal
+from emp right outer join dept
+on emp.deptno=dept.deptno 
+```
+
+or 
+
+``` sql
+select dept.deptno,emp.deptno,dname,loc,empno,ename,sal
+from [dbo].[EMP] full outer join [dbo].[DEPT]
+on dept.deptno=emp.deptno 
+```
+
+#### Develop PBI Report using Full Outer Join
+
+1. In above report, In Queries Pane ,select **01_Inner_join** > Right Click and click on **Duplicate**
+1. In Query Settings rename as **04_Full_outer_Join**
+1. Click on  **Source** Settings and change **inner join** as **Full Outer Join** 
+1. Click on **ok** 
+1. Observe Result
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0037.png?raw=true)
+
+### Left Anti Join
+
+#### Learn Sql Query
+
+``` sql 
+select * from emp
+where deptno not in (select deptno from dept );
+```
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0038.png?raw=true)
+
+#### Develop PBI Report using Left Anti Join
+
+1. In above report, In Queries Pane ,select **01_Inner_join** > Right Click and click on **Duplicate**
+1. In Query Settings rename as **05_Left_Anti_Join**
+1. Click on  **Source** Settings and change **inner join** as **Left Anti Join** 
+1. Click on **ok** 
+1. Observe Result
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0039.png?raw=true)
+
+### Right Anti Join
+
+#### Learn Sql Query
+
+``` sql
+select * 
+from dept 
+where deptno not in (select deptno from emp );
+```
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0040.png?raw=true)
+
+#### Develop PBI Report using Right Anti Join
+
+1. In above report, In Queries Pane ,select **01_Inner_join** > Right Click and click on **Duplicate**
+1. In Query Settings rename as **06_Right_Anti_Join**
+1. Click on  **Source** Settings and change **inner join** as **Right Anti Join** 
+1. Click on **ok** 
+1. Observe Result
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0041.png?raw=true)
+
+### Non Equi Join
+
+#### Learn Sql Query
+``` sql
+select ename,sal,grade 
+from emp,salgrade 
+where sal between losal and hisal
+```
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0042.png?raw=true)
+
+#### Develop PBI Report using Non Equi Join
+1. Click on **Get Data** > Select **Databases**> Select **MySql** > Click on **Connect** > Provide **Servername** as **localhost** and **Database Name** as **rritec** > Click on **Advanced Options** > under **SQL Statement** ,paste above sql > Click on **ok**
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0043.png?raw=true)
+	
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0044.png?raw=true)
+	
+1. In **Query Settings** rename query as **Non Equi Join**
+1. Observe result    
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0045.png?raw=true)
+
+### Cross Join
+
+#### Learn Sql Query
+``` sql
+select ename,dname,job,sal
+from emp,dept
+```
+
+   ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0046.png?raw=true)
+
+#### Develop PBI Report using Cross Join
+
+1. In above report, In Queries Pane ,select **01_Inner_join** > Right Click and click on **Duplicate**
+1. In Query Settings rename as **05_Left_Anti_Join**
+1. Click on  **Source** Settings and change **inner join** as **Left Anti Join** 
+1. Click on **ok** 
+1. Observe Result
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0047.png?raw=true)
+    
+#### Develop PBI Report using Self Join
+``` sql
+select e.ename as employee_name,m.ename as manager_name 
+from emp as e,emp as m
+where e.mgr=m.empno
+```
+
+## Home Work: Develop Below reports
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0022.png?raw=true)
+
+## Questions
+1. What is composite Key ?
+
+	A composite key is a combination of two or more columns in a table that can be used to uniquely identify each row in the table
+	
+	![image](https://user-images.githubusercontent.com/20516321/127946905-78dea4ea-93aa-49da-9cff-0c72aaa38264.png)
+
+	
+	
+1. Can we merge/Join in power bi with two or more columns?
+
+	Yes. Press Ctrl key and select multiple columns.
+	
+	*Note:* In *Model* we can not create join based on multiple columns 
+1. How many types of combine available in PowerBI?
+
+	1. Append
+	
+	2. Merge
+1. What you mean by append?
+
+	Combining rows from two or more tables
+1. What you mean by Merge?
+	
+	Merge is nothing but Join
+1. How many types of Mergeing possible in Power BI?
+	
+	- 6 Types and those are 
+		- Inner Join
+		- Left Outer Join
+		- Right Outer Join
+		- Full Outer Join
+		- Left Anti Join
+		- Right Anti Join
+1. Can you show null mesures coresponding rows in the report?
+	No. As a work around we can replace NULL with something(like Zero,NA,...etc)
+1. Understand below data and answer questions?
+	- Table 1
+	
+	| Col1 | Col2 |
+	| --- | --- |	
+	| 101 | ram |	
+	| 102 | raju |
+	
+	- Table 2
+	
+	| Col1 | Col2 |
+	| --- | --- |	
+	| 101 | Accounting |	
+	| 102 | IT |
+	
+	1. if i create join between these two tables 
+		- using **inner join** how many rows will get in result?
+			- 2
+		- using **left outer join** how many rows will get in result?
+			- 2
+		- using **right outer join** how many rows will get in result?
+			- 2			
+		- using **full outer join** how many rows will get in result?
+			- 2	
+1. Power BI **Append** works as **union** or **union all**?
+	- Union all
+1. What is the difference between **union** and **union all**
+	- Union --> it will not produce duplicates rows
+	- union all --> will produce duplicate rows
+
+
+
+
+- **Power BI Desktop** Key Components
+    1. Power Query Editor
+        - Connecting Data Sources
+            - Files(Excel ... etc)
+            - Relational Databases (MySql,MS Sql Server ... etc)        - 
+        - Import Tables
+        - Transformations
+            - Replace **null** with **zero**
+            - Add new column
+            - Change datatype
+            - Filter data
+            - .... etc        
+        - Understanding Transformations in M-Language of Power BI
+        - Combine
+            - Append(Union All)
+            - Merge(Join)
+                - Inner Join
+                - Left Outer Join
+                - Right Outer Join
+                - Full Outer JOin
+                - Left Anti Join
+                - Right Anti Join 
+        - Based on these concepts let us do one small project
+    1. Power Pivot
+    1. Power View
+    
+# Lab Overview
+
+## SCENARIO
+ABC is a company that manufactures and sells **sporting goods**. The company has offices in the United States (US) and several other countries. Its sales comprise of US sales and International sales. ABC’s sales come from its owned manufactured products, as well as other manufacturers’ products.
+
+ABC's US office stores the sales data on an **Access** database. ABC International sales transactions are available as **Comma Separated Values (CSV)** files. They could be generated daily, either manually by someone, or automatically by an automated process. They are available in a dedicated folder. These CSV files have the same column structure as the sales table for the US sales that comes from the SQL Database.
+
+You want to perform analysis on ABC's worldwide sales data for the year **2000 to 2015**. You need to bring all these data into Power BI Desktop before you can perform any analysis. Finally, you want to compare ABC's **country sales with the country population**. You need to import the country population data from a less structured **Excel** report to Power BI.
+
+
+
+## LAB OVERVIEW
+
+This lab comprises of three exercises:
+
+In the **First Exercise**, you will import data to Power BI Desktop from an Access database file.
+
+In the **Second Exercise**, you will import data from CSV files which resides in a file folder. You will append this new data to the corresponding existing data that comes from the Access Database.
+
+In the **Third Exercise**, you will import data to Power BI Desktop from an Excel file that is less structured.
+
+
+
+## WHAT YOU'LL NEED
+
+A computer with the latest version of Power BI Desktop installed on it.
+
+A copy of the `Access Database` containing ABC's US sales data.
+
+`4 CSV files`, containing ABC’s international sales data:
+
+1. CA Sales.csv
+2. FR Sales.csv
+3. DE Sales.csv
+4. MX Sales.csv
+
+An `Excel` file containing country population data.
+
+## Import Data from Access Database
+
+
+1. Open `Power BI Desktop`.
+2. Click `Get Data`.
+3. Click `Access database`, and click `Connect`.
+4. Navigate to `LabData`, click `PowerBI.accdb`, and click `Open`.
+5. Select `bi_date, bi_geo, bi_manufacturer, bi_product` and `bi_salesFact` and click `Transform`.
+6. In Queries, select `bi_salesFact`.
+7. Select the `Date` column.
+8. Click the `Transform` ribbon.
+9. In the `Any Column` group, select `Data Type` and select `Date`.
+10. Click the drop-down button at the top of the `Date` column.
+11. Click `Date` Filters and click `After`.
+12. In the first Enter or select a value field, type 12/31/1999 if you are using MM/DD/YYYY dates and 31/12/1999 if you are using DD/MM/YYYY dates and click OK.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0092.png?raw=true)
+    
+13. In `Queries`, select `bi_Date`.
+14. Select the Date column.
+15. Click the Transform ribbon.
+16. In the Any Column group, select Data Type and select Date.
+17. Click the drop-down button at the top of the Date column.
+18. Click Date Filters and click After.
+19. In the first Enter or select a value field, type 12/31/1999 if you are using DD/MM/YYYY dates and 31/12/1999 if you are using DD/MM/YYYY dates and click OK.
+20. Rename the queries as follows:
+
+- In Queries, right click **bi_date**, click Rename, replace the text with **Date**, and press Enter.
+- In Queries, right click **bi_geo**, click Rename, replace the text with **Locations**, and press Enter.
+- In Queries, right click **bi_manufacturer**, click Rename, replace the text with **Manufacturers**, and press Enter.
+- In Queries, right click **bi_product**, click Rename, replace the text with **Products**, and press Enter.
+- In Queries, right click **bi_salesFact**, click Rename, replace the text with **Sales**, and press Enter.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0094.png?raw=true)
+    
+21. Click the Home ribbon.
+22. Click **Close and Apply**.
+23. Click **Data** and explore the imported data in the Data View.
+
+## Import Data from a Folder Containing CSV Files
+
+Continue with your Power BI file from the previous exercise. You want to create a Query for the International sales and append the Query to the Query from US Sales.
+
+1. On the **Home** ribbon, click **Get Data** > click **File** > Click **Folder** > click **Connect**.
+1. In Folder path, go to **labdata/Lab1** and select **International** folder, and click **OK**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0095.png?raw=true)
+
+1. Click on **Combine & Transform Data**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0096.png?raw=true)
+
+1. Observe data > Click on **ok**
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0097.png?raw=true)    
+
+1. In **QUERY SETTINGS** change the name to **International Sales**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0098.png?raw=true) 
+    
+1. Select the **Date** column.
+1. Click the **Transform** ribbon.
+1. In the **Any Column** group, select **Data Type** and select **Date**.
+1. Click the drop-down button at the top of the **Date** column.
+15. Click **Date Filters** > click **After**.
+16. In the first Enter or select a value field, type **12/31/1999** if you are using DD/MM/YYYY dates
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0099.png?raw=true)
+    
+17. In **Queries**, select **Sales**.
+18. On the **Home** ribbon, click **Append Queries**.
+19. Select **International Sales** and click **OK**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0100.png?raw=true)
+    
+20. On the **Add Column** ribbon > Click on **Custom Column**.
+21. In New column name type **Country Name**.
+22. To replace null values with USA, in Custom column formula, type the following formula and click OK:
+`=if [Country] = null then "USA" else [Country]`
+   ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0101.png?raw=true)
+    
+    
+23. Right-click the header of the **Country** column and click **Remove**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0102.png?raw=true)
+    
+24. Click the **Home** ribbon.
+25. Click **Close & Apply**.
+26. Click **Data** and explore the imported data in the **Data View**.
+
+## Import a Less Structured Data from an Excel File
+ 
+
+Continue with your Power BI file from the previous exercise. You want to import an Excel report containing population data for the countries that VanArsdel operates.
+
+1. Import the data from the file folder by clicking **Get Data** > **Excel** > **Connect**.
+1. Select **..Labdata/lab1/Country Population by Year.xlsx** and click **Open**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0103.png?raw=true)
+
+1. Select **Sheet1** and click **Transform Data**.
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0104.png?raw=true)    
+    
+1. In **QUERY SETTINGS** change Name to **Country Population**.
+1. On the ribbon, click **Remove Rows** > Click **Remove Top Rows** > in **Number of rows** >  type **3** > click **OK**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0105.png?raw=true)
+    
+1. On the ribbon, click Use **First Row as Headers**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0106.png?raw=true)    
+1. Select the **1999** column, hold **Shift** and select the **2014** column.
+1. On the **Transform** ribbon, click **Unpivot** Columns.
+1. Right-click the **Attribute** column header and click **Rename**.
+1. Type **Year** and press **Enter**.
+1. Right-click the **Value** column header and click **Rename**.
+1. Type **Population** and press **Enter**.
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0107.png?raw=true)
+    
+1. Click the **drop-down** button on the **Year** header, unselect **1999**, and click **OK**.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0108.png?raw=true)
+    
+1. Click the **Year** header, on the **Transform** ribbon click **Data Type**, and click **Whole Number**.
+1. Click the **Population** header, on the **Transform** ribbon click **Data Type**, and click **Whole Number**.
+1. Click the **Home** ribbon.
+1. Click **Close & Apply**.
+1. Load the **data** into Power BI Desktop.
+1. Explore the imported data in the Data View.
+
+
+## Questions
+-----
+1. How Many Types of connections available in **Power BI**
+    - Import
+    - DirectQuery
+    - Live Connection
+    - Streaming Connection
+2. What is difference between Import and Direct Connection?
+    1. Import:
+        - Gives you the **full suite** of transformation and **data manipulation** in the Desktop
+        - There is a 1 GB limit to the Desktop if you plan on publishing to the PBI Service
+        - Scheduling Datasets using gateway is needed to avoid old(stale) data
+    2. DirectQuery:
+        - Limits your ability to manipulate data in the Desktop (removes the Data section)
+        - Leaves the data in the SQL database
+        - Is "live", no need to schedule a refresh (In the Service)
+2. What is the max data limit in a given dataset?
+
+    - **1 GB**
+    
+    - for more information read this [doc](https://docs.microsoft.com/en-us/power-bi/admin/service-admin-manage-your-data-storage-in-power-bi#:~:text=There%20is%20a%201%20GB,250%20MB%20for%20the%20dataset)
+1. How Power BI define datatypes?
+    - Based on first 200 rows data values
+
+
+```python
+
+```
+
