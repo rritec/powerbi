@@ -1522,7 +1522,7 @@ Continue with your Power BI file from the previous exercise. You want to import 
 
 
 
-- # Power Pivot Modeling part 1
+# Power Pivot Modeling part 1
 
   - It is useful to do two activities  
     1. Modeling
