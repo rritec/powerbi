@@ -6,7 +6,7 @@
 5. **[M-Language](#M-Language)**<br>
 6. **[Combine Queries](#Combine-Queries)**<br>
 7. **[Power Query Editor Project](#Power-Query-Editor-Project)**<br>
-8. **[Power Query Editor Project2](#Power-Query-Editor-Project2)**<br>
+8. **[Power Pivot Modeling Part1](#Power Pivot Modeling Part1)**<br>
 9. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 10. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 11. **[Power BI Desktop](#Power-BI-Desktop)**<br>
@@ -1520,7 +1520,7 @@ Continue with your Power BI file from the previous exercise. You want to import 
 ```
 # Power Pivot Modeling part 1
 
-# Power Query Editor Project2
+# Power Pivot Modeling Part1
   - It is useful to do two activities  
     1. Modeling
         - Relation ship(Among Tables) Vs Join(Among Queries)
