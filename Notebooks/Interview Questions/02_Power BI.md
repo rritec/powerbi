@@ -82,10 +82,13 @@
    4. Full Outer Join
    5. Left Anti Join
    6. Right Anti Join
-   7. 
-27. Seeall these 
+
+
+27. See all these 
+
     1. https://data-flair.training/blogs/power-bi-interview-questions/
     2. https://data-flair.training/blogs/power-bi-interview-questions-and-answers/
+
 28. Think and develop below reports.
 	![image](https://user-images.githubusercontent.com/20516321/115226802-44837c00-a12d-11eb-94d3-b1ced898ddf1.png)
 	![image](https://user-images.githubusercontent.com/20516321/115226863-57964c00-a12d-11eb-8d66-f248102aa75a.png)
