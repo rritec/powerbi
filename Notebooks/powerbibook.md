@@ -20,11 +20,11 @@
 19. **[Types of Filter](#Types-of-Filter)**<br>
 20. **[Groups Bins](#Groups-Bins)**<br>
 21. **[Conditional Formatting](#Conditional-Formatting)**<br>
-22. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-23. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-24. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-25. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-26. **[Power BI Desktop](#Power-BI-Desktop)**<br>
+22. **[Power BI Service](#Power-BI-Service)**<br>
+23. **[Create Apps](#Create-Apps)**<br>
+24. **[Parameters](#Parameters)**<br>
+25. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power BI)**<br>
+26. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
 27. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 28. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 29. **[Power BI Desktop](#Power-BI-Desktop)**<br>
@@ -2885,3 +2885,342 @@ https://docs.microsoft.com/en-us/power-bi/desktop-conditional-table-formatting
 ## Ref
 
 https://exceleratorbi.com.au/conditional-formatting-with-a-text-field-in-power-bi/
+
+
+#  Power BI Service
+
+
+# Power BI Service
+
+## Create a new workspace
+
+1. Signup for new user id and password with **work mail id** [Signup link](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb_nolicense_redirect%26redirectedFromSignup%3D1%26noSignUpCheck%3D1) or **use what instructor provided to you**.
+2. Open https://app.powerbi.com/
+3. Signin with username and password given to you by your instructor
+    ![image](https://user-images.githubusercontent.com/20516321/112792985-1658d200-9082-11eb-9f74-63b862b27d24.png)
+
+4. In the left **Navigation Pane** > Click on **Workspaces** > Click on **Create a Workspace** > provide **workspace name** as **rritec-workspace** > click on **Save**
+
+## Publish PBI Report
+
+1. Open the **Labdata/Lab4/Lab 4 Starting.pbix** file.
+1. On the **Home ribbon**, click **Publish**.
+1. In Select a destination, select **rritec-workspace**, and click **Select**.
+1. If prompted, sign in using the account you used to sign up for the Power BI service.
+1. [Signup link](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb_nolicense_redirect%26redirectedFromSignup%3D1%26noSignUpCheck%3D1)
+1. Once the report is published, click Got it.
+1. Open browser, go to https://app.powerbi.com/, and click Sign in.
+1. Sign in using your account.
+1. Go to the **Lab 4 Starting Report** and explore your published report. It looks similar to the one in Power BI Desktop file. Now you can start creating a dashboard by pinning some visualizations.
+## Create Dashboard by Pining Visualizations
+1. Go to the **Sales Report** tab and pin the chart showing **Total Sales by Category and Segment** (100% Stacked Bar Chart). Select to create a New dashboard and name it **VanArsdel Sales**.
+1. Pin the **treemap chart**, **the scatter chart**, and the **map** visualization from the Sales Report tab to the **VanArsdel Sales** dashboard.
+1. Go to the **Yearly Trend** tab and pin the **waterfall chart** that shows the **Sales Var by Year** to the VanArsdel Sales dashboard.
+1. Go to the VanArsdel Sales dashboard and review what you have created.
+1. Resize and arrange the tiles as necessary.
+1. Go to **Edit** > Click on **Mobile Layout** > Observe how it looks in mobile > In the Right Side corner Click on **Web Layout** to see how it looks in web/laptops
+1. Review the phone view.
+1. Resize and arrange the tiles as necessary.
+1. You should have something similar to the below image:
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0048.png?raw=true)
+    
+- **Note:** If the original visualization that's used to create the tile changes, the tile doesn't change. For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
+
+## Share Dashboard
+
+1. Let's start sharing your newly created dashboard. For simplicity, let's share the dashboard to your own email address.
+
+1. **NOTE:** Power BI Pro is required for sharing dashboards. If you do not have a Power BI Pro subscription, you can enroll for a free 60 day trial.
+
+1. Click **My Workspace**, click Dashboards, and click **Van Arsdel Sales**.
+1. In the **VanArsdel Sales** dashboard, click the **Share** button to share your dashboard.
+1. Click **Try Pro** for free.
+1. Click **Start Trial**, and click **Close**.
+1. Click **My Workspace**, click **Dashboards**, and click **Van Arsdel Sales**.
+1. In the **VanArsdel Sales dashboard**, click the **Share** button to share your dashboard.
+1. In Grant access to, enter your email address used for Power BI service and click Share.
+1. Check your inbox to see an invite to view this dashboard.
+
+## Update Report and re-publish
+----
+1. Once you've published your Power BI Desktop file to Power BI service, you can still make changes to it, and re-publish the file so that your changes is reflected in Power BI service.
+1. Open the **Lab 4 Starting.pbix** file.
+1. Modify the **Total Sales by Category and Segment chart** (the one displayed using **100% stacked bar chart** visualization) on the Sales Report tab to use **Stacked Bar chart** visualization instead.
+1. Again **publish** the file to **Power BI service** and replace the existing dataset with this one.
+1. Go to Power BI service and review the **Lab 4 - Starting Report** and examine whether the change you made is reflected.
+
+## Add entire page to dashboard as live page
+1. Open report > click on **...** > Click on **Pin to a dashboard**
+ 
+## Add Web Content Tile
+----
+4. Web Content Tile accepts any html tags/code
+5. In above report click on **Edit** > Click on **+ Add tile**
+6. Under Media, Clic on **Web Content**  > Select **Next** 
+7. Under **Embed Code** > paste below code html
+
+    ```
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    ```
+
+1. Click om **Apply** and observe Tile in the dashboard
+
+## Add Image Tile
+-----
+
+1. In above report click on **Edit** > Click on **+ Add tile**
+1. Under Media, Clic on **Image**  > Select **Next** 
+1. Under **Content** > paste below URL
+
+    https://github.com/rritec/datahexa/blob/master/images/Mentor_dl.jpg?raw=true
+
+1. Click om **Apply** and observe Tile in the dashboard    
+
+## Add youtube Video
+----
+
+1. In above report click on **Edit** > Click on **+ Add tile**
+1. Under Media, Clic on **Video**  > Select **Next** 
+1. Under **Content** > paste below URL
+
+    https://youtu.be/DNovBg5VCHA?list=PLpF-Cn8-Vi9QLt3NsK-7RH0jUPGRLnu7o
+
+1. Click om **Apply** and observe Tile in the dashboard    
+
+## Explore Dasboard Themes
+----
+
+#### Exercise 1: Export and import custom theme.
+
+1. Open **PowerBI Desktop** > Open Any **report** > Go to **View** menu > Click on **Themes** down arrow mark > Click on **Customize Current Theme**
+2. Observe all **properties**
+3. Change required **colors** or **fonts** ...etc
+4. Click on **Apply**
+5. Again Go to **View** menu > Click on **Themes** down arrow mark > **Save Current Theme** into local pc **Desktop**
+6. Open any other report > Go to **View** menu > Click on **Themes** down arrow mark > Click **Browse for themes** > Select previously saved **json** file > Click on **open** > observe changes
+
+#### Exercise 2: Change Themes from Power BI Service.
+
+1. In above report click on **Edit** > Click on **Dashboard Theme** > explore it
+
+    - For more info [click here](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-report-themes)
+  
+
+## Questions
+1. Without using **Power BI Desktop**, will you be able to upload **PBIX** file into **Power BI Service** ?
+    - Yes. 
+    - Go to required **workspace** > Click on **New** > Click on **Upload a File**
+        ![image](https://user-images.githubusercontent.com/20516321/114537204-8e70eb80-9c6f-11eb-9c72-a4f0d0b68c5c.png)
+
+  
+  
+#  Create Apps
+
+## what is an App ?
+- An app is a Power BI content type that combines related **dashboards and reports**, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. 
+- Click on **rritec-workspace** > click on **Create app** > name it as **rritec-workspace-app** > provide **description** as **it is a sales app**
+- Click on **Publish app** > in pop up click on **publish**
+- Explore [Here](https://docs.microsoft.com/en-us/learn/paths/manage-workspaces-datasets-power-bi/?ns-enrollment-type=Collection&ns-enrollment-id=djwu3eywpk4nm)
+
+## Questions
+1. If we created new report, will it automatically reflect into app?
+  - No,We need to update the app
+2. By default,a report or dashboard will be not shown in the app. Do we have any option to show a report or dashboard.?
+  - Yes . (Go to workspace > view > list > Include in app > disable/enable it)
+3. Can you create a report using published dataset? in side power bi service?
+  - Yes
+4. How Many Apps, possible using One Work Space ?
+  - Only **One**
+5. 
+
+
+#  Parameters
+
+# Parameters
+
+- let us assume development servername and database name
+    - Server name: rritec
+    - Databasename: Adventureworksdw2012
+
+- let us assume Testing servername and database name
+    - Server name: rritec_test
+    - Databasename: Adventureworksdw2012_test
+
+- let us assume production servername and database name
+    - Server name: rritec_prod
+    - Databasename: Adventureworksdw2012_prod
+- Import three tables DimDate,DimCustomer and FactInternetSales tables from sqlserver and observe M-Language source line of code of each query
+- Create two paramatrs with the name of Servername and DBName and passvalues as rritec and AdventureWorksDW2012 respectively
+    - ![image](https://user-images.githubusercontent.com/20516321/147030231-745ed8c7-e0a9-424b-bfa6-44e6d1e92647.png)
+    - ![image](https://user-images.githubusercontent.com/20516321/147030273-c9c25483-2ef9-44a8-b6c4-a0ca1ddf82f0.png)
+
+
+- Double click on each Query source step and change static values to above parameters.
+
+
+## Reference M-Language
+let
+    Source = Sql.Database("rritec", "AdventureWorksDW2012"),
+    dbo_DimDate = Source{[Schema="dbo",Item="DimDate"]}[Data]
+in
+    dbo_DimDate
+
+let
+    Source = Sql.Database("rritec", "AdventureWorksDW2012"),
+    dbo_DimCustomer = Source{[Schema="dbo",Item="DimCustomer"]}[Data]
+in
+    dbo_DimCustomer
+
+let
+    Source = Sql.Database("rritec", "AdventureWorksDW2012"),
+    dbo_FactInternetSales = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
+    #"Filtered Rows" = Table.SelectRows(dbo_FactInternetSales, each [OrderDate] >= RangeStart and [OrderDate] <= RangeEnd)
+in
+    #"Filtered Rows"
+
+
+#  Gateways Data Refresh in Power BI
+
+
+# Data Refresh
+---
+
+- How many types of sources are available?
+  - On-Permise
+    - excel
+    - SqlServer
+    - Oracle
+    - ...etc 
+  
+  - Cloud
+    - web
+    - Azure SQL Database
+    - snowflake    - 
+    - ...etc
+- For which type of sources required scheduling?
+  - On-Permise
+  - Scenerio:
+      - Today 10 rows available in the Source(example: excel/sql server/oracle/teradata)(on - Permise Datasets)
+      - you imported to PBI file
+      - Developed reports
+      - published report to power Bi service
+      - After one month  5 more records added to excel and 2 records of excel updated and 1 record of excel deleted.Now total number of records in excel is 14
+      - However if i go and run report in **power Bi service** ,iam seeing old data (10 rows). How to fix it?
+      - 
+ 
+2. Power BI Service(Azure Cloud) Communicates On -Permise Datasets by using ............?
+  - Gateway
+## What is an on-premises data gateway?
+- The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services.
+- These cloud services include Power BI, PowerApps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
+- By using a gateway, organizations can keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in cloud services.
+
+![image](https://user-images.githubusercontent.com/20516321/113988805-74996800-986d-11eb-888f-c7255a071f55.png)
+
+## Types of gateways
+- There are two different types of gateways, each for a different scenario:
+
+  1. **On-premises data gateway** allows multiple users to connect to multiple on-premises data sources. You can use an on-premises data gateway with all supported services, with a single gateway installation. This gateway is well-suited to complex scenarios with multiple people accessing multiple data sources.It is also called as **Enterprise** or **Standalone** Gateway
+
+  2. **On-premises data gateway (personal mode)** allows one user to connect to sources, and can’t be shared with others. An on-premises data gateway (personal mode) can be used only with Power BI. This gateway is well-suited to scenarios where you’re the only person who creates reports, and you don't need to share any data sources with others.
+
+## Download and install a personal mode gateway
+
+  1. [Download the personal mode gateway.](https://go.microsoft.com/fwlink/?LinkId=2116848&clcid=0x409)
+  2. In the gateway installer, enter the default installation path, accept the terms of use, and then select Install.
+
+      ![image](https://user-images.githubusercontent.com/20516321/113989982-9d6e2d00-986e-11eb-9961-a3fa02477f21.png)
+
+  3. Enter the email address for your Office 365 organization account, and then select Sign in.
+    ![image](https://user-images.githubusercontent.com/20516321/113990054-b1b22a00-986e-11eb-8788-eeb89b005a05.png)
+
+  4. You're now signed in to your account. Select Close.
+      ![image](https://user-images.githubusercontent.com/20516321/113990114-c393cd00-986e-11eb-9ac1-ca3a6016a1ed.png)
+ ## Schedule Dataset developed using Excel/SQL Server Source
+
+  1. Follow regular process and develop a report from excel source
+  2. Publish it
+  3. In Power BI Service > click on dataset schedule and set credentials and time accordingly
+  4. 
+## Incremental Refresh
+
+  1. Open Power BI Desktop
+  2. Import DimDate, DimCustomer, FactInternetSales from Sql Server AdventureWorksDW2012 database
+  3. Develop a table visulization, by dragging **orderdate** column from **FactInternetSales** > Set **Orderdate** as **date** column  > set aggregation rule as **earliest** . Again drag **orderdate** column from **FactInternetSales** table > set **orderdate** as date column > set aggregation rule as **latest** date
+  ![image](https://user-images.githubusercontent.com/20516321/129829244-0af234a9-016d-4e5e-a4c1-6280c9c6cef5.png)
+  4. In **PowerQueryEditor** window create two parameters with the name of **RangeStart** and **RangeEnd** and set below values.
+  
+  ![image](https://user-images.githubusercontent.com/20516321/129829544-1900ae16-10b0-4801-8faa-e35975a94ca9.png)
+
+
+  4. Apply custom filter on **FactInternetSales > Orderdate** column by using above parameters(RangeStart/RangeEnd)
+  5. close and apply
+  6. In power View > right click on FactInternetsales>click on Incremental Refresh select required options.
+Reference: 
+- https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install
+- https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-data
+- https://docs.microsoft.com/en-us/power-bi/admin/service-premium-incremental-refresh
+
+## Questions
+----
+1. With **Pro** Licence, how many times we can schedule/Refresh the dataset in a given day?
+  - **8** Times
+2. With **Premium** Licence, how many times we can schedule/Refresh the dataset in a given day?
+  - **48** Times
+3. In Incrmental Refresh what are the parameters are manadatory?
+  - RangeStart
+  - RangeEnd
+4. In Incrmental refresh what is the importance of **Detect data changes**
+  - [Refer](https://docs.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview#4---detect-data-changes)
+5. In Incrmental refresh what is the importance of **Only Refresh Complete Days**
+  - [Refer](https://docs.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview#5---only-refresh-complete-days)
+6. What is Query Folding?
+  -  Incremental refresh is designed for data sources that support query folding, which is Power Query's ability to generate a single query expression to retrieve and transform source data. Most data sources that support SQL queries support query folding. Data sources like flat files, blobs, and some web feeds often do not.
+7. Incremental Refresh, can you apply on **Excel** Data source?
+  - No
+8. 
+
+
+#  Deployment Pipelines
+
+## Power BI Deployment Pipelines
+-----
+
+- The tool is designed as a pipeline with three stages:
+
+### Development
+
+- This stage is used to design, build, and upload new content with fellow creators. This is the first stage in deployment pipelines.
+
+### Test
+
+- You're ready to enter the test stage after you've made all the needed changes to your content. You upload the modified content so it can be moved to this test stage. Here are three examples of what can be done in the test environment:
+- Share content with testers and reviewers
+- Load and run tests with larger volumes of data
+- Test your app to see how it will look for your end users
+
+### Production
+
+- After testing the content, use the production stage to share the final version of your content with business users across the organization.
+
+### Navigation Steps
+
+1. Click on Workspace **rritec-workspace** > Click on **settings** > Click on Premium > select storage as small blobs > click on **ok**
+1. Click on **Deployment Pipelines** > Click on **Create a Pipeline** > Provide pipeline name as **rritecPipeline** >click on **Assign Workspace** > from drop down select **rritec-workspace** > Select **Development** > Click on assign
+1. Click on **Deploy** to copy content (Datasets/reports/dashboards) to **Test**
+1. Click on Test **Deploy** to copy content from **Test** to **production**
+### On going Changes:
+1. How to deploy new 1 or couple of reports into other environment?
+2. How to deploy Modified report from lower environment to higher environment?
+3. How to decommission(Delete) a report?
+### Questions
+1. After deployment(from dev to test) one report added to dev. Then will it automatically will appear in test?
+  - NO, We need click on Dev **Deploy** button
+2. As a developer what workspace i will have access?
+  - Dev
+3. Accidentely removed one report from Dev, Can i copy a report from test to dev?
+  - No. (Work around is Request Admin to download PBIX file from test and publis pbix file to Dev)
+4. 
+
