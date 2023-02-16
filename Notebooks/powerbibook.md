@@ -35,6 +35,7 @@
 34. **[Paginated Reports](#Paginated-Reports)**<br>
 35. **[SSRS](#SSRS)**<br>
 36. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
+37. **[Power BI](#Power-BI)**<br>
 
 
 # Introduction
