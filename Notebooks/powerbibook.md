@@ -1,6 +1,6 @@
 # Power BI
 1. **[Introduction](#Introduction)**<br>
-2. **[Power BI Desktop](#Power-BI-Desktop)**<br>
+2. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
 3. **[Working with MySql](#Working-with-MySql)**<br>
 4. **[Working with SQL Server](#Working-with-SQL-Server)**<br>
 5. **[M-Language](#M-Language)**<br>
@@ -226,7 +226,7 @@ direct link : https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data
     4. Power BI Maps
     5. Power BI Embeded Analytics
     
-# Power BI Desktop
+# Power Query Editor Shape data using Excel as source
     - It has mainly three Components
         - Power Query Editor(Extract + Transforming + Loading into PBIX file)
         - Power Pivot (Model + DAX)
