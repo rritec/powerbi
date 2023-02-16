@@ -35,7 +35,7 @@
 34. **[Paginated Reports](#Paginated-Reports)**<br>
 35. **[SSRS](#SSRS)**<br>
 36. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
-37. **[Interview Questions](#Interview-Questions)**<br>
+37. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
 
 
 # Introduction
@@ -3784,7 +3784,7 @@ https://docs.microsoft.com/en-us/sql/reporting-services/create-a-basic-table-rep
 https://docs.microsoft.com/en-us/power-bi/guidance/migrate-ssrs-reports-to-power-bi
 
 
-#  Interview Questions 
+#  Power BI Interview Questions
 
 1. Tell me about your self
    1. I completed [Btech] in [cse] specilaization and got opprtunity to work as fresher in [abc] company. I got onboard/Induction training on skills SQL and               PowerBI.
