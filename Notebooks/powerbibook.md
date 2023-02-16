@@ -9,17 +9,17 @@
 8. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
 9. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
 10. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
-11. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-12. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-13. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-14. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-15. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-16. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-17. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-18. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-19. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-20. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-21. **[Power BI Desktop](#Power-BI-Desktop)**<br>
+11. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
+12. **[DAX Studio](#DAX-Studio)**<br>
+13. **[recap](#recap)**<br>
+14. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
+15. **[Exam](#Exam)**<br>
+16. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
+17. **[Power View Hierarchy Drill down drill up](#Power-View-Hierarchy-Drill-down-drill-up)**<br>
+18. **[Power View Drill Through](#Power-View-Drill-Through)**<br>
+19. **[Types of Filter](#Types-of-Filter)**<br>
+20. **[Groups Bins](#Groups-Bins)**<br>
+21. **[Conditional Formatting](#Conditional-Formatting)**<br>
 22. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 23. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 24. **[Power BI Desktop](#Power-BI-Desktop)**<br>
@@ -1824,4 +1824,1064 @@ https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-
 ```python
 
 ```
+# DAX iterator Functions
 
+# Use aggregation iterator functions
+
+- Each single-column summarization function has its equivalent iterator function.
+- Example sum > sumx, min > minx, max > maxx, rank >rankx, count>countX, counta > countaX ..etc
+- All scenarios of sum/min/max ..etc can also achivable using respective sumX/minX/maxX.... etc, however first priority goes to sum/min/max ..etc
+
+
+
+## What is the difference between SUM() Vs SUMX()?
+   - https://exceleratorbi.com.au/use-sum-vs-sumx/   
+   - SUM() operates over a **single column** and has no awareness of individual rows in the column (no row by row evaluation).
+   - SUMX() can operate on **multiple columns** in a table and can complete row by row evaluation in those columns.
+   - SUMX() vs SUM(): Which One Should I Use?
+      - Which you use really depends on your personal preference and the **structure of your data**.
+      - In below example what we should use ?
+      
+      | product  | Quantity | Unit Price |        
+      | ------------- | ------------- | -------- |        
+      | Product 1 |	2	| 100 |        
+      | Product 2 |	4	| 120 |        
+      | Product 3 |	8 |	130 |
+      
+      - Answer is : Sumx
+      - In below example what we should use ?
+      
+      
+      | product  | Total Price |        
+      | ------------- | -------- |        
+      | Product 1 |	200 |        
+      | Product 2 |	480 |        
+      | Product 3 |	1040|
+      
+      
+      - Answer is sum
+
+   ### Process Steps:
+   ----
+   -  From SQL Server **Adventureworksdw2012** > Import **FactInternetSales** and **Customer** Table
+   -  Observe the **Model** Relationship based on **customerkey** automatically created
+   -  Creat a table vizulization with three columns **English Education**,**TotalProductCost**,**SalesAmount**
+   -  ![image](https://user-images.githubusercontent.com/20516321/168948738-e6c7985b-f620-4e4d-aeba-bf0529b7ea61.png)
+
+   -  Create **Margin** Mesure using below formula
+   
+           Margin = sumx(FactInternetSales,FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])
+   -  Create **TotalMargin** Mesure using below formula
+   
+            TotalMargin = sumx(all(FactInternetSales),FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])
+   -  Create **% Margin Contribution** Mesure using below formula
+   
+            % Margin Contribution = DIVIDE([Margin],[TotalMargin])
+   -  Select **% Margin** > Change format as **Percentage**
+   -  For more information Follow below blog and Develop below report
+   - [Reference](https://radacad.com/sum-vs-sumx-what-is-the-difference-of-the-two-dax-functions-in-power-bi)
+      ![image](https://user-images.githubusercontent.com/20516321/117744290-065a1380-b226-11eb-971f-87b9c80729a0.png)
+
+## Calculate ranks
+
+```sql
+
+select e.*,
+sum(sal) over ( partition by deptno),
+rank() over(order by sal) as rank1,
+dense_rank() over(order by sal) as denserank
+from emp as e
+order by deptno
+```
+
+- The RANKX DAX function is a special iterator function you can use to calculate ranks. Its syntax is as follows:
+```RANKX(<table>, <expression>[, <value>[, <order>[, <ties>]]])```
+- Ref Help [doc](https://docs.microsoft.com/en-us/dax/rankx-function-dax)
+- Similar to all iterator functions, you must pass in a table and an expression. Optionally, you can pass in a rank value to find the order direction or to help you determine how to handle ranks when values are tied.
+
+## Order direction
+- Order direction is either ascending or descending.
+- When ranking something favorable, like revenue values, you're likely to use descending order so that the highest revenue will be ranked first. 
+- When ranking something unfavorable, like customer complaints, you might use ascending order so that the lowest number of complaints will be ranked first. 
+- When you don't pass in an order argument, the function will use descending order.
+
+## Handle ties
+- You can handle ties by skipping rank values or using dense ranking, which uses the next rank value after a tie. 
+- When you don't pass in a ties argument, the function will use skipped. 
+- You'll have an opportunity to work with an example of each tie argument in subsequent sections.
+
+## Create ranking measures
+- Download [file](https://github.com/rritec/powerbi/raw/master/Labdata/Adventure%20Works%20DW%202020%20M05.pbix)
+- Open file 
+- Add the following measure 
+
+  ```Product Quantity Rank = RANKX(ALL('Product'[Product]),[Quantity])```
+
+- Add the Product Quantity Rank measure to the table visual that is found on Page 2 of the report. The table visual groups bike products and displays quantity, which orders products by descending quantity.
+- The RANKX function iterates over a table that is returned by the ALL DAX function. The ALL function is used to return all rows in a model table or values in one or more columns, and it ignores all filters. Therefore, in this case, it returns a table that consists of all Product column values in the Product table. The RANKX function must use the ALL function because the table visual will group by product (which is a filter on the Product table).
+- In the table visual, notice that two products tie for tenth place and that the next product's rank is 12. This visual is an example of using the Skipped ties argument.
+- Bike Sales table visual with columns: Product, Quantity, and Rank, ordered by Quantity descending.
+![image](https://user-images.githubusercontent.com/20516321/110742032-a7931080-825b-11eb-9bd3-40a885fb958e.png)
+
+- Your next task is to enter the following logic to modify the Product Quantity Rank measure definition to use dense ranking:
+
+  ``` Product Quantity Rank =RANKX(ALL('Product'[Product]),[Quantity],,,DENSE)```
+
+- In the table visual, notice that a skipped ranking no longer exists. After the two products that tie for tenth place, the next ranking is 11.
+- Bike Sales table visual with columns: Product, Quantity, and Rank, ordered by Quantity descending, but with dense ranking.
+    ![image](https://user-images.githubusercontent.com/20516321/110742454-67805d80-825c-11eb-82e1-752da4ebc908.png)
+
+- Notice that the table visual total for the Product Quantity Rank is one (1). The reason is because the total for all products is ranked.
+- An image shows the Product Quantity Rank total is 1.
+- It's not appropriate to rank total products, so you will now use the following logic to modify the measure definition to return BLANK, unless a single product is filtered:
+  ```Product Quantity Rank = IF(HASONEVALUE('Product'[Product]),RANKX(ALL('Product'[Product]),[Quantity],,,DENSE))```
+- An image shows the Product Quantity Rank total is BLANK.
+  ![image](https://user-images.githubusercontent.com/20516321/110742868-20df3300-825d-11eb-888b-5f11d71d8857.png)
+
+- Notice that the total Product Quantity Rank is now BLANK, which was achieved by using the HASONEVALUE DAX function to test whether the Product column in the Product table has a single value in filter context. It's the case for each product group, but not for the total, which represents all products.
+
+**Home work:** [Top N dynamic selections](https://github.com/rritec/powerbi/blob/566b75a3a5850984fc9a9d9549104ce3dd70befe/Notebooks/Interview%20Questions/Top%20N%20Dynmic%20Selecton%20using%20what%20if%20parameter.md)
+
+## Count Vs counta & count vs countx & counta vs countax
+  - Enter below data and create a table
+
+      | Employee Name | Date  | Holiday Flag | phone |        
+      | ------------- | ------------- | ------------- | -------- |        
+      | Ram | 01-Jan-2016 |	False	| 9573707079 |        
+      | John | 02-Jan-2017 |	True	|  |        
+      | Nancy | 01-Jan-2019 |	False |	1234567890 |
+
+  - Make sure datatypes are Employee Name --> Text, Date --> Date , Holiday Flag --> Bool, Phone --> Whole Number
+  - Can you count Date column using count and counta function?
+      - yes
+  - can you count bool column with count function?
+      - No
+  - Can you count bool column with counta?
+      - Yes
+
+  - count number of rows when holiday flag is *False*
+      - *Hint*: use below formula inside the measure 
+      - COUNTAX(FILTER(count_understanding,count_understanding[Holiday Flag]=FALSE()),count_understanding[Holiday Flag])  
+
+
+
+#  DAX Studio
+
+## About
+
+- DAX Studio is a tool to write, execute, and analyze DAX queries in Power BI Desktop, Power Pivot for Excel, and Analysis Services Tabular.
+
+## Setup environment 
+1. Download DAX Studio Software [here](https://daxstudio.org/)
+2. Double click on DAX STUDIO > Install it.
+3. Download sample pbix file to follow dax studio tutorial https://github.com/microsoft/powerbi-desktop-samples/raw/main/DAX/Adventure%20Works%20DW%202020.pbix 
+4. Open the above Power BI file
+5. Go to Power BI Desktop > External Tools > Click on DAX Studio
+## Tutorial 
+7. Follow blog https://daxstudio.org/tutorials/writing-dax-queries/
+### How to query a table of data?
+Syntax: Evaluate \<Table Expression\>
+       
+        EVALUATE customer
+More Examples:
+
+        EVALUATE CALENDAR(date(2021,10,01),date(2021,10,05))
+        EVALUATE FILTER(Customer,Customer[City]="Concord") 
+        EVALUATE CALCULATETABLE(Customer,Customer[City]="Concord")
+### How to query a table or column of data?
+Syntax: VALUES\<tablename or columnname\>
+        
+        EVALUATE VALUES(Customer)
+        EVALUATE VALUES(Customer[City])
+        EVALUATE CALCULATETABLE(VALUES(Customer[City]),LEFT(Customer[City],1)="C")
+        EVALUATE FILTER(VALUES(Customer[City]),LEFT(Customer[City],1)="C")
+
+### How to sort the data?
+Syntax: ORDER BY \<column names\> ASC/DESC
+        
+        EVALUATE CALCULATETABLE( VALUES ( Customer[City] ), LEFT ( Customer[City], 1 ) = "R" ) ORDER BY Customer[City]
+        
+### Returning a single value?
+
+        
+        EVALUATE { SUM ( Sales[Sales Amount] ) }
+               
+ ### Selecting columns from multiple tables?
+
+        
+        EVALUATE
+        SUMMARIZECOLUMNS (
+            Product[Color],
+            Reseller[Business Type],
+            FILTER ( ALL ( Product[List Price] ), Product[List Price] > 150.00 ),
+            TREATAS ( { “Accessories”, “Bikes” }, ‘Product’[Category] ),
+            “Total Sales”, SUM ( Sales[Sales Amount] )
+        )
+        
+### Multiple Resultsets?
+
+        
+        EVALUATE Customer
+        EVALUATE Product       
+
+### Using Parameters in Queries?
+
+        
+        EVALUATE FILTER ( 'Product', 'Product'[Color] = @color_name )
+        
+
+### Write Dax Queries by comparing SQL Queries
+
+// select * from Customer
+//EVALUATE Customer
+
+// select city from customer
+//EVALUATE VALUES(Customer[City])
+
+// select * from customer where city ="redmond"
+//EVALUATE CALCULATETABLE ( Customer, Customer[City] = "Redmond" )
+
+// select city  from customer where city like "R%"
+//EVALUATE CALCULATETABLE(VALUES(Customer[City]),left(Customer[City],1)="R")
+
+// select *  from customer where city like "R%"
+//EVALUATE CALCULATETABLE(Customer,left(Customer[City],2)="Ro")
+
+// select city  from customer where city like "R%" order by city desc
+//EVALUATE CALCULATETABLE(VALUES(Customer[City]),left(Customer[City],1)="R") ORDER BY Customer[City] desc
+
+![image](https://user-images.githubusercontent.com/20516321/169445380-cf011b56-3c7c-485f-bdc4-ced3857f1dc3.png)
+
+
+### Exercise: Create a tabe in powerBI using below dax query
+1. In DAX studio write below Dax query, run it  and understand result. 
+
+        EVALUATE SUMMARIZECOLUMNS (
+              Product[Color],
+              Reseller[Business Type],
+              FILTER ( ALL ( Product[List Price] ), Product[List Price] > 150.00 ),
+              TREATAS ( { "Accessories", "Bikes" }, 'Product'[Category] ),
+              "Total Sales", SUM ( Sales[Sales Amount] )
+          )
+2. Once we are happy with result then create table inside PBI
+3. open PBI Desltop > data page
+4. click on Dax Table, write below dax formula
+
+        test_table_name =
+          SUMMARIZECOLUMNS (
+              Product[Color],
+              Reseller[Business Type],
+              FILTER ( ALL ( Product[List Price] ), Product[List Price] > 150.00 ),
+              TREATAS ( { "Accessories", "Bikes" }, 'Product'[Category] ),
+              "Total Sales", SUM ( Sales[Sales Amount] )
+          )
+5. Observe result
+
+ ### More Examples
+
+Explore online dax examples https://dax.guide/
+Compare SQL to DAX Query examples  https://www.sqlbi.com/articles/from-sql-to-dax-projection/
+
+
+#  recap
+
+Recap:
+
+1. Power Pivot
+	- Model
+		- 1.1.1. What are the dimension tables?
+			- PK + Decs
+		- 1.1.2. What are the Fact Tables?
+			- FKs + Mesures
+		- 1.1.3. Star Model,Snow Flake Model,Mixed Models
+		- 1.1.4. Between two tables
+			- a) Cardinality(1:1, \*:\*, \*:1, 1:\*)>> Default(\*:1)(Fact to Dim)
+			- b) Cross Filter Direction (Single, Both) >> Default Cross Filter Direction is **Single**
+			- c) Active/Inactive (This scenario of inactive relation comes if we have ROLE PLAYING DIMENSIONS)
+	- DAX(Data Analysis eXpression)(Calculations)
+		- 1.2.1. New Column(0.01%)
+		- 1.2.2. New Mesure(99.98%)
+		- 1.2.3. New Table(0.01%)
+		- ![image](https://user-images.githubusercontent.com/20516321/148710242-8e059b9a-21e5-460f-b995-1f7c1689fdb3.png)
+
+			- 1).Aggregation functions
+				- SUM(Return value)
+				- MIN
+				- MAX
+				- COUNT
+				- COUNTA
+				- SUMX
+				- MINX
+				- MAXX
+				- COUNTX
+				- COUNTAX
+			- 2) Date and time functions
+				- Calendar(\<start date\>,\<end date\>) (Returns Table)
+				- CALENDARAUTO([\<end_of_the_fin_month\>](Return Table)
+				- DATE (\<yyyy>,\<mm>,\<dd>)(Return Value)
+				- DATEDIFF(\<startdate>,\<enddate>,\<interval>)(Return Value)
+				- NOW()(Return Value)
+				- today()(Return Value)
+				- EOMONTH(\<DATE>,\<months>)(Return Value)
+
+			- 3) Filter functions
+				- Filter(\<Table>,\<filter>)(Return Table)
+				- CalculateTable(\<Table>,\<filter>)(Return Table)
+				- ALL([\<Table>,[<column]])(Return Table)
+				- ALLEXCEPT(\<table>,\<column>[,\<column>[,…]])(Return Table)
+				- Calculate(\<Expression>,[\<filter1>,[\<Filter2>...]])
+				- SELECTEDVALUE())Returns slicer selected value/coresponding value
+				
+			- 4) Financial functions
+			- 5) Information functions
+				- HASONEVALUE(\<columnName>)(Return Value)(Bool)
+				- ISBLANK(\<value>) 
+				- USERNAME()
+				- USERPRINCIPALNAME()
+			- 6) Logical functions
+				- AND
+				- OR
+				- IF
+				- SWITCH
+			- 7) Math and Trig functions
+				- DIVIDE(\<num>,\<den>,[\<alternate Result>])
+				- ABS
+				- SIN(pi()/2)
+				- COS(0)
+				- SQRT(<number>)
+			- 8) Other functions
+				- BLANK()
+				- ERROR()
+			- 9) Parent and Child functions
+				- PATH(\<empno>,\<mgrno>
+				- ![image](https://user-images.githubusercontent.com/20516321/137073130-748c5efb-2208-4c6a-a4c5-effa23a3552a.png)
+
+			- 10) RelationShip Functions
+				- deptno10_data_only = FILTER(EMP,RELATED(DEPT[DNAME])="ACCOUNTING")
+
+			- 11) Statistical functions
+				- RankX
+
+				
+			- 12) Table manipulation functions
+				- SUMMARIZEDCOLUMNS
+				- ROLLUP
+				- TOPN
+
+## Questions:
+----
+
+
+1. Filter Vs Calculatedtable
+2. calculate Vs Calculatetable
+3. all vs allexcept
+4. new column Vs New mesure
+5. selectedvalue
+6. sum Vs Sumx
+7. summarize Vs Summarizecolumns
+8. Calculatetable Vs Filter Vs Calculate
+9. Hasonevalue
+
+				
+#  Power Pivot Modeling Lab
+
+
+# `Power BI Desktop Modelling`
+- It is also knon as **Power Pivot**
+- In power pivot mainly we will do
+    - Relation Ships(Among Queries)
+    - DAX Formulas
+
+## SCENARIO
+VanArsdel is a company that manufactures and sells sporting goods. The company has offices in the United States (US) and several other countries. Its sales comprise of US sales and International sales. VanArsdel’s sales come from its owned manufactured products, as well as other manufacturers’ products.
+
+You have successfully brought the US sales data from the Access database and the International sales data from a collection of CSV files to Power BI Desktop. 
+
+Before you can start analyzing your data, you need to manage the table relationships within your data model and create new ones if necessary. To do so, you might need to create calculated columns or calculated tables for the relationships to be based on.
+Once you have all the relationships created, you can create visualizations and start to analyze the data. However, you need to create additional measures to perform more advanced analysis with your data, which includes:
+
+- Comparing current year YTD sales and last year YTD sales.
+- Comparing sales of VanArsdel's manufactured goods to other manufacturers.
+
+
+## LAB OVERVIEW
+
+In this lab, you will create 
+    - calculated columns 
+    - calculated tables
+    - create table relationships in your data model based on the calculated columns and tables you created. 
+In addition, you will write several DAX expressions to create measures to be used to analyze VanArsdel’s sales data. Specifically, you will create the following measures:
+1. `Total Sales:` calculates the total sales.
+2. `LY Sales:` calculates last year sales.
+3. `Sales Var:` calculates sales variance between this year and last year sales.
+4. `Sales Var %:` calculates sales variance between this year and last year sales in percentage.
+5. `YTD Sales:` calculates YTD sales.
+6. `LY YTD Sales:` calculates last year YTD sales.
+7. `YTD Sales Var:` calculates sales variance between this year and last year YTD sales.
+8. `YTD Sales Var %:` calculates sales variance between this year and last year YTD sales in percentage.
+9. `Total VanArsdel Sales:` calculates sales for VanArsdel manufactured goods.
+10. `% Sales Market Share:` calculates the percentage of VanArsdel manufactured goods from the total sales.
+
+
+
+## WHAT YOU’LL NEED
+The “Lab 2 - Starting.pbix” file
+
+## Exercise 1- Manage Table Relationships
+Power BI Desktop has automatically detected and created table relationships. So the first step is to ensure all the relationships are properly created, and if not, create them yourselves.
+
+
+1. Open the `Lab2 - Starting.pbix` file from our `Labdata/Lab2 folder`.
+2. In the navigation pane on the left, click `Model`
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0000.png?raw=true).
+    
+3. Notice that there is a **many to one** relationship from the `ProductID` column on the `Sales` table to the `ProductID` column on the `Products` table.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0002.png?raw=true)
+    
+4. Notice that there is a **many to one** relationship from the `ManufacturerID` column on the `Products` table to the `ManufacturerID` column on the `Manufacturers` table.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0004.png?raw=true)
+
+5. Drag the `Date` column on the `Sales` table to the `Date` column on the `Date` table.
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0003.png?raw=true)
+    
+6. Now you want to create a relationship between the `Sales` table and the `Locations` table. First, you merge the `Country` and `Zip` columns in both `Sales` and `Locations` table as a new column, `CountryZip`. Then, you create a relationship on the `CountryZip` column for both tables.
+    - In the `navigation pane` on the left, click `Data`
+    
+        ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0005.png?raw=true).
+        
+    - In the navigation pane on the right, click `Location`.
+    - On the Modeling ribbon, click New Column.
+    - In the formula bar for the new column, type `CountryZip = Locations[Country] & ", " & Locations[Zip]`, and press `Enter`.
+        
+        ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0008.png?raw=true)
+        
+    - In the navigation pane on the right, click Sales.
+    - On the Modeling ribbon, click New Column.
+    - In the formula bar for the new column, type `CountryZip = Sales[Country Name] & ", " & Sales[Zip]`, and press `Enter`.
+        
+        ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0006.png?raw=true)
+        
+    - In the navigation pane on the left, click **Model**.
+    - Drag the **CountryZip** column on the **Sales** table to the **CountryZip** column on the **Locations** table.
+    
+        ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0007.png?raw=true)
+        
+16. Click **Save**, to save the Power BI file.
+
+## Exercise 2- Last Year Comparison
+
+- You want to know how much sales (revenue) in total does the VanArsdel have and to compare this with the figure from the same period last year. You need to create several calculated measures to help with this comparison. To do so, in either the Report view or the Data view, right-click the Sales table, click New Measure, and type in the corresponding DAX formulas for the measure you want to create. This will create the measures with the Home Table properties set to the Sales table.
+- Specifically, you will create the following measures:
+    - `Total Sales:` calculates the total sales. Format this measure as Currency. (Hint: Check out the SUM function).
+    - `LY Sales:` calculates last year sales. Format this measure as Currency. (Hint: You might find the CALCULATE and SAMEPERIODLASTYEAR function useful).
+    - `Sales Var:` calculates sales variance between this year and last year sales. Format this measure as Currency. (Hint: This is simply the difference between Total Sales and LY Sales).
+    - `Sales Var %:` calculates sales variance between this year and last year sales in percentage. Format this measure as Percentage. (Hint: This is simply the percentage of Sales Var from LY Sales. You might find the DIVIDE function useful).
+
+1. In the navigation pane on the left, click `Data`
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0005.png?raw=true).
+2. In the navigation pane on the right, click `Sales`.
+3. On the Modeling ribbon, click `New Measure`.
+4. In the formula bar for the new measure, type `Total Sales = SUM(Sales[Revenue])`, and press `Enter`.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0009.png?raw=true)
+
+5. On the `Modeling` ribbon, click `Format`, click `Currency`, and click `Currency general`.
+6. On the Modeling ribbon, click New Measure.
+7. In the formula bar for the new measure, type `LY Sales = CALCULATE([Total Sales],SAMEPERIODLASTYEAR(‘Date’[Date]))`, and press `Enter`.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0010.png?raw=true)
+
+8. On the `Modeling` ribbon, click `Format`, click `Currency`, and click `Currency general`.
+9. On the `Modeling` ribbon, click `New Measure`.
+10. In the formula bar for the new measure, type `Sales Var = [Total Sales] - [LY Sales]`, and press `Enter`.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0011.png?raw=true)
+
+11. On the `Modeling` ribbon, click `Format`, click `Currency`, and click `Currency general`.
+12. On the `Modeling` ribbon, click `New Measure`.
+13. In the formula bar for the `new measure`, type `Sales Var % = DIVIDE([Sales Var],[LY Sales]) `, and press `Enter`.
+
+    
+14. On the `Modeling` ribbon, click `Format`, and click `Percentage`.
+15. Click `Save`, to save the Power BI file.
+16. Develop below report and understand results
+
+    ![image](https://user-images.githubusercontent.com/20516321/112080270-a8a33680-8ba7-11eb-8346-299e0f052cb2.png)
+
+
+`Home Work:`
+- Total Units: Total Units = SUM(Sales[Units])
+- LY Total Units: LY Total Units = CALCULATE([Total Units],SAMEPERIODLASTYEAR(‘Date’[Date])
+- Total Units Var: Total Units Var = [Total Units] - [LY Total Units]
+- Total Units Var %: Total Units Var % = DIVIDE([Total Units Var],[LY Total Units])
+
+
+## Exercise 3- Year to Date
+- Year-to-date (YTD) is a period starting from the beginning of the current year and continuing up to the present date. You want to calculate the YTD sales and compare this with the figure from the same period last year. Specifically, you will create the following measures:
+    - YTD Sales: calculates the YTD sales. Format this measure as Currency. (Hint: Check out the TOTALYTD function).
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0013.png?raw=true)
+    
+    - LY YTD Sales: calculates last year YTD sales. Format this measure as Currency. (Hint: You might find the CALCULATE and SAMEPERIODLASTYEAR function useful).
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0014.png?raw=true)
+    
+    - YTD Sales Var: calculates sales variance between this year and last year YTD sales. Format this measure as Currency. (Hint: This is simply the difference between YTD Sales and LY YTD Sales).
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0015.png?raw=true)
+    
+    - YTD Sales Var %: calculates sales variance between this year and last year YTD sales in percentage. Format this measure as Percentage. (Hint: This is simply the percentage of YTD Sales Var from LY YTD Sales. You might find the DIVIDE function useful).
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0017.png?raw=true)
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0110.png?raw=true)
+    
+
+`Home Work:`
+1. YTD Total Units: YTD Total Units = TOTALYTD([Total Units],‘Date’[Date])
+2. LY YTD Total Units: LY YTD Total Units = CALCULATE([YTD Total Units],SAMEPERIODLASTYEAR(‘Date’[Date]))
+3. YTD Total Units Var: YTD Total Units Var = [YTD Total Units]- [LY YTD Total Units]
+4. YTD Total Units Var %: YTD Total Units Var % = DIVIDE([YTD Total Units Var],[LY YTD Total Units])
+
+## Exercise 4- Market Share
+
+- VanArsdel sales comprise of products manufactured by VanArsdel and other companies. You want to know how much of these sales are VanArsdel’s own manufactured products. You decide to show this share in numbers and %. Specifically, you will create the following measures:
+- Total VanArsdel Sales: calculates sales where the products manufacturer is VanArsdel. Format this measure as Currency. (Hint: Use the CALCULATE function and filter by Manufacturer).
+- % Sales Market Share: calculates the percentage of sales of VanArsdel manufactured products from the total sales. Format this measure as Percentage.
+
+1. In the navigation pane on the left, click `Data`.
+2. In the navigation pane on the right, click `Sales`.
+3. On the `Modeling` ribbon, click `New Measure`.
+4. In the formula bar for the new measure, type `Total VanArsdel Sales = CALCULATE([Total Sales],Manufacturer[Manufacturer]="VanArsdel")`, and press `Enter`.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0019.png?raw=true)
+
+5. On the `Modeling` ribbon, click `New Measure`.
+6. In the formula bar for the new measure, type `% Sales Market Share = IF([Total VanArsdel Sales]=0,0,DIVIDE([Total VanArsdel Sales],[Total Sales],0))`, and press `Enter`.
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0018.png?raw=true)
+
+7. On the `Modeling` ribbon, click `Format`, and click `Percentage`.
+8. Click `Save`, to save the Power BI file.
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0111.png?raw=true)
+
+`Home Work:`
+- Total VanArsdel Units: Total VanArsdel Units = CALCULATE([Total Units],Manufacturers[Manufacturer]=“VanArsdel”)
+- % Units Market Share: % Units Market Share = IF([Total VanArsdel Units]=0,0,DIVIDE([Total VanArsdel Units],[Total Units],0))
+
+
+## Exercise 5- Optimize the Data Model
+
+1. Now that you have the table relationships defined and the measures created, you want to optimize the data model before you create the visualizations.
+1. If it is not already open, open the Lab 2 - Starting.pbix file.
+1. Ensure both the **International Sales** and **Country Population** table are hidden from the report view using the following steps.
+1. In the navigation pane on the left, click `Data`.
+1. In the navigation pane on the right, click the ellipses (...) adjacent to - `International Sales` and click `Hide in report view`.
+1. In the navigation pane on the right, click the ellipses (...) adjacent to `Country Population` and click Hide in report view.
+1. Hide the following fields on the `Date` table from the report view:
+    - MonthNo
+    - MonthID
+    - Month
+        - In the navigation pane on the right, click `Date`, click the ellipses (...) adjacent to `MonthNo` and click `Hide in report view`.
+        - In the navigation pane on the right, click Date, click the ellipses(...) adjacent to `MonthID` and click `Hide in report view`.
+        - In the navigation pane on the right, click Date, click the ellipses(...) adjacent to `Month` and click `Hide in report view`.
+5. Sort the MonthName column by the MonthNo column using the following steps.
+    - Click the `MonthName` column and, on the Modeling ribbon, click `Sort by Column`, and click `MonthNo`.
+9. Hide the `CountryZip` field on the `Location` table and the `ManufacturerID` field on the `Manufacturer` table from the report view using the following steps.
+    - In the navigation pane on the right, click Location, click the ellipses adjacent to CountryZip and click Hide in report view.
+    - In the navigation pane on the right, click Manufacturer, click the ellipses adjacent to ManufacturerID and click Hide in report view.
+10. Hide the following fields on the **Products** table from the report view.
+    - ProductID
+    - ManufacturerID
+    - Manufacturer
+        - In the navigation pane on the right, click Products, click the ellipses(...) adjacent to ProductID and click Hide in report view.
+        - Click the ellipses adjacent to ManufacturerID and click Hide in report view.
+        - Click the ellipses adjacent to Manufacturer and click Hide in report view.
+8. Hide the following fields on the **Sales** table from the report view.
+    - ProductID
+    - Date
+    - Zip
+    - Units
+    - Revenue
+    - Country Name
+    - CountryZip
+        - In the navigation pane on the right, click Sales, 
+        - Click the ellipses adjacent to `ProductID` and click `Hide in report view`.
+        - Click the ellipses adjacent to `Date` and click `Hide in report view`.
+        - Click the ellipses adjacent to `Zip` and click `Hide in report view`.
+        - Click the ellipses adjacent to `Units` and click `Hide in report view`.
+        - Click the ellipses adjacent to `Revenue` and click `Hide in report view`.
+        - Click the ellipses adjacent to `Country Name` and click `Hide in report view`.
+        - Click the ellipses adjacent to `CountryZip` and click `Hide in report view`.
+9. Click `Save`, to save the Power BI file.
+
+## Questions
+----
+1. Can you develop below report
+    - ![image](https://user-images.githubusercontent.com/20516321/110577445-ac3ac480-8188-11eb-9afc-a39eb1443a41.png)
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+#  Exam
+
+Exam 1:
+
+https://docs.google.com/forms/u/2/d/1eHMES9qZATaOuvpYy3X2ewBDRm3flJt-CGFCahR6tac/edit
+
+
+#  Power View Visualization Lab
+
+
+# Power BI Desktop Visualization 
+
+## Exercise 1- Cross-Tabular Report
+- **Scenario:** You want to show VanArsdel's sales (revenue) and units for each month and year in a single report. You choose to show this using two Matrix visualizations.
+
+1. Open file **Labdata/Lab3/Lab 3 - Starting.pbix** file.
+1. In the navigation pane on the left, click **Report**.
+1. In the **FIELDS** list, on the right, click the **Sales** table.
+1. Drag the **Total Sales** field from the **Sales** table to the report to create a chart.
+1. In the FIELDS list, on the right, click the **Date** table.
+1. Drag the **MonthName** and **Year** fields from the **Date** table to the chart.
+1. In the **VISUALIZATIONS** list, click **Matrix**.
+1. In the **VISUALIZATIONS** list, in **Rows**, select **MonthName**, in **Columns**, select **Year**, and in **Values**, select **Total Sales**.
+1. Click in the empty space of report
+1. Repeat Step 3 to 8 to add another chart, but this time, display the **Total Units** field in place of **Total Sales**.
+1. From the **Home** ribbon, click **Text** box.
+1. In the text box, type **VanArsdel Sales and Units** and resize and move the text box so that it appears as the title of the report.
+1. At the bottom of the screen, right-click **Page 1**, and click **Rename** Page.
+1. Type **Sales and Units** and press **Enter**.
+1. You should have something similar to the below Image:
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0023.png?raw=true)
+1. Click **Save**, to save the Power BI file.    
+### Think few mins, how to get below vizulization.
+
+![image](https://user-images.githubusercontent.com/20516321/125020165-f9c33180-e095-11eb-9276-bf6689b976e9.png)
+
+- Drag **Matrix** to work area
+- Drag Year, Manufacturer, Region to **Rows**
+- Drag **TotalSales** to **Values**
+- Filter on **year** for **2001** and **2002**
+- Filter on **region** for **Central** and **East**
+- Filter on **Manufacturer** for **Abbas** and **Aliqui**
+- Click **twice** on **Expand all down one level in the hierarchy**
+- If you need **SubTotals** in the bottom set it in **format** tab
+
+## Exercise 2- Part-to-Whole Report
+**Scenario:** analyzing sales data by product category, segment and manufacturer.
+
+1. Create a new report page by clicking **New Page (+)** at the bottom of the report view.
+1. Drag the **Total Sales** field from the **Sales** table to the report and create a chart.
+1. Drag the **Category** and **Segment** fields from the **Products** table to the chart.
+1. In the **VISUALIZATIONS** list, click **100% Stacked Bar Chart** .
+1. In the **VISUALIZATIONS** list, in **Axis**, select **Category**, in **Legend**, select **Segment**, and in **Value**, select **Total Sales**.
+1. In the **VISUALIZATIONS** list, click the **Format** button.
+1. Set **Data labels** to **On**.
+1. Set **Value decimal places** to **0**.
+1. Click on the empty space of report
+1. Drag the **Total Sales** field from the **Sales** table to the report and create another chart.
+1. Drag the **Manufacturer** field from the **Manufacturers** table to the chart.
+1. Modify the chart to use the **Treemap visualization**.
+1. Click on the empty space of report
+1. Drag the **MonthName** field from the **Date** table to the report and create another chart.
+1. Modify the chart to use the **Slicer visualization**.
+1. Click on the empty space of report
+1. Drag the **Year** field from the **Date** table to the report and create a chart.
+1. Modify the chart to use the **Slicer visualization**.
+1. Rename the report sheet to **Sales Breakdown**.
+1. Click **Save**, to save the Power BI file.
+1. You should have something similar to the below image:
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0024.png?raw=true)
+
+## Edit Interactions:
+Scenario: Slicer should not impact few vizulations.
+- By Default Slicer changing all the visulizations inside the current page
+- In above report click on year slicer > go to **Format** > click on **edit Interactions**  > select required vizulization **None** button.
+- Now change any slicer options and observe the vizulation is not impacting.
+
+## Sync Slicers
+- In above report,copy any vizulaion and paste into other page .
+- Go to view menu > click on **sync Slicers**
+- select **year** slicer > select sync check boxes of current page and the pages need to impact.
+- Change slicer options and observe that visulization changes.
+
+## Exercise 3- Relationship Report
+
+- **Scenario:** You would like to know more about the relationship between total units and total sales by category and segment. You choose to analyze this using scatter chart.
+
+1. Create a new report page by clicking **New Page** at the bottom of the report view.
+1. In **VISUALIZATIONS**, click **Scatter Chart**.
+1. Drag the **Total Sales**, **Total Units**, and **YTD Sales** fields from the **Sales** table to the chart.
+1. Drag the **Category** and **Segment** fields from the **Products** table to the chart.
+1. Drag the **Year** field from the **Date** table to the chart.
+1. Rename the report sheet to **Sales Relationship**.
+1. Ensure that the following fields are set in the visualization Details:
+    - Details: Category
+    - Legend: Segment
+    - X Axis: Total Sales
+    - Y Axis: Total Units
+    - Size: YTD Sales
+    - Play Axis: Year
+1. Click **Save**, to save the Power BI file.
+1. You should have something similar to the below image:
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0025.png?raw=true)
+
+## Exercise 4- Trend Report
+**Scenario:** Show a chart to compare Total Sales and Total Units throughout the years. And then let's show two more charts showing the Total Sales and Total Units variances throughout the years.
+
+1. Create a new report page by clicking the **New Page** icon at the bottom of the report view.
+1. Drag the **Year** field from the **Date** table to the report and create the first chart.
+1. Drag the **Total Sales** and **Total Units** fields from the **Sales** table to the Year chart.
+1. Modify the chart to use the **Line and Stacked Column Chart** visualization.
+1. Ensure that the **Year** is shown as the **Shared Axis**, **Total Sales** is shown as the **Column values**, and **Total Units** is shown as the **Line values** of the visualization Details.
+----
+1. Create a second chart based on the **Waterfall** Chart visualization.
+1. Drag the **Sales Var** field from the **Sales** table to the Sales Var chart.
+1. Drag the **Year** field from the **Date** table to the Sales Var chart.
+---
+1. Create a third chart, also based on the Waterfall Chart visualization.
+1. Drag the **Total Units Var** field from the **Sales** table to the Total Units Var chart.
+1. Drag the **Year** field from the **Date** table to the Total Units Var chart.
+1. Click the Elipse button on both the Sales Var and Total Units Var charts and sort by **Year** ascending.
+1. Add a **Text Box** to the report and enter **Yearly Trend** as the text.
+1. Rename the report sheet to **Yearly Trend**.
+1. Click **Save**, to save the Power BI file.
+1. You should have something similar to the below image:
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0026.png?raw=true)
+
+## Exercise 5- Rank Report
+**Scenario:** You now want to analyze individual products sales (revenue) and volume (units). You decide to show these using two bar charts.
+
+1. Create a new report page by clicking the **New Page** icon at the bottom of the report view.
+1. Drag the **Total Sales** field from the **Sales** table to the report and create a chart.
+1. Drag the **Product** field from the **Products** table to the chart.
+1. Modify the chart to use the **Stacked Bar Chart** visualization.
+1. Ensure that the chart is sorted by **Total Sales**.
+----
+1. Click on empty space of report
+1. Drag the **Total Units** field from the **Sales** table to the report and create a new chart.
+1. Drag the **Product** field from the **Products** table to the chart.
+1. Modify the chart to use the **Stacked Bar Chart** visualization.
+1. Ensure that the chart is sorted by **Total Units**.
+-----
+1. Click on empty space of report
+1. Drag the **Year** field from the **Date** table to the report and create a new chart.
+1. Modify the chart to use the **Slicer visualization**.
+1. Modify the slicer type by clicking the **dropdown** arrow in the Year chart and selecting the **List** option.
+1. Add a **Text Box** to the report and enter **Top Products** as the text.
+1. Rename the report sheet to **Top Products**.
+1. Click **Save**, to save the Power BI file.
+1. You should have something similar to the below image:
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0027.png?raw=true)
+
+## Reference
+
+https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-report-visualizations
+
+## Exercise 1:
+
+![image](https://user-images.githubusercontent.com/20516321/115183931-64e61300-a0fa-11eb-9740-bc7eebf4f56a.png)
+
+## Exercise 2:
+
+https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-radial-gauge-charts
+
+```python
+
+```
+
+#  Power View Hierarchy Drill down drill up
+
+
+# Hierarchy
+
+- Can you use **drill down/drill up** without **Hierarchy** ?
+    - <input type="radio" disabled> Yes
+    - <input type="radio" disabled checked> No
+- Without Creating Hierarchy, can you drill down from **Category** to **segment** to **product**?   
+    - <input type="radio"> Yes
+    - <input type="radio" checked> No
+
+## Exercise 1: Develop a report **Total Sales by Category**
+- from fileds select total Sales and Category columns 
+- select Stacked Column Chart
+- Click on any bar to  move from category to segmant. Are you able to move ??? no right??? so let us learn how to create hierarchy
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0049.png?raw=true)
+
+## Create Product Hierarchy
+
+- In **Fields** Pane
+- Expand **Product** table
+- Select **Segment** and drag and drop on to **Category**
+- Observe one hierarchy created with the name ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0050.png?raw=true)
+- Rename **Category Hierarchy** as **Product Hierarchy**
+- Select **product** Column and drop onto **Product Hierarchy**
+- Finally your hierarchy will be looks like this
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0053.png?raw=true)
+
+
+
+## Understanfd below terms and functionalties
+    1. Drill Down
+    2. Drill Up
+    3. Show Next Level
+    4. Expand Next Level
+    
+   ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0054.png?raw=true)
+
+### Drill Down
+
+    - Navigating from high level data to low level data (Example : Year > Half Year > Quarter > Month > Day)
+
+1. In **Visulizations** > Click on **Stacked Column Chart**
+1. From **Fields** pane > Click on **Total Sales** and **Product Hierarchy** 
+1. Your report should look as shown below
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0055.png?raw=true)
+    
+1. **Click to turn on drill down** as shown below
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0056.png?raw=true)
+1. Click on **Urban** bar and observe urban related **Segment** sales
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0057.png?raw=true)
+
+
+
+### Drill Up
+
+    - Navigating from low level data to high level data (Example : Day > Month > Quarter > Half Year > Year)
+1. Click on **Drill Up** to see again **Category** Level Data
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0058.png?raw=true)
+
+### Show Next Level
+- Rolls data to next level irrespective of category
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0061.png?raw=true)
+
+### Expand Next Level
+- Shows category-Segment Data
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0062.png?raw=true)
+
+
+```python
+
+```
+
+#  Power View Drill Through
+
+
+# Drill Through
+
+## Develop a Master Report
+- In **Visulizations** > click on **Donut** Chart
+- In **Fields** Pane > Click on **Category** and **Total Sales**
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0063.png?raw=true)
+    
+- Rename page as **Master**
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0064.png?raw=true)
+
+
+## Develop a Detail Report
+1. In **Visulizations** > click on **Table** Chart
+1. In **Fields** Pane > Click on **Category** , **Segment** and **Total Sales**
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0065.png?raw=true)
+1. Select **Drill Through** and drag drop **Category**
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0066.png?raw=true)
+    
+1. Rename page as **Detail**
+1. Go Back to to **Master** page > Right Click on **urban** Category > Drill Through > Detail
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0068.png?raw=true)
+1. Observe output of detail report
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0069.png?raw=true)
+
+
+Refer: https://docs.microsoft.com/en-us/power-bi/desktop-drillthrough
+
+
+```python
+
+```
+
+#  Types of Filter
+
+
+# Filter data with Power BI
+1. In PowerBI filters are mainly **6** types
+    - Slicer
+    - Filter Pane Filters
+        - Vizulations Level Filter
+        - Page Level Filter
+        - All Pages Level Filter or Report Level Filter
+    - Drill Through Filter
+    - RLS(Row Level Security)
+
+3. Data is the core of Power BI. As you explore reports, each visual draws its underlying data from sources that often contain far more data than you need. 
+4. Power BI offers several ways to filter reports. Knowing how to filter data is the key to finding the right information
+![](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/media/2-1/power-bi-filter-intro.gif)
+
+## Slicers
+1. A simple type of filtering that you can use directly on the report page is called a slicer.
+1. There are several different types of slicers: **numeric**, **categorical**, and **date**. 
+1. Slicers make it easy to filter all the visuals on the page at once.
+
+    ![](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/media/2-1/power-bi-slicers.gif)
+1.If you want to select more than one field, hold the Ctrl key and click additional fields.    
+
+## Explore the Filters pane
+1. Another way to filter data is by opening and modifying filters in the Filters pane. The Filters pane contains filters that were added to the report by the report designer. As a consumer, you can interact with the filters and save your changes but can't add new filters.
+
+The **four types** of filters are:
+
+1. **Filter on all pages** or **Report Level Filter** > Applies to all pages in the report.
+1. **Filter on this Page** or **Page Level Filter** – Applies to all the visuals on the current report page.
+1. **Visual level Filter** – Applies to a single visual on a report page. You only see visual level filters if you've selected a visual on the report canvas.
+1. **Drillthrough Filter** – Allows you to explore successively more detailed views within a single visual.
+    ![](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/media/2-1/power-bi-filter-types.png)
+
+### Filter on all pages or Report Level Filter
+1. Open **Labdata/Lab3/Lab 3 - Starting.pbix**
+1. Click on **New page** and rename it as **USA Region Wise Sales**
+1. In **Visulizations**> Click on **Table**
+1. From **Fields** > select **Country**,**Region** and **Total Sales**
+1. Our report will be looks like below image
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0072.png?raw=true)
+1. Right click on **USA Region Wise Sales** > Click on **Duplicate Page**
+1. Rename page as **USA Region Wise Units**
+1. Delete column **Total Sales** and drag **Total Units**
+1. Drag and drop **Country** column below **Filter on all Pages** > Select **USA** > observe reports data in both the pages
+    
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0073.png?raw=true)
+
+### Filter on this Page or Page Level Filter
+1. In above report **USA Region Wise Sales** > drag and drop **year** column onto **Filters on this page** > show only sales **greater than or equal** to **2006** and **less than or equal** to **2010**
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0074.png?raw=true)
+    
+1. Observe report data
+
+### Filter on this Visual
+1. In above report **USA Region Wise Sales** > select **table visulization** > provide region filter as shown in below image 
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0075.png?raw=true)
+    
+1. Observe report data
+
+
+### Drill Through
+1. Refer previous lesson
+
+
+### Reference
+[Refer and complete learning path](https://docs.microsoft.com/en-us/learn/modules/analyze-data-power-bi/1-filtering-data)
+
+### Questions:
+1. How many Filters available in Power BI?
+
+    - Slicer
+    - Filter Pane
+        - Viz
+        - page
+        - all pages
+    - Drill Through
+    - Row-Level Security(RLS)
+2. What is the defualt sorting in slicer?
+    - Ascending order
+1.  Slicer by default will affect other pages visulizations? do you have any work arounds?
+    - No, we have work arounds [Refer](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-slicers#sync-and-use-slicers-on-other-pages) 
+1.  I have a slicer and two visulas ,slicers need to affect only one visual,is it possible?
+    - Yes. [Refer](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-slicers#control-which-page-visuals-are-affected-by-slicers)
+1. Can you create a slicer with two values "option1" and "option2"
+    - Yes. create Custome table then create slicer using custom table [refer](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-enter-data-directly-into-desktop)
+2. 
+```python
+
+```
+
+#  Groups Bins
+
+
+# Grouping and Binning
+
+## Grouping
+1. Open file **Labdata/Lab3/Lab 3 - Starting.pbix** file.
+1. Expand **products** > Right click on **Segment** > Click on **New Group** > select as shown below
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0112.png?raw=true)
+
+1. click on **pie chart**
+1. drag **segment(groups)** into legend
+1. drag **totalsales** into values
+1. observe report
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0113.png?raw=true)
+
+
+## Binning
+1. Import **scott excel** file from **Labdata/Lab1**
+1. Right click on sal column and develop as shown
+    - Note: Default Number of bins are 5
+
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0114.png?raw=true)
+    
+1. develop a report as shown
+
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0115.png?raw=true)
+
+Reference: https://docs.microsoft.com/en-us/power-bi/desktop-grouping-and-binning
+
+
+```python
+
+```
+
+#  Conditional Formatting
+
+
+# Conditional Formatting
+
+## Font Color Conditional Formatting
+
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0117.png?raw=true)
+
+
+## Font Color Example 2
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0124.png?raw=true)
+
+
+
+## Icons Condtional Formatting
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0123.png?raw=true)
+![](https://github.com/rritec/powerbi/blob/master/images/PBI_0121.png?raw=true)
+
+https://docs.microsoft.com/en-us/power-bi/desktop-getting-started <br>
+https://docs.microsoft.com/en-us/power-bi/desktop-conditional-table-formatting
+## Ref
+
+https://exceleratorbi.com.au/conditional-formatting-with-a-text-field-in-power-bi/
