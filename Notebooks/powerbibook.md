@@ -4,16 +4,51 @@
 
 
 
+.
+
+
+.
+
+
+.
+
 
 
 ![image](https://user-images.githubusercontent.com/20516321/219373758-0487c4a9-1a42-4402-a849-41398b3d3c77.png)
+.
+
+# Whatsapp: 8374 899 166
+# Online/Class Room Training
+
+.
+
+
+.
+
+
+.
+
+
+.
+.
 
 
 
 
 
 
-<div style="page-break-after: always;"></div>
+<div class="page-break"></div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Power BI
@@ -22,7 +57,7 @@
 3. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
 4. **[Power Query Editor Shape data using MySql as input](#Power-Query-Editor-Shape-data-using-MySql-as-input)**<br>
 5. **[Power Query Editor Shape data using SQL Server as input](#Power-Query-Editor-Shape-data-using-SQL-Server-as-input)**<br>
-6. **[optional](#optional)**<br>
+6. **[Optional](#Optional)**<br>
 7. **[M-Language](#M-Language)**<br>
 8. **[Power Query Editor Combine Data](#Power-Query-Editor-Combine-Data)**<br>
 9. **[Project1 Power Query Editor Lab](#Project1-Power-Query-Editor-Lab)**<br>
@@ -32,7 +67,7 @@
 13. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
 14. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
 15. **[DAX Studio](#DAX-Studio)**<br>
-16. **[recap](#recap)**<br>
+16. **[Recap](#Recap)**<br>
 17. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
 18. **[Exam](#Exam)**<br>
 19. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
