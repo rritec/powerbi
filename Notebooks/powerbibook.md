@@ -1,13 +1,8 @@
-
-.
-
-
 .
 
 
 
 ![image](https://user-images.githubusercontent.com/20516321/219373758-0487c4a9-1a42-4402-a849-41398b3d3c77.png)
-.
 
 # Whatsapp: 8374 899 166
 # Online/Class Room Training
@@ -25,11 +20,6 @@
 .
 
 
-
-
-
-
-<div class="page-break"></div>
 
 
 
