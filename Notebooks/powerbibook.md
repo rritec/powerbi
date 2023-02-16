@@ -6,7 +6,7 @@
 5. **[optional](#optional)**<br>
 6. **[M-Language](#M-Language)**<br>
 7. **[Power Query Editor Combine Data](#Power-Query-Editor-Combine-Data)**<br>
-8. **[Project1 Power Query Editor Lab](#Project1 Power Query Editor Lab)**<br>
+8. **[Project1 Power Query Editor Lab](#Project1-Power-Query-Editor-Lab)**<br>
 9. **[Power Query Editor Knowledge Test](#Power-Query-Editor-Knowledge-Test)**<br>
 10. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
 11. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
