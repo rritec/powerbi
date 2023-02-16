@@ -1,43 +1,185 @@
 # Power BI
-1. **[Introduction Installation](#Introduction-Installation)**<br>
-2. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
-3. **[Power Query Editor Shape data using MySql as input](#Power-Query-Editor-Shape-data-using-MySql-as-input)**<br>
-4. **[Power Query Editor Shape data using SQL Server as input](#Power-Query-Editor-Shape-data-using-SQL-Server-as-input)**<br>
-5. **[optional](#optional)**<br>
-6. **[M-Language](#M-Language)**<br>
-7. **[Power Query Editor Combine Data](#Power-Query-Editor-Combine-Data)**<br>
-8. **[Project1 Power Query Editor Lab](#Project1-Power-Query-Editor-Lab)**<br>
-9. **[Power Query Editor Knowledge Test](#Power-Query-Editor-Knowledge-Test)**<br>
-10. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
-11. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
-12. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
-13. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
-14. **[DAX Studio](#DAX-Studio)**<br>
-15. **[recap](#recap)**<br>
-16. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
-17. **[Exam](#Exam)**<br>
-18. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
-19. **[Power View Hierarchy Drill down drill up](#Power-View-Hierarchy-Drill-down-drill-up)**<br>
-20. **[Power View Drill Through](#Power-View-Drill-Through)**<br>
-21. **[Types of Filter](#Types-of-Filter)**<br>
-22. **[Groups Bins](#Groups-Bins)**<br>
-23. **[Conditional Formatting](#Conditional-Formatting)**<br>
-24. **[Power BI Service](#Power-BI-Service)**<br>
-25. **[Create Apps](#Create-Apps)**<br>
-26. **[Parameters](#Parameters)**<br>
-27. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
-28. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
-29. **[Bookmarks Actions Buttons Images](#Bookmarks-Actions-Buttons-Images)**<br>
-30. **[Power BI Import Vs Direct Query Vs Live Connection](#Power-BI-Import-Vs-Direct-Query-Vs-Live-Connection)**<br>
-31. **[Run Python scripts in Power BI Desktop](#Run-Python-scripts-in-Power-BI-Desktop)**<br>
-32. **[SSAS Multidimensional Models in PowerBI Desktop](#SSAS-Multidimensional-Models-in-PowerBI-Desktop)**<br>
-33. **[Connect to a Snowflake computing warehouse in Power BI Desktop](#Connect-to-a-Snowflake-computing-warehouse-in-Power-BI-Desktop)**<br>
-34. **[row level security (RLS)](#row-level-security-(RLS))**<br>
-35. **[Power BI Cmdlets for Windows PowerShell and PowerShell Core](#Power-BI-Cmdlets-for-Windows-PowerShell-and-PowerShell-Core)**<br>
-36. **[Paginated Reports](#Paginated-Reports)**<br>
-37. **[SSRS](#SSRS)**<br>
-38. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
-39. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
+1. **[Data Warehousing Concepts](#Data-Warehousing-Concepts)**<br>
+2. **[Introduction Installation](#Introduction-Installation)**<br>
+3. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
+4. **[Power Query Editor Shape data using MySql as input](#Power-Query-Editor-Shape-data-using-MySql-as-input)**<br>
+5. **[Power Query Editor Shape data using SQL Server as input](#Power-Query-Editor-Shape-data-using-SQL-Server-as-input)**<br>
+6. **[optional](#optional)**<br>
+7. **[M-Language](#M-Language)**<br>
+8. **[Power Query Editor Combine Data](#Power-Query-Editor-Combine-Data)**<br>
+9. **[Project1 Power Query Editor Lab](#Project1-Power-Query-Editor-Lab)**<br>
+10. **[Power Query Editor Knowledge Test](#Power-Query-Editor-Knowledge-Test)**<br>
+11. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
+12. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
+13. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
+14. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
+15. **[DAX Studio](#DAX-Studio)**<br>
+16. **[recap](#recap)**<br>
+17. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
+18. **[Exam](#Exam)**<br>
+19. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
+20. **[Power View Hierarchy Drill down drill up](#Power-View-Hierarchy-Drill-down-drill-up)**<br>
+21. **[Power View Drill Through](#Power-View-Drill-Through)**<br>
+22. **[Types of Filter](#Types-of-Filter)**<br>
+23. **[Groups Bins](#Groups-Bins)**<br>
+24. **[Conditional Formatting](#Conditional-Formatting)**<br>
+25. **[Power BI Service](#Power-BI-Service)**<br>
+26. **[Create Apps](#Create-Apps)**<br>
+27. **[Parameters](#Parameters)**<br>
+28. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
+29. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
+30. **[Bookmarks Actions Buttons Images](#Bookmarks-Actions-Buttons-Images)**<br>
+31. **[Power BI Import Vs Direct Query Vs Live Connection](#Power-BI-Import-Vs-Direct-Query-Vs-Live-Connection)**<br>
+32. **[Run Python scripts in Power BI Desktop](#Run-Python-scripts-in-Power-BI-Desktop)**<br>
+33. **[SSAS Multidimensional Models in PowerBI Desktop](#SSAS-Multidimensional-Models-in-PowerBI-Desktop)**<br>
+34. **[Connect to a Snowflake computing warehouse in Power BI Desktop](#Connect-to-a-Snowflake-computing-warehouse-in-Power-BI-Desktop)**<br>
+35. **[row level security (RLS)](#row-level-security-(RLS))**<br>
+36. **[Power BI Cmdlets for Windows PowerShell and PowerShell Core](#Power-BI-Cmdlets-for-Windows-PowerShell-and-PowerShell-Core)**<br>
+37. **[Paginated Reports](#Paginated-Reports)**<br>
+38. **[SSRS](#SSRS)**<br>
+39. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
+40. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
+
+
+#  Data Warehousing Concepts
+
+Please listen below videos and read the material
+
+[Intro to DW](https://youtu.be/NAuWUWmdmsE)
+
+[OLTP Vs OLAP](https://youtu.be/KeJi1xDHQtA)
+
+[Types of Schemas](https://youtu.be/XeMpv1Q3aJ8)
+
+
+1. Name few business domains around you and understand how they collect data from customer.
+    - Retail
+        - amazon.in/amazon.com/amazon.co.uk        
+    - Insurance
+        - arbella
+    - Healthcare
+        - UHC
+    - Banking
+        - bankofamerica
+    - IME
+        - https://www.fox.com/
+    - ... etc
+2. What is data?
+    - Any thing which helps to get some **meaningful information** is known as data.
+    - Based on usage data Mainly two types
+      -  Transactional Data
+      -  Analytical Data
+3. Transactional Data
+    - Is run time data or day to day data
+    - Is current and detail
+    - Is useful to **Run** the business
+    - Is stored in **OLTP**(On Line Transactional Processing)
+    - Source of transactional data is mainly **web applications** and **mobile apps**
+    - Example : ATM Transactions , Share market transactions..etc
+    - ![image](https://user-images.githubusercontent.com/20516321/115664644-bb07c000-a35f-11eb-878a-ead2e05c2c1b.png)
+4. Analytical Data
+    - Is usuful to **ANALYSE**  the business
+    - Is **Historical** and **Summarized**
+    - Is stored in **OLAP**(On Line Analytical Processing) or **DW**(Data Warehouse )
+    - Source of Analytical data is **OLTP**
+5. Generic DW Flow or Architecture
+    - ![image](https://user-images.githubusercontent.com/20516321/115807868-045f1a80-a407-11eb-9c80-458a606844d0.png)
+
+
+6. DW Tools
+    - ETL Tools
+      - Informatica
+      - Data Stage
+      - Abintio
+      - SSIS
+      - ODI
+      - OWB
+      - BODI
+    - Reporting or BI Tools
+      - Power BI
+      - Tableau
+      - OBIEE
+      - BI Publisher
+      - Cognos
+      - SAP-BO
+      - DOMO
+      - Qlick View
+      - MicroStrategy 
+7. OLTP Vs OLAP
+
+    | OLTP      | OLAP(read only DB)(DSS)|
+    | ----------- | ----------- |
+    | Is useful to store Transactional data      | Is useful to store Analytical Data       |
+    | Is useful to **run** the business   | Is useful to **analyze** the business        |
+    | The nature of data is current and detail   | The nature of data is historical and summarized     |
+    | OLTP Supports CRUD(Create ,Partially read,update,delete)   | OLAP supports only Read operations    |
+    | It is a application oriented DB | It is a Subject oriented DB |
+    | It is volatile | It is non Volatile |
+    | No of users are more(customers+emp) | No of users are less (MM+HM) |
+    | In OLTP we will use Normalized schema | In OLAP we will use denormalized schema |
+8. Data Warehouse Definations
+    - Different people have different definitions for a data warehouse.
+    - The most popular definition came from Bill Inmon, who provided the following
+        - A data warehouse is a subject-oriented, integrated, time-variant and non-volatile collection of data to support analysis.
+        - Subject-Oriented: A data warehouse can be used to analyze a particular subject area. For example, "sales" can be a particular subject.
+        - Integrated: A data warehouse integrates data from multiple data sources. For example, source A and source B may have different ways of identifying a product, but in a data warehouse, there will be only a single way of identifying a product.
+        - Time-Variant: Historical data is kept in a data warehouse. For example, one can retrieve data from 3 months, 6 months, 12 months, or even older data from a data warehouse. This contrasts with a transactions system, where often only the most recent data is kept. For example, a transaction system may hold the most recent address of a customer, where a data warehouse can hold all addresses associated with a customer.
+        - Non-volatile: Once data is in the data warehouse, it will not change. So, historical data in a data warehouse should never be altered.
+    - Ralph Kimball provided a more concise definition of a data warehouse:
+        - A data warehouse is a copy of transaction data specifically structured for query and analysis.
+        - This is a functional view of a data warehouse. 
+        - Kimball did not address how the data warehouse is built like Inmon did; rather he focused on the functionality of a data warehouse.
+9. Tables
+    - Dimension Tables (Keys + Descripitive Columns)
+        - Role Play Dimensions
+        - Slowly Changing Dimensions
+            - SCD1
+            - SCD2
+            - SCD3
+            - SCD4
+            - SCD5
+            - SCD6
+        - Conformed Dimensions
+        - Degenerated Dimension
+        - Junk Dimension
+    - Fact Tables (Keys + Mesure columns)
+
+10. Schemas
+    - A group of tables are called as schema 
+        - Star 
+        - Snow Flake
+        - Constellation or mixed 
+    - Star
+        - Organizes data into a central fact table with surrounding dimension tables
+        - Each dimension row has many associated fact rows
+        - Dimension tables do not directly relate to each other
+        - All Dimension Tables are de normalized
+        - Optimized to read data
+        - User friendly ,easy to understand
+        - ![image](https://user-images.githubusercontent.com/20516321/115670440-0a9dba00-a367-11eb-9c39-abac453225f1.png)
+    - Snow Flake
+        - Normalized tables are used
+        - Extended star schema
+        - Two dimesiontables will be directly joined
+        - Like star schema ,it  has only one fact table
+
+    - Mixed Schema
+        - Galaxy schema contains many fact tables with some common dimensions (conformed dimensions). 
+        - This schema is a combination of many schemas
+        - ![image](https://user-images.githubusercontent.com/20516321/115670843-7da73080-a367-11eb-8ed5-adac58cdffb0.png)
+## Questions:
+---
+1. What type of attributes available in dimension?
+    - Keys
+    - Descriptive (example Product name,Product Size ..etc)
+2. 1. What type of attributes available in Fact?
+    - Keys
+    - Measures (Revenue,Qty.. etc)
+3. Based on usage the databases are divided into how many types?
+    - OLTP > Runing the business
+    - OLAP or DW > Analyzing the business
+4. 
+
 
 
 # Introduction Installation
