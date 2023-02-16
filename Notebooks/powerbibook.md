@@ -1,7 +1,7 @@
 # Power BI
 1. **[Introduction](#Introduction)**<br>
 2. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
-3. **[Working with MySql](#Working-with-MySql)**<br>
+3. **[Power Query Editor Shape data using MySql as input](#Power-Query-Editor-Shape-data-using-MySql-as-input)**<br>
 4. **[Working with SQL Server](#Working-with-SQL-Server)**<br>
 5. **[M-Language](#M-Language)**<br>
 6. **[Combine Queries](#Combine-Queries)**<br>
@@ -382,7 +382,7 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
     - Cloud Databases(Snow Flake,Azure SQl Database,Azure Synapse,Azure Blobs...etc)
 
 
-# Working with MySql
+# Power Query Editor Shape data using MySql as input
 
 ![image](https://user-images.githubusercontent.com/20516321/196849404-a9371f5d-6a66-4d5c-9285-75e3131c8332.png)
 
