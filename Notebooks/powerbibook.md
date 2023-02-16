@@ -1,5 +1,5 @@
 # Power BI
-1. **[Introduction](#Introduction)**<br>
+1. **[Introduction Installation](#Introduction-Installation)**<br>
 2. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
 3. **[Power Query Editor Shape data using MySql as input](#Power-Query-Editor-Shape-data-using-MySql-as-input)**<br>
 4. **[Power Query Editor Shape data using SQL Server as input](#Power-Query-Editor-Shape-data-using-SQL-Server-as-input)**<br>
@@ -40,7 +40,7 @@
 39. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
 
 
-# Introduction
+# Introduction Installation
 ---
 
 ##  What is BI ?
