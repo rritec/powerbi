@@ -6,7 +6,7 @@
 5. **[optional](#optional)**<br>
 6. **[M-Language](#M-Language)**<br>
 7. **[Power Query Editor Combine Data](#Power-Query-Editor-Combine-Data)**<br>
-8. **[Power Query Editor Project](#Power-Query-Editor-Project)**<br>
+8. **[Project1 Power Query Editor Lab](#Project1 Power Query Editor Lab)**<br>
 9. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
 10. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
 11. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
@@ -1307,7 +1307,7 @@ where e.mgr=m.empno
 
 
 
-# Power Query Editor Project
+# Project1 Power Query Editor Lab
 
 - **Power BI Desktop** Key Components
     1. Power Query Editor
