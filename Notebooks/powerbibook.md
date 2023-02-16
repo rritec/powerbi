@@ -3,39 +3,40 @@
 2. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
 3. **[Power Query Editor Shape data using MySql as input](#Power-Query-Editor-Shape-data-using-MySql-as-input)**<br>
 4. **[Power Query Editor Shape data using SQL Server as input](#Power-Query-Editor-Shape-data-using-SQL-Server-as-input)**<br>
-5. **[M-Language](#M-Language)**<br>
-6. **[Combine Queries](#Combine-Queries)**<br>
-7. **[Power Query Editor Project](#Power-Query-Editor-Project)**<br>
-8. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
-9. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
-10. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
-11. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
-12. **[DAX Studio](#DAX-Studio)**<br>
-13. **[recap](#recap)**<br>
-14. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
-15. **[Exam](#Exam)**<br>
-16. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
-17. **[Power View Hierarchy Drill down drill up](#Power-View-Hierarchy-Drill-down-drill-up)**<br>
-18. **[Power View Drill Through](#Power-View-Drill-Through)**<br>
-19. **[Types of Filter](#Types-of-Filter)**<br>
-20. **[Groups Bins](#Groups-Bins)**<br>
-21. **[Conditional Formatting](#Conditional-Formatting)**<br>
-22. **[Power BI Service](#Power-BI-Service)**<br>
-23. **[Create Apps](#Create-Apps)**<br>
-24. **[Parameters](#Parameters)**<br>
-25. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
-26. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
-27. **[Bookmarks Actions Buttons Images](#Bookmarks-Actions-Buttons-Images)**<br>
-28. **[Power BI Import Vs Direct Query Vs Live Connection](#Power-BI-Import-Vs-Direct-Query-Vs-Live-Connection)**<br>
-29. **[Run Python scripts in Power BI Desktop](#Run-Python-scripts-in-Power-BI-Desktop)**<br>
-30. **[SSAS Multidimensional Models in PowerBI Desktop](#SSAS-Multidimensional-Models-in-PowerBI-Desktop)**<br>
-31. **[Connect to a Snowflake computing warehouse in Power BI Desktop](#Connect-to-a-Snowflake-computing-warehouse-in-Power-BI-Desktop)**<br>
-32. **[row level security (RLS)](#row-level-security-(RLS))**<br>
-33. **[Power BI Cmdlets for Windows PowerShell and PowerShell Core](#Power-BI-Cmdlets-for-Windows-PowerShell-and-PowerShell-Core)**<br>
-34. **[Paginated Reports](#Paginated-Reports)**<br>
-35. **[SSRS](#SSRS)**<br>
-36. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
-37. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
+5. **[optional](#optional)**<br>
+6. **[M-Language](#M-Language)**<br>
+7. **[Combine Queries](#Combine-Queries)**<br>
+8. **[Power Query Editor Project](#Power-Query-Editor-Project)**<br>
+9. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
+10. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
+11. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
+12. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
+13. **[DAX Studio](#DAX-Studio)**<br>
+14. **[recap](#recap)**<br>
+15. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
+16. **[Exam](#Exam)**<br>
+17. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
+18. **[Power View Hierarchy Drill down drill up](#Power-View-Hierarchy-Drill-down-drill-up)**<br>
+19. **[Power View Drill Through](#Power-View-Drill-Through)**<br>
+20. **[Types of Filter](#Types-of-Filter)**<br>
+21. **[Groups Bins](#Groups-Bins)**<br>
+22. **[Conditional Formatting](#Conditional-Formatting)**<br>
+23. **[Power BI Service](#Power-BI-Service)**<br>
+24. **[Create Apps](#Create-Apps)**<br>
+25. **[Parameters](#Parameters)**<br>
+26. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
+27. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
+28. **[Bookmarks Actions Buttons Images](#Bookmarks-Actions-Buttons-Images)**<br>
+29. **[Power BI Import Vs Direct Query Vs Live Connection](#Power-BI-Import-Vs-Direct-Query-Vs-Live-Connection)**<br>
+30. **[Run Python scripts in Power BI Desktop](#Run-Python-scripts-in-Power-BI-Desktop)**<br>
+31. **[SSAS Multidimensional Models in PowerBI Desktop](#SSAS-Multidimensional-Models-in-PowerBI-Desktop)**<br>
+32. **[Connect to a Snowflake computing warehouse in Power BI Desktop](#Connect-to-a-Snowflake-computing-warehouse-in-Power-BI-Desktop)**<br>
+33. **[row level security (RLS)](#row-level-security-(RLS))**<br>
+34. **[Power BI Cmdlets for Windows PowerShell and PowerShell Core](#Power-BI-Cmdlets-for-Windows-PowerShell-and-PowerShell-Core)**<br>
+35. **[Paginated Reports](#Paginated-Reports)**<br>
+36. **[SSRS](#SSRS)**<br>
+37. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
+38. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
 
 
 # Introduction
@@ -697,6 +698,10 @@ INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
  - select dnmae,sum(sal) from [dbo].[emp],[dbo].[dept] where emp.deptno=dept.deptno group by dname
 4. Who is top sal employee?
  - King(5000)
+
+#  optional
+
+![image](https://user-images.githubusercontent.com/20516321/196850801-05c4bd18-3736-4328-b2dc-9288182d81be.png)
 
 
 # M-Language
