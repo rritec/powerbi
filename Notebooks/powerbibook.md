@@ -25,16 +25,16 @@
 24. **[Parameters](#Parameters)**<br>
 25. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
 26. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
-27. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-28. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-29. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-30. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-31. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-32. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-33. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-34. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-35. **[Power BI Desktop](#Power-BI-Desktop)**<br>
-36. **[Power BI Desktop](#Power-BI-Desktop)**<br>
+27. **[Bookmarks Actions Buttons Images](#Bookmarks-Actions-Buttons-Images)**<br>
+28. **[Power BI Import Vs Direct Query Vs Live Connection](#Power-BI-Import-Vs-Direct-Query-Vs-Live-Connection)**<br>
+29. **[Run Python scripts in Power BI Desktop](#Run-Python-scripts-in-Power-BI-Desktop)**<br>
+30. **[SSAS Multidimensional Models in PowerBI Desktop](#SSAS-Multidimensional-Models-in-PowerBI-Desktop)**<br>
+31. **[Connect to a Snowflake computing warehouse in Power BI Desktop](#Connect-to-a-Snowflake-computing-warehouse-in-Power-BI-Desktop)**<br>
+32. **[row level security (RLS)](#row-level-security-(RLS))**<br>
+33. **[Power BI Cmdlets for Windows PowerShell and PowerShell Core](#Power-BI-Cmdlets-for-Windows-PowerShell-and-PowerShell-Core)**<br>
+34. **[Paginated Reports](#Paginated-Reports)**<br>
+35. **[SSRS](#SSRS)**<br>
+36. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
 
 
 # Introduction
@@ -3230,3 +3230,554 @@ Reference:
   - No. (Work around is Request Admin to download PBIX file from test and publis pbix file to Dev)
 4. 
 
+
+#  Bookmarks Actions Buttons Images
+
+
+
+# Reading Activity:
+https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks
+
+https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-buttons
+
+
+## Use Case 1: Clear All Slicers in Power BI
+----
+1. Create a **text box** and name it as Dname:
+1. Create a **Slicer** with Dname Column
+1. Create a **text box** and name it as Job:
+1. Create a **Slicer** with Job Column
+1. Develop a pie chart location by salary 
+1. Develop a pie chart Ename by salary 
+1. Kepp two slicers with all option
+1. Go to view menu create a book mark and rename it has **Clear All**
+1. Create a **Blank** Button > Select it change **Button Text** as **Clear All** > Select **action** as **Clear All** book mark
+1. Change slicers as you wish  and observe data
+1. press ctrl and click on button it will reset all slicers to **all**
+
+![image](https://user-images.githubusercontent.com/20516321/209264366-34062b18-eeb1-4b6f-a76c-47e16aab8464.png)
+
+## Use Case 2: Toggle between Pie and Bar Chart
+----
+1. Open Power BI Desktop
+2. Import DimCustomer.csv and FactInternetSale.csv
+3. Develop a pie chart and column chart one overap another
+4. Change titles of visulizations as Pie and Bar respectively
+5. Open Selection pane and Bookmarks pane
+6. Hide Column chart and create bookmark as Pie
+7. Hide Pie chart and create bookmark as Column
+8. From google download two images Pie and bar chart
+9. Go to insert menu and click on images and browse above pie and place in the work area as small as possible
+10. Go to insert menu and click on images and browse above bar and place in the work area as small as possible
+11. Select Pie image > enable Actions > select bookmarks as pie
+12. Select Bar image > enable Actions > select bookmarks as Bar
+13. Test it
+
+![image](https://user-images.githubusercontent.com/20516321/113813419-7b50ae00-978d-11eb-9718-acd2f1cc6c79.png)
+
+## Use Case 3: Navigate to required page of PBIX file Dynamically
+----
+
+- Create custom table by using Enter Table option
+    - In **Power BI Desktop** > Click on **Enter Data** > Provide **Table Name**, **Column Name** and Values must be equal to your PBIX page names 
+    - For Example
+        ![image](https://user-images.githubusercontent.com/20516321/116339897-e117df00-a7fb-11eb-95eb-517087b67597.png)
+- Develop a slicer using above column and make it as single selection
+- Introduce one Image and allign beside slicer as shown below image
+- select Image > Go to format > action > Type: **Page Navigation** > Destination: Click on **Fx** > Format By: **Field Value** > Based on Field: **Select column what you created** > Click on **ok**
+
+
+![image](https://user-images.githubusercontent.com/20516321/113814794-d1beec00-978f-11eb-9e36-7511da5f7002.png)
+
+
+1. **Reference**
+    https://radacad.com/clear-all-slicers-in-power-bi-a-bookmark-story
+    
+    https://radacad.com/bookmarks-and-buttons-making-power-bi-charts-even-more-interactive
+    
+
+#  Power BI Import Vs Direct Query Vs Live Connection
+
+
+https://docs.microsoft.com/en-us/power-bi/power-bi-data-sources
+
+Example:
+
+Excel has no direct Query
+
+Sql Server has Direct query
+
+![image](https://user-images.githubusercontent.com/20516321/113528602-a779fc80-95de-11eb-938a-3808cc990206.png)
+
+
+![image](https://user-images.githubusercontent.com/20516321/113528740-1d7e6380-95df-11eb-9d46-946971a3287a.png)
+
+
+https://radacad.com/directquery-live-connection-or-import-data-tough-decision
+https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-directquery-about
+
+	Import(90%)	Direct Query/Live Connection(10%)	Comments
+Memory(Hard Disk Space)	(metadata + Data)2044KB	(Metadata)32KB	"1. Publish Limitation of PBIX file is 1GB
+2. PBIS Storage follows Column-store in-memory technology"
+Performance	High Speed	Low Speed	
+Features	All Dax Functions using possible	Few Dax Functions using possible	
+![image](https://user-images.githubusercontent.com/20516321/183326168-df918024-1b3e-42c1-aa85-b0a2042cf906.png)
+
+
+## Questions
+---
+1. How many types of connection available in Power BI
+  - Import
+  - Direct Query
+  - Live Connection
+  - Stream
+2. What is the size limit of dataset in power BI Service Pro ?
+  - 1GB
+3. For Each Power BI Service, what is the total size limit of datasets?
+  - 10 GB
+4. Data inside PBIX file stores in what format?
+  - Columnar Store
+  - Compresed format(Due to this Size will be reduced to approximately below 10% actual size)
+  
+5. Import Data Connection Pros and Cons
+  - Pros
+    - Power BI Fully Functional
+      - we can use time intilligency functions
+      - Query combineing
+      - ...etc
+    - Performance is very good as data already available inside poer bi service
+    - it is possible with all data sources(file/Databases/web/...etc)
+  - Cons
+    - Size limitations
+    - Shedule data sets by following ETL data refresh window
+  
+6. Direct Query/Live Connection Connection Pros and Cons
+  - Pros
+    - No need of schudling dataset always we will get latest data from database
+    - No Hard disk space or power Bi service space consumed
+  - Cons
+    - Can not support all data sources
+    - Performance is not good as it as to run query in the runtime and fetch results from database
+    - Power BI all fetures are not supported
+7. Always give first priority to Import connection
+8. Live connection available only for SSAS Tabular Models and SSAS Multidimensional Cubes
+9. Can you swtich Import Connection of table to Direct Query?
+  - No
+10. Can you swtich Direct Query Connection of table to Import?
+  - Yes
+ 11. What is Dual Storage, when we will use it.
+  - https://docs.microsoft.com/en-in/power-bi/transform-model/desktop-storage-mode
+
+
+```python
+
+```
+
+#  Run Python scripts in Power BI Desktop
+
+
+# Run Python scripts in Power BI Desktop
+
+    
+
+
+1. Follow this blog
+    https://docs.microsoft.com/en-us/power-bi/desktop-python-scripts
+
+
+**If time permits listen below videos**
+
+
+
+1. Listen videos to learn basics of python https://datahexa.com/course/python-basic-level-1/
+
+1. Set up new python environment by listening below video
+
+    [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/HWo1dJTpwOc/0.jpg)](http://www.youtube.com/watch?v=HWo1dJTpwOc)
+
+```python
+
+```
+
+#  SSAS Multidimensional Models in PowerBI Desktop
+
+
+# SSAS Multidimensional Models(Cubes)
+
+## MSBI
+
+    - SSIS > ETL
+    - SSRS > Reporting
+    - SSAS > Tabular Cube or Multidimensional Cube
+
+## Download and Restore Sample Data
+
+1. Download Sample Data warehouse data **AdventureWorksDW2012.bak**
+
+    https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2012.bak
+
+1. Restore Data by following below steps
+
+    https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15#restore-backup
+
+## Install SQL Server Analysis Services
+1. Start > Microsoft SQL Server 2019 > SQL Server 2019 Installation Center (64-bit)
+1. Click on Installation > New Sql Server Stand alone installation or add Features to existing installation> select c drive > sql2019 folder > Developer_enu
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0139.png?raw=true)
+1.  Select Add fetures to an existing instance
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0140.png?raw=true)
+1. Select Analysis Service
+    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0141.png?raw=true)
+1. Follow the wizard    
+
+
+
+## Learn Basic of SSAS
+1. Setup prerequisites
+
+    https://docs.microsoft.com/en-us/analysis-services/multidimensional-tutorial/multidimensional-modeling-adventure-works-tutorial?view=asallproducts-allversions#prerequisites
+
+1. Complete at least first 2 chapters 
+
+    https://docs.microsoft.com/en-us/analysis-services/multidimensional-tutorial/multidimensional-modeling-adventure-works-tutorial?view=asallproducts-allversions
+
+## Deploy Cube
+1. Open **SQL Server Data Tools for Visual Studio 2012** > **File** > **Open** > **Project/Solution** > **Lesson 10 Complete** > select **Analysis Services Tutorial.sln** > Click on **open**
+1. In **Solution Explorer** > Right click on **Analysis Services Tutorial** > Click on **Deploy**
+
+## Develop PBI Report using Cube
+1. Open **PBI Desktop** > **Get Data**> **SQL Server Analysis Service Database**
+1. Provide **Server** as **localhost** > Select **Connect Live** > Click on **ok**
+1. Expand **Analysis Service Tutorial** > Select **Sales Summary** > Click on **ok**
+1. Select **Calendar Date** Hierarchy and **Total Sales Amount**
+1. Observe Report
+1. Similarly Develop some other reports
+
+
+## Optional
+- Lear SSIS by using MSFT documents
+    - https://docs.microsoft.com/en-us/sql/integration-services/lesson-1-create-a-project-and-basic-package-with-ssis?view=sql-server-ver15-  
+- SSRS
+    - https://docs.microsoft.com/en-us/sql/reporting-services/install-windows/install-reporting-services?view=sql-server-ver15
+    - https://docs.microsoft.com/en-us/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15
+
+
+
+```python
+
+```
+
+#  Connect to a Snowflake computing warehouse in Power BI Desktop
+
+
+1. Create **Snowflake** data warehouse
+    1. Sign up for free account
+	- Click [here](https://signup.snowflake.com/?_ga=2.244222469.1468146556.1618626004-173092964.1618626004) and create id 
+	- Provide all information like name and mailid  > click **Continue** > Choose your Snowflake edition as **Enterprise** > Choose your cloud provider as **Microsoft Azure** > Region as **West US2 (washington)** > click on **Get Started** > Open Mail > Verify mail to activate the account > create username and password
+	![image](https://user-images.githubusercontent.com/20516321/115165273-bd052100-a0ca-11eb-89f9-a2443e23c786.png)
+
+	- 
+    
+  
+1. Open PBI Desktop
+1. Connect snowflake
+		1. Server > xxxxxxxx.west-us-2.azure.snowflakecomputing.com
+		2. Warehouse > COMPUTE_WH > click on **ok**
+		3. provide username: xxxxxx  > pasword: xxxxxx > click on **connect**
+		
+1. Select Required Table
+
+	1. Expand Snowflake_sample_data > expand TPCH_SF1 > select tables Customer,Nation,Region,Orders
+	1. Create joins accordingly.
+
+    
+1. Develop the report using columns region name ,nation name and total price.
+
+    
+
+**Optional:**
+
+  1. Install snowsql CLI https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/index.html
+  1. https://docs.snowflake.com/en/user-guide/getting-started-tutorial.html#snowflake-in-20-minutes
+  
+**Scripts:**
+```
+account_name: ox16000.west-us-2.azure
+account url : https://ox16000.west-us-2.azure.snowflakecomputing.com
+sername: kumaryama
+password: ********
+
+
+
+open cmd
+snowsql -a uk00084.west-us-2.azure -u mylageethika
+create or replace database sf_tuts;
+select current_database(), current_schema();
+create or replace table emp_basic (
+  first_name string ,
+  last_name string ,
+  email string ,
+  streetaddress string ,
+  city string ,
+  start_date date
+  );
+  
+  
+create or replace warehouse sf_tuts_wh with
+  warehouse_size='X-SMALL'
+  auto_suspend = 180
+  auto_resume = true
+  initially_suspended=true;
+  
+select current_warehouse();
+
+put file://c:\temp\employees0*.csv @sf_tuts.public.%emp_basic;
+
+list @sf_tuts.public.%emp_basic;
+copy into emp_basic
+  from @%emp_basic
+  file_format = (type = csv field_optionally_enclosed_by='"')
+  pattern = '.*employees0[1-5].csv.gz'
+  on_error = 'skip_file';
+select * from emp_basic;
+insert into emp_basic values
+  ('Clementine','Adamou','cadamou@sf_tuts.com','10510 Sachs Road','Klenak','2017-9-22') ,
+  ('Marlowe','De Anesy','madamouc@sf_tuts.co.uk','36768 Northfield Plaza','Fangshan','2017-1-26');
+select email from emp_basic where email like '%.uk';
+select first_name, last_name, dateadd('day',90,start_date) from emp_basic where start_date <= '2017-01-01';
+
+drop database if exists sf_tuts;
+
+drop warehouse if exists sf_tuts_wh;
+
+!exit
+
+```
+
+#  row level security (RLS)
+
+
+# Security
+In any BI application 3 Tiers of Security required. Those are
+1. Authentication
+  - Application username and password is called as Authentication.
+2. Autherization
+  - Object Level (Workspace, App,Dashboard,Report,Dataset)
+    - https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces
+    - https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-roles-new-workspaces
+  - Row Level Security(RLS) or Data Security 
+# Row Level Security (RLS)
+
+## Reference Documents
+
+https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-rls
+
+
+
+## Develop Data Security in Dynamic Way
+
+1. Copy below data into Excel
+
+| Item      | Price | Account Manager     |
+| ---        |    ----   |          --- |
+| Item 1      | 10       | studentpbi@mylaramreddy.onmicrosoft.com   |
+| Item 2   | 20        | studentpbi@mylaramreddy.onmicrosoft.com      |
+| Item 3   | 30        | vmyla1@mylaramreddy.onmicrosoft.com      |
+| Item 4   | 40        | vmyla1@mylaramreddy.onmicrosoft.com      |
+
+2. Save the excel as rritec_rls_source
+3. Import the excel and develop a table report with three columns
+![image](https://user-images.githubusercontent.com/20516321/114550670-15c65b00-9c80-11eb-8129-9e0bef38f3a4.png)
+
+4. Click on the model > Click on the Manage Roles > Create a role as shown below
+![image](https://user-images.githubusercontent.com/20516321/114550922-5d4ce700-9c80-11eb-91eb-afe79589603c.png)
+
+5. Save this report as rls_report
+6. Publish to workspace.
+7. In the workspace make sure **info@datahexa.com** as **Viewer**
+8. Go to Dataset > Security > Select **role** and map info@datahexa.com > Add > Save 
+9. Open **Private window** in the brwoser > open app.powerbi.com > login using info@datahexa.com and password shared by your instructor.
+10. Open the report and notice that only two records are visible
+![image](https://user-images.githubusercontent.com/20516321/114551387-f24fe000-9c80-11eb-8dcd-0bfd582b64a4.png)
+
+
+
+## Questions
+1. RLS will applies to Workspace members assigned Admin, Member, or Contributor ?
+  - No . Only applies on Viewers
+2. 
+```python
+
+```
+
+#  Power BI Cmdlets for Windows PowerShell and PowerShell Core
+
+## Reading Activity
+
+- https://docs.microsoft.com/en-us/learn/modules/introduction-to-powershell/
+
+# Power BI Cmdlets for Windows PowerShell and PowerShell Core
+https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
+
+## Exercise 1: Install all modules of PowerBI
+-----
+1. Open **Windows PowerShell ISE(X86)** > In power Shell window run below command
+```
+Install-Module -Name MicrosoftPowerBIMgmt
+```
+2. In right side **Commands** window click on refresh observe all **six** useful modules are installed.
+```
+
+MicrosoftPowerBIMgmt.Admin
+MicrosoftPowerBIMgmt.Capacities
+MicrosoftPowerBIMgmt.Data
+MicrosoftPowerBIMgmt.Profile
+MicrosoftPowerBIMgmt.Reports
+MicrosoftPowerBIMgmt.Workspaces
+```
+## Exercise 2: Export workspaces/Dashboards/Reports to csv file
+-----
+
+1. Click on **New Script** > paste below code and change **workspace id** and **path** accordingly and run it
+```
+Connect-PowerBIServiceAccount
+
+
+Get-PowerBIWorkspace | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\ws.csv
+Get-PowerBIDashboard -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\ds.csv
+Get-PowerBIReport -WorkspaceId 987a132d-795b-406e-9358-b6fbd3fade8f | Export-Csv -Path C:\Users\ramreddymyla\Desktop\rritec\20210731\cmdlets\rs.csv
+```
+
+## Exercise 3: Get report names from multiple workspaces
+
+   
+    $myArray = "9c265642-a2b2-4ae1-a7fe-d9f3822984d7","1083fdff-a6fd-4a92-b849-4387530e8a38"
+    #$myArray.Length-1
+    $i=0
+    for(;$i -le $myArray.Length-1;$i++)
+    {
+        $myArray[$i]
+        Get-PowerBIReport -WorkspaceId $myArray[$i] | Export-Csv -Append -Path C:\work\ps\list_of_sanjay_ws_reports1.csv
+    }
+    
+   
+            
+### Exercise 4: Get report names from all workspaces
+
+    
+      # connect to power BI Service
+      Connect-PowerBIServiceAccount
+
+
+      # Define variables for path and file name
+      $path="C:\work\ps\"
+      $ws_file_name="list_of_workspaces.csv"
+      $rs_file_name="list_of_reports.csv"
+
+      # Export all workspace information
+      Get-PowerBIWorkspace | Export-Csv -Path $path$ws_file_name
+
+      # Read csv file of workspaces
+      $ws=Import-Csv -Path $path$ws_file_name
+
+      # Read ids of workspaces
+      ForEach-Object {
+          $Ids += $ws.Id
+      }
+
+      # export reportnames from each workspace in append mode
+
+      $i=0
+      for(;$i -le $Ids.Length-1;$i++)
+      {
+
+          Get-PowerBIReport -WorkspaceId $Ids[$i] | Export-Csv -Append -Path $path$rs_file_name
+      }
+    
+   
+
+## Exercise 5: Create new workspace
+-----
+```
+New-PowerBIWorkspace -Name myla1-workspace
+```
+
+## Exercise 6: Remove Power BI Report
+----
+1. Change report id and workspace id and run it.
+
+```
+Remove-PowerBIReport -Id 09d39a15-65ac-46c8-84ac-de2923536cb9 -WorkspaceId 383e66d4-0587-45c8-93dd-0b4a8abec074
+```
+
+## Exercise 7: Add/Remove user to/from workspace
+----
+
+```
+Add-PowerBIWorkspaceUser -Id 79578b7e-3515-421b-bb3f-1fbaee65a319 -UserEmailAddress info@datahexa.com -AccessRight Viewer
+Remove-PowerBIWorkspaceUser -Id b901218c-3621-4238-883d-1a7abfdcb58b -UserPrincipalName info@datahexa.com
+```
+## Exercise 8: Bulk users adding to required workspaces
+-----
+- Download sample securiy [file](https://github.com/rritec/powerbi/blob/master/Labdata/setup-powerbi-access-to-end-users1.csv) 
+
+      # Define variables for path and file name
+      $path="C:\work\ps\"
+      $file_name="setup-powerbi-access-to-end-users1.csv"
+
+
+      # Read csv file of workspaces
+      $ws=Import-Csv -Path $path$file_name
+      #$ws
+      #$Id1=""
+      #$UserEmailAddress=""
+      #$AccessRights=""
+
+      #Clear-Variable wsId
+      #Clear-Variable UserEmailAddress1
+      #Clear-Variable AccessRights1
+
+      # Read ids of workspaces
+      ForEach-Object {
+          $wsId += $ws.workspaceid
+          $UserEmailAddress1 += $ws.UserEmailAddress
+          $AccessRights1 += $ws.AccessRight   
+
+      }
+
+      # export reportnames from each workspace in append mode
+
+      $i=0
+      for(;$i -le $wsId.Length-1;$i++)
+      {
+
+          Add-PowerBIWorkspaceUser -Id $wsId[$i] -UserEmailAddress $UserEmailAddress1[$i] -AccessRight $AccessRights1[$i]
+
+
+
+      }
+      Clear-Variable wsId
+      Clear-Variable UserEmailAddress1
+      Clear-Variable AccessRights1
+## Exercise 9: Disconnect Power BI Service
+----
+
+```
+Disconnect-PowerBIServiceAccount
+```
+
+#  Paginated Reports
+
+# Install Report Builder Tool
+
+#  SSRS
+
+Step 1: Install data tools
+https://github.com/rritec/powerbi/blob/master/Notebooks/PBI_01_01_Introduction_Installation.md#instal-msbi-download-sql-server-data-tools-ssdt
+Step 2: Follow the Tutorial
+https://docs.microsoft.com/en-us/sql/reporting-services/create-a-basic-table-report-ssrs-tutorial?view=sql-server-ver15
+
+
+#  Migrate SSRS to PowerBI
+
+https://docs.microsoft.com/en-us/power-bi/guidance/migrate-ssrs-reports-to-power-bi
