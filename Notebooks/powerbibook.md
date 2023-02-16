@@ -2,7 +2,7 @@
 1. **[Introduction](#Introduction)**<br>
 2. **[Power Query Editor Shape data using Excel as source](#Power-Query-Editor-Shape-data-using-Excel-as-source)**<br>
 3. **[Power Query Editor Shape data using MySql as input](#Power-Query-Editor-Shape-data-using-MySql-as-input)**<br>
-4. **[Working with SQL Server](#Working-with-SQL-Server)**<br>
+4. **[Power Query Editor Shape data using SQL Server as input](#Power-Query-Editor-Shape-data-using-SQL-Server-as-input)**<br>
 5. **[M-Language](#M-Language)**<br>
 6. **[Combine Queries](#Combine-Queries)**<br>
 7. **[Power Query Editor Project](#Power-Query-Editor-Project)**<br>
@@ -571,7 +571,7 @@ INSERT INTO emp30 (empno,ename,job,mgr,hiredate,sal,comm,deptno,test) VALUES
 ```python
 
 ```
-# Working with SQL Server
+# Power Query Editor Shape data using SQL Server as input
 ---
 **Note:** Mostly as **BI** developer, we wont get chance to create databases,tables and loading data. In our training program, we are creating simple database with couple of small tables.
 
