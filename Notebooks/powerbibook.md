@@ -7,36 +7,37 @@
 6. **[M-Language](#M-Language)**<br>
 7. **[Power Query Editor Combine Data](#Power-Query-Editor-Combine-Data)**<br>
 8. **[Project1 Power Query Editor Lab](#Project1 Power Query Editor Lab)**<br>
-9. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
-10. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
-11. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
-12. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
-13. **[DAX Studio](#DAX-Studio)**<br>
-14. **[recap](#recap)**<br>
-15. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
-16. **[Exam](#Exam)**<br>
-17. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
-18. **[Power View Hierarchy Drill down drill up](#Power-View-Hierarchy-Drill-down-drill-up)**<br>
-19. **[Power View Drill Through](#Power-View-Drill-Through)**<br>
-20. **[Types of Filter](#Types-of-Filter)**<br>
-21. **[Groups Bins](#Groups-Bins)**<br>
-22. **[Conditional Formatting](#Conditional-Formatting)**<br>
-23. **[Power BI Service](#Power-BI-Service)**<br>
-24. **[Create Apps](#Create-Apps)**<br>
-25. **[Parameters](#Parameters)**<br>
-26. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
-27. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
-28. **[Bookmarks Actions Buttons Images](#Bookmarks-Actions-Buttons-Images)**<br>
-29. **[Power BI Import Vs Direct Query Vs Live Connection](#Power-BI-Import-Vs-Direct-Query-Vs-Live-Connection)**<br>
-30. **[Run Python scripts in Power BI Desktop](#Run-Python-scripts-in-Power-BI-Desktop)**<br>
-31. **[SSAS Multidimensional Models in PowerBI Desktop](#SSAS-Multidimensional-Models-in-PowerBI-Desktop)**<br>
-32. **[Connect to a Snowflake computing warehouse in Power BI Desktop](#Connect-to-a-Snowflake-computing-warehouse-in-Power-BI-Desktop)**<br>
-33. **[row level security (RLS)](#row-level-security-(RLS))**<br>
-34. **[Power BI Cmdlets for Windows PowerShell and PowerShell Core](#Power-BI-Cmdlets-for-Windows-PowerShell-and-PowerShell-Core)**<br>
-35. **[Paginated Reports](#Paginated-Reports)**<br>
-36. **[SSRS](#SSRS)**<br>
-37. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
-38. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
+9. **[Power Query Editor Knowledge Test](#Power-Query-Editor-Knowledge-Test)**<br>
+10. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
+11. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
+12. **[Power Pivot DAX Metrics](#Power-Pivot-DAX-Metrics)**<br>
+13. **[DAX iterator Functions](#DAX-iterator-Functions)**<br>
+14. **[DAX Studio](#DAX-Studio)**<br>
+15. **[recap](#recap)**<br>
+16. **[Power Pivot Modeling Lab](#Power-Pivot-Modeling-Lab)**<br>
+17. **[Exam](#Exam)**<br>
+18. **[Power View Visualization Lab](#Power-View-Visualization-Lab)**<br>
+19. **[Power View Hierarchy Drill down drill up](#Power-View-Hierarchy-Drill-down-drill-up)**<br>
+20. **[Power View Drill Through](#Power-View-Drill-Through)**<br>
+21. **[Types of Filter](#Types-of-Filter)**<br>
+22. **[Groups Bins](#Groups-Bins)**<br>
+23. **[Conditional Formatting](#Conditional-Formatting)**<br>
+24. **[Power BI Service](#Power-BI-Service)**<br>
+25. **[Create Apps](#Create-Apps)**<br>
+26. **[Parameters](#Parameters)**<br>
+27. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
+28. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
+29. **[Bookmarks Actions Buttons Images](#Bookmarks-Actions-Buttons-Images)**<br>
+30. **[Power BI Import Vs Direct Query Vs Live Connection](#Power-BI-Import-Vs-Direct-Query-Vs-Live-Connection)**<br>
+31. **[Run Python scripts in Power BI Desktop](#Run-Python-scripts-in-Power-BI-Desktop)**<br>
+32. **[SSAS Multidimensional Models in PowerBI Desktop](#SSAS-Multidimensional-Models-in-PowerBI-Desktop)**<br>
+33. **[Connect to a Snowflake computing warehouse in Power BI Desktop](#Connect-to-a-Snowflake-computing-warehouse-in-Power-BI-Desktop)**<br>
+34. **[row level security (RLS)](#row-level-security-(RLS))**<br>
+35. **[Power BI Cmdlets for Windows PowerShell and PowerShell Core](#Power-BI-Cmdlets-for-Windows-PowerShell-and-PowerShell-Core)**<br>
+36. **[Paginated Reports](#Paginated-Reports)**<br>
+37. **[SSRS](#SSRS)**<br>
+38. **[Migrate SSRS to PowerBI](#Migrate-SSRS-to-PowerBI)**<br>
+39. **[Power BI Interview Questions](#Power-BI-Interview-Questions)**<br>
 
 
 # Introduction
@@ -1532,6 +1533,12 @@ Continue with your Power BI file from the previous exercise. You want to import 
 ```python
 
 ```
+
+#  Power Query Editor Knowledge Test
+
+https://docs.google.com/forms/d/e/1FAIpQLScXps5bMocuSuFrZCaZ3iSsDqDW_N79INcdFzHGEc_Cug6NZQ/viewform?usp=sf_link
+
+https://docs.google.com/forms/u/2/d/1eHMES9qZATaOuvpYy3X2ewBDRm3flJt-CGFCahR6tac/edit
 
 
 # Power Pivot Modeling Part1
