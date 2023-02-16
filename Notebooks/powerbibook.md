@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/20516321/219373758-0487c4a9-1a42-4402-a849-41398b3d3c77.png)
+
+
+
+
+
+
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div>
+
+
 # Power BI
 1. **[Data Warehousing Concepts](#Data-Warehousing-Concepts)**<br>
 2. **[Introduction Installation](#Introduction-Installation)**<br>
