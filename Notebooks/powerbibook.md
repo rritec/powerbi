@@ -13,7 +13,7 @@
 
 
 
-<div style="page-break-after: always; visibility: hidden"> \pagebreak </div>
+<div style="page-break-after: always;"></div>
 
 
 # Power BI
