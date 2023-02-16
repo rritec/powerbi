@@ -23,7 +23,7 @@
 22. **[Power BI Service](#Power-BI-Service)**<br>
 23. **[Create Apps](#Create-Apps)**<br>
 24. **[Parameters](#Parameters)**<br>
-25. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power BI)**<br>
+25. **[Gateways Data Refresh in Power BI](#Gateways-Data-Refresh-in-Power-BI)**<br>
 26. **[Deployment Pipelines](#Deployment_Pipelines)**<br>
 27. **[Power BI Desktop](#Power-BI-Desktop)**<br>
 28. **[Power BI Desktop](#Power-BI-Desktop)**<br>
