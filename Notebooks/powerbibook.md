@@ -5,7 +5,7 @@
 4. **[Power Query Editor Shape data using SQL Server as input](#Power-Query-Editor-Shape-data-using-SQL-Server-as-input)**<br>
 5. **[optional](#optional)**<br>
 6. **[M-Language](#M-Language)**<br>
-7. **[Combine Queries](#Combine-Queries)**<br>
+7. **[Power Query Editor Combine Data](#Power-Query-Editor-Combine-Data)**<br>
 8. **[Power Query Editor Project](#Power-Query-Editor-Project)**<br>
 9. **[Power Pivot Modeling Part1](#Power-Pivot-Modeling-Part1)**<br>
 10. **[Power Pivot Modeling Part2](#Power-Pivot-Modeling-Part2)**<br>
@@ -940,7 +940,9 @@ in
 
 
 
-# Combine Queries
+# Power Query Editor Combine Data
+
+
 - In power BI, we can combine data intwo ways
 	1. Append
 	2. Merge
