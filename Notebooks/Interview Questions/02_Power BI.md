@@ -195,34 +195,42 @@
        * FIXED
 
 52. What are formats in Power BI ?
+
     1. Power BI Desktop – Power BI Desktop can be downloaded and installed on your PC. You can connect it to the data source, transform the data, and analyze and             visualize it with the help of templates.
     2. Power BI Services – Power BI Services is a Service-as-a-platform or a cloud based service.
     3. Power BI Mobile App – The Power BI App is available for iOs, Android, and Windows.
 
 53. What is row-level security?
+
     Row-level security limits the data a user can view and has access to, and it relies on filters. 
     Users can define the rules and roles in Power BI Desktop and also publish them to Power BI Service to configure row-level security.
     
 54. Define bi-directional cross filtering?
+
     Bidirectional cross-filtering enables them to apply filters on both sides of a table relationship. 
     You can apply the filters by propagating the filter context to a second related table on the other side of a table relationship.
 
 55. What is "M language"?
+
     M is a programming language used in Power Query as a functional, case-sensitive language similar to other programming languages and easy to use.
 
 56. What are the major differences between visual-level, page-level, and report-level filters in Power BI?
+
     Visual-level filters are used to filter data within a single visualization. Page-level filters are used to work on an entire page in a report, and 
     different pages can have various filters. 
     Report-level filters are used to filter all the visualizations and pages in the report.
 
 57. What are KPIs in Power BI?
+
     KPI is abbreviated as Key Performance Indicator. Any professional organization has teams and employees follow the KPI protocols. The organizations set 
     up KPIs for all the employees. These KPIs act as their targets. These KPIs are compared to previous performance and analyze the progress.
 
 58. What is the incremental refresh in the context of Power BI?
+
     Incremental refresh is used to refresh the newly added data to avoid truncating and loading data.
 
 59. What are the different joins in Power BI?
+
     1.Horizontal Joins to append data from multiple tables
     2.Vertical Joins to merge the data from multiple tables
 
