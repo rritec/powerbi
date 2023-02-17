@@ -127,6 +127,7 @@
 33. Errors rectifing (debugging)
 34. What is the definition of L1, L2, L3, L4 support levels in IT Operations Management?
 	- https://myfirstsite99.wordpress.com/what-is-the-definition-of-l1-l2-l3-l4-support-levels-in-it-operations-management/
+
 35. Write Sql Query to get running totals.
 	```sql
 	select empno,sal,
@@ -136,49 +137,75 @@
 	```
 36. Difference between summarize and summarizecolumns
     * https://www.sqlbi.com/articles/introducing-summarizecolumns/#:~:text=Another%20difference%20between%20SUMMARIZE%20and,only%20and%20no%20row%20context.
+
 37. Explain about data alerts ?
     https://docs.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts
+
 38. How many types of gateways are available in power BI?
+
     1. Personal Gateway
     2. Enterprise gateway
+
 39. When we need to gateway?
+
     1. For on permise data sources(for example Oracle,Sql Server ,MySql,Excel, Notepad ...etc)
+
 40. What are the ticketing tools available ?
+
     1. Ivanti
     2. Zendesk
     3. Freshservice ....etc
+
 41. What is GetData in PowerBI ?
     1. GetData is a simple icon on PowerBI used to import data from the source.
+
 42. List out some drawbacks/limitations of using PowerBI ?
+
     1. PowerBi Doesn't accepts file sizes larger than 1GB and doesn't mix imported data accessed from real-time connections.
     2. There are very few data soures that allow real-time connections to PowerBi reports and dashboards.
     3. it only shares dashboards and reports with users logged in with the same email address.
     4. Dashboard doesn't accept or pass user,account,or other entity parameters.
+
 43. Name some commonly used tasks in the query editor ?
+
     1. Connect to data
     2. Shape and Combine data
     3. Group rows
     4. Pivot columns 
     5. Create custom columns 
     6. Query formulas
+
 44. How many types of buildings blocks in power BI ?
+
     There are Five Types of Building Blocks
     1. Visualizations
     2. Datasets
     3. Reports
     4. Dashboards
     5. Tiles
+
 45. What is Visualizations ?
+
     * Visualization is the visual representation of data in the form of maps, charts, or tables.
+
 46. What is Datasets ?
-    * Dataset is a collection of data gathered from various sources like SQL Server, Azure, Text, Oracle, XML, JSON, and many more. With the GetData feature in Power       BI, we can easily fetch data from any data source.
+
+    * Dataset is a collection of data gathered from various sources like SQL Server, Azure, Text, Oracle, XML, JSON, and many more. With the GetData feature in         Power BI, we can easily fetch data from any data source.
+
 47. What is Report ?
-    * Reports are a structured representation of datasets that consists of multiple pages. Reports help to extract important information and insights from datasets         to take major business decisions.
+
+    * Reports are a structured representation of datasets that consists of multiple pages. Reports help to extract important information and insights from               datasets to take major business decisions.
+
 48. What is Dashboard ?
+
     * A dashboard is a single-page representation of reports made of various datasets. Each element is termed a tile. 
+
 49. What is Tile ?
+
     * Tiles are single-block containing visualizations of a report. Tiles help to differentiate each report 
+
 50. Name any 3 most useful aggregation functions DAX?
+
     DAX has a number of aggregation functions, including the following commonly used functions:
         * SUM
         * AVERAGE
@@ -187,6 +214,7 @@
         * SUMX (and other X functions)
 
 51. Name any 3 most useful text functions in DAX?
+
     The text functions in DAX include the following:
        * CONCATENTATE
        * REPLACE
