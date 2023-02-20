@@ -50,6 +50,8 @@ Import Data From Excel Data Source By Using Our Material
 4. Click on **publish** > Select above workspace **rritec - workspace** > click on ok
 5. Go to **power BI service** > observe report
 
+## Embed The File
+
 1.Open PowerPoint 
 
 2.Click On Insert
