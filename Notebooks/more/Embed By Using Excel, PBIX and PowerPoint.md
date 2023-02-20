@@ -80,7 +80,7 @@ Import Data From Excel Data Source By Using Our Material
 
 12. Now Open Scott Data file in excel
 
-13. Add One Row with Any details and save it
+13. Add One Row in Emp Table with Any details and save it
 
   ![image](https://user-images.githubusercontent.com/20516321/220102841-59c0aff6-7930-47dd-a585-d8a8bbdb952d.png)
   
