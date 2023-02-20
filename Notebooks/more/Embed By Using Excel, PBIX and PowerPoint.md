@@ -69,7 +69,7 @@ Click On Save
 
 
 Now Open Scott Data file in excel
-  ![image](https://user-images.githubusercontent.com/20516321/220102012-27659e32-6db9-471e-96bd-e471641a1348.png)
+  ![image](https://user-images.githubusercontent.com/20516321/220102841-59c0aff6-7930-47dd-a585-d8a8bbdb952d.png)
 Add One Row with Any details and save it
 now open PowerBI report and refresh the data
 we will get the output what we have updated in the excel file.
