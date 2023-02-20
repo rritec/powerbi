@@ -52,40 +52,40 @@ Import Data From Excel Data Source By Using Our Material
 
 ## Embed The File
 
-1.Open PowerPoint 
+1. Open PowerPoint 
 
-2.Click On Insert
+2. Click On Insert
 
   ![image](https://user-images.githubusercontent.com/20516321/220101062-a1907f77-798c-48f9-a4fb-5f46bec98557.png)
-3.Click On Add-Ins
+3. Click On Add-Ins
 
-4.From Microsoft Store Search Microsoft PowerBI And Download   (Note:- Need to be sign with same accounts in all apps)
+4. From Microsoft Store Search Microsoft PowerBI And Download   (Note:- Need to be sign with same accounts in all apps)
   ![image](https://user-images.githubusercontent.com/20516321/220101325-cd966f5a-9dd7-4c0e-88d9-0d82cc5e1b74.png)
 
-5.Click On Microsoft PowerBI
+5. Click On Microsoft PowerBI
 
-6.Goto app.powerbi.com
+6. Goto app.powerbi.com
 
-7.Open the dataset what we have published earlier
+7. Open the dataset what we have published earlier
 
-8.copy the url above what we published the report and paste 
+8. Copy the url above what we published the report and paste 
 
   ![image](https://user-images.githubusercontent.com/20516321/220101774-37a8fd01-59c9-4f48-9806-78430ecf0f37.png)
 
-9.click on insert
+9. Click on insert
 
-10.Modify as per our requirements
+10. Modify as per our requirements
 
-11.Click On Save
+11. Click On Save
 
-12.Now Open Scott Data file in excel
+12. Now Open Scott Data file in excel
 
-13.Add One Row with Any details and save it
+13. Add One Row with Any details and save it
 
   ![image](https://user-images.githubusercontent.com/20516321/220102841-59c0aff6-7930-47dd-a585-d8a8bbdb952d.png)
   
-14.now open PowerBI report and refresh the data
+14. now open PowerBI report and refresh the data
 
-15.we will get the output what we have updated in the excel file.
+15. we will get the output what we have updated in the excel file.
 
 
