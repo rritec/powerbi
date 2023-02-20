@@ -51,6 +51,7 @@ Import Data From Excel Data Source By Using Our Material
 5. Go to **power BI service** > observe report
 
 1.Open PowerPoint 
+
 2.Click On Insert
 
   ![image](https://user-images.githubusercontent.com/20516321/220101062-a1907f77-798c-48f9-a4fb-5f46bec98557.png)
