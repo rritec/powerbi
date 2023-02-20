@@ -57,7 +57,7 @@ Import Data From Excel Data Source By Using Our Material
   ![image](https://user-images.githubusercontent.com/20516321/220101062-a1907f77-798c-48f9-a4fb-5f46bec98557.png)
 3.Click On Add-Ins
 
-4.From Microsoft Store Search On Download Microsoft PowerBI  (Note:- Need to be sign with same accounts in all apps)
+4.From Microsoft Store Search Microsoft PowerBI And Download   (Note:- Need to be sign with same accounts in all apps)
   ![image](https://user-images.githubusercontent.com/20516321/220101325-cd966f5a-9dd7-4c0e-88d9-0d82cc5e1b74.png)
 
 1.Click On Microsoft PowerBI
