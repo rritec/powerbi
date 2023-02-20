@@ -84,11 +84,11 @@ Import Data From Excel Data Source By Using Our Material
 
   ![image](https://user-images.githubusercontent.com/20516321/220102841-59c0aff6-7930-47dd-a585-d8a8bbdb952d.png)
   
-14. now open PowerBI report and refresh the data
+14. Now open PowerBI report and refresh the data
 
-    ![image](https://user-images.githubusercontent.com/20516321/220115685-48e58476-ef85-49fe-a499-c74ec8bd1c97.png)
+    ![image](https://user-images.githubusercontent.com/20516321/220116164-727da220-a26f-4b1e-9b05-2227974e8558.png))
 
 
-15. we will get the output what we have updated in the excel file.
+15. We will get the output what we have updated in the excel file.
 
 
