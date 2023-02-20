@@ -62,31 +62,30 @@ Import Data From Excel Data Source By Using Our Material
 4.From Microsoft Store Search Microsoft PowerBI And Download   (Note:- Need to be sign with same accounts in all apps)
   ![image](https://user-images.githubusercontent.com/20516321/220101325-cd966f5a-9dd7-4c0e-88d9-0d82cc5e1b74.png)
 
-1.Click On Microsoft PowerBI
+5.Click On Microsoft PowerBI
 
-2.Goto app.powerbi.com
+6.Goto app.powerbi.com
 
-3.Open the dataset what we have published earlier
+7.Open the dataset what we have published earlier
 
-4.copy the url above what we published the report and paste 
+8.copy the url above what we published the report and paste 
 
   ![image](https://user-images.githubusercontent.com/20516321/220101774-37a8fd01-59c9-4f48-9806-78430ecf0f37.png)
 
-5.click on insert
+9.click on insert
 
-6.Modify as per our requirements
+10.Modify as per our requirements
 
-7.Click On Save
+11.Click On Save
 
+12.Now Open Scott Data file in excel
 
-1.Now Open Scott Data file in excel
-
-2.Add One Row with Any details and save it
+13.Add One Row with Any details and save it
 
   ![image](https://user-images.githubusercontent.com/20516321/220102841-59c0aff6-7930-47dd-a585-d8a8bbdb952d.png)
   
-3.now open PowerBI report and refresh the data
+14.now open PowerBI report and refresh the data
 
-4.we will get the output what we have updated in the excel file.
+15.we will get the output what we have updated in the excel file.
 
 
