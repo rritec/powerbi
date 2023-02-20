@@ -57,8 +57,8 @@
     1. True
     2. False
 14. Power Query is useful to data manipulate/wrangling tool?
-   1. Yes
-   2. No
+    1. Yes
+    2. No
 15. In Power Query each Transformation is recorded as one Step in Query Settings Window?
     1. True
     2. False
