@@ -65,7 +65,19 @@
 Answers:
 
 1. 6
-2. 
+2. 6
+3. 4
+4. 1
+5. 1
+6. 1
+7. 1
+8. 1
+9. 1
+10. 1
+11. 4
+12. 1
+13. 1
+14. 1
 
 
 https://docs.google.com/forms/d/e/1FAIpQLScXps5bMocuSuFrZCaZ3iSsDqDW_N79INcdFzHGEc_Cug6NZQ/viewform?usp=sf_link
