@@ -18,8 +18,8 @@ https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-fo
 ``` F#
 let
     x = 1 +1,
-    y= 2+2,
-    z = x+y+3
+    y= x+2,
+    z = y+3
 in
     z
 ```
