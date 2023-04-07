@@ -10,17 +10,20 @@
   
 1. Open PBI Desktop
 1. Connect snowflake
-		1. Server > xxxxxxxx.west-us-2.azure.snowflakecomputing.com
-		2. Warehouse > COMPUTE_WH > click on **ok**
-		3. provide username: xxxxxx  > pasword: xxxxxx > click on **connect**
-		
-1. Select Required Table
+1. Server name copy from activation mail > xxxxxxxx.west-us-2.azure.snowflakecomputing.com
+1. Warehouse > COMPUTE_WH > click on **ok**
+2. provide username: xxxxxx  > pasword: xxxxxx > click on **connect**
+3. Select Required Tables
+4. Expand Snowflake_sample_data > expand TPCH_SF1 > select tables Customer, Nation, Region, Orders
+5. Create joins accordingly.
 
-	1. Expand Snowflake_sample_data > expand TPCH_SF1 > select tables Customer,Nation,Region,Orders
-	1. Create joins accordingly.
+![image](https://user-images.githubusercontent.com/20516321/230553459-aee3b83f-1f94-40fa-b8b6-baf135bbdde4.png)
 
-    
-1. Develop the report using columns region name ,nation name and total price.
+6. Develop the report using columns region name ,nation name and total price.
+
+![image](https://user-images.githubusercontent.com/20516321/230553617-a71e2e5b-8983-4837-b2ab-a6ecb0ed86df.png)
+
+7. 
 
     
 
@@ -30,11 +33,12 @@
   1. https://docs.snowflake.com/en/user-guide/getting-started-tutorial.html#snowflake-in-20-minutes
   
 **Scripts:**
+
 ```
 account_name: ox16000.west-us-2.azure
 account url : https://ox16000.west-us-2.azure.snowflakecomputing.com
-sername: kumaryama
-password: ********
+username: mylarr9
+password: RRitec***
 
 
 
