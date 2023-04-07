@@ -21,7 +21,8 @@
 
 6. Develop the report using columns region name ,nation name and total price.
 
-![image](https://user-images.githubusercontent.com/20516321/230553617-a71e2e5b-8983-4837-b2ab-a6ecb0ed86df.png)
+![image](https://user-images.githubusercontent.com/20516321/230553939-dfc03b98-aebe-4b12-9a05-e5d3823b6c99.png)
+
 
 7. 
 
