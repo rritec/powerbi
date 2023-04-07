@@ -35,6 +35,8 @@
   
 **Scripts:**
 
+1. Know your account details, should be simillar to below
+
 ``` bash
 account_name: ermwurj-md70724
 account url : https://ermwurj-md70724.snowflakecomputing.com
@@ -157,6 +159,9 @@ select first_name, last_name, dateadd('day',90,start_date) from emp_basic where 
 ``` sql
 
 drop database if exists sf_tuts;
+
+```
+``` sql
 
 drop warehouse if exists sf_tuts_wh;
 
