@@ -35,18 +35,37 @@
   
 **Scripts:**
 
-```
-account_name: ox16000.west-us-2.azure
-account url : https://ox16000.west-us-2.azure.snowflakecomputing.com
+``` bash
+account_name: ermwurj-md70724
+account url : https://ermwurj-md70724.snowflakecomputing.com
 username: mylarr9
 password: RRitec***
 
+```
 
 
-open cmd
+
+1. open cmd
+``` bash
 snowsql -a uk00084.west-us-2.azure -u mylageethika
+```
+![image](https://user-images.githubusercontent.com/20516321/230555247-5e2d4fef-f799-4ccb-a010-a79de77bb053.png)
+
+2. create a database
+``` sql 
+
 create or replace database sf_tuts;
+
+```
+3. know current database and schema
+``` sql
+
 select current_database(), current_schema();
+
+```
+4. create a table
+``` sql 
+
 create or replace table emp_basic (
   first_name string ,
   last_name string ,
@@ -55,34 +74,94 @@ create or replace table emp_basic (
   city string ,
   start_date date
   );
+ 
+```
   
   
+5. Create compute warehouse
+``` sql
+
 create or replace warehouse sf_tuts_wh with
   warehouse_size='X-SMALL'
   auto_suspend = 180
   auto_resume = true
   initially_suspended=true;
+
+```
   
+6. Know cureent warehouse
+``` sql
+
 select current_warehouse();
+
+```
+
+7. put all files into staging location
+``` bash
 
 put file://c:\temp\employees0*.csv @sf_tuts.public.%emp_basic;
 
+```
+
+8. list the files in staging location
+
+``` bash
+
 list @sf_tuts.public.%emp_basic;
+
+```
+9. copy files from staging location to table
+
+``` bash
+
 copy into emp_basic
   from @%emp_basic
   file_format = (type = csv field_optionally_enclosed_by='"')
   pattern = '.*employees0[1-5].csv.gz'
   on_error = 'skip_file';
+
+```
+10. Observe all data
+
+``` sql
+
 select * from emp_basic;
+
+```
+11. insert few rows 
+
+``` sql
+
 insert into emp_basic values
   ('Clementine','Adamou','cadamou@sf_tuts.com','10510 Sachs Road','Klenak','2017-9-22') ,
   ('Marlowe','De Anesy','madamouc@sf_tuts.co.uk','36768 Northfield Plaza','Fangshan','2017-1-26');
+
+```
+12. Query data
+
+``` sql
+
 select email from emp_basic where email like '%.uk';
+
+```
+
+``` sql
+
+
 select first_name, last_name, dateadd('day',90,start_date) from emp_basic where start_date <= '2017-01-01';
+
+```
+
+13. clean database and compute warehouse to save the credits (optional)
+
+``` sql
 
 drop database if exists sf_tuts;
 
 drop warehouse if exists sf_tuts_wh;
+
+```
+``` bash 
 
 !exit
 
