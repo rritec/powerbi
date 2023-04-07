@@ -68,14 +68,15 @@ select current_database(), current_schema();
 4. create a table
 ``` sql 
 
-create or replace table emp_basic (
-  first_name string ,
-  last_name string ,
-  email string ,
-  streetaddress string ,
-  city string ,
-  start_date date
-  );
+CREATE OR replace TABLE emp_basic
+                        (
+                                                first_name string ,
+                                                last_name string ,
+                                                email string ,
+                                                streetaddress string ,
+                                                city string ,
+                                                start_date date
+                        );
  
 ```
   
@@ -134,9 +135,19 @@ select * from emp_basic;
 
 ``` sql
 
-insert into emp_basic values
-  ('Clementine','Adamou','cadamou@sf_tuts.com','10510 Sachs Road','Klenak','2017-9-22') ,
-  ('Marlowe','De Anesy','madamouc@sf_tuts.co.uk','36768 Northfield Plaza','Fangshan','2017-1-26');
+INSERT INTO emp_basic
+VALUES      ('Clementine',
+             'Adamou',
+             'cadamou@sf_tuts.com',
+             '10510 Sachs Road',
+             'Klenak',
+             '2017-9-22'),
+            ('Marlowe',
+             'De Anesy',
+             'madamouc@sf_tuts.co.uk',
+             '36768 Northfield Plaza',
+             'Fangshan',
+             '2017-1-26'); 
 
 ```
 12. Query data
