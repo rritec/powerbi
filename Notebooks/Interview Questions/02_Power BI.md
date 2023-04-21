@@ -262,7 +262,11 @@
     1.Horizontal Joins to append data from multiple tables
     2.Vertical Joins to merge the data from multiple tables
 
-60. 
+60. Divide Function Vs Divide Operator
+- It's recommended that you use the **DIVIDE function** whenever the denominator is an expression that could return zero or BLANK.
+- In the case that the denominator is a **constant value**, we recommend that you use the **divide operator**. In this case, the division is guaranteed to succeed, and your expression will perform better because it will avoid unnecessary testing.
+- [Refer document](https://learn.microsoft.com/en-us/dax/best-practices/dax-divide-function-operator)
+61. 
 
    
 
