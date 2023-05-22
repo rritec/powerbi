@@ -266,7 +266,15 @@
 - It's recommended that you use the **DIVIDE function** whenever the denominator is an expression that could return zero or BLANK.
 - In the case that the denominator is a **constant value**, we recommend that you use the **divide operator**. In this case, the division is guaranteed to succeed, and your expression will perform better because it will avoid unnecessary testing.
 - [Refer document](https://learn.microsoft.com/en-us/dax/best-practices/dax-divide-function-operator)
-61. 
+61. Table 1 has one column and 4 rows with values 1,1,0,null and Table2 has one column with values 1,1,null,null then let me know how many rows we will get in full outer join? left outer join? reight outerjoin?inner join? ca you get full outer join results without using full outer join ?
+62. split below data in power query to get two columns
+- SAR:98
+- IND-560
+- RAND_:9854
+- AED=78
+63. Get domain name from mail ids using SQL and PowerBI
+64. write query to get duplicate rows 
+65. reverse the ddmmyyyy into yyyymmdd in sql and powerbi.
 
    
 
