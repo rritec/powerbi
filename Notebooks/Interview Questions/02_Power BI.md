@@ -320,8 +320,7 @@ Full OUTER JOIN DATATableB ON DATATableA.ColumA = DATATableB.ColumB;
 - RAND_:9854
 - AED=78
 63. Get domain name from mail ids using SQL and PowerBI
-	``` Sql
-
+  ``` Sql
 Create Table Domine
 (
 EmailID Varchar(30)
@@ -338,7 +337,7 @@ Select EmailID,SUBSTRING(EmailID,CHARINDEX('@',EmailID)+1,LEN(EmailID)-CHARINDEX
 from Domine;
 
  ```
-Out Put:
+
 ![image](https://github.com/rritec/powerbi/assets/20516321/aaa372a7-4b51-4fbd-8e9e-ff2fb901cc30)
 
 
