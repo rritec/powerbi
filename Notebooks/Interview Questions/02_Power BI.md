@@ -342,24 +342,14 @@ from Domine;
 
 
 64. write query to get duplicate rows 
-    ``` Sql
-	
+   ``` Sql
 Create Table Duplicate
 (
 Name_Col Varchar(30)
 )
 
 Insert Into Duplicate(Name_Col) Values ('Ravi Teja'),
-('Ravi Teja'),
-('Tarun'),
-('Tarun'),
-('Chetan'),
-('SAI'),
-('Rinku'),
-('Geetham'),
-('Rinku'),
-('SAI'),
-('Geetham');
+('Ravi Teja'),('Tarun'),('Tarun'),('Chetan'),('SAI'),('Rinku'),('Geetham'),('Rinku'),('SAI'),('Geetham');
 
 Select * from Duplicate;
 
