@@ -342,6 +342,38 @@ from Domine;
 
 
 64. write query to get duplicate rows 
+    ``` Sql
+	
+Create Table Duplicate
+(
+Name_Col Varchar(30)
+)
+
+Insert Into Duplicate(Name_Col) Values ('Ravi Teja'),
+('Ravi Teja'),
+('Tarun'),
+('Tarun'),
+('Chetan'),
+('SAI'),
+('Rinku'),
+('Geetham'),
+('Rinku'),
+('SAI'),
+('Geetham');
+
+Select * from Duplicate;
+
+Select Name_Col,COUNT(*) As count
+From Duplicate
+Group BY Name_Col
+Having Count(*)>1
+
+```
+![image](https://github.com/rritec/powerbi/assets/20516321/cf65e319-bef4-4733-afa1-af9892ade202)
+
+
+
+
 65. reverse the ddmmyyyy into yyyymmdd in sql and powerbi.
 
    
