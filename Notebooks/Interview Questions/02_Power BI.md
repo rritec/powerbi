@@ -307,6 +307,9 @@ Full OUTER JOIN DATATableB ON DATATableA.ColumA = DATATableB.ColumB;
 
 
 ```
+
+![image](https://github.com/rritec/powerbi/assets/20516321/1bb17dbe-1a73-42f2-ac7f-ebcbf733d9bc)
+
 62. split below data in power query to get two columns
 - SAR:98
 - IND-560
