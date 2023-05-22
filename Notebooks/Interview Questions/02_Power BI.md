@@ -320,6 +320,28 @@ Full OUTER JOIN DATATableB ON DATATableA.ColumA = DATATableB.ColumB;
 - RAND_:9854
 - AED=78
 63. Get domain name from mail ids using SQL and PowerBI
+	``` Sql
+
+Create Table Domine
+(
+EmailID Varchar(30)
+)
+
+Insert Into Domine(EmailID) Values ('abcgd@Microsoft.com'),
+('Tarun@Rightsoftware.com'),
+('Ravi Teja @ LtiMindtree.com'),
+('Chetan@google.com')
+
+Select * from Domine;
+
+Select EmailID,SUBSTRING(EmailID,CHARINDEX('@',EmailID)+1,LEN(EmailID)-CHARINDEX('@',EmailID)) AS Domine_Name
+from Domine;
+
+ ```
+Out Put:
+![image](https://github.com/rritec/powerbi/assets/20516321/aaa372a7-4b51-4fbd-8e9e-ff2fb901cc30)
+
+
 64. write query to get duplicate rows 
 65. reverse the ddmmyyyy into yyyymmdd in sql and powerbi.
 
