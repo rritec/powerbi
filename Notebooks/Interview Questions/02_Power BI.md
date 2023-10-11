@@ -365,6 +365,20 @@ Having Count(*)>1
 
 
 65. reverse the ddmmyyyy into yyyymmdd in sql and powerbi.
+66. Difference between treat as and filter dax functions ?
+- TREATAS and FILTER are both DAX functions used for filtering data, but they serve different purposes and have distinct use cases:
+- TREATAS Function:
+	- Purpose: TREATAS is used to establish a virtual relationship between tables by applying a filter context from one table to another, even when no physical relationship exists between them in the data model.
+	- Syntax: TREATAS(<table_or_expression_to_use_as_filter_context>, <table_to_filter>)
+	- Use Case: You would use TREATAS when you want to create a temporary relationship between tables for a specific calculation or analysis. For instance, when you want to filter one table based on values in another table without creating a physical relationship in the data model.
+	- Example: If you have two tables, Sales and Product, without a direct relationship, you can use TREATAS to filter the Product table based on values from the Sales table.
+ - FILTER Function:
+	- Purpose: FILTER is used to create a new table by filtering an existing table based on a specified condition or expression.
+	- Syntax: FILTER(<table>, <filter_expression>)
+	- Use Case: You would use FILTER when you want to filter rows within a single table based on specific criteria. This is often used for creating subsets of data within a single table.
+	- Example: If you have a Sales table and you want to filter it to include only rows where the sales amount is greater than 1000, you would use the FILTER function.
+	- In summary, the key difference between the two functions is that TREATAS is primarily used to establish temporary relationships between tables, whereas FILTER is used to filter rows within a single table. Your choice between them depends on the specific data modeling or analysis scenario you are working on.
+67. 
 
    
 
