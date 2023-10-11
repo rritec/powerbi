@@ -381,55 +381,55 @@ Having Count(*)>1
 
 67. Performance tunning in powerbi?
 
-Performance tuning in Power BI is crucial to ensure that your reports and dashboards load and respond quickly, providing a smooth user experience. Here are some tips for optimizing the performance of your Power BI reports:
+	Performance tuning in Power BI is crucial to ensure that your reports and dashboards load and respond quickly, providing a smooth user experience. Here are some tips for optimizing the performance of your Power BI reports:
+	
+	1. **Data Model Optimization**:
+	   - **Data Loading**: Limit the data loaded into your Power BI model. Only load the data that is necessary for your analysis.
+	   - **Data Transformation**: Optimize data transformation steps in Power Query to reduce data size.
+	   - **Data Type Selection**: Choose appropriate data types for your columns to reduce memory usage.
+	   - **Remove Unnecessary Columns**: Remove columns you don't need for analysis to reduce data size.
+	   - **Data Compression**: Enable data compression when possible to reduce memory footprint.
+	
+	2. **Data Modeling**:
+	   - **Star Schema**: Use a star schema for your data model, with a central fact table and dimension tables. This can improve query performance.
+	   - **Relationships**: Define relationships between tables efficiently. Use one-to-many relationships when appropriate.
+	   - **Bi-Directional Filtering**: Use bi-directional filtering with caution, as it can affect performance.
+	
+	3. **DAX Optimization**:
+	   - **Measure Optimization**: Write efficient DAX measures. Avoid using complex DAX functions that slow down performance.
+	   - **Row-Level Security**: If you use Row-Level Security, make sure it's optimized to avoid excessive data filtering.
+	
+	4. **Aggregations**:
+	   - Use aggregations to pre-calculate and store summary data for large datasets. This can significantly improve query performance.
+	
+	5. **Filter Optimization**:
+	   - Minimize the number of visual-level filters. Excessive filters can slow down report performance.
+	   - Use slicers and filters strategically to limit the data loaded.
+	
+	6. **Visual Design**:
+	   - Use summarization and drill-through features to provide a balance between detail and performance.
+	   - Limit the number of visuals on a single report page.
+	   - Use visuals with caution, especially if they have a large number of data points.
+	
+	7. **Performance Analyzer**:
+	   - Use Power BI's built-in Performance Analyzer to identify bottlenecks in your report. It helps pinpoint slow-performing visuals or DAX measures.
+	
+	8. **Data Refresh Schedule**:
+	   - Schedule data refresh during off-peak times to minimize the impact on the Power BI Service's performance.
+	
+	9. **Power BI Service Considerations**:
+	   - Be mindful of dataset size limitations in the Power BI Service.
+	   - Utilize the Power BI Premium or Premium Per User (PPU) capacities for better performance.
+	
+	10. **Monitor Usage**:
+	    - Use the Power BI Service's usage metrics and monitoring tools to identify reports that need optimization.
+	
+	11. **Regular Testing**:
+	    - Continuously test your reports and measures for performance as your data and report complexity grow.
+	
+	Remember that performance optimization is an ongoing process. Regularly review and optimize your Power BI reports as data and business requirements evolve to ensure that your reports remain responsive and provide a good user experience.
 
-1. **Data Model Optimization**:
-   - **Data Loading**: Limit the data loaded into your Power BI model. Only load the data that is necessary for your analysis.
-   - **Data Transformation**: Optimize data transformation steps in Power Query to reduce data size.
-   - **Data Type Selection**: Choose appropriate data types for your columns to reduce memory usage.
-   - **Remove Unnecessary Columns**: Remove columns you don't need for analysis to reduce data size.
-   - **Data Compression**: Enable data compression when possible to reduce memory footprint.
-
-2. **Data Modeling**:
-   - **Star Schema**: Use a star schema for your data model, with a central fact table and dimension tables. This can improve query performance.
-   - **Relationships**: Define relationships between tables efficiently. Use one-to-many relationships when appropriate.
-   - **Bi-Directional Filtering**: Use bi-directional filtering with caution, as it can affect performance.
-
-3. **DAX Optimization**:
-   - **Measure Optimization**: Write efficient DAX measures. Avoid using complex DAX functions that slow down performance.
-   - **Row-Level Security**: If you use Row-Level Security, make sure it's optimized to avoid excessive data filtering.
-
-4. **Aggregations**:
-   - Use aggregations to pre-calculate and store summary data for large datasets. This can significantly improve query performance.
-
-5. **Filter Optimization**:
-   - Minimize the number of visual-level filters. Excessive filters can slow down report performance.
-   - Use slicers and filters strategically to limit the data loaded.
-
-6. **Visual Design**:
-   - Use summarization and drill-through features to provide a balance between detail and performance.
-   - Limit the number of visuals on a single report page.
-   - Use visuals with caution, especially if they have a large number of data points.
-
-7. **Performance Analyzer**:
-   - Use Power BI's built-in Performance Analyzer to identify bottlenecks in your report. It helps pinpoint slow-performing visuals or DAX measures.
-
-8. **Data Refresh Schedule**:
-   - Schedule data refresh during off-peak times to minimize the impact on the Power BI Service's performance.
-
-9. **Power BI Service Considerations**:
-   - Be mindful of dataset size limitations in the Power BI Service.
-   - Utilize the Power BI Premium or Premium Per User (PPU) capacities for better performance.
-
-10. **Monitor Usage**:
-    - Use the Power BI Service's usage metrics and monitoring tools to identify reports that need optimization.
-
-11. **Regular Testing**:
-    - Continuously test your reports and measures for performance as your data and report complexity grow.
-
-Remember that performance optimization is an ongoing process. Regularly review and optimize your Power BI reports as data and business requirements evolve to ensure that your reports remain responsive and provide a good user experience.
-
-68. 
+68. dddddddd
    
    
    
