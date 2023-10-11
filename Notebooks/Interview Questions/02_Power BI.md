@@ -378,8 +378,10 @@ Having Count(*)>1
 	- Use Case: You would use FILTER when you want to filter rows within a single table based on specific criteria. This is often used for creating subsets of data within a single table.
 	- Example: If you have a Sales table and you want to filter it to include only rows where the sales amount is greater than 1000, you would use the FILTER function.
 	- In summary, the key difference between the two functions is that TREATAS is primarily used to establish temporary relationships between tables, whereas FILTER is used to filter rows within a single table. Your choice between them depends on the specific data modeling or analysis scenario you are working on.
+ 
 
 67. Performance tunning in powerbi?
+    
 
 	Performance tuning in Power BI is crucial to ensure that your reports and dashboards load and respond quickly, providing a smooth user experience. Here are some tips for optimizing the performance of your Power BI reports:
 	
@@ -429,7 +431,10 @@ Having Count(*)>1
 	
 	Remember that performance optimization is an ongoing process. Regularly review and optimize your Power BI reports as data and business requirements evolve to ensure that your reports remain responsive and provide a good user experience.
 
-68. dddddddd
+
+
+69. dddddddd
+70. kk
    
    
    
