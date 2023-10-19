@@ -152,3 +152,5 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
     - Flat Files(Excel,Csv,Tab delimited,Json,XML...etc)
     - Relational Databases (MS Sql Server,Oracle,Teradata,MySql,BigData Hive,...etc)
     - Cloud Databases(Snow Flake,Azure SQl Database,Azure Synapse,Azure Blobs...etc)
+1. write
+    - answer
