@@ -73,6 +73,12 @@
   4. Apply custom filter on **FactInternetSales > Orderdate** column by using above parameters(RangeStart/RangeEnd)
   5. close and apply
   6. In power View > right click on FactInternetsales>click on Incremental Refresh select required options.
+
+## Home WOrk
+
+[Create Power automate flow to refresh PowerBI Dataset](https://github.com/rritec/PowerAutomate/blob/main/Create%20Power%20automate%20flow%20to%20refresh%20PowerBI%20Dataset.md)
+
+
 Reference: 
 - https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install
 - https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-data
@@ -95,5 +101,5 @@ Reference:
   -  Incremental refresh is designed for data sources that support query folding, which is Power Query's ability to generate a single query expression to retrieve and transform source data. Most data sources that support SQL queries support query folding. Data sources like flat files, blobs, and some web feeds often do not.
 7. Incremental Refresh, can you apply on **Excel** Data source?
   - No
-8. 
+
 
