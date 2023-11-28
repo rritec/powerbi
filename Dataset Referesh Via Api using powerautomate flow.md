@@ -1,6 +1,4 @@
-# How to Creating Power automate flow.
-
-## Power Automate Login.
+# How to Create Power automate flow
 
 1. Click on link to login (https://www.microsoft.com/en-us/power-platform/products/power-automate)
 
@@ -8,8 +6,6 @@
 
 
 2. Sign in with your **Microsoft Credtials**.
-
-## Creating Power Automate Flow
 
 
 3. Click on **Create**
