@@ -150,11 +150,17 @@
             - **Evaluation** - Calculated columns are evaluated by using row context at data refresh time, while measures are evaluated by using filter context at query time. Filter context is introduced in a later module; it's an important topic to understand and master so that you can achieve sophisticated summarizations.
             - **Storage** - Calculated columns (in Import storage mode tables) store a value for each row in the table, but a measure never stores values in the model.
             - **Visual use** - Calculated columns (like any column) can be used to filter, group, or summarize (as an implicit measure), whereas measures are designed to summarize.
+# Interview Questions 
+1. Based on return type, DAX functions are divided into how many types ?
+    - Two Types
+          - Table Return(Calander,all,filter..etc)
+          - Scalar Return(Date,year,month,hour...etc)    - 
+2. Any calculated column first priority goes to M-language ?
+    - True
+3. 
 
 
  
 
 
-```python
 
-```
