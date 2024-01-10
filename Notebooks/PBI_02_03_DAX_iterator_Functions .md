@@ -133,7 +133,10 @@ order by deptno
 
   - count number of rows when holiday flag is *False*
       - *Hint*: use below formula inside the measure 
-      - COUNTAX(FILTER(count_understanding,count_understanding[Holiday Flag]=FALSE()),count_understanding[Holiday Flag])  
+      - COUNTAX(FILTER(count_understanding,count_understanding[Holiday Flag]=FALSE()),count_understanding[Holiday Flag])
+- Try below example
+![image](https://github.com/rritec/powerbi/assets/20516321/46b43888-40e8-4396-bf30-dfe9e49fc504)
+
 
 
 
