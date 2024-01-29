@@ -6,7 +6,7 @@
 3. what is the relation between Datasources and Semantic Model?
 4. What is the relation between Semantic Model and Report?
 
-# Answwers
+# Answers
 
 1. Many
 2. Many
