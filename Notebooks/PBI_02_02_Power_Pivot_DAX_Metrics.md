@@ -128,7 +128,7 @@
         
  1. What is User Principal Name?
     - User Principal Name (UPN) is the name of a system user in an email address format.
-    - A UPN (for example: john.doe@domain.com) consists of the user name (logon name), separator (the @ symbol), and domain name (UPN suffix)
+    - A UPN (for example: john.doe@domain.com) consists of the user name (login name), separator (the @ symbol), and domain name (UPN suffix)
   
 1. What is Implicity Mesure.
     - Implicit measures are automatic behaviors that allow visuals to summarize model column data. 
