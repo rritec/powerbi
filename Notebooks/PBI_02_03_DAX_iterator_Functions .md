@@ -43,7 +43,7 @@
    -  Create **Margin** Measure using below formula
    
            Margin = sumx(FactInternetSales,FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])
-   -  Create **TotalMargin** Mesure using below formula
+   -  Create **TotalMargin** Measure using below formula
    
             TotalMargin = sumx(all(FactInternetSales),FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])
    -  Create **% Margin Contribution** Measure using below formula
