@@ -37,16 +37,16 @@
    ----
    -  From SQL Server **Adventureworksdw2012** > Import **FactInternetSales** and **Customer** Table
    -  Observe the **Model** Relationship based on **customerkey** automatically created
-   -  Creat a table vizulization with three columns **English Education**,**TotalProductCost**,**SalesAmount**
+   -  Creat a table visualization with three columns **English Education**,**TotalProductCost**,**SalesAmount**
    -  ![image](https://user-images.githubusercontent.com/20516321/168948738-e6c7985b-f620-4e4d-aeba-bf0529b7ea61.png)
 
-   -  Create **Margin** Mesure using below formula
+   -  Create **Margin** Measure using below formula
    
            Margin = sumx(FactInternetSales,FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])
    -  Create **TotalMargin** Mesure using below formula
    
             TotalMargin = sumx(all(FactInternetSales),FactInternetSales[SalesAmount]-FactInternetSales[TotalProductCost])
-   -  Create **% Margin Contribution** Mesure using below formula
+   -  Create **% Margin Contribution** Measure using below formula
    
             % Margin Contribution = DIVIDE([Margin],[TotalMargin])
    -  Select **% Margin** > Change format as **Percentage**
