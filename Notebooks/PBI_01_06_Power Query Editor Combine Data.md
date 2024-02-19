@@ -330,6 +330,7 @@ where e.mgr=m.empno
 		- Left Anti Join
 		- Right Anti Join
 1. Can you show null measures corresponding rows in the report?
+   
 	No. As a work around we can replace NULL with something(like Zero,NA,...etc)
 1. Understand below data and answer questions?
 	- Table 1
