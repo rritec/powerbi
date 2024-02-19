@@ -127,7 +127,7 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
     - Yes
 1. Each Sheet is called as what in power Query Editor?
     - Query
-1. Can we reorder Transformation steps in **Qurry Settings**?
+1. Can we reorder Transformation steps in **Query Settings**?
     - Yes
 1. What is the extension of Power BI File?
     - .PBIX
@@ -135,7 +135,7 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
     - Co**M**uting Column
 1. Can you name some of the Power BI supporting Data Types?
     - Whole Number
-    - Deciambal
+    - Deciamal
     - Text
     - Date
     - True/False(Bool)
