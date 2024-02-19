@@ -153,7 +153,7 @@
 # Interview Questions 
 1. Based on return type, DAX functions are divided into how many types ?
     - Two Types
-          - Table Return(Calander,all,filter..etc)
+          - Table Return(Calender,all,filter..etc)
           - Scalar Return(Date,year,month,hour...etc)    - 
 2. Any calculated column first priority goes to M-language ?
     - True
