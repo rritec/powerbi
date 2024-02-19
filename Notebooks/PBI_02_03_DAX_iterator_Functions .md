@@ -61,7 +61,8 @@
 select e.*,
 sum(sal) over ( partition by deptno),
 rank() over(order by sal) as rank1,
-dense_rank() over(order by sal) as denserank
+dense_rank() over(order by sal) as denserank,
+rank() over (partition by deptno order by sal desc) as p_based_on_deptno_rank
 from emp as e
 order by deptno
 ```
