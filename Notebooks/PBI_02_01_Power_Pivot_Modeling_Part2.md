@@ -28,7 +28,7 @@ https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-
   - Many to One
 4. Without Relationship, between two tables,will we get right data?
   - Wrong Data
-5. Power BI creats relationships automatically based on what?
+5. Power BI creates relationships automatically based on what?
   - Column Names
 6. Can you create Joins manually if column names are different?
   - Yes
