@@ -11,7 +11,7 @@
 ## Exercise 1: Develop a report **Total Sales by Category**
 - from fileds select total Sales and Category columns 
 - select Stacked Column Chart
-- Click on any bar to  move from category to segmant. Are you able to move ??? no right??? so let us learn how to create hierarchy
+- Click on any bar to  move from category to segment. Are you able to move ??? no right??? so let us learn how to create hierarchy
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0049.png?raw=true)
 
