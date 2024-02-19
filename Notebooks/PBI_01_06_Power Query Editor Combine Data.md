@@ -1,6 +1,6 @@
 
 # Combine Queries
-- In power BI, we can combine data intwo ways
+- In power BI, we can combine data into two ways
 	1. Append
 	2. Merge
 ## Append
