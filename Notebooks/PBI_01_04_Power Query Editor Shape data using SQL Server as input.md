@@ -121,7 +121,7 @@ INSERT INTO [dbo].[SALGRADE] VALUES (5, 3001, 9999);
 2. How many rows inserted in emp table ?
  - 14 (select count(*) from [dbo].[emp])
 3. Write SQL to get deptname wise salary expenditure?
- - select dnmae,sum(sal) from [dbo].[emp],[dbo].[dept] where emp.deptno=dept.deptno group by dname
+ - select dname,sum(sal) from [dbo].[emp],[dbo].[dept] where emp.deptno=dept.deptno group by dname
 4. Who is top sal employee?
  - King(5000)
 
