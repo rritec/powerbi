@@ -135,7 +135,7 @@ https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference
     - Co**M**uting Column
 1. Can you name some of the Power BI supporting Data Types?
     - Whole Number
-    - Deciamal
+    - Decimal
     - Text
     - Date
     - True/False(Bool)
