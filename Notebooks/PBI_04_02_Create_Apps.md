@@ -26,7 +26,7 @@
 1. If we created new report, will it automatically reflect into app?
   - No,We need to update the app
 2. By default,a report or dashboard will be not shown in the app. Do we have any option to show a report or dashboard.?
-  - Yes . (Go to workspace > view > list > Include in app > disable/enable it)
+  - Yes .
 3. Can you create a report using published dataset? in side power bi service?
   - Yes
 4. How Many Apps, possible using One Work Space ?
