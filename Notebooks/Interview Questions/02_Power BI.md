@@ -433,8 +433,24 @@ Having Count(*)>1
 
 
 
-69. dddddddd
-70. kk
+69. What is formula engine and storage engine in DAX?
+    - https://www.sqlbi.com/articles/formula-engine-and-storage-engine-in-dax/#:~:text=Differences%20between%20the%20formula%20engine,made%20by%20the%20formula%20engine.
+70. What is tabular Editor external tool  in context of powerbi
+    - https://docs.tabulareditor.com/?tabs=TE3
+71. What is data lineage in DAX ?
+    - https://www.sqlbi.com/articles/understanding-data-lineage-in-dax/    
+73. What is XMLA endpoint?
+   - https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-connect-tools
+74. context transition in DAX?
+    - https://www.sqlbi.com/articles/understanding-context-transition-in-dax/
+75. What is SQL Server Profiler?
+    - https://learn.microsoft.com/en-us/sql/tools/sql-server-profiler/sql-server-profiler?view=sql-server-ver16
+76. What is CTE and WITH?
+    - https://www.metabase.com/learn/sql-questions/sql-cte#cte-example
+77. What are the windows functions in SQL?
+    - https://mode.com/sql-tutorial/sql-window-functions
+78. 
+
    
    
    
