@@ -92,9 +92,6 @@
 # MSFT SQL Server Installation
 ---
 
-## Install MSFT SQL Server Database
----
-
 1. Download Sqlserver Developer edition [here](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)
 
     ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0132.png?raw=true)
@@ -139,7 +136,7 @@
 1. Follow below link download and restore sample data **AdventureWorksDW2012.bak**
 https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15
 
-## Instal MSBI (Download SQL Server Data Tools (SSDT))
+# Instal MSBI (Download SQL Server Data Tools (SSDT))(Optional)
 ---
 
 1. Download Sqlserver Developer edition https://www.microsoft.com/en-au/sql-server/sql-server-downloads
