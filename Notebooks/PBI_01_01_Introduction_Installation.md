@@ -115,7 +115,7 @@
 
     
 
-## Instal SQL Server Management Studio (SSMS) 
+# Instal SQL Server Management Studio (SSMS) 
 ---
 
 1. Download SQL Server Management Studio [here](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)
@@ -130,7 +130,7 @@
    ![](https://github.com/rritec/powerbi/blob/master/images/PBI_0136.png?raw=true)   
 
 
-## Restore sample data
+# Restore sample data
 ---
 
 1. Follow below link download and restore sample data **AdventureWorksDW2012.bak**
