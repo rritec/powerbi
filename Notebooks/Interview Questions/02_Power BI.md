@@ -381,9 +381,7 @@ Having Count(*)>1
  
 
 67. Performance tunning in powerbi?
-    
-
-	Performance tuning in Power BI is crucial to ensure that your reports and dashboards load and respond quickly, providing a smooth user experience. Here are some tips for optimizing the performance of your Power BI reports:
+    - Performance tuning in Power BI is crucial to ensure that your reports and dashboards load and respond quickly, providing a smooth user experience. Here are some tips for optimizing the performance of your Power BI reports:
 	
 	1. **Data Model Optimization**:
 	   - **Data Loading**: Limit the data loaded into your Power BI model. Only load the data that is necessary for your analysis.
@@ -430,8 +428,6 @@ Having Count(*)>1
 	    - Continuously test your reports and measures for performance as your data and report complexity grow.
 	
 	Remember that performance optimization is an ongoing process. Regularly review and optimize your Power BI reports as data and business requirements evolve to ensure that your reports remain responsive and provide a good user experience.
-
-
 
 69. What is formula engine and storage engine in DAX?
     - https://www.sqlbi.com/articles/formula-engine-and-storage-engine-in-dax/#:~:text=Differences%20between%20the%20formula%20engine,made%20by%20the%20formula%20engine.
