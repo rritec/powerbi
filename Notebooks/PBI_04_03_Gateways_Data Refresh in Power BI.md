@@ -18,7 +18,7 @@
      - 
  
 2. Power BI Service(Azure Cloud) Communicates On -Permise Datasets by using ............?
-  - Gateway
+    - Gateway
 
 3. Scenerio:
     - Today 10 rows available in the Source(example: excel/sql server/oracle/teradata)(on - Permise Datasets)
