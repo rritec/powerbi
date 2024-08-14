@@ -2,7 +2,7 @@
 # Data Refresh
 ---
 
-- How many types of sources are available?
+1. How many types of sources are available?
   - On-Permise
     - excel
     - SqlServer
