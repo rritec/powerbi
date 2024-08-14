@@ -20,13 +20,13 @@
 2. Power BI Service(Azure Cloud) Communicates On -Permise Datasets by using ............?
   - Gateway
 
- - Scenerio:
-      - Today 10 rows available in the Source(example: excel/sql server/oracle/teradata)(on - Permise Datasets)
-      - you imported to PBI file
-      - Developed reports
-      - published report to power Bi service
-      - After one month  5 more records added to excel and 2 records of excel updated and 1 record of excel deleted.Now total number of records in excel is 14
-      - However if i go and run report in **power Bi service** ,iam seeing old data (10 rows). How to fix it?
+3. Scenerio:
+    - Today 10 rows available in the Source(example: excel/sql server/oracle/teradata)(on - Permise Datasets)
+    - you imported to PBI file
+    - Developed reports
+    - published report to power Bi service
+    - After one month  5 more records added to excel and 2 records of excel updated and 1 record of excel deleted.Now total number of records in excel is 14
+    - However if i go and run report in **power Bi service** ,iam seeing old data (10 rows). How to fix it?
 ## What is an on-premises data gateway?
 - The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services.
 - These cloud services include Power BI, PowerApps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
