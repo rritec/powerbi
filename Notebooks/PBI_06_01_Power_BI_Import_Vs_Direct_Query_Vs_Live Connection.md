@@ -67,6 +67,14 @@ Features	All Dax Functions using possible	Few Dax Functions using possible
   - Yes
  11. What is Dual Storage, when we will use it.
   - https://docs.microsoft.com/en-in/power-bi/transform-model/desktop-storage-mode
+12. How to know the size of table in MS SQL Server
+``` sql
+EXEC sp_spaceused 'FactInternetSales';--9904KB
+EXEC sp_spaceused 'DimCustomer';--7816KB
+EXEC sp_spaceused 'DimProduct';--5992KB
+select 9904+7816+5992 -- 23712 = 24MB
+```
+    
 
 
 ```python
