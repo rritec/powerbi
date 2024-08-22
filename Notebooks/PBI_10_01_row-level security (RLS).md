@@ -5,6 +5,22 @@ In any BI application 3 Tiers of Security required. Those are
   - Application username and password is called as Authentication.
 2. Autherization
   - Object Level (Workspace, App,Dashboard,Report,Dataset)
+    - 	Workspace
+    - 			1. viewer >>> Business Users
+    - 			2. contributor >> Dev team
+    - 			3. member >>> Senior Dev team
+    - 			4. admin >> all permissions
+	  - Semantic Model
+		1. Read
+		2. Reshare
+		3. Build
+		4. Modify
+	Report
+		1. Read
+		2. Reshare
+	dashboard
+		1. Read
+		2. Reshare
     - https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces
     - https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-roles-new-workspaces
   - Row Level Security(RLS) or Data Security 
