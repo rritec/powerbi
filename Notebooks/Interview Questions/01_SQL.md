@@ -61,23 +61,27 @@ INSERT INTO Student_Marks (Student_ID, Sub_Id, Marks, Class) VALUES
 (2, 2, 40, 1);
 ```
 ``` sql
-SELECT 
+SELECT
     st.Student_Name,
-    T.Teacher_Name, Sb.Sub_Name, sm.Marks,
-	 CASE
-        WHEN sm.Marks >= 0  and sm.Marks < 35 THEN 'Fail'
-		WHEN sm.Marks >= 35  and sm.Marks < 50 THEN 'Just Pass'
-		WHEN sm.Marks >= 50  and sm.Marks < 60 THEN 'Second Class'
-		WHEN sm.Marks >= 60  and sm.Marks <= 100 THEN 'First Class'        
+    T.Teacher_Name,
+    Sb.Sub_Name,
+    sm.Marks,
+    CASE
+        WHEN sm.Marks >= 0 AND sm.Marks < 35 THEN 'Fail'
+        WHEN sm.Marks >= 35 AND sm.Marks < 50 THEN 'Just Pass'
+        WHEN sm.Marks >= 50 AND sm.Marks < 60 THEN 'Second Class'
+        WHEN sm.Marks >= 60 AND sm.Marks <= 100 THEN 'First Class'
     END AS Grade
-FROM 
+FROM
     STUDENT_SUBJECT ss
-JOIN 
+JOIN
     STUDENT st ON st.Student_ID = ss.Stu_Id
-join
-	TEACHER T ON T.TID = ss.Teacher_Id
-join SUBJECT sb ON sb.Sub_Id = ss.Sub_id
-join Student_Marks sm ON sm.Sub_Id  = ss.Sub_id and sm.Student_ID  = st.Student_ID
+JOIN
+    TEACHER T ON T.TID = ss.Teacher_Id
+JOIN
+    SUBJECT sb ON sb.Sub_Id = ss.Sub_id
+JOIN
+    Student_Marks sm ON sm.Sub_Id = ss.Sub_id AND sm.Student_ID = st.Student_ID;
 ```
 
 
