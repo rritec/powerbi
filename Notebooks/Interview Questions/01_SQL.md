@@ -96,5 +96,16 @@ sum(sal) over (partition by deptno order by deptno,sal) as dept_running_total
 from emp order by deptno,sal
 
    ```
-4. 
+4. How we can merge two tables in sql by using merge
+5. How to execute Stored procedure in adf
+6. How to get alerts in adf ( if we have 100 pipelines if any one pipeline fails we should get alert)
+7. In Storage Account have 100 files we should load files by having some specific conditions into Azure Blob storage
+8. How to Execute table writtening function
+9. How to return value from Stored Procedure
+10. How to write data into sql server using pyspark
+11. how to remove duplicates from dataframe
+12. how to join two dataframes in pyspark
+13. If stored procudure value is True then run copy activity else do not run.
+14. How to call value writtening function in select query.
+15. 
 	
