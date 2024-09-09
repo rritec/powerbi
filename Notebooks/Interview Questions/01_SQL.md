@@ -86,5 +86,15 @@ JOIN
 
 
 
-2. 
+2. Find grand total,running total and deptno wise running total
+ ``` sql
+
+select deptno,empno,sal,
+sum(sal) over () as grand_total,
+sum(sal) over (order by deptno,sal) as running_total,
+sum(sal) over (partition by deptno order by deptno,sal) as dept_running_total
+from emp order by deptno,sal
+
+   ```
+4. 
 	
