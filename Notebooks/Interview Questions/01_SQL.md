@@ -25,7 +25,8 @@
 		job = 'SALESMAN'
 	```
 
-	![image](https://github.com/user-attachments/assets/e5f23b0b-641c-442c-bb75-67e8987b7b8d)
+	![image](https://github.com/user-attachments/assets/f9cd079d-8e48-4e04-bc21-d6ce8eebaae5)
+
 
 1. Write query to get studentname,teachername,subjectname based on below data.
 
