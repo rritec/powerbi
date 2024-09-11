@@ -3,15 +3,28 @@
 	In Sql Statement we should have **select/from/where/group by/having/order by**
 1. Write Sql for Total Sal dept name wise ?
 
-	Select dname,sum(sal) as totalsal <br>
+	``` sql
+        Select dname,sum(sal) as totalsal
 	from emp,dept
 	where emp.deptno=dept.deptno
 	group by dname
+ ```
 ![image](https://github.com/user-attachments/assets/2951ce02-bc86-4efc-9eff-f5432c1fe1b0)
 
 1. Can we get all salesmans information where dept name is Sales?
 
-	select * from emp,dept where emp.deptno=dept.deptno and dept.deptno=30 and job = 'SALESMAN'
+	``` sql
+select 
+	* 
+from 
+	emp,dept 
+where 
+	emp.deptno=dept.deptno and 
+	dept.dname='SALES' and 
+	job = 'SALESMAN'
+```
+![image](https://github.com/user-attachments/assets/e5f23b0b-641c-442c-bb75-67e8987b7b8d)
+
 1. Write query to get studentname,teachername,subjectname based on below data.
 
 ```sql
