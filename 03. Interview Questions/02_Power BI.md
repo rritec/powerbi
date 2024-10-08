@@ -445,7 +445,13 @@ Having Count(*)>1
     - https://www.metabase.com/learn/sql-questions/sql-cte#cte-example
 77. What are the windows functions in SQL?
     - https://mode.com/sql-tutorial/sql-window-functions
-78. 
+# Part 2
+1. Explain about field parameters and calculation groups
+- https://www.sqlbi.com/articles/using-field-parameters-and-calculation-groups-for-conditional-formatting/
+2. 
+
+
+
 
    
    
